@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Kingdom Come Deliverance II" Moder="Yharnam" Cusa="PPSA21704" Version="01.041.000" Process="eboot.bin">
+  <Genres Name="RPG"/>
+  <Items/>
+  <Cheat Text="Infi Health-无限生命">
+    <Cheatline>
+      <Offset>8D16500</Offset>
+      <Section>0</Section>
+      <ValueOn>48-81-F9-00-C8-A2-0A-75-09-49-83-FD-00-74-03-0F-28-C4-C5-FA-11-84-83-A8-01-00-00-E9-56-A3-65-F7</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>37086D</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-8E-5C-9A-08-90-90-90-90</ValueOn>
+      <ValueOff>C5-FA-11-84-83-A8-01-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>A5FD1</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-EA-3F-AF-05</ValueOff>
+    </Cheatline>	
+  </Cheat>
+  <Cheat Text="Untouchable-无敌模式" Description="战斗教程期间请关闭。">
+    <Cheatline>
+      <Offset>8D165A0</Offset>
+      <Section>0</Section>
+      <ValueOn>48-8D-7B-28-4C-89-FE-81-BF-9C-00-00-00-77-77-00-00-75-05-E9-35-18-8B-F7-E9-2B-18-8B-F7</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>5C7DE1</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-BA-E7-74-08-90-90</ValueOn>
+      <ValueOff>48-8D-7B-28-4C-89-FE</ValueOff>
+    </Cheatline>
+  </Cheat>  
+  <Cheat Text="1 Hit Kill-一击必杀" Description="即使NPC互相攻击，也会一击毙命。这可能会影响剧情，请谨慎使用。">
+    <Cheatline>
+      <Offset>8D16550</Offset>
+      <Section>0</Section>
+      <ValueOn>48-3D-00-00-51-02-74-1D-49-83-F8-01-74-17-66-81-FC-40-A8-74-09-66-81-FC-A0-98-74-02-74-07-C7-47-1C-80-96-98-CA-C5-FA-58-47-1C-E9-E0-E9-BF-FC</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>5914F5A</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-F1-15-40-03</ValueOn>
+      <ValueOff>C5-FA-58-47-1C</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Stealth Kill (Touch)-潜行击杀（触碰）" Description="玩家与对手触碰时激活。仅非战斗状态可用。请谨慎使用。">
+    <Cheatline>
+      <Offset>8D16640</Offset>
+      <Section>0</Section>
+      <ValueOn>48-3D-00-00-51-02-74-17-66-81-FC-90-9B-74-09-66-81-FC-70-9C-74-02-EB-07-C7-47-1C-80-96-98-CA-C5-FA-11-47-20-E9-F1-E8-BF-FC</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>5914F55</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-E6-16-40-03</ValueOn>
+      <ValueOff>C5-FA-11-47-20</ValueOff>
+    </Cheatline>
+  </Cheat>  
+  <Cheat Text="Infi Stamina-无限耐力">
+    <Cheatline>
+      <Offset>3707C1</Offset>
+      <Section>0</Section>
+      <ValueOn>C4-A1-7A-11-8C-BB-A8-01-00-00</ValueOn>
+      <ValueOff>C4-A1-7A-11-84-BB-A8-01-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>9EF2C</Offset>
+      <Section>0</Section>
+      <ValueOn>C5-7A-11-83-54-07-00-00</ValueOn>
+      <ValueOff>C5-FA-11-93-54-07-00-00</ValueOff>
+    </Cheatline>   	
+  </Cheat>
+  <Cheat Text="Infi Energy (Fatigue)-无限精力（疲劳值）">
+    <Cheatline>
+      <Offset>A6393</Offset>
+      <Section>0</Section>
+      <ValueOn>C4-C1-7A-11-9E-58-07-00-00</ValueOn>
+      <ValueOff>C4-C1-7A-11-86-58-07-00-00</ValueOff>
+    </Cheatline>		
+  </Cheat>
+  <Cheat Text="Infi Durability (Weapons, Armor, Some Items)-无限耐久（武器、护甲、部分物品）">
+    <Cheatline>
+      <Offset>17815D</Offset>
+      <Section>0</Section>
+      <ValueOn>C5-F2-5F-C0</ValueOn>
+      <ValueOff>C5-F2-5D-C0</ValueOff>
+    </Cheatline>		
+  </Cheat>  
+  <Cheat Text="No Hunger-无饥饿感">
+    <Cheatline>
+      <Offset>A61CD</Offset>
+      <Section>0</Section>
+      <ValueOn>C4-C1-7A-11-9E-5C-07-00-00</ValueOn>
+      <ValueOff>C4-C1-7A-11-86-5C-07-00-00</ValueOff>
+    </Cheatline>		
+  </Cheat>
+  <Cheat Text="No Fall Damage-无坠落伤害">
+    <Cheatline>
+      <Offset>13E1ADA</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90</ValueOn>
+      <ValueOff>FF-10</ValueOff>
+    </Cheatline>		
+  </Cheat>
+  <Cheat Text="Zero Weight (When Changed)-负重清零（变更时生效）">
+    <Cheatline>
+      <Offset>5C7D6F6</Offset>
+      <Section>0</Section>
+      <ValueOn>0F-57-C0-90-90-90</ValueOn>
+      <ValueOff>C4-C2-71-A9-46-1C</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infi Money (Sell)-无限金钱（出售时）">
+    <Cheatline>
+      <Offset>8D165F0</Offset>
+      <Section>0</Section>
+      <ValueOn>44-8B-7E-50-44-03-7F-50-66-81-FC-60-A9-75-06-41-BF-7F-96-98-00-E9-C8-A4-F6-F7</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>C80ACA</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-21-5B-09-08-90-90-90</ValueOn>
+      <ValueOff>44-8B-7E-50-44-03-7F-50</ValueOff>
+    </Cheatline>	
+  </Cheat>  
+</Trainer>

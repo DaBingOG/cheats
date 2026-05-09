@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Silent Hill f" Moder="Celogamez & baobao8888汉化" Cusa="PPSA21159" Version="01.001.000" Process="eboot.bin">
+  <Genres Name="Action" />
+  <Items />
+  <Cheat Text="God Mode-无敌模式">
+    <Cheatline>
+      <Offset>41F45C6</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-25-E4-0F-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>41F413D</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-0E-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>425B76F</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-DC-89-F9-FF</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infinite Stamina-无限体力">
+    <Cheatline>
+      <Offset>41FA4E6</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-05-85-0F-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infinite Consumables-无限消耗品">
+    <Cheatline>
+      <Offset>61F3800</Offset>
+      <Section>0</Section>
+      <ValueOn>48-63-CA-C7-44-C8-04-64-00-00-00-8B-54-C8-04-E9-60-DB-11-FE</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>431136D</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-8E-24-EE-01-90-90</ValueOn>
+      <ValueOff>48-63-CA-8B-54-C8-04</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infinite Weapons Durability-无限武器耐久">
+    <Cheatline>
+      <Offset>43AC1C7</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-24-68-F4-FF</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Max Focus-最大专注值">
+    <Cheatline>
+      <Offset>41FC792</Offset>
+      <Section>0</Section>
+      <ValueOn>C5-FA-5F-C1</ValueOn>
+      <ValueOff>C5-FA-5D-C1</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infinite Sanity-无限理智值">
+    <Cheatline>
+      <Offset>41FB97E</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-6D-70-0F-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>41F3386</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-65-F6-0F-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Max/Infinite Faith-最大/无限信仰值">
+    <Cheatline>
+      <Offset>4315B37</Offset>
+      <Section>0</Section>
+      <ValueOn>B8-7F-96-98-00</ValueOn>
+      <ValueOff>C4-E2-70-F2-C0</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="1 Hit Kill - 一击必杀">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>61F2B00</Offset>
+      <ValueOn>C7-45-B4-80-96-98-4A-C5-FA-10-45-B4-E9-84-8A-FE-FD</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>41DB590</Offset>
+      <ValueOn>E9-6B-75-01-02</ValueOn>
+      <ValueOff>C5-FA-10-45-B4</ValueOff>
+    </Cheatline>	
+  </Cheat>  
+    <Cheat Text="Instant Awakening Gauge - 觉醒能量即刻拉满">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>41F2223</Offset>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>C5-FA-10-45-D4</ValueOff>
+    </Cheatline>
+  </Cheat>  
+</Trainer>

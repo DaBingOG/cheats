@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="DOOM The Dark Ages" Moder="Yharnam & baobao8888汉化" Cusa="PPSA20560" Version="01.009.000" Process="eboot.bin">
+  <Genres Name="Action"/>
+  <Items/>
+  <Cheat Text="1 Hit Kill-一击必杀">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>3725DA0</Offset>
+      <ValueOn>81-3F-00-FB-BF-04-74-0A-C7-83-C4-2F-00-00-20-BC-3E-4C-C5-FA-10-83-BC-2F-00-00-E9-37-C4-B0-FC</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>2321EE</Offset>
+      <ValueOn>E9-AD-3B-4F-03-90-90-90</ValueOn>
+      <ValueOff>C5-FA-10-83-BC-2F-00-00</ValueOff>
+    </Cheatline>		
+  </Cheat>  
+  <Cheat Text="Untouchable (Player)-无敌（玩家）" Description="教程关卡中关闭此功能可使用盾牌格挡攻击">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>3725C00</Offset>
+      <ValueOn>81-3F-48-40-EA-04-74-06-FF-90-10-0F-00-00-E9-6D-2E-0E-FD</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>  
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>808A7A</Offset>
+      <ValueOn>E9-81-D1-F1-02-90</ValueOn>
+      <ValueOff>FF-90-10-0F-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Untouchable (Mech, Turret)-无敌（机甲、炮台）">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>E59CC3</Offset>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-E4-A9-03-00</ValueOff>
+    </Cheatline>
+  </Cheat>  
+  <Cheat Text="Infi Health (Player)-无限生命（玩家）">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>3725C50</Offset>
+      <ValueOn>C4-E3-79-21-40-04-10-C4-E3-79-17-00-01-E9-65-C5-D9-FC</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>  
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>4C21C1</Offset>
+      <ValueOn>E9-8A-3A-26-03-90</ValueOn>
+      <ValueOff>C4-E3-79-17-00-01</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infi Health (Mech, Turret)-无限生命（机甲、炮台）">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>3725D00</Offset>
+      <ValueOn>C4-E3-79-21-40-04-10-C4-E3-79-17-00-01-E9-A5-66-DC-FC</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>  
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>4EC3B1</Offset>
+      <ValueOn>E9-4A-99-23-03-90</ValueOn>
+      <ValueOff>C4-E3-79-17-00-01</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infi Health (Dragon)-无限生命（巨龙）">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>3725DF0</Offset>
+      <ValueOn>81-3F-00-FB-BF-04-75-0A-C7-83-C4-2F-00-00-00-40-9C-C5-C5-FA-10-93-C4-2F-00-00-E9-EF-C3-B0-FC</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>  
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>2321F6</Offset>
+      <ValueOn>E9-F5-3B-4F-03-90-90-90</ValueOn>
+      <ValueOff>C5-FA-10-93-C4-2F-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>  
+  <Cheat Text="Infi Ammo-无限弹药">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>3725CA0</Offset>
+      <ValueOn>85-F6-78-05-44-01-F6-EB-03-44-89-F6-89-73-60-E9-47-A0-CE-FD</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>140FCF5</Offset>
+      <ValueOn>E9-A6-5F-31-02-90</ValueOn>
+      <ValueOff>44-01-F6-89-73-60</ValueOff>
+    </Cheatline>	
+  </Cheat>  
+  <Cheat Text="Infi Shield Durability-无限盾牌耐久度">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>7FAEA9</Offset>
+      <ValueOn>C5-FA-58-C2</ValueOn>
+      <ValueOff>C5-FA-5C-C2</ValueOff>
+    </Cheatline>
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>7FA4EE</Offset>
+      <ValueOn>C5-FA-11-8F-50-0A-00-00</ValueOn>
+      <ValueOff>C5-FA-11-87-50-0A-00-00</ValueOff>
+    </Cheatline>	
+  </Cheat>
+  <Cheat Text="Infi Punch-无限重拳">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>E1EED4</Offset>
+      <ValueOn>0F-28-C1-90</ValueOn>
+      <ValueOff>C5-F2-5C-C0</ValueOff>
+    </Cheatline>	
+  </Cheat>
+  <Cheat Text="Infi Gold & Ruby (Use)-无限金币与红宝石（使用时）">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>3725D50</Offset>
+      <ValueOn>C5-FA-7E-40-1C-85-C9-7F-05-B9-E8-03-00-00-E9-EF-2A-68-FD</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>DA884D</Offset>
+      <ValueOn>E9-FE-D4-97-02</ValueOn>
+      <ValueOff>C5-FA-7E-40-1C</ValueOff>
+    </Cheatline>	
+  </Cheat>  
+</Trainer>

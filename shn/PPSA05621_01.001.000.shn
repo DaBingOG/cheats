@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Wanted Dead" Moder="Yharnam & baobao8888汉化" Cusa="PPSA05621" Version="01.001.000" Process="eboot.bin">
+  <Genres Name="Action" />  
+  <Items />
+  <Cheat Text="God Mode-无敌模式">
+	<Cheatline>
+      <Offset>64A7A90</Offset>
+      <Section>0</Section>
+      <ValueOn>41-81-7F-08-48-00-04-00-74-09-C4-C1-7A-11-87-C0-00-00-00-E9-3C-37-75-FB</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+	<Cheatline>
+      <Offset>1BFB1DB</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-B0-C8-8A-04-90-90-90-90</ValueOn>
+      <ValueOff>C4-C1-7A-11-87-C0-00-00-00</ValueOff>
+    </Cheatline>
+	<Cheatline>
+      <Offset>64A7AC0</Offset>
+      <Section>0</Section>
+      <ValueOn>81-7F-08-48-00-04-00-74-08-C5-FA-11-8F-C0-00-00-00-E9-AF-00-2F-FA</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+	<Cheatline>
+      <Offset>797B7D</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-3E-FF-D0-05-90-90-90</ValueOn>
+      <ValueOff>C5-FA-11-8F-C0-00-00-00</ValueOff>
+    </Cheatline>
+	<Cheatline>
+      <Offset>1C32BD3</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-58-33-B8-FE</ValueOff>
+    </Cheatline>	
+  </Cheat>
+  <Cheat Text="Infi Ammo-无限弹药">
+	<Cheatline>
+      <Offset>64A7A50</Offset>
+      <Section>0</Section>
+      <ValueOn>66-81-FC-30-AC-74-06-FF-8B-40-03-00-00-E9-A0-8C-32-FA</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+	<Cheatline>
+      <Offset>7D06FC</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-4F-73-CD-05-90</ValueOn>
+      <ValueOff>FF-8B-40-03-00-00</ValueOff>
+    </Cheatline>    
+  </Cheat>     
+  <Cheat Text="Infi Grenades-无限手榴弹">
+    <Cheatline>
+      <Offset>1C3B580</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90</ValueOn>
+      <ValueOff>FF-C8</ValueOff>
+    </Cheatline>		
+    <Cheatline>
+      <Offset>1C3B56C</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90</ValueOn>
+      <ValueOff>FF-C8</ValueOff>
+    </Cheatline>
+  </Cheat>  
+  <Cheat Text="Acquire SP x 5 - 获得5倍技能点">
+	<Cheatline>
+      <Offset>64A7AF0</Offset>
+      <Section>0</Section>
+      <ValueOn>45-6B-ED-05-44-01-AE-B8-05-00-00-E9-81-19-8C-FB</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+	<Cheatline>
+      <Offset>1D6947A</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-71-E6-73-04-90-90</ValueOn>
+      <ValueOff>44-01-AE-B8-05-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Acquire Adrenaline x 10 - 获得10倍肾上腺素">
+    <Cheatline>
+      <Offset>64A7B10</Offset>
+      <Section>0</Section>
+      <ValueOn>C5-FA-59-85-3C-FF-FF-FF-49-C7-C5-00-00-20-41-66-45-0F-6E-F5-F3-41-0F-59-C6-49-C7-C5-00-00-00-00-66-45-0F-EF-F6-E9-9E-A6-78-FB</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>1C321D0</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-3B-59-87-04-90-90-90</ValueOn>
+      <ValueOff>C5-FA-59-85-3C-FF-FF-FF</ValueOff>
+    </Cheatline>	
+  </Cheat>
+  <Cheat Text="Infi Medikit-无限医疗包">
+    <Cheatline>
+      <Offset>1C3953A</Offset>
+      <Section>0</Section>
+      <ValueOn>44-0F-4D-F0</ValueOn>
+      <ValueOff>44-0F-4C-F0</ValueOff>
+    </Cheatline>
+  </Cheat>  
+</Trainer>
