@@ -180,7 +180,6 @@
 <body>
 
     <h2 class="top-title">游戏金手指资料库</h2>
-    <div id="loading" style="text-align:center; font-size:16px; color:#64748b;">正在读取仓库文件...</div>
     <div class="game-wrap" id="gameBox"></div>
 
     <div class="pop-box" id="pop">
@@ -210,17 +209,16 @@ const FILE_LIST = [
 
 let currentText = "";
 const gameBox = document.getElementById("gameBox");
-const loading = document.getElementById("loading");
 
+// 立即加载，不请求API，绝对不卡
 window.onload = function(){
-    loading.style.display = "none";
     FILE_LIST.forEach(file => {
         let gameId = file.split("_")[0];
         let card = document.createElement("div");
         card.className = "game-card";
         card.onclick = () => openFile(file);
         card.innerHTML = `
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/24040313/62b4c30578e682c334f461ed/${gameId}.png">
+            <img src="https://image.api.playstation.com/v1/assets/${gameId}/icon">
             <div class="game-name">${file}</div>
         `;
         gameBox.appendChild(card);
