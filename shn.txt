@@ -1,4 +1,4 @@
-1-PPSA02530_01.200.000.shn=实质存在.PRAGMATA Deluxe Edition
+1-PPSA02530_01.200.000.shn=识质存在.PRAGMATA Deluxe Edition
 2-PPSA30803_01.200.000.shn=生化危机9：安魂曲（美版全DLC）
 3-PPSA26679_01.003.000.shn=忍者龙剑传2 – 黑之章.NINJA GAIDEN 2 Black
 4-PPSA26344_01.008.000.shn=羊蹄山之魂：数字豪华版.Ghost of Yōtei Digital Deluxe Edition
@@ -25,7 +25,7 @@ PPSA02372_01.005.000.shn=暗邪西部.Evil West
 PPSA02433_01.000.002.shn=古惑狼4
 PPSA02474_01.000.500.shn=终结者 抵抗军
 PPSA02525_01.009.000.shn=受折磨的灵魂
-PPSA02530_01.200.000.shn=实质存在.PRAGMATA Deluxe Edition
+PPSA02530_01.200.000.shn=识质存在.PRAGMATA Deluxe Edition
 PPSA02629_02.000.000.shn=黄泉之路
 PPSA02632_01.000.000.shn=街头霸王6
 PPSA02633_01.000.000.shn=街头霸王6
