@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Demon Slayer Kimetsu no Yaiba" Moder="Yanam Guy" Cusa="PPSA03490" Version="01.000.000" Process="eboot.bin">
+    <Genres Name="Action" />
+    <Items />
+    <Cheat Text="上帝模式 | God Mode">
+        <Cheatline>
+            <Offset>5AD3C80</Offset>
+            <Section>0</Section>
+            <ValueOn>41-83-BE-B8-01-00-00-01-74-06-FF-90-B0-0B-00-00-E9-2F-06-CF-FC</ValueOn>
+            <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+        </Cheatline>
+        <Cheatline>
+            <Offset>27C42BE</Offset>
+            <Section>0</Section>
+            <ValueOn>E9-BD-F9-30-03-90</ValueOn>
+            <ValueOff>FF-90-B0-0B-00-00</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="一击必杀 | 1 Hit Kill">
+        <Cheatline>
+            <Offset>5AD3CA0</Offset>
+            <Section>0</Section>
+            <ValueOn>83-BB-B8-01-00-00-01-74-06-C4-C1-7A-11-45-40-E9-78-52-12-FC</ValueOn>
+            <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+        </Cheatline>
+        <Cheatline>
+            <Offset>1BF8F26</Offset>
+            <Section>0</Section>
+            <ValueOn>E9-75-AD-ED-03-90</ValueOn>
+            <ValueOff>C4-C1-7A-11-4D-40</ValueOff>
+        </Cheatline>
+    </Cheat>
+	<Cheat Text="无限耐力 | Inf Stamina">
+        <Cheatline>
+            <Offset>1C801E5</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90-90-90-90-90-90-90</ValueOn>
+            <ValueOff>C5-FA-11-8B-C8-00-00-00</ValueOff>
+        </Cheatline>        
+    </Cheat>
+	<Cheat Text="无限加速 | Inf Boost" Description="">
+        <Cheatline>
+            <Offset>5AD3CC0</Offset>
+            <Section>0</Section>
+            <ValueOn>C5-FA-10-93-6C-02-00-00-C5-FA-11-93-68-02-00-00-E9-E0-C9-1C-FC</ValueOn>
+            <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+        </Cheatline>
+		<Cheatline>
+            <Offset>1CA06AD</Offset>
+            <Section>0</Section>
+            <ValueOn>E9-0E-36-E3-03-90-90-90</ValueOn>
+            <ValueOff>C5-FA-11-93-68-02-00-00</ValueOff>
+        </Cheatline>        
+    </Cheat>
+	<Cheat Text="无限共斗槽/支援槽 | Inf Cooperation Gauge" Description="">
+        <Cheatline>
+            <Offset>1B77C71</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90-90-90-90-90-90-90</ValueOn>
+            <ValueOff>C5-FA-11-80-74-02-00-00</ValueOff>
+        </Cheatline>        
+    </Cheat>
+	<Cheat Text="鬼灭点数拉满 | Max Kimetsu Pointes" Description="">
+        <Cheatline>
+            <Offset>20882CC</Offset>
+            <Section>0</Section>
+            <ValueOn>89-08-90</ValueOn>
+            <ValueOff>44-89-30</ValueOff>
+        </Cheatline>        
+    </Cheat>
+	<Cheat Text="冻结战斗时间 | Freeze time in battle">
+        <Cheatline>
+            <Offset>5AD3CE0</Offset>
+            <Section>0</Section>
+            <ValueOn>C7-47-38-00-00-C6-42-C5-FA-10-47-38-E9-BE-F5-F3-FB</ValueOn>
+            <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+        </Cheatline>        
+		<Cheatline>
+            <Offset>1A132AA</Offset>
+            <Section>0</Section>
+            <ValueOn>E9-31-0A-0C-04</ValueOn>
+            <ValueOff>C5-FA-11-47-38</ValueOff>
+        </Cheatline>
+    </Cheat>	
+</Trainer>

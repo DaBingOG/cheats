@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="The Last of Us Part I" Moder="Yharnam" Cusa="PPSA03396" Version="02.000.000" Process="eboot.bin">
+    <Genres Name="Action" />
+    <Items />
+    <Cheat Text="无限生命 | Infi Health">
+        <Cheatline>
+            <Offset>1E0CDFF</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90-90</ValueOn>
+            <ValueOff>FF-50-20</ValueOff>
+        </Cheatline>        
+    </Cheat>
+    <Cheat Text="无限弹药和道具 | Infi Ammo & Items">
+        <Cheatline>
+            <Offset>239D50D</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90</ValueOn>
+            <ValueOff>FF-C9</ValueOff>
+        </Cheatline>
+		<Cheatline>
+            <Offset>2399C1E</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90-90-90-90-90-90</ValueOn>
+            <ValueOff>66-FF-88-F0-0B-00-00</ValueOff>
+        </Cheatline>
+        <Cheatline>
+            <Offset>237BCA6</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90</ValueOn>
+            <ValueOff>29-D0</ValueOff>
+        </Cheatline>
+		<Cheatline>
+            <Offset>5F2160</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90-90</ValueOn>
+            <ValueOff>44-29-FA</ValueOff>
+        </Cheatline>		
+    </Cheat>
+</Trainer>

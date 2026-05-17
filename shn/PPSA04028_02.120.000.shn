@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Cyberpunk 2077" Moder="Yharnam" Cusa="PPSA03974" Version="02.120.000" Process="eboot.bin">
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Cyberpunk 2077" Moder="Yharnam" Cusa="PPSA04028" Version="02.120.000" Process="eboot.bin">
     <Genres Name="RPG" />
     <Items />
     <Cheat Text="无限生命值和耐力 | Infi Health & Stamina">

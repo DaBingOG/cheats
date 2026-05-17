@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Wanted Dead" Moder="Yharnam" Cusa="PPSA05621" Version="01.001.000" Process="eboot.bin">
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Wanted Dead" Moder="Yharnam" Cusa="PPSA05622" Version="01.001.000" Process="eboot.bin">
   <Genres Name="Action" />  
   <Items />
   <Cheat Text="上帝模式 | God Mode">

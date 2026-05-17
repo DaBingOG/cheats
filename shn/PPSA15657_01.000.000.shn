@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Disney Epic Mickey Rebrushed" Moder="Yharnam & baobao8888汉化" Cusa="PPSA15657" Version="01.000.000" Process="eboot.bin">
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Disney Epic Mickey Rebrushed" Moder="Yharnam" Cusa="PPSA15657" Version="01.000.000" Process="eboot.bin">
   <Genres Name="Action"/>
   <Items/>
-  <Cheat Text="Untouchable-无敌">
+  <Cheat Text="无懈可击 | Untouchable">
     <Cheatline>
       <Section>0</Section>
       <Offset>14307FA</Offset>
@@ -10,7 +10,7 @@
       <ValueOff>E8-21-00-00-00</ValueOff>
     </Cheatline>
   </Cheat>  
-  <Cheat Text="Inf Health-无限生命">
+  <Cheat Text="无限生命 | Inf Health">
     <Cheatline>
       <Section>0</Section>
       <Offset>5C0ADC0</Offset>
@@ -24,7 +24,7 @@
       <ValueOff>C6-85-D8-FE-FF-FF-01</ValueOff>
     </Cheatline>
   </Cheat>
-  <Cheat Text="Inf Paints-无限颜料">
+  <Cheat Text="无限油漆 | Inf Paints">
     <Cheatline>
       <Section>0</Section>
       <Offset>4D5571</Offset>
@@ -32,7 +32,7 @@
       <ValueOff>41-FF-90-68-06-00-00</ValueOff>
     </Cheatline>
   </Cheat>  
-  <Cheat Text="Max Items-最大物品">
+  <Cheat Text="最大物品 | Max Items" Description="">
     <Cheatline>      
       <Section>0</Section>
       <Offset>5C0AE24</Offset>

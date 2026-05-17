@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Lie of P" Moder="Yharnam" Cusa="PPSA10261" Version="01.005.001" Process="eboot.bin">
+  <Genres Name="Action" />
+  <Items />
+  <Cheat Text="无限生命、耐力、寓言艺术和1次击杀） | Infi HP & Stamina & Fable Arts & 1 Hit Kill)" Description="The Fable Arts gauge is fixed. Turn it on when it's full.">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>290C729</Offset>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-D2-E2-EA-FF</ValueOff>
+    </Cheatline>
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>9207F00</Offset>
+      <ValueOn>0F-45-C8-49-83-FD-00-75-06-31-C9-41-89-4E-0C-E9-D9-A1-FF-F6</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>2020E6</Offset>
+      <ValueOn>E9-15-5E-00-09-90-90</ValueOn>
+      <ValueOff>0F-45-C8-41-89-4E-0C</ValueOff>
+    </Cheatline>	
+  </Cheat>
+  <Cheat Text="无限气力 | Infi Ergo" Description="Buy or sell something">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>28B3804</Offset>
+      <ValueOn>90-90-90</ValueOn>
+      <ValueOff>0F-4C-C8</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="无限道具和存储空间 | Infi Items & Storage">
+    <Cheatline>      
+      <Section>0</Section>
+      <Offset>8F7A0E</Offset>
+      <ValueOn>B8-63-00-00-00</ValueOn>
+      <ValueOff>C4-E2-78-F2-C6</ValueOff>
+    </Cheatline>
+  </Cheat>
+</Trainer>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Remnant II" Moder="Yharnam & baobao8888汉化" Cusa="PPSA06693" Version="01.000.037" Process="eboot.bin">
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Remnant II" Moder="Yharnam" Cusa="PPSA06693" Version="01.000.037" Process="eboot.bin">
   <Genres Name="Action" />
   <Items />
-  <Cheat Text="Inf Health - 无限生命">    
+  <Cheat Text="无限生命 | Inf Health">    
     <Cheatline>
       <Offset>52066A0</Offset>
       <Section>0</Section>
@@ -16,7 +16,7 @@
       <ValueOff>C5-FA-11-8B-90-08-00-00</ValueOff>
     </Cheatline>	
   </Cheat>    
-  <Cheat Text="Infi Stamina - 无限体力">
+  <Cheat Text="无限耐力 | Infi Stamina">
     <Cheatline>
       <Offset>1AFEF4E</Offset>
       <Section>0</Section>
@@ -24,7 +24,7 @@
       <ValueOff>C5-FA-11-8B-F0-00-00-00</ValueOff>
     </Cheatline>
   </Cheat>
-  <Cheat Text="Infi Ammo - 无限弹药">
+  <Cheat Text="无限弹药 | Infi Ammo">
     <Cheatline>
       <Offset>1D06871</Offset>
       <Section>0</Section>
@@ -32,7 +32,7 @@
       <ValueOff>44-29-77-64</ValueOff>
     </Cheatline>
   </Cheat>
-  <Cheat Text="Infi Items & Money (get) - 无限物品与金钱（获取时）">    
+  <Cheat Text="无限道具和金钱（ GET ） | Infi Items & Money (get)">    
     <Cheatline>
       <Offset>52066C8</Offset>
       <Section>0</Section>

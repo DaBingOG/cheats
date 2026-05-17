@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Valkyrie Elysium" Moder="Yanam Guy" Cusa="PPSA07275" Version="01.000.000" Process="eboot.bin">
+    <Genres Name="Action" />
+    <Items />
+    <Cheat Text="无敌模式& 1次击杀 | God Mode & 1 Hit Kill" Description="">
+        <Cheatline>
+            <Offset>1925CCD</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90</ValueOn>
+            <ValueOff>FF-D3</ValueOff>
+        </Cheatline>
+        <Cheatline>
+            <Offset>D4B917</Offset>
+            <Section>0</Section>
+            <ValueOn>97</ValueOn>
+            <ValueOff>87</ValueOff>
+        </Cheatline>
+		<Cheatline>
+            <Offset>D7D2E6</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90-90-90-90-90</ValueOn>
+            <ValueOff>FF-90-98-0C-00-00</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="无限灵魂槽 | Inf Soul Gauge" Description="">
+        <Cheatline>
+            <Offset>18A25C0</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90-90-90-90-90-90-90</ValueOn>
+            <ValueOff>C5-FA-11-87-34-01-00-00</ValueOff>
+        </Cheatline>        
+    </Cheat>
+	<Cheat Text="无限奥义槽 | Inf Art Gauge" Description="">
+        <Cheatline>
+            <Offset>18F4CC0</Offset>
+            <Section>0</Section>
+            <ValueOn>90-90-90-90-90-90-90-90</ValueOn>
+            <ValueOff>C5-FA-11-87-98-02-00-00</ValueOff>
+        </Cheatline>        
+    </Cheat>
+	<Cheat Text="武器熟练度拉满 | Max Weapon Proficiency" Description="">
+        <Cheatline>
+            <Offset>1BB347B</Offset>
+            <Section>0</Section>
+            <ValueOn>4E</ValueOn>
+            <ValueOff>4F</ValueOff>
+        </Cheatline>        
+    </Cheat>
+</Trainer>

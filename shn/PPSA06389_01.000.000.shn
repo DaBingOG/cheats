@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="System Shock" Moder="Yharnam" Cusa="PPSA06389" Version="01.000.000" Process="eboot.bin">
+  <Genres Name="Action" />  
+  <Items />  
+  <Cheat Text="无限生命 + 闪电光束 | Inf Health & Spark Beam" Description="">
+    <Cheatline>
+      <Offset>57BD890</Offset>
+      <Section>0</Section>
+      <ValueOn>83-7F-4C-10-74-11-81-7F-1C-51-CF-FF-7F-74-08-83-7F-3C-10-74-02-EB-03-48-89-CA-48-89-97-D8-00-00-00-E9-F0-14-25-FF</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>4A0ED9F</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-EC-EA-DA-00-90-90</ValueOn>
+      <ValueOff>48-89-97-D8-00-00-00</ValueOff>
+    </Cheatline>	
+  </Cheat>
+</Trainer>

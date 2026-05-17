@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Star Wars Outlaws" Moder="Yharnam & baobao8888汉化" Cusa="PPSA08260" Version="01.003.001" Process="eboot.bin">
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Star Wars Outlaws" Moder="Yharnam" Cusa="PPSA08260" Version="01.003.001" Process="eboot.bin">
   <Genres Name="Action"/>
   <Items/>
-  <Cheat Text="Infi Health & Speeder & Spaceship - 无限生命&摩托&飞船">
+  <Cheat Text="Infinite Health & Speeder &太空船 | Infi Health & Speeder & Spaceship">
     <Cheatline>
       <Offset>6205260</Offset>
       <Section>0</Section>
@@ -16,7 +16,7 @@
       <ValueOff>C5-FA-11-5B-40</ValueOff>
     </Cheatline>	
   </Cheat>
-  <Cheat Text="1 Hit Kill - 一击必杀">
+  <Cheat Text="一击必杀 | 1 Hit Kill">
     <Cheatline>
       <Offset>6205292</Offset>
       <Section>0</Section>
@@ -30,7 +30,7 @@
       <ValueOff>48-89-DF-C5-F8-28-C1</ValueOff>
     </Cheatline>	
   </Cheat>
-  <Cheat Text="No Reduction (Ammo, Items, Adrenaline) - 不消耗（弹药、物品、肾上腺素）">
+  <Cheat Text="无减免（弹药、道具、肾上腺素） | No Reduction (Ammo, Items, Adrenaline)">
     <Cheatline>
       <Offset>5730A89</Offset>
       <Section>0</Section>
@@ -38,7 +38,7 @@
       <ValueOff>8B-BD-04-FF-FF-FF</ValueOff>
     </Cheatline>
   </Cheat>
-  <Cheat Text="No Weapon Overheating (No Reload) - 武器不过热（无需换弹）">
+  <Cheat Text="无武器过热（无重新加载） | No Weapon Overheating (No Reload)">
     <Cheatline>
       <Section>0</Section>
       <Offset>32BA379</Offset>

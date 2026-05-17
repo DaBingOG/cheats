@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="The Callisto Protocol" Moder="Yanam Guy & baobao8888汉化" Cusa="PPSA03351" Version="01.029.000" Process="eboot.bin">
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="The Callisto Protocol" Moder="Yanam Guy" Cusa="PPSA03351" Version="01.029.000" Process="eboot.bin">
     <Genres Name="Action" />
     <Items />
-    <Cheat Text="Infinite Health-无限生命">
+    <Cheat Text="无限生命 | Infinite Health">
         <Cheatline>
             <Offset>7083100</Offset>
             <Section>0</Section>
@@ -16,7 +16,7 @@
             <ValueOff>C5-FA-5D-8F-1C-01-00-00</ValueOff>
         </Cheatline>		
     </Cheat>
-	<Cheat Text="No Reload-无需换弹">
+	<Cheat Text="无需上弹 | No Reload">
         <Cheatline>
             <Offset>1DE9B4A</Offset>
             <Section>0</Section>
@@ -24,7 +24,7 @@
             <ValueOff>44-01-F6</ValueOff>
         </Cheatline>
     </Cheat>
-    <Cheat Text="Infinite GRP-无限GRP能量">
+    <Cheat Text="无限GRP | Infinite GRP">
         <Cheatline>
             <Offset>1DDDA1E</Offset>
             <Section>0</Section>
@@ -32,7 +32,7 @@
             <ValueOff>87</ValueOff>
         </Cheatline>
     </Cheat>
-    <Cheat Text="Max Credits-最大信用点数">
+    <Cheat Text="最大信用额度 | Max Credits">
         <Cheatline>
             <Offset>7083200</Offset>
             <Section>0</Section>

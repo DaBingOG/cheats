@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Aliens Fireteam Elite" Moder="Yanam Guy & baobao8888汉化" Cusa="PPSA03393" Version="01.040.000" Process="eboot.bin">
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Aliens Fireteam Elite" Moder="Yanam Guy" Cusa="PPSA03393" Version="01.040.000" Process="eboot.bin">
     <Genres Name="Action" />
     <Items />
-    <Cheat Text="Infinite Health-无限生命">
+    <Cheat Text="无限生命 | Infinite Health">
         <Cheatline>
             <Offset>7EC003E8</Offset>
             <Section>0</Section>
@@ -16,7 +16,7 @@
             <ValueOff>C5-FA-11-47-0C</ValueOff>
         </Cheatline>		
     </Cheat>
-	<Cheat Text="Infinite Ammo (No Reload)-无限弹药（无需换弹）">
+	<Cheat Text="无限弹药（无重新装填） | Infinite Ammo (No Reload)">
         <Cheatline>
             <Offset>1886C05</Offset>
             <Section>0</Section>
@@ -36,7 +36,7 @@
             <ValueOff>41-89-85-DC-07-00-00</ValueOff>
         </Cheatline>
     </Cheat>
-    <Cheat Text="Infinite Consumables-无限消耗品">
+    <Cheat Text="无限耗材 | Infinite Consumables">
         <Cheatline>
             <Offset>1497F2C</Offset>
             <Section>0</Section>
@@ -44,14 +44,15 @@
             <ValueOff>83-BB-40-0C-00-00-00</ValueOff>
         </Cheatline>
     </Cheat>
-    <Cheat Text="No currency reduction-货币无消耗">
+    <Cheat Text="无币种折扣 | No currency reduction">
         <Cheatline>
             <Offset>135A1BC</Offset>
             <Section>0</Section>
             <ValueOn>90-90-90</ValueOn>
             <ValueOff>2B-45-D4</ValueOff>
         </Cheatline>
-	<Cheat Text="Infinite First Aid kit-无限急救包">
+    </Cheat>
+	<Cheat Text="无限急救包 | Infinite First Aid kit">
         <Cheatline>
             <Offset>1497EF2</Offset>
             <Section>0</Section>
