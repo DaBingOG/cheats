@@ -5,38 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>游戏金手指资料库</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:微软雅黑,sans-serif;}
-        body{background:#f1f3f6;padding:20px 15px;}
-        .top-title{text-align:center;font-size:26px;color:#222;margin-bottom:25px;font-weight:600;}
+        *{margin:0;padding:0;box-sizing:border-box;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 微软雅黑, sans-serif;}
+        body{background:#f7f8fa;padding:25px 15px;}
         
+        .top-title{
+            text-align:center;
+            font-size:28px;
+            font-weight:700;
+            color:#1e293b;
+            margin-bottom:30px;
+        }
+
         .game-wrap{
             max-width:1200px;
             margin:0 auto;
             display:grid;
             grid-template-columns:repeat(4, 1fr);
-            gap:18px;
+            gap:20px;
         }
 
         .game-card{
             width:100%;
             aspect-ratio:1/1;
-            border-radius:12px;
+            border-radius:16px;
             overflow:hidden;
             position:relative;
             cursor:pointer;
-            box-shadow:0 2px 10px #00000015;
-            transition: all 0.25s ease;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
         }
         .game-card:hover{
-            transform: translateY(-4px);
-            box-shadow:0 6px 18px rgba(0,0,0,0.2);
+            transform: translateY(-6px);
+            box-shadow:0 12px 24px rgba(0,0,0,0.12);
         }
 
         .game-card img{
             width:100%;
             height:100%;
             object-fit:cover;
-            display:block;
         }
 
         .game-name{
@@ -44,122 +50,221 @@
             left:0;
             bottom:0;
             width:100%;
-            padding:10px 0;
+            padding:12px 0;
             text-align:center;
             font-size:14px;
-            font-weight:bold;
+            font-weight:600;
             color:#fff;
-            background: linear-gradient(transparent,rgba(0,0,0,0.7));
+            background: linear-gradient(transparent, rgba(0,0,0,0.6));
         }
 
         @media (max-width:768px){
             .game-wrap{ grid-template-columns:repeat(2, 1fr); }
+            .top-title{font-size:24px;}
         }
 
-        .pop-box{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);display:none;align-items:center;justify-content:center;z-index:999;}
-        .pop-inner{width:92%;max-width:650px;background:#fff;border-radius:16px;padding:22px;max-height:85vh;overflow-y:auto;}
-        .pop-title{font-size:20px;text-align:center;margin-bottom:18px;color:#111;}
-        .cheat-content{
-            background:#f7f8fa;
-            padding:14px;
-            border-radius:10px;
-            white-space:pre-wrap;
-            font-family:Consolas;
-            line-height:1.5;
+        .pop-box{
+            position:fixed;
+            top:0;left:0;
+            width:100%;height:100%;
+            background:rgba(0,0,0,0.5);
+            display:none;
+            align-items:center;
+            justify-content:center;
+            z-index:999;
         }
-        .btn-group{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;}
-        .btn{flex:1;padding:10px;border:none;border-radius:8px;font-size:15px;cursor:pointer;min-width:100px;}
-        .copy-btn{background:#277da1;color:#fff;}
-        .down-btn{background:#43aa8b;color:#fff;}
-        .close-btn{background:#999;color:#fff;}
+        .pop-inner{
+            width:94%;
+            max-width:650px;
+            background:#fff;
+            border-radius:20px;
+            padding:28px;
+            max-height:85vh;
+            overflow-y:auto;
+            position:relative;
+        }
+
+        .close-btn-top{
+            position:absolute;
+            right:24px;
+            top:24px;
+            width:32px;
+            height:32px;
+            border-radius:50%;
+            background:#f1f5f9;
+            border:none;
+            font-size:18px;
+            cursor:pointer;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#475569;
+        }
+        .close-btn-top:hover{
+            background:#e2e8f0;
+        }
+
+        .pop-title{
+            font-size:22px;
+            font-weight:600;
+            text-align:center;
+            color:#1e293b;
+            margin-bottom:24px;
+            padding-right:40px;
+        }
+
+        .cheat-item{
+            background:#ffffff;
+            border:1px solid #e2e8f0;
+            padding:16px 20px;
+            border-radius:12px;
+            margin-bottom:12px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .cheat-label{
+            font-weight:600;
+            font-size:15px;
+            color:#1e293b;
+        }
+
+        .switch{
+            width:50px;
+            height:26px;
+            background:#e2e8f0;
+            border-radius:99px;
+            position:relative;
+            cursor:pointer;
+            transition:all 0.2s;
+        }
+        .switch::after{
+            content:"";
+            position:absolute;
+            width:22px;
+            height:22px;
+            background:#fff;
+            border-radius:50%;
+            top:2px;
+            left:2px;
+            transition:all 0.2s;
+            box-shadow:0 2px 4px rgba(0,0,0,0.1);
+        }
+        .switch.on{
+            background:#22c55e;
+        }
+        .switch.on::after{
+            left:26px;
+        }
+
+        .btn-group{
+            display:flex;
+            gap:12px;
+            margin-top:28px;
+        }
+        .btn{
+            flex:1;
+            padding:14px;
+            border:none;
+            border-radius:12px;
+            font-size:15px;
+            font-weight:500;
+            cursor:pointer;
+            transition:0.2s;
+        }
+        .copy-btn{background:#2563eb;color:#fff;}
+        .down-btn{background:#0ea5e9;color:#fff;}
+
     </style>
 </head>
 <body>
-    <h2 class="游戏金手指资料库</h2>
-    <div id="loading" style="text-align:center;font-size:18px;margin:20px 0;">正在加载你的仓库金手指文件...</div>
+
+    <h2 class="top-title">游戏金手指资料库</h2>
+    <div id="loading" style="text-align:center; font-size:16px; color:#64748b;">正在读取仓库文件...</div>
     <div class="game-wrap" id="gameBox"></div>
 
     <div class="pop-box" id="pop">
         <div class="pop-inner">
+            <button class="close-btn-top" onclick="closePop()">×</button>
+            
             <h3 class="pop-title" id="popGameName"></h3>
-            <div class="cheat-content" id="cheatContent">加载中...</div>
+            <div id="cheatContent"></div>
+            
             <div class="btn-group">
                 <button class="btn copy-btn" onclick="copyCheat()">复制金手指</button>
                 <button class="btn down-btn" onclick="downloadCheat()">下载文件</button>
-                <button class="btn close-btn" onclick="closePop()">关闭</button>
             </div>
         </div>
     </div>
 
 <script>
-// ==============================================
-//  已绑定你的 GitHub 仓库：x980506/cheats/shn
-// ==============================================
-const OWNER = "x980506";
-const REPO = "cheats";
-const PATH = "shn";
-const BRANCH = "main";
-
-const API_URL = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}?ref=${BRANCH}`;
-const RAW_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${PATH}/`;
+const RAW_URL = "https://raw.githubusercontent.com/x980506/cheats/main/shn/";
+const FILE_LIST = [
+    "PPSA01341_01.004.000.shn","PPSA01341_01.005.000.shn","PPSA01341_01.006.000.shn",
+    "PPSA01341_01.007.000.shn","PPSA01341_01.008.000.shn","PPSA01341_01.009.000.shn",
+    "PPSA01341_01.010.000.shn","PPSA01341_01.011.000.shn","PPSA01341_01.012.000.shn",
+    "PPSA01341_01.013.000.shn","PPSA01341_01.014.000.shn","PPSA01341_01.015.000.shn",
+    "PPSA01341_01.016.000.shn","PPSA01341_01.017.000.shn","PPSA01341_01.018.000.shn",
+    "PPSA01341_01.019.000.shn","PPSA01341_01.020.000.shn"
+];
 
 let currentText = "";
 const gameBox = document.getElementById("gameBox");
 const loading = document.getElementById("loading");
 
-// 自动读取你仓库里的所有 .shn 文件
-fetch(API_URL)
-  .then(res => {
-    if (!res.ok) throw new Error("仓库读取失败");
-    return res.json();
-  })
-  .then(files => {
+window.onload = function(){
     loading.style.display = "none";
-    const shnFiles = files.filter(f => f.name.endsWith(".shn"));
-
-    shnFiles.forEach(file => {
-      const card = document.createElement("div");
-      card.className = "game-card";
-      card.onclick = () => openFile(file.name);
-      card.innerHTML = `
-        <img src="https://picsum.photos/seed/${file.name}/400/400">
-        <div class="game-name">${file.name}</div>
-      `;
-      gameBox.appendChild(card);
+    FILE_LIST.forEach(file => {
+        let gameId = file.split("_")[0];
+        let card = document.createElement("div");
+        card.className = "game-card";
+        card.onclick = () => openFile(file);
+        card.innerHTML = `
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/24040313/62b4c30578e682c334f461ed/${gameId}.png">
+            <div class="game-name">${file}</div>
+        `;
+        gameBox.appendChild(card);
     });
-  })
-  .catch(err => {
-    loading.innerText = "加载失败，请确保已部署到 GitHub Pages";
-  });
+}
 
-// 打开金手指
 function openFile(filename) {
-  document.getElementById("popGameName").innerText = filename;
-  document.getElementById("cheatContent").innerText = "加载中...";
-  document.getElementById("pop").style.display = "flex";
+    document.getElementById("popGameName").innerText = filename;
+    document.getElementById("cheatContent").innerHTML = "加载中...";
+    document.getElementById("pop").style.display = "flex";
 
-  fetch(RAW_URL + filename)
-    .then(res => res.text())
-    .then(text => {
-      currentText = text;
-      document.getElementById("cheatContent").innerText = text;
-    });
+    fetch(RAW_URL + filename)
+        .then(res => res.text())
+        .then(text => {
+            currentText = text;
+            parseCheatXml(text);
+        })
 }
 
-function closePop() {
-  document.getElementById("pop").style.display = "none";
+function parseCheatXml(text){
+    const regex = /<Cheat Text="([^"]+)"/g;
+    let html = "";
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+        const cheatName = match[1];
+        html += `
+        <div class="cheat-item">
+            <div class="cheat-label">${cheatName}</div>
+            <div class="switch" onclick="this.classList.toggle('on')"></div>
+        </div>`;
+    }
+
+    document.getElementById("cheatContent").innerHTML = html;
 }
 
-function copyCheat() {
-  navigator.clipboard.writeText(currentText).then(() => alert("复制成功！"));
-}
-
+function closePop() { document.getElementById("pop").style.display = "none"; }
+function copyCheat() { navigator.clipboard.writeText(currentText).then(()=>alert("复制成功！")); }
 function downloadCheat() {
-  const blob = new Blob([currentText], { type: "text/plain" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = document.getElementById("popGameName").innerText;
-  a.click();
+    const blob = new Blob([currentText], { type:"text/plain" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = document.getElementById("popGameName").innerText;
+    a.click();
 }
 </script>
 </body>
