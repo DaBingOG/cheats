@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><Trainer xmlns:xsd="http://w3.org" xmlns:xsi="http://w3.org-instance" Game="Pragmata" Moder="Aig" Cusa="PPSA02530" Version="01.200.000" Process="eboot.bin">
+  <Genres Name="Action-Adventure" />
+  <Items />
+  <Cheat Text="无限生命 | Infinite Health">
+    <Cheatline>
+      <Offset>10F5D9A</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>E8-C1-01-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="无限悬浮 | Unlimited Hover">
+    <Cheatline>
+      <Offset>6095B1D</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90</ValueOn>
+      <ValueOff>C5-FA-11-4E-10</ValueOff>
+    </Cheatline>
+  </Cheat>
+</Trainer>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Trainer Game="Black Myth Wukong" Moder="Yharnam" Cusa="PPSA23226" Version="01.000.016" Process="eboot.bin">
+    <Genres Name="Action" />
+    <Items />
+    <Cheat Text="无限生命 | Infi Health">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>AECEFA4</Offset>
+            <ValueOn>90-90-90</ValueOn>
+            <ValueOff>FF-57-18</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="无限体力 | Infi Stamina">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>9A693F5</Offset>
+            <ValueOn>90-90-90-90-90</ValueOn>
+            <ValueOff>35-00-00-00-80</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="无限MP | Infi MP">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>9A6912C</Offset>
+            <ValueOn>90-90-90-90-90</ValueOn>
+            <ValueOff>35-00-00-00-80</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="技能无 CD | Infi Skill (No Cooldown)">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>999DE92</Offset>
+            <ValueOn>F3-0F-5C-C0-90</ValueOn>
+            <ValueOff>F3-0F-5C-45-D4</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="无限葫芦 | Infi Healing Potion">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>9A696D3</Offset>
+            <ValueOn>B8-63-00-00-00</ValueOn>
+            <ValueOff>44-89-F0-F7-D8</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="技能点拉满 | Max Skill points">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>11B51A00</Offset>
+            <ValueOn>8B-50-20-BA-E7-03-00-00-89-51-4C-E9-67-5E-AB-F6</ValueOn>
+            <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+        </Cheatline>	
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>8607871</Offset>
+            <ValueOn>E9-8A-A1-54-09-90</ValueOn>
+            <ValueOff>8B-50-20-89-51-4C</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="灵蕴9999+ | Max Money">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>11B51A50</Offset>
+            <ValueOn>48-8B-50-20-48-C7-C2-7F-96-98-00-48-89-51-20-E9-A3-25-AA-F6</ValueOn>
+            <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+        </Cheatline>	
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>85F3FFF</Offset>
+            <ValueOn>E9-4C-DA-55-09-90-90-90</ValueOn>
+            <ValueOff>48-8B-50-20-48-89-51-20</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="无限道具 | Max Items">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>11B51AA0</Offset>
+            <ValueOn>BA-E7-03-00-00-89-51-1C-E9-74-26-AA-F6</ValueOn>
+            <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+        </Cheatline>	
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>85F411B</Offset>
+            <ValueOn>E9-80-D9-55-09-90</ValueOn>
+            <ValueOff>8B-50-20-89-51-1C</ValueOff>
+        </Cheatline>
+    </Cheat>
+    <Cheat Text="经验值拉满 | Max Exp">
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>11B51AF0</Offset>
+            <ValueOn>8B-50-20-BA-7F-96-98-00-89-51-48-E9-3F-5D-AB-F6</ValueOn>
+            <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+        </Cheatline>
+        <Cheatline>
+            <Section>0</Section>
+            <Offset>8607839</Offset>
+            <ValueOn>E9-B2-A2-54-09-90</ValueOn>
+            <ValueOff>8B-50-20-89-51-48</ValueOff>
+        </Cheatline>
+    </Cheat>	
+</Trainer>
