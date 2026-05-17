@@ -7,7 +7,33 @@
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:微软雅黑,sans-serif;}
         body{background:#f1f1f1;padding:20px 15px;}
-        .top-title{text-align:center;font-size:26px;color:#222;margin-bottom:25px;font-weight:600;}
+        
+        .top-title{
+            text-align:center;
+            font-size:26px;
+            color:#222;
+            margin-bottom:16px;
+            font-weight:600;
+        }
+
+        /* 搜索框样式 */
+        .search-box{
+            max-width:600px;
+            margin:0 auto 25px auto;
+            position:relative;
+        }
+        .search-input{
+            width:100%;
+            padding:12px 16px;
+            border:1px solid #ddd;
+            border-radius:10px;
+            font-size:15px;
+            outline:none;
+            box-shadow:0 2px 6px rgba(0,0,0,0.05);
+        }
+        .search-input:focus{
+            border-color:#0ea5e9;
+        }
         
         .game-wrap{
             max-width:1200px;
@@ -141,6 +167,18 @@
 <body>
 
 <h2 class="top-title">PS5 金手指资料库</h2>
+
+<!-- 🔍 搜索框 -->
+<div class="search-box">
+    <input 
+        type="text" 
+        class="search-input" 
+        id="searchInput" 
+        placeholder="搜索游戏名称 或 游戏ID（如：生化危机3 / PPSA03952）"
+        oninput="searchGames()"
+    >
+</div>
+
 <div id="loading" style="text-align:center;padding:30px;">加载中...</div>
 <div class="game-wrap" id="gameBox"></div>
 
@@ -164,13 +202,15 @@
 </div>
 
 <script>
-const BASE_URL = "https://raw.githubusercontent.com/x980506/cheats/main/shn/";
-const LIST_URL = "https://raw.githubusercontent.com/x980506/cheats/main/shn.txt";
-
-// ✅✅✅ 100% 对应你的仓库：main/images/
-const IMAGE_BASE = "https://raw.githubusercontent.com/x980506/cheats/main/images/";
+// ==============================================
+// ✅ 你的新 GitHub 用户名：DaBingOG
+// ==============================================
+const BASE_URL = "https://raw.githubusercontent.com/DaBingOG/cheats/main/shn/";
+const LIST_URL = "https://raw.githubusercontent.com/DaBingOG/cheats/main/shn.txt";
+const IMAGE_BASE = "https://raw.githubusercontent.com/DaBingOG/cheats/main/images/";
 
 let GAME_LIST = [];
+let FILTERED_LIST = []; // 搜索结果
 let currentPage = 1;
 const pageSize = 20;
 let currentText = "";
@@ -191,7 +231,8 @@ window.onload = async function () {
                 let id = file.replace(".shn", "");
                 return { file, name, id };
             });
-
+        
+        FILTERED_LIST = [...GAME_LIST];
         document.getElementById("loading").style.display = "none";
         renderFileList();
     } catch (err) {
@@ -199,25 +240,47 @@ window.onload = async function () {
     }
 };
 
+// 🔍 搜索功能
+function searchGames() {
+    let keyword = document.getElementById("searchInput").value.toLowerCase().trim();
+    currentPage = 1;
+
+    if (!keyword) {
+        FILTERED_LIST = [...GAME_LIST];
+        renderFileList();
+        return;
+    }
+
+    FILTERED_LIST = GAME_LIST.filter(item => {
+        return (
+            item.name.toLowerCase().includes(keyword) || 
+            item.id.toLowerCase().includes(keyword)
+        );
+    });
+
+    renderFileList();
+}
+
 function renderFileList() {
     const box = document.getElementById("gameBox");
     box.innerHTML = "";
 
     let start = (currentPage - 1) * pageSize;
     let end = start + pageSize;
-    let list = GAME_LIST.slice(start, end);
+    let list = FILTERED_LIST.slice(start, end);
+
+    if (list.length === 0) {
+        box.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:#666;">未找到相关游戏</div>`;
+        updatePage();
+        return;
+    }
 
     list.forEach(item => {
         let card = document.createElement("div");
         card.className = "game-card";
         card.onclick = () => openFile(item);
 
-        // ==========================
-        // 核心：自动匹配同名图片
-        // ==========================
         let imgUrl = IMAGE_BASE + item.id + ".jpg";
-        
-        // 用 background-image 显示，永不裂开、最稳定
         card.style.backgroundImage = `url(${imgUrl})`;
 
         card.innerHTML = `
@@ -233,7 +296,7 @@ function renderFileList() {
 }
 
 function updatePage() {
-    let total = Math.ceil(GAME_LIST.length / pageSize);
+    let total = Math.ceil(FILTERED_LIST.length / pageSize);
     document.getElementById("pageInfo").innerText = `第 ${currentPage}/${total} 页`;
     document.getElementById("prevBtn").disabled = currentPage <= 1;
     document.getElementById("nextBtn").disabled = currentPage >= total;
@@ -243,7 +306,7 @@ document.getElementById("prevBtn").onclick = () => {
     if (currentPage > 1) { currentPage--; renderFileList(); }
 };
 document.getElementById("nextBtn").onclick = () => {
-    let total = Math.ceil(GAME_LIST.length / pageSize);
+    let total = Math.ceil(FILTERED_LIST.length / pageSize);
     if (currentPage < total) { currentPage++; renderFileList(); }
 };
 
