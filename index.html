@@ -3,595 +3,3307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS5 金手指资料库</title>
+    <meta name="description" content="PS5 金手指资料库 - 收录海量PS5游戏金手指，支持搜索和下载">
+    <meta name="keywords" content="PS5,金手指,cheats,修改器">
+    <title>大饼 PS5 金手指资料库</title>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/crypto-js.min.js"></script>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:微软雅黑,sans-serif;}
-        
-        body{
-            background-color: #ffffff;
-            background-image: radial-gradient(#cfe2ff 1.2px, transparent 1.2px), radial-gradient(#cfe2ff 1.2px, transparent 1.2px);
-            background-size: 40px 40px;
-            background-position: 0 0, 20px 20px;
-            background-attachment: fixed;
-            padding:20px 15px;
-            min-height: 100vh;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
         }
-        
-        /* 顶部标题 + 统计 */
-        .header{
-            max-width: 1200px;
-            margin: 0 auto 20px;
+
+        /* SVG 图标样式 */
+        .icon {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            vertical-align: -0.15em;
+            fill: none;
+            stroke: currentColor;
+            overflow: hidden;
+        }
+        .icon-fill {
+            fill: currentColor !important;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #f8fafc 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            color: #1e293b;
+        }
+
+        /* 全局滚动条样式 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #cbd5e1, #94a3b8);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #94a3b8, #64748b);
+        }
+
+        /* 顶部导航栏 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 64px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0.05), transparent, rgba(59, 130, 246, 0.05));
+            pointer-events: none;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar-brand img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .navbar-menu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-item {
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            background: rgba(59, 130, 246, 0);
+        }
+
+        .nav-item:hover {
+            background: rgba(59, 130, 246, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .nav-item.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(30, 64, 175, 0.15));
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #60a5fa, #3b82f6);
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        .nav-item.active::after {
+            width: 70%;
+        }
+
+        .navbar-toggle {
+            display: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            color: #374151;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-toggle:hover {
+            background: rgba(59, 130, 246, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* 侧边仪表盘 */
+        .sidebar {
+            position: fixed;
+            top: 64px;
+            left: 0;
+            width: 270px;
+            height: calc(100vh - 64px);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-right: 1px solid rgba(59, 130, 246, 0.15);
+            color: #1e293b;
+            padding: 24px;
+            transform: translateX(-100%);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 999;
+            overflow-y: auto;
+            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar.open {
+            transform: translateX(0);
+        }
+
+        .sidebar-header {
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+            margin-bottom: 24px;
+        }
+
+        .sidebar-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #64748b;
+            margin-bottom: 14px;
+            padding-left: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar-stats {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(30, 64, 175, 0.08));
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 6px;
+        }
+
+        .sidebar-nav {
+            margin-top: 24px;
+        }
+
+        .sidebar-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 13px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+            margin-bottom: 6px;
+            background: rgba(59, 130, 246, 0);
+            border: 1px solid transparent;
+            color: #374151;
+        }
+
+        .sidebar-nav-item:hover {
+            background: rgba(59, 130, 246, 0.08);
+            border-color: rgba(59, 130, 246, 0.15);
+            transform: translateX(4px);
+        }
+
+        .sidebar-nav-item.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(30, 64, 175, 0.15));
+            border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
+            color: #1e40af;
+        }
+
+        .sidebar-nav-item svg {
+            width: 19px;
+            height: 19px;
+            flex-shrink: 0;
+        }
+
+        .sidebar-footer {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            right: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(59, 130, 246, 0.15);
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #3b82f6;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 16px;
-            flex-wrap:wrap;
+            font-size: 16px;
+            font-weight: 600;
         }
-        .top-title{
-            font-size:26px;
-            color:#222;
-            font-weight:600;
+
+        .user-name {
+            font-size: 14px;
+            font-weight: 500;
         }
-        .stat-box-title{
-            padding: 6px 12px;
-            background:#fff;
-            border:1px solid #ddd;
-            border-radius:8px;
-            font-size:14px;
-            color:#333;
-            white-space:nowrap;
+
+        .user-role {
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        /* 侧边栏遮罩 */
+        .sidebar-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(4px);
+            z-index: 998;
+            display: none;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
+        }
+
+        /* 主内容区域 */
+        .main-content {
+            flex: 1;
+            margin-top: 64px;
+            padding: 24px 15px;
+            transition: margin-left 0.35s ease;
+        }
+
+        /* 顶部标题 + 统计 */
+        .header {
+            max-width: 1200px;
+            margin: 0 auto 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-title {
+            font-size: 28px;
+            color: #1f2937;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-box-title {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(30, 64, 175, 0.15));
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            font-size: 14px;
+            color: #93c5fd;
+            white-space: nowrap;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
         }
 
         /* 海报轮播样式 */
-        .banner-swiper{
-            max-width:1200px;
-            height:220px;
-            margin:0 auto 20px;
-            border-radius:16px;
-            overflow:hidden;
-            position:relative;
-        }
-        .banner-list{
-            width:100%;
-            height:100%;
-            display:flex;
-            transition: all 0.5s ease;
-        }
-        .banner-item{
-            min-width:100%;
-            height:100%;
-            background-size:cover;
-            background-position:center;
-            position:relative;
-            cursor:pointer;
-        }
-        /* 最新更新 —— 移到海报内部左上角 */
-        .new-banner-title{
-            position:absolute;
-            top:14px;
-            left:18px;
-            z-index:2;
-            font-size:16px;
-            color:#fff;
-            font-weight:bold;
-            text-shadow:0 1px 3px rgba(0,0,0,0.5);
-        }
-        .banner-info{
-            position:absolute;
-            left:0;
-            bottom:0;
-            width:100%;
-            padding:25px 20px;
-            background:linear-gradient(transparent,rgba(0,0,0,0.7));
-            color:#fff;
-        }
-        .banner-name{
-            font-size:18px;
-            font-weight:bold;
-            margin-bottom:5px;
-        }
-        .banner-id{
-            font-size:13px;
-            opacity:0.9;
-        }
-        .banner-btn{
-            position:absolute;
-            top:50%;
-            transform:translateY(-50%);
-            width:36px;
-            height:36px;
-            border-radius:50%;
-            background:rgba(255,255,255,0.3);
-            border:none;
-            color:#fff;
-            font-size:18px;
-            cursor:pointer;
-            z-index:10;
-        }
-        .banner-prev{left:15px;}
-        .banner-next{right:15px;}
-        .banner-dots{
-            position:absolute;
-            bottom:15px;
-            left:50%;
-            transform:translateX(-50%);
-            display:flex;
-            gap:8px;
-        }
-        .dot{
-            width:10px;
-            height:10px;
-            border-radius:50%;
-            background:rgba(255,255,255,0.4);
-        }
-        .dot.active{
-            background:#2563eb;
+        .banner-swiper {
+            max-width: 1200px;
+            height: 240px;
+            margin: 0 auto 25px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(59, 130, 246, 0.2);
         }
 
-        /* 排序 + 搜索 —— 海报下方 */
-        .search-sort-wrap{
-            max-width:1200px;
-            margin:0 auto 25px auto;
-            display:flex;
-            gap:10px;
-            align-items:center;
+        .banner-list {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .sort-select{
-            padding:12px 10px;
-            border:1px solid #ddd;
-            border-radius:10px;
-            font-size:14px;
-            outline:none;
-            background:#fff;
+
+        .banner-item {
+            min-width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            cursor: pointer;
         }
-        .search-box{ flex:1; display:flex; gap:10px; }
-        .search-input{
-            flex:1;
-            padding:12px 16px;
-            border:1px solid #ddd;
-            border-radius:10px;
-            font-size:15px;
-            outline:none;
-            background:#fff;
+
+        .banner-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, transparent 50%, rgba(15, 23, 42, 0.3) 100%);
         }
-        .search-btn{
-            padding:0 18px;
-            background:#2563eb;
-            color:#fff;
-            border:none;
-            border-radius:10px;
-            font-size:15px;
-            cursor:pointer;
+
+        .banner-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.9) 100%);
         }
-        
-        .game-wrap{
-            max-width:1200px;
-            margin:0 auto;
-            display:grid;
-            grid-template-columns:repeat(4,1fr);
-            gap:18px;
+
+        .new-banner-title {
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            z-index: 2;
+            font-size: 15px;
+            color: #fff;
+            font-weight: 600;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            padding: 6px 16px;
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
         }
-        .game-card{
-            width:100%;
-            aspect-ratio:1/1;
-            border-radius:12px;
-            overflow:hidden;
-            position:relative;
-            cursor:pointer;
-            transition:0.3s;
-            background-size:cover;
+
+        .banner-info {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 35px 28px;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .banner-name {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner-id {
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
+        .banner-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .banner-prev {
+            left: 15px;
+        }
+
+        .banner-next {
+            right: 15px;
+        }
+
+        .banner-dots {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .dot:hover {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .dot.active {
+            background: #3b82f6;
+            border-color: #fff;
+            transform: scale(1.2);
+        }
+
+        /* 排序 + 搜索 */
+        .search-sort-wrap {
+            max-width: 1200px;
+            margin: 0 auto 25px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .sort-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sort-select {
+            padding: 8px 12px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 8px;
+            font-size: 13px;
+            outline: none;
+            background: #fff;
+            color: #374151;
+            cursor: pointer;
+            min-width: 80px;
+            transition: all 0.3s ease;
+        }
+
+        .sort-select:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .sort-order-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 50%;
+            font-size: 16px;
+            background: #fff;
+            color: #374151;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .sort-order-btn:hover {
+            background: rgba(59, 130, 246, 0.08);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .sort-order-btn.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(30, 64, 175, 0.15));
+            border-color: rgba(59, 130, 246, 0.4);
+            color: #1e40af;
+        }
+
+        .sort-order-btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .sort-order-btn.asc svg {
+            transform: rotate(180deg);
+        }
+
+        .search-box {
+            flex: 1;
+            display: flex;
+            gap: 12px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 11px 18px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+            background: #fff;
+            color: #1e293b;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .search-input::placeholder {
+            color: #94a3b8;
+        }
+
+        .search-btn {
+            padding: 0 22px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        /* 游戏卡片网格 */
+        .game-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .game-card {
+            width: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background-size: cover;
             background-position: center 60%;
-            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.15);
         }
-        .game-card:hover{transform:translateY(-5px);}
+
+        .game-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(59, 130, 246, 0.2);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .game-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.6) 100%);
+            opacity: 1;
+        }
+
         .ps5-badge {
             position: absolute;
-            top: 10px; left: 10px;
-            width: 34px; height: 34px;
+            top: 14px;
+            left: 14px;
+            width: 40px;
+            height: 40px;
             background-image: url('https://cdn.jsdelivr.net/gh/DaBingOG/cheats@main/images/UI/PS5.png');
             background-size: contain;
             background-repeat: no-repeat;
-            z-index:3;
+            z-index: 3;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
         }
-        .game-card-info{
-            position:absolute;
-            bottom:0; left:0; right:0;
-            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
-            color:white;
-            padding:20px 12px 10px 12px;
-        }
-        .game-card-name{
-            font-size:15px;
-            font-weight:bold;
-            white-space:nowrap;
-            overflow:hidden;
-            text-overflow:ellipsis;
-        }
-        .game-card-id{ font-size:12px; color:#eee; }
 
-        /* 蓝色主题翻页样式 */
-        .pagination{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            gap: 12px;
-            margin:30px 0;
+        .game-card:hover .ps5-badge {
+            transform: scale(1.1);
         }
-        .page-arrow{
-            width: 44px;
-            height: 44px;
+
+        .game-card-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4), transparent);
+            color: #fff;
+            padding: 28px 16px 12px;
+            transform: translateY(0);
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .game-card-name {
+            font-size: 15px;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-card-id {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        /* 分页样式 */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-arrow {
+            width: 42px;
+            height: 42px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size:16px;
-            font-weight:bold;
-            background:#2563eb;
-            color:white;
-            cursor:pointer;
-            border:none;
-        }
-        .page-arrow.page-disabled{
-            opacity:0.5;
-            cursor:not-allowed;
-        }
-        .page-number{
-            width:34px;
-            height:34px;
-            border-radius:50%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:14px;
-            background:#ffffff;
-            border:1px solid #e5e7eb;
-            color:#374151;
-            cursor:pointer;
-        }
-        .page-number.page-active{
-            background:#2563eb;
-            color:white;
-            border-color:#2563eb;
-        }
-        .page-dots{
-            font-size:14px;
-            color:#999;
-            padding:0 4px;
+            font-size: 16px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
         }
 
-        .footer{
-            text-align:center;
-            margin-top:20px;
-            padding:15px 0;
-            font-size:14px;
-            color:#666;
-            border-top:1px solid #ddd;
+        .page-arrow:hover:not(.page-disabled) {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
         }
 
-        @media (max-width:768px){
-            .game-wrap{grid-template-columns:repeat(2,1fr);}
-            .search-sort-wrap{ flex-direction:column; }
-            .banner-swiper{height:160px;}
-            .top-title{font-size:22px;}
+        .page-arrow.page-disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            background: #e2e8f0;
+            box-shadow: none;
         }
 
-        .pop-box{
-            position:fixed;inset:0;
-            background:rgba(0,0,0,0.6);
-            display:none;
-            align-items:center;
-            justify-content:center;
-            z-index:999;
+        .page-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 500;
+            background: #fff;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            color: #475569;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
-        .pop-inner{
-            width:90%;max-width:650px;
-            background:#fff;
-            border-radius:16px;
-            padding:24px;
-            max-height:85vh;
-            overflow-y:auto;
-            position:relative;
+
+        .page-number:hover {
+            border-color: #3b82f6;
+            color: #1e40af;
+            background: rgba(59, 130, 246, 0.08);
         }
-        .close-btn-fixed{
-            position:absolute;
-            right:20px;top:20px;
-            width:36px;height:36px;
-            border-radius:50%;
-            background:#f2f2f2;
-            border:none;
-            font-size:18px;
-            cursor:pointer;
+
+        .page-number.page-active {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            border-color: #3b82f6;
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
         }
-        /* 预览界面游戏名称加粗 */
-        .game-title{ font-size:22px; text-align:center; margin-bottom:10px; font-weight: bold; }
-        .game-info-row{ display:flex; gap:24px; color:#666; margin-bottom:20px; justify-content:center; }
-        .cheat-container{ max-height:400px; overflow-y:auto; margin-bottom:20px; }
-        .cheat-item{ padding:12px 14px; border:1px solid #eee; border-radius:8px; margin-bottom:8px; }
-        .cheat-label{font-weight:bold;color:#b91c1c;}
-        .download-btn{
-            width:100%; padding:12px; background:#2563eb;
-            color:#fff; border:none; border-radius:8px; font-size:16px; cursor:pointer; margin-top:10px;
+
+        .page-dots {
+            font-size: 14px;
+            color: #94a3b8;
+            padding: 0 8px;
+        }
+
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 24px 0;
+            font-size: 14px;
+            color: #64748b;
+            border-top: 1px solid rgba(59, 130, 246, 0.15);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+        }
+
+        /* 弹窗样式 */
+        .pop-box {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.25s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .pop-inner {
+            width: 90%;
+            max-width: 680px;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .close-btn-fixed {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            font-size: 20px;
+            cursor: pointer;
+            color: #64748b;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-btn-fixed:hover {
+            background: rgba(59, 130, 246, 0.2);
+            color: #1e293b;
+            transform: rotate(90deg);
+        }
+
+        .game-title {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 18px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .game-info-row {
+            display: flex;
+            gap: 30px;
+            color: #64748b;
+            margin-bottom: 26px;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .game-info-row span {
+            padding: 8px 16px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 25px;
+            color: #1e40af;
+        }
+
+        .cheat-container {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 24px;
+            padding-right: 10px;
+        }
+
+        .cheat-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .cheat-container::-webkit-scrollbar-track {
+            background: rgba(59, 130, 246, 0.08);
+            border-radius: 3px;
+        }
+
+        .cheat-container::-webkit-scrollbar-thumb {
+            background: rgba(59, 130, 246, 0.4);
+            border-radius: 3px;
+        }
+
+        .cheat-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(59, 130, 246, 0.6);
+        }
+
+        .cheat-item {
+            padding: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.15);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            background: rgba(59, 130, 246, 0.05);
+            transition: all 0.25s ease;
+        }
+
+        .cheat-item:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.3);
+            transform: translateX(4px);
+        }
+
+        .cheat-label {
+            font-weight: 600;
+            color: #dc2626;
+            margin-right: 8px;
+        }
+
+        .download-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 14px;
+            font-weight: 600;
+            transition: all 0.35s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.35);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.45);
+        }
+
+        .download-btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* 加载状态 */
+        .loading {
+            text-align: center;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .loading-spinner {
+            width: 52px;
+            height: 52px;
+            border: 4px solid rgba(59, 130, 246, 0.15);
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            animation: spin 1.2s linear infinite;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading-text {
+            font-size: 15px;
+            color: #6b7280;
+        }
+
+        /* 空状态 */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6b7280;
+        }
+
+        .empty-state svg {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .game-wrap {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .game-wrap {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .search-sort-wrap {
+                flex-direction: column;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+
+            .banner-swiper {
+                height: 180px;
+            }
+
+            .top-title {
+                font-size: 22px;
+            }
+
+            .banner-name {
+                font-size: 18px;
+            }
+
+            .pop-inner {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .game-wrap {
+                grid-template-columns: 1fr;
+            }
+
+            .banner-swiper {
+                height: 150px;
+            }
+
+            .game-info-row {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+
+        /* 移动端导航适配 */
+        @media (max-width: 768px) {
+            .navbar-menu {
+                display: none;
+            }
+
+            .navbar-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .navbar-brand span {
+                font-size: 16px;
+            }
+
+            .sidebar {
+                width: 280px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .sidebar-overlay {
+                display: none !important;
+            }
+        }
+
+        /* 捐赠弹窗样式 */
+        .donate-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donate-modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .donate-modal-content {
+            position: relative;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            max-width: 320px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .donate-modal-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 50%;
+            background: #f1f5f9;
+            font-size: 20px;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .donate-modal-close:hover {
+            background: #e2e8f0;
+            color: #374151;
+        }
+
+        .donate-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .donate-icon .icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .donate-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 16px;
+        }
+
+        .donate-status {
+            display: inline-block;
+            padding: 8px 24px;
+            background: #fef3c7;
+            color: #d97706;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .donate-desc {
+            color: #64748b;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 关于信息弹窗样式 */
+        .about-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .about-modal-content {
+            position: relative;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            max-width: 320px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        .about-modal-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 50%;
+            background: #f1f5f9;
+            font-size: 20px;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .about-modal-close:hover {
+            background: #e2e8f0;
+            color: #374151;
+        }
+
+        .about-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .about-icon .icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .about-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+
+        .about-info {
+            text-align: left;
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .about-info p {
+            margin: 8px 0;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .about-info strong {
+            color: #1e293b;
+            font-size: 16px;
+        }
+
+        .about-desc {
+            color: #64748b;
+            font-size: 13px;
+            margin: 0;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* PS5手柄按键图标样式 */
+        .ps5-icon {
+            width: 1.3em;
+            height: 1.3em;
+            transition: transform 0.3s ease;
+            transform: translateY(0);
+            transform-origin: center center;
+        }
+
+        .ps5-btn:hover .ps5-icon {
+            transform: rotate(90deg);
+        }
+
+        .ps5-btn:hover .ps5-icon-circle {
+            transform: scale(1.2);
+        }
+        .ps5-btn:hover .ps5-icon-circle.ps5-icon {
+            transform: scale(1.2);
+        }
+
+        /* 三角形图标特殊处理 */
+        .ps5-icon-triangle {
+            width: 1.4em;
+            height: 1.4em;
+            margin-bottom: -2px;
+        }
+
+        /* 下拉菜单样式 */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 8px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            z-index: 100;
+            min-width: 120px;
+        }
+
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown.active .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 12px 16px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #374151;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-item:hover {
+            background: rgba(59, 130, 246, 0.1);
+            color: #3b82f6;
+        }
+
+        /* 留言板样式 */
+        .messages-panel {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #f8fafc;
+            z-index: 1000;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .messages-panel.active {
+            display: flex;
+        }
+
+        .messages-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+        }
+
+        .messages-title {
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .messages-title .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .messages-close-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+            color: white;
+            transition: all 0.2s;
+        }
+
+        .messages-close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .messages-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+        }
+
+        .messages-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .message-item {
+            display: flex;
+            gap: 12px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message-avatar {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .message-avatar.user {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+
+        .message-avatar .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .message-body {
+            flex: 1;
+            background: white;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .message-author {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .message-time {
+            font-size: 12px;
+            color: #94a3b8;
+        }
+
+        .message-content {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        .messages-input-area {
+            display: flex;
+            gap: 12px;
+            padding: 16px 24px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .messages-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .messages-input:focus {
+            border-color: #10b981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+
+        .messages-submit-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            border: none;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .messages-submit-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        /* 工具箱样式 */
+        .tools-panel {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #f8fafc;
+            z-index: 1000;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .tools-panel.active {
+            display: flex;
+        }
+
+        .tools-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+        }
+
+        .tools-title {
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tools-title .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .tools-close-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+            color: white;
+            transition: all 0.2s;
+        }
+
+        .tools-close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .tools-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+        }
+
+        .tools-flex-row {
+            display: flex;
+            gap: 20px;
+            align-items: stretch;
+            margin-bottom: 20px;
+        }
+
+        .tools-flex-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .tools-panel-box {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .tools-subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .tools-tip-text {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+
+        .tools-upload-area {
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .tools-upload-area input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .tools-upload-area label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px;
+            padding: 28px 12px;
+            border-radius: 12px;
+            background: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            font-size: 14px;
+            color: #475569;
+            transition: all 0.2s;
+        }
+
+        .tools-upload-area input:hover + label {
+            background: #f1f5f9;
+            border-color: #3b82f6;
+        }
+
+        #toolsFileLabel {
+            font-size: 12px;
+            color: #3b82f6;
+            text-align: center;
+            margin-top: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+
+        .tools-action-btn {
+            width: 100%;
+            padding: 12px 10px;
+            border-radius: 10px;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            white-space: nowrap;
+        }
+
+        .tools-action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            filter: brightness(1.06);
+        }
+
+        .tools-action-btn:active {
+            transform: translateY(0);
+        }
+
+        .tools-btn-color-1 {
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+            color: #fff;
+        }
+
+        .tools-btn-color-2 {
+            background: linear-gradient(135deg, #06b6d4, #22d3ee);
+            color: #fff;
+        }
+
+        .tools-btn-color-3 {
+            background: linear-gradient(135deg, #ec4899, #f472b6);
+            color: #fff;
+        }
+
+        .tools-btn-color-4 {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: #fff;
+        }
+
+        .tools-btn-color-5 {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            color: #fff;
+        }
+
+        .tools-btn-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .tools-btn-row .tools-action-btn {
+            flex: 1;
+            margin: 0;
+        }
+
+        .tools-result-area {
+            width: 100%;
+            flex: 1;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            background: #f8fafc;
+            padding: 14px;
+            font-size: 13px;
+            resize: none;
+            outline: none;
+            color: #1e293b;
+            font-family: monospace;
+        }
+
+        #toolsLoadingPanel {
+            display: none;
+            margin-top: 10px;
+        }
+
+        #toolsLoadingText {
+            text-align: center;
+            font-size: 14px;
+            color: #4f46e5;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .tools-progress-base {
+            width: 100%;
+            height: 6px;
+            background: #e2e8f0;
+            border-radius: 99px;
+            overflow: hidden;
+        }
+
+        .tools-progress-animation {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, #4f46e5, #22d3ee, #4f46e5);
+            background-size: 200% 100%;
+            border-radius: 99px;
+            animation: toolsAnim 1.5s linear infinite;
+        }
+
+        @keyframes toolsAnim {
+            0% { background-position: 200% 0; }
+            100% { background-position: 0 0; }
+        }
+
+        .tools-menu-preview {
+            flex: 1;
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 16px;
+            color: #1e293b;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            overflow-y: auto;
+            margin-top: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .tools-menu-title {
+            color: #3b82f6;
+            font-size: 14px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: 600;
+        }
+
+        .tools-menu-item {
+            padding: 10px 12px;
+            margin: 6px 0;
+            background: white;
+            border-radius: 8px;
+            font-size: 13px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #e2e8f0;
+        }
+
+        .tools-menu-item:hover {
+            background: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        .tools-menu-edit {
+            width: 100%;
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            outline: none;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .tools-menu-edit:focus {
+            background: #e0f2ff;
+        }
+
+        .tools-menu-desc-edit {
+            width: 100%;
+            border: none;
+            background: transparent;
+            font-size: 11px;
+            color: #64748b;
+            outline: none;
+            padding: 4px;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+
+        .tools-menu-desc-edit:focus {
+            background: #e0f2ff;
+        }
+
+        .tools-menu-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin-right: 10px;
+        }
+
+        .tools-menu-switch {
+            width: 34px;
+            height: 20px;
+            background: #e2e8f0;
+            border-radius: 99px;
+            position: relative;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .tools-menu-switch::after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: all 0.2s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .tools-no-preview {
+            color: #94a3b8;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 13px;
+        }
+
+        .tools-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #94a3b8;
+            padding: 16px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .tools-footer span {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+
+        @media(max-width:768px) {
+            .tools-flex-row {
+                flex-direction: column;
+                gap: 16px;
+            }
+            
+            .tools-panel-box {
+                padding: 18px;
+            }
+            
+            .tools-content {
+                padding: 16px;
+            }
+            
+            .tools-title {
+                font-size: 16px;
+            }
+        }
+
+        /* 悬浮按钮样式 */
+        .float-btn {
+            position: fixed;
+            bottom: 30px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            z-index: 999;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .float-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+        .float-btn svg {
+            color: #ffffff;
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 4;
+        }
+
+        .float-btn:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .float-btn.refresh-btn {
+            right: 30px;
+            bottom: 96px;
+        }
+
+        .float-btn.top-btn {
+            right: 30px;
+            bottom: 30px;
+        }
+
+        .float-btn svg {
+            width: 24px;
+            height: 24px;
+            color: #3b82f6;
+        }
+
+        .float-btn.refresh-btn:hover svg {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media(max-width: 768px) {
+            .float-btn {
+                width: 48px;
+                height: 48px;
+            }
+            
+            .float-btn.refresh-btn {
+                right: 20px;
+                bottom: 88px;
+            }
+            
+            .float-btn.top-btn {
+                right: 20px;
+                bottom: 20px;
+            }
+            
+            .float-btn svg {
+                width: 20px;
+                height: 20px;
+            }
         }
     </style>
 </head>
-<body>
 
-<!-- 顶部：标题 + 统计 -->
-<div class="header">
-    <h1 class="top-title">PS5 金手指资料库</h1>
-    <div class="stat-box-title" id="statBox">📊 已收录：0 个金手指</div>
-</div>
-
-<!-- 轮播海报（内部左上角带文字） -->
-<div class="banner-swiper" id="bannerSwiper">
-    <div class="new-banner-title">🔥 最新更新</div>
-    <div class="banner-list" id="bannerList"></div>
-    <button class="banner-btn banner-prev" onclick="prevBanner()">&lt;</button>
-    <button class="banner-btn banner-next" onclick="nextBanner()">&gt;</button>
-    <div class="banner-dots" id="bannerDots"></div>
-</div>
-
-<!-- 排序 + 搜索 → 海报下方 -->
-<div class="search-sort-wrap">
-    <select class="sort-select" id="sortSelect" onchange="changeSortSelect()">
-        <option value="desc">倒序</option>
-        <option value="asc">正序</option>
-        <option value="name">游戏名称排序</option>
-    </select>
-    <div class="search-box">
-        <input type="text" class="search-input" id="searchInput" placeholder="搜索游戏名称 或 游戏ID">
-        <button class="search-btn" onclick="searchGames()">搜索</button>
-    </div>
-</div>
-
-<div id="loading" style="text-align:center;padding:30px;">加载中...</div>
-<div class="game-wrap" id="gameBox"></div>
-
-<div class="pagination" id="pagination"></div>
-
-<div class="footer">
-    作者：大饼电玩 | 仅供学习使用 | 学习交流群：310630593
-</div>
-
-<div class="pop-box" id="pop">
-    <div class="pop-inner">
-        <button class="close-btn-fixed" onclick="closePop()">×</button>
-        <div class="game-title" id="gameTitle"></div>
-        <div class="game-info-row">
-            <span id="gameId"></span>
-            <span id="gameModer"></span>
+<body oncontextmenu="return false">
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-brand" onclick="toggleSidebar()">
+            <img src="images/UI/logo.png" alt="Logo">
+            <span>大饼 PS5 金手指资源库</span>
         </div>
-        <div class="cheat-container" id="cheatContent"></div>
-        <button class="download-btn" onclick="downloadCheat()">下载金手指</button>
+        <div class="navbar-menu">
+            <div class="nav-item active" id="navHome"><svg class="icon icon-fill" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 首页</div>
+
+            <div class="nav-item ps5-btn" id="navPopular"><svg class="icon ps5-icon ps5-icon-triangle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3L6 12h12L12 3z"/></svg> 热门游戏</div>
+            <div class="nav-item ps5-btn" id="navTools"><svg class="icon ps5-icon ps5-icon-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/></svg> 工具箱</div>
+            <div class="nav-item ps5-btn" id="navMessages"><svg class="icon ps5-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg> 留言板</div>
+            <div class="nav-item nav-dropdown ps5-btn" id="navAbout" onclick="toggleAboutDropdown()">
+                <svg class="icon ps5-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> 关于我们
+                <div class="dropdown-menu" id="aboutDropdown">
+                    <div class="dropdown-item" onclick="showAboutInfo()">信息</div>
+                    <div class="dropdown-item" onclick="showDonate()">捐赠</div>
+                </div>
+            </div>
+        </div>
+        <button class="navbar-toggle" onclick="toggleSidebar()"><svg class="icon" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
+    </nav>
+
+    <!-- 侧边仪表盘 -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-title"><svg class="icon" viewBox="0 0 512 512"><path d="M64 64c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V64zM96 160v64c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H128c-17.7 0-32 14.3-32 32zm128 0v64c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32zM128 288v32c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V288c0-17.7-14.3-32-32-32H160c-17.7 0-32 14.3-32 32zm192-32c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V288c0-17.7-14.3-32-32-32H320zM128 384v32c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V384c0-17.7-14.3-32-32-32H160c-17.7 0-32 14.3-32 32zm160-32c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V384c0-17.7-14.3-32-32-32H288z"/></svg> 数据统计</div>
+            <div class="sidebar-stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="statTotal">0</div>
+                    <div class="stat-label">总金手指数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="statLatest">0</div>
+                    <div class="stat-label">最新更新</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar-nav">
+            <div class="sidebar-title"><svg class="icon icon-fill" viewBox="0 0 576 512"><path d="M88.7 223.8L0 375.8 0 96C0 60.7 28.7 32 64 32H181.5c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7H416c35.3 0 64 28.7 64 64v32H144c-22.8 0-43.8 12.1-55.3 32zM455.1 222.2c-8.8-15.1-25.1-24.2-42.8-24.2H128c-17.7 0-34 9.1-42.8 24.2L4.6 386.4C1.6 391.6 0 397.5 0 403.5V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V403.5c0-6-1.6-11.9-4.6-17.1L455.1 222.2z"/></svg> 分类导航</div>
+            <div class="sidebar-nav-item active" id="sideAll">
+                <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/></svg>
+                <span>全部游戏</span>
+            </div>
+            <div class="sidebar-nav-item" id="sidePS5">
+                <svg class="icon icon-fill" viewBox="0 0 640 512"><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200a40 40 0 1 1 80 0 40 40 0 1 1 -80 0z"/></svg>
+                <span>PS5游戏</span>
+            </div>
+            <div class="sidebar-nav-item" id="sideNewest">
+                <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                <span>最近更新</span>
+            </div>
+            <div class="sidebar-nav-item" id="sideSearch">
+                <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                <span>高级搜索</span>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <div class="user-info">
+                <div class="user-avatar"><svg class="icon icon-fill" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 178.3 304z"/></svg></div>
+                <div>
+                    <div class="user-name">游客用户</div>
+                    <div class="user-role">普通会员</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 侧边栏遮罩 -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+    <!-- 主内容区域 -->
+    <main class="main-content" id="mainContent" onclick="closeSidebarOnClick(event)">
+        <!-- 顶部：标题 + 统计 -->
+        <div class="header">
+            <h1 class="top-title">大饼 PS5 金手指资源库</h1>
+        </div>
+
+        <!-- 轮播海报 -->
+        <div class="banner-swiper" id="bannerSwiper">
+            <div class="new-banner-title"><svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M327.3 98.9c-6.9-12.1-19.8-19.9-34.5-19.9s-27.6 7.8-34.5 19.9L185.9 214.5c-7 12.2-7 27.1 0 39.3l72.3 115.6c6.9 12.1 19.8 19.9 34.5 19.9s27.6-7.8 34.5-19.9L399.7 253.8c7-12.2 7-27.1 0-39.3L327.3 98.9zM512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0z"/></svg> 最新更新</div>
+            <div class="banner-list" id="bannerList"></div>
+            <button class="banner-btn banner-prev" onclick="prevBanner()"><svg class="icon icon-fill" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
+            <button class="banner-btn banner-next" onclick="nextBanner()"><svg class="icon icon-fill" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></button>
+            <div class="banner-dots" id="bannerDots"></div>
+        </div>
+
+        <!-- 排序 + 搜索 -->
+        <div class="search-sort-wrap">
+            <div class="sort-controls">
+                <select class="sort-select" id="sortSelect" onchange="handleSortChange()">
+                    <option value="id">序号</option>
+                    <option value="name">名称</option>
+                </select>
+                <button class="sort-order-btn" id="sortOrderBtn" onclick="toggleSortOrder()">
+                    <svg class="icon icon-fill" viewBox="0 0 576 512"><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-96-96c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L128 370.7 128 64c0-17.7 14.3-32 32-32s32 14.3 32 32l0 306.7 41.4-41.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-96 96zm352-333.3c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L448 141.3 448 448c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-306.7-41.4 41.4c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l96-96c12.5-12.5 32.8-12.5 45.3 0l96 96z"/></svg>
+                </button>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索游戏名称 或 游戏ID" onkeyup="handleSearchKeyup(event)">
+                <button class="search-btn" onclick="performSearch()"><svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+            </div>
+        </div>
+
+        <!-- 加载状态 -->
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">正在加载游戏列表...</div>
+        </div>
+
+    <!-- 游戏卡片容器 -->
+        <div class="game-wrap" id="gameBox" style="display: none;"></div>
+
+        <!-- 分页 -->
+        <div class="pagination" id="pagination"></div>
+
+        <!-- 页脚 -->
+        <div class="footer">
+            站长：大饼电玩D.B.© | 仅供学习使用 | 学习交流群：310630593
+        </div>
+    </main>
+
+    <!-- 悬浮按钮 -->
+    <button class="float-btn refresh-btn" onclick="refreshPage()" title="刷新页面">
+        <svg class="icon icon-stroke" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M36.7279 36.7279C33.4706 39.9853 28.9706 42 24 42C14.0589 42 6 33.9411 6 24C6 14.0589 14.0589 6 24 6C28.9706 6 33.4706 8.01472 36.7279 11.2721C38.3859 12.9301 42 17 42 17"/><path d="M42 8V17H33"/></svg>
+    </button>
+    <button class="float-btn top-btn" onclick="scrollToTop()" title="回到顶部">
+        <svg class="icon icon-stroke" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 30L25 18L37 30"/></svg>
+    </button>
+
+    <!-- 工具箱面板 -->
+    <div class="tools-panel" id="toolsPanel">
+        <div class="tools-header">
+            <h2 class="tools-title"><svg class="icon" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M44 16C44 22.6274 38.6274 28 32 28C29.9733 28 28.0639 27.4975 26.3896 26.6104L9 44L4 39L21.3896 21.6104C20.5025 19.9361 20 18.0267 20 16C20 9.37258 25.3726 4 32 4C34.0267 4 35.9361 4.50245 37.6104 5.38959L30 13L35 18L42.6104 10.3896C43.4975 12.0639 44 13.9733 44 16Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> MC4 & JSON 金手指转换 | 自动汉化工具箱</h2>
+            <button class="tools-close-btn" onclick="hideToolsPanel()"><svg class="icon icon-fill" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256l105.3-105.4z"/></svg></button>
+        </div>
+        
+        <div class="tools-content">
+            <div class="tools-flex-row">
+                <div class="tools-flex-col" style="flex:0 0 280px;">
+                    <div class="tools-panel-box">
+                        <div class="tools-subtitle">📁 选择金手指</div>
+                        <div class="tools-tip-text">支持 MC4 / JSON / SHN</div>
+                        
+                        <div class="tools-upload-area">
+                            <input type="file" id="toolsFileSelector" accept=".mc4,.json,.shn" onchange="updateToolsFileLabel()">
+                            <label for="toolsFileSelector">
+                                点击或拖拽文件
+                                <div id="toolsFileLabel"></div>
+                            </label>
+                        </div>
+
+                        <div style="margin-top:auto;">
+                            <button class="tools-action-btn tools-btn-color-1" onclick="runDecrypt()">■ 解密MC4金手指</button>
+                            <button class="tools-action-btn tools-btn-color-2" onclick="runConvert()">▲ 修复JSON金手指</button>
+                            <button class="tools-action-btn tools-btn-color-5" onclick="readFileContent()">✖ 读取金手指代码</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-flex-col">
+                    <div class="tools-panel-box">
+                        <div class="tools-subtitle">📝 金手指代码</div>
+                        <textarea class="tools-result-area" id="toolsResultView" placeholder="等待转换金手指..."></textarea>
+                        
+                        <div id="toolsLoadingPanel">
+                            <div id="toolsLoadingText">๐•ᴗ•๐ 正在翻译中，请稍候...</div>
+                            <div class="tools-progress-base"><div class="tools-progress-animation"></div></div>
+                        </div>
+
+                        <div class="tools-btn-row">
+                            <button class="tools-action-btn tools-btn-color-3" onclick="runTranslate()">◉ 自动汉化金手指</button>
+                            <button class="tools-action-btn tools-btn-color-4" onclick="runSave()">➤ 导出SHN格式</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tools-panel-box">
+                <div class="tools-subtitle">★ 金手指功能键可视化编辑 ★</div>
+                <div id="toolsMenuPreview" class="tools-menu-preview">
+                    <div class="tools-no-preview">请先读取或生成金手指内容</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tools-footer">
+            By : <span>DaBing Game Studio</span> | 交流群：310630593 | 本软件完全免费，仅供学习使用 | 尊重原作，请勿篡改原作者信息
+        </div>
     </div>
-</div>
 
-<script>
-const BASE_URL = "https://raw.githubusercontent.com/DaBingOG/cheats/main/shn/";
-const LIST_URL = "https://raw.githubusercontent.com/DaBingOG/cheats/main/shn.txt";
-const IMAGE_BASE = "https://cdn.jsdelivr.net/gh/DaBingOG/cheats@main/images/";
+    <!-- 留言板面板 -->
+    <div class="messages-panel" id="messagesPanel">
+        <div class="messages-header">
+            <h2 class="messages-title"><svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M448 64C448 28.7 419.3 0 384 0H64C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64h96v-80c0-26.5 21.5-48 48-48h64c26.5 0 48 21.5 48 48v80h96c35.3 0 64-28.7 64-64V64zM384 64V256L288 192 192 256V64h192z"/></svg> 留言板</h2>
+            <button class="messages-close-btn" onclick="hideMessagesPanel()"><svg class="icon icon-fill" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3l105.4 105.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256l105.3-105.4z"/></svg></button>
+        </div>
+        
+        <div class="messages-content">
+            <div class="messages-list" id="messagesList">
+                <div class="message-item">
+                    <div class="message-avatar">
+                        <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                    </div>
+                    <div class="message-body">
+                        <div class="message-header">
+                            <span class="message-author">管理员</span>
+                            <span class="message-time">2024-01-15 10:30</span>
+                        </div>
+                        <div class="message-content">欢迎来到PS5金手指资料库！如果您有任何问题或建议，欢迎留言反馈。</div>
+                    </div>
+                </div>
+                <div class="message-item">
+                    <div class="message-avatar user">
+                        <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                    </div>
+                    <div class="message-body">
+                        <div class="message-header">
+                            <span class="message-author">游客用户</span>
+                            <span class="message-time">2024-01-14 15:45</span>
+                        </div>
+                        <div class="message-content">希望能增加更多游戏的金手指支持，感谢分享！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="messages-input-area">
+            <input type="text" class="messages-input" id="messageInput" placeholder="输入您的留言..." onkeydown="handleMessageKeydown(event)">
+            <button class="messages-submit-btn" onclick="submitMessage()">发送</button>
+        </div>
+    </div>
 
-let GAME_LIST = [];
-let ORIGIN_LIST = [];
-let FILTERED_LIST = [];
-let currentPage = 1;
-const pageSize = 20;
-let CURRENT_FILE = "";
-let CURRENT_CONTENT = "";
-let bannerIndex = 0;
-let bannerTimer = null;
-let bannerData = [];
-let currentSort = "desc";
+    <!-- 详情弹窗 -->
+    <div class="pop-box" id="pop">
+        <div class="pop-inner">
+            <button class="close-btn-fixed" onclick="closePop()">&#xd7;</button>
+            <div class="game-title" id="gameTitle"></div>
+            <div class="game-info-row">
+                <span id="gameId"></span>
+                <span id="gameModer"></span>
+            </div>
+            <div class="cheat-container" id="cheatContent"></div>
+            <button class="download-btn" onclick="downloadCheat()">
+                <svg class="icon icon-stroke" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24.0083V42H42V24"/><path d="M33 23L24 32L15 23"/><path d="M23.9917 6V32"/></svg>
+                <span>下载金手指</span>
+            </button>
+        </div>
+    </div>
 
-window.onload = async function () {
-    let res = await fetch(LIST_URL);
-    let text = await res.text();
-    
-    let allGames = text.split("\n")
-        .filter(i=>i&&i.includes("="))
-        .map(i=>{
-            let [file,name]=i.split("=");
-            return {file:file.trim(),name:name.trim(),id:file.replace(".shn","")};
+    <script>
+        // API 配置
+        const CONFIG = {
+            BASE_URL: "https://raw.githubusercontent.com/DaBingOG/cheats/main/shn/",
+            LIST_URL: "https://raw.githubusercontent.com/DaBingOG/cheats/main/shn.txt",
+            IMAGE_BASE: "https://cdn.jsdelivr.net/gh/DaBingOG/cheats@main/images/",
+            PAGE_SIZE: 20
+        };
+
+        // 全局状态
+        const state = {
+            gameList: [],
+            originList: [],
+            filteredList: [],
+            currentPage: 1,
+            currentFile: "",
+            currentContent: "",
+            bannerIndex: 0,
+            bannerTimer: null,
+            bannerData: [],
+            currentSort: "id",
+            sortOrder: "desc",
+            searchKeyword: "",
+            isLoading: true
+        };
+
+        // DOM 引用
+        const dom = {
+            statBox: document.getElementById("statBox"),
+            bannerList: document.getElementById("bannerList"),
+            bannerDots: document.getElementById("bannerDots"),
+            bannerSwiper: document.getElementById("bannerSwiper"),
+            sortSelect: document.getElementById("sortSelect"),
+            sortOrderBtn: document.getElementById("sortOrderBtn"),
+            searchInput: document.getElementById("searchInput"),
+            loading: document.getElementById("loading"),
+            gameBox: document.getElementById("gameBox"),
+            pagination: document.getElementById("pagination"),
+            pop: document.getElementById("pop"),
+            gameTitle: document.getElementById("gameTitle"),
+            gameId: document.getElementById("gameId"),
+            gameModer: document.getElementById("gameModer"),
+            cheatContent: document.getElementById("cheatContent"),
+            sidebar: document.getElementById("sidebar"),
+            sidebarOverlay: document.getElementById("sidebarOverlay"),
+            mainContent: document.getElementById("mainContent"),
+            statTotal: document.getElementById("statTotal"),
+            statLatest: document.getElementById("statLatest")
+        };
+
+        // 侧边栏切换
+        function toggleSidebar() {
+            dom.sidebar.classList.toggle("open");
+            dom.sidebarOverlay.classList.toggle("active");
+        }
+
+        // 点击主内容区域关闭侧边栏
+        function closeSidebarOnClick(event) {
+            // 如果侧边栏是打开状态，点击主内容区域时关闭它
+            if (dom.sidebar.classList.contains("open")) {
+                // 检查点击事件是否来自主内容区域（不包括侧边栏）
+                const isClickInsideSidebar = event.target.closest('.sidebar');
+                if (!isClickInsideSidebar) {
+                    toggleSidebar();
+                }
+            }
+        }
+
+        // 导航项点击处理
+        function handleNavClick(navItem) {
+            // 移除所有导航项的active状态
+            document.querySelectorAll(".nav-item").forEach(item => item.classList.remove("active"));
+            // 添加当前导航项的active状态
+            navItem.classList.add("active");
+            
+            // 根据点击的导航项执行相应操作
+            const id = navItem.id;
+            if (id === "navHome") {
+                state.currentPage = 1;
+                state.filteredList = [...state.gameList];
+                render();
+            } else if (id === "navPopular") {
+                // 热门游戏（可以根据实际需求实现）
+                alert("热门游戏功能开发中...");
+            } else if (id === "navTools") {
+                showToolsPanel();
+            } else if (id === "navMessages") {
+                showMessagesPanel();
+            } else if (id === "navAbout") {
+                // 关于我们下拉菜单已通过onclick处理
+                return;
+            }
+            
+            // 关闭侧边栏（移动端）
+            toggleSidebar();
+        }
+
+        // 侧边栏导航点击处理
+        function handleSideNavClick(sideItem) {
+            // 移除所有侧边栏导航项的active状态
+            document.querySelectorAll(".sidebar-nav-item").forEach(item => item.classList.remove("active"));
+            // 添加当前导航项的active状态
+            sideItem.classList.add("active");
+            
+            const id = sideItem.id;
+            if (id === "sideAll") {
+                state.filteredList = [...state.gameList];
+            } else if (id === "sidePS5") {
+                // 筛选PS5游戏（ID以PPSA开头）
+                state.filteredList = state.gameList.filter(game => game.id.startsWith("PPSA"));
+            } else if (id === "sideNewest") {
+                // 最新更新（前20个）
+                state.filteredList = [...state.gameList].slice(0, 20);
+            } else if (id === "sideSearch") {
+                // 聚焦搜索框
+                dom.searchInput.focus();
+                return;
+            }
+            
+            state.currentPage = 1;
+            updateStat();
+            render();
+            toggleSidebar();
+        }
+
+        // 初始化
+        async function init() {
+            try {
+                await loadGameList();
+                setupEventListeners();
+                updateStat();
+                initBannerSwiper();
+                render();
+                state.isLoading = false;
+                dom.loading.style.display = "none";
+                dom.gameBox.style.display = "grid";
+            } catch (error) {
+                console.error("初始化失败:", error);
+                dom.loading.innerHTML = '<div style="color: #dc2626;">加载失败，请刷新重试</div>';
+            }
+        }
+
+        // 加载游戏列表
+        async function loadGameList() {
+            const response = await fetch(CONFIG.LIST_URL);
+            const text = await response.text();
+
+            const allGames = text.split("\n")
+                .filter(line => line && line.includes("="))
+                .map(line => {
+                    const [file, name] = line.split("=");
+                    return {
+                        file: file.trim(),
+                        name: name.trim(),
+                        id: file.replace(".shn", "").trim()
+                    };
+                });
+
+            state.originList = [...allGames];
+            state.bannerData = allGames
+                .filter(game => /^[1-5]-/.test(game.file))
+                .map(game => ({
+                    ...game,
+                    file: game.file.replace(/^[1-5]-/, ""),
+                    id: game.id.replace(/^[1-5]-/, "")
+                }));
+
+            applySort();
+            state.filteredList = [...state.gameList];
+        }
+
+        // 设置事件监听
+        function setupEventListeners() {
+            // 点击弹窗外部关闭
+            dom.pop.addEventListener("click", (e) => {
+                if (e.target === dom.pop) {
+                    closePop();
+                }
+            });
+
+            // ESC 键关闭弹窗和侧边栏
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") {
+                    closePop();
+                    if (dom.sidebar.classList.contains("open")) {
+                        toggleSidebar();
+                    }
+                }
+            });
+
+            // 顶部导航栏点击事件
+            document.querySelectorAll(".nav-item").forEach(item => {
+                item.addEventListener("click", () => handleNavClick(item));
+            });
+
+            // 侧边栏导航点击事件
+            document.querySelectorAll(".sidebar-nav-item").forEach(item => {
+                item.addEventListener("click", () => handleSideNavClick(item));
+            });
+        }
+
+        // 排序方式切换
+        function handleSortChange() {
+            state.currentSort = dom.sortSelect.value;
+            applySort();
+            state.filteredList = [...state.gameList];
+            state.currentPage = 1;
+            render();
+        }
+
+        // 排序顺序切换（正序/倒序）
+        function toggleSortOrder() {
+            state.sortOrder = state.sortOrder === "desc" ? "asc" : "desc";
+            updateSortOrderBtn();
+            applySort();
+            state.filteredList = [...state.gameList];
+            state.currentPage = 1;
+            render();
+        }
+
+        // 更新排序顺序按钮显示
+        function updateSortOrderBtn() {
+            const btn = dom.sortOrderBtn;
+            if (state.sortOrder === "desc") {
+                // 倒序状态
+                btn.classList.remove("asc");
+            } else {
+                // 正序状态
+                btn.classList.add("asc");
+            }
+        }
+
+        function applySort() {
+            const filterFn = game => !/^[1-5]-/.test(game.file);
+            let sortedList = [...state.originList].filter(filterFn);
+
+            if (state.currentSort === "name") {
+                sortedList = sortedList.sort((a, b) => 
+                    a.name.localeCompare(b.name, "zh-CN")
+                );
+            }
+
+            if (state.sortOrder === "desc") {
+                sortedList = sortedList.reverse();
+            }
+
+            state.gameList = sortedList;
+        }
+
+        // 搜索处理（带防抖）
+        let searchTimer = null;
+
+        function handleSearchKeyup(event) {
+            if (event.key === "Enter") {
+                performSearch();
+                return;
+            }
+
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(() => {
+                performSearch();
+            }, 300);
+        }
+
+        function performSearch() {
+            const keyword = dom.searchInput.value.toLowerCase().trim();
+            state.searchKeyword = keyword;
+
+            if (!keyword) {
+                state.filteredList = [...state.gameList];
+            } else {
+                state.filteredList = state.gameList.filter(game =>
+                    game.name.toLowerCase().includes(keyword) ||
+                    game.id.toLowerCase().includes(keyword)
+                );
+            }
+
+            state.currentPage = 1;
+            updateStat();
+            render();
+        }
+
+        // 轮播初始化
+        function initBannerSwiper() {
+            if (state.bannerData.length === 0) {
+                dom.bannerSwiper.style.display = "none";
+                return;
+            }
+
+            let listHtml = "";
+            let dotHtml = "";
+
+            state.bannerData.forEach((item, index) => {
+                const imageUrl = `${CONFIG.IMAGE_BASE}${item.id}.jpg`;
+                listHtml += `
+                    <div class="banner-item" style="background-image:url(${imageUrl})" onclick="openFile(state.bannerData[${index}])">
+                        <div class="banner-info">
+                            <div class="banner-name">${item.name}</div>
+                            <div class="banner-id">ID：${item.id}</div>
+                        </div>
+                    </div>`;
+                dotHtml += `<span class="dot ${index === 0 ? 'active' : ''}" onclick="switchBanner(${index})"></span>`;
+            });
+
+            dom.bannerList.innerHTML = listHtml;
+            dom.bannerDots.innerHTML = dotHtml;
+
+            startAutoBanner();
+
+            dom.bannerSwiper.addEventListener('mouseenter', () => clearInterval(state.bannerTimer));
+            dom.bannerSwiper.addEventListener('mouseleave', startAutoBanner);
+        }
+
+        function startAutoBanner() {
+            clearInterval(state.bannerTimer);
+            state.bannerTimer = setInterval(() => {
+                state.bannerIndex++;
+                if (state.bannerIndex >= state.bannerData.length) {
+                    state.bannerIndex = 0;
+                }
+                switchBanner(state.bannerIndex);
+            }, 4000);
+        }
+
+        function switchBanner(index) {
+            state.bannerIndex = index;
+            dom.bannerList.style.transform = `translateX(-${index * 100}%)`;
+            document.querySelectorAll(".dot").forEach((dot, i) => {
+                dot.classList.toggle("active", i === index);
+            });
+        }
+
+        function prevBanner() {
+            state.bannerIndex--;
+            if (state.bannerIndex < 0) {
+                state.bannerIndex = state.bannerData.length - 1;
+            }
+            switchBanner(state.bannerIndex);
+        }
+
+        function nextBanner() {
+            state.bannerIndex++;
+            if (state.bannerIndex >= state.bannerData.length) {
+                state.bannerIndex = 0;
+            }
+            switchBanner(state.bannerIndex);
+        }
+
+        // 更新统计
+        function updateStat() {
+            // 更新侧边栏统计数据
+            if (dom.statTotal) {
+                dom.statTotal.innerText = state.originList.length;
+            }
+            if (dom.statLatest) {
+                dom.statLatest.innerText = state.bannerData.length;
+            }
+        }
+
+        // 渲染
+        function render() {
+            renderGameList();
+            renderPagination();
+        }
+
+        // 渲染游戏列表
+        function renderGameList() {
+            dom.gameBox.innerHTML = "";
+
+            const total = Math.ceil(state.filteredList.length / CONFIG.PAGE_SIZE);
+            const list = state.filteredList.slice(
+                (state.currentPage - 1) * CONFIG.PAGE_SIZE,
+                state.currentPage * CONFIG.PAGE_SIZE
+            );
+
+            if (!list.length) {
+                dom.gameBox.innerHTML = `
+                    <div class="empty-state">
+                        <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                        <p>未找到匹配的游戏</p>
+                    </div>`;
+                return;
+            }
+
+            list.forEach(item => {
+                const card = document.createElement("div");
+                card.className = "game-card";
+                card.onclick = () => openFile(item);
+                card.style.backgroundImage = `url(${CONFIG.IMAGE_BASE}${item.id}.jpg)`;
+                card.innerHTML = `
+                    ${item.id.startsWith("PPSA") ? '<div class="ps5-badge"></div>' : ''}
+                    <div class="game-card-info">
+                        <div class="game-card-name">${item.name}</div>
+                        <div class="game-card-id">${item.id}</div>
+                    </div>`;
+                dom.gameBox.appendChild(card);
+            });
+        }
+
+        // 渲染分页
+        function renderPagination() {
+            dom.pagination.innerHTML = "";
+            const total = Math.ceil(state.filteredList.length / CONFIG.PAGE_SIZE);
+
+            if (total <= 1) {
+                dom.pagination.style.display = "none";
+                return;
+            }
+
+            dom.pagination.style.display = "flex";
+
+            // 上一页
+            const prevBtn = createPageButton("<", () => {
+                if (state.currentPage > 1) {
+                    state.currentPage--;
+                    render();
+                }
+            }, state.currentPage <= 1);
+            dom.pagination.appendChild(prevBtn);
+
+            // 页码
+            let start = Math.max(1, state.currentPage - 2);
+            let end = Math.min(total, state.currentPage + 2);
+
+            if (start > 1) {
+                addPageNumber(1);
+                if (start > 2) {
+                    addDots();
+                }
+            }
+
+            for (let i = start; i <= end; i++) {
+                addPageNumber(i);
+            }
+
+            if (end < total) {
+                if (end < total - 1) {
+                    addDots();
+                }
+                addPageNumber(total);
+            }
+
+            // 下一页
+            const nextBtn = createPageButton(">", () => {
+                if (state.currentPage < total) {
+                    state.currentPage++;
+                    render();
+                }
+            }, state.currentPage >= total);
+            dom.pagination.appendChild(nextBtn);
+        }
+
+        function createPageButton(text, onClick, disabled) {
+            const btn = document.createElement("div");
+            btn.className = `page-arrow${disabled ? " page-disabled" : ""}`;
+            btn.innerText = text;
+            if (!disabled) {
+                btn.onclick = onClick;
+            }
+            return btn;
+        }
+
+        function addPageNumber(num) {
+            const page = document.createElement("div");
+            page.className = `page-number${num === state.currentPage ? " page-active" : ""}`;
+            page.innerText = num;
+            page.onclick = () => {
+                state.currentPage = num;
+                render();
+            };
+            dom.pagination.appendChild(page);
+        }
+
+        function addDots() {
+            const dots = document.createElement("span");
+            dots.className = "page-dots";
+            dots.innerText = "...";
+            dom.pagination.appendChild(dots);
+        }
+
+        // 打开游戏详情
+        async function openFile(item) {
+            state.currentFile = item.file;
+            dom.pop.style.display = "flex";
+            dom.gameTitle.innerText = item.name;
+            dom.gameId.innerText = `ID：${item.id}`;
+
+            try {
+                const response = await fetch(CONFIG.BASE_URL + item.file);
+                state.currentContent = await response.text();
+
+                const moder = state.currentContent.match(/Moder="([^"]+)"/i)?.[1] || "未知";
+                dom.gameModer.innerText = `作者：${moder}`;
+
+                const texts = state.currentContent.match(/Text="([^"]+)"/g) || [];
+                dom.cheatContent.innerHTML = texts.map(text => `
+                    <div class="cheat-item">${text.replace(/Text="/g, "").replace(/"$/, "")}</div>
+                `).join("");
+            } catch (error) {
+                console.error("加载金手指内容失败:", error);
+                dom.cheatContent.innerHTML = '<div style="text-align:center;color:#dc2626;padding:20px;">加载失败</div>';
+            }
+        }
+
+        // 下载金手指
+        function downloadCheat() {
+            if (!state.currentFile || !state.currentContent) {
+                return;
+            }
+
+            const blob = new Blob([state.currentContent], { type: "text/plain;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = state.currentFile;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // 关闭弹窗
+        function closePop() {
+            dom.pop.style.display = "none";
+        }
+
+        // ========== 工具箱功能 ==========
+        const toolsDom = {
+            panel: document.getElementById("toolsPanel"),
+            resultView: document.getElementById("toolsResultView"),
+            fileSelector: document.getElementById("toolsFileSelector"),
+            fileLabel: document.getElementById("toolsFileLabel"),
+            loadingPanel: document.getElementById("toolsLoadingPanel"),
+            loadingText: document.getElementById("toolsLoadingText"),
+            menuPreview: document.getElementById("toolsMenuPreview")
+        };
+
+        let toolsFileBuffer = null;
+        let toolsSaveFileName = "";
+        let toolsCheatItems = [];
+
+        // 显示工具箱面板
+        function showToolsPanel() {
+            toolsDom.panel.classList.add("active");
+            document.querySelectorAll(".nav-item").forEach(item => item.classList.remove("active"));
+            document.getElementById("navTools").classList.add("active");
+        }
+
+        // 隐藏工具箱面板
+        function hideToolsPanel() {
+            toolsDom.panel.classList.remove("active");
+            document.getElementById("navHome").classList.add("active");
+        }
+
+        // 更新文件标签
+        function updateToolsFileLabel() {
+            const f = toolsDom.fileSelector.files[0];
+            if (f) toolsDom.fileLabel.innerText = f.name;
+            else toolsDom.fileLabel.innerText = "";
+        }
+
+        // 金手指菜单预览
+        function toolsPreviewCheatMenu() {
+            const content = toolsDom.resultView.value;
+            const previewBox = toolsDom.menuPreview;
+            
+            if (!content) {
+                previewBox.innerHTML = '<div class="tools-no-preview">请先读取或生成金手指内容</div>';
+                return;
+            }
+
+            const gameMatch = content.match(/Game="([^"]+)"/i);
+            const moderMatch = content.match(/Moder="([^"]+)"/i);
+            const cusaMatch = content.match(/Cusa="([^"]+)"/i);
+            const allVersions = [...content.matchAll(/Version="([^"]+)"/gi)];
+            let gameVer = "00.000.000";
+            if (allVersions.length >= 2) gameVer = allVersions[1][1];
+            else if (allVersions.length >= 1) gameVer = allVersions[0][1];
+
+            const gameName = gameMatch ? gameMatch[1] : "UnknownGame";
+            const authorName = moderMatch ? moderMatch[1] : "Unknown";
+            const cusaCode = cusaMatch ? cusaMatch[1] : "UnknownID";
+            const finalTitle = `${gameName}_${cusaCode}_${gameVer} ☆  By: ${authorName}`;
+
+            const cheatRegex = /<Cheat\s+Text="([^"]+)"(?:\s+Description="([^"]*)")?\s*>/g;
+            const matches = [...content.matchAll(cheatRegex)];
+            toolsCheatItems = matches;
+            
+            if (matches.length === 0) {
+                previewBox.innerHTML = '<div class="tools-no-preview">未检测到金手指菜单</div>';
+                return;
+            }
+
+            let html = `<div class="tools-menu-title">☆ ${finalTitle}</div>`;
+            matches.forEach((m, idx) => {
+                const text = m[1] || "";
+                const desc = m[2] || "";
+                html += `
+                <div class="tools-menu-item">
+                    <div class="tools-menu-left">
+                        <input type="text" class="tools-menu-edit" data-type="text" data-idx="${idx}" value="${text.replace(/"/g, "&quot;")}">
+                        <input type="text" class="tools-menu-desc-edit" data-type="desc" data-idx="${idx}" value="${desc.replace(/"/g, "&quot;")}" placeholder="描述（可选）">
+                    </div>
+                    <div class="tools-menu-switch"></div>
+                </div>`;
+            });
+            
+            previewBox.innerHTML = html;
+
+            document.querySelectorAll(".tools-menu-edit, .tools-menu-desc-edit").forEach(input => {
+                input.addEventListener("input", function(){
+                    const idx = parseInt(this.dataset.idx);
+                    const type = this.dataset.type;
+                    const val = this.value;
+                    toolsUpdateCheatItem(idx, type, val);
+                });
+            });
+        }
+
+        // 更新金手指项
+        function toolsUpdateCheatItem(index, type, value) {
+            let content = toolsDom.resultView.value;
+            const regex = /<Cheat\s+Text="([^"]+)"(?:\s+Description="([^"]*)")?\s*>/g;
+            const matches = [...content.matchAll(regex)];
+            if (!matches[index]) return;
+
+            const fullTag = matches[index][0];
+            const oldText = matches[index][1];
+            const oldDesc = matches[index][2] || "";
+
+            let newTag;
+            if (type === "text") {
+                newTag = `<Cheat Text="${value}" Description="${oldDesc}">`;
+            } else {
+                newTag = `<Cheat Text="${oldText}" Description="${value}">`;
+            }
+
+            content = content.replace(fullTag, newTag);
+            toolsDom.resultView.value = content;
+            toolsFileBuffer = new TextEncoder().encode(content);
+        }
+
+        // 读取文件内容
+        async function toolsReadFileContent() {
+            try {
+                const f = toolsDom.fileSelector.files[0];
+                if (!f) return alert("请选择文件");
+                const fileExt = f.name.split('.').pop().toLowerCase();
+                if (!['json', 'shn', 'mc4'].includes(fileExt)) {
+                    return alert("不支持的文件格式！仅支持 JSON / SHN / MC4");
+                }
+                const fileContent = await f.text();
+                let displayContent = fileContent;
+                if (fileExt === 'json') {
+                    try {
+                        const jsonObj = JSON.parse(toolsCleanJsonData(fileContent));
+                        displayContent = JSON.stringify(jsonObj, null, 2);
+                    } catch (e) {
+                        alert("JSON文件格式有误，将展示原始内容");
+                    }
+                }
+                toolsDom.resultView.value = displayContent;
+                toolsFileBuffer = new TextEncoder().encode(displayContent);
+                toolsPreviewCheatMenu();
+                if (fileExt === 'json') {
+                    toolsSaveFileName = f.name.replace(/\.json$/i, ".shn");
+                } else if (fileExt === 'shn') {
+                    toolsSaveFileName = f.name;
+                } else if (fileExt === 'mc4') {
+                    toolsSaveFileName = f.name.replace(/\.mc4$/i, ".shn");
+                }
+                alert(`✔ 成功读取${fileExt.toUpperCase()}文件内容`);
+            } catch(e) {
+                alert("✖ 读取文件失败：" + e.message);
+            }
+        }
+
+        // 固定翻译
+        const toolsFixedTranslations = {
+            "1 Hit Kill": "一击必杀",
+            "Infinite Health": "无限生命",
+            "Inf Health": "无限生命",
+            "inf Health": "无限生命",
+            "Infi Health": "无限生命",
+            "inf health": "无限生命",
+            "Infi health": "无限生命",
+            "Untouchable": "无懈可击"
+        };
+
+        function toolsReplaceAbbr(txt) {
+            txt = txt.replace(/\binf\b/gi, "Infinite");
+            txt = txt.replace(/\binfi\b/gi, "Infinite");
+            return txt;
+        }
+
+        function toolsGetCustomTranslation(text) {
+            let processed = toolsReplaceAbbr(text);
+            if (toolsFixedTranslations[text]) return toolsFixedTranslations[text];
+            if (toolsFixedTranslations[processed]) return toolsFixedTranslations[processed];
+            return processed;
+        }
+
+        // 自动翻译
+        async function toolsRunTranslate() {
+            const txt = toolsDom.resultView.value;
+            const load = toolsDom.loadingPanel;
+            if (!txt) return alert("请先生成内容！");
+            try {
+                load.style.display = "block";
+                const reg = /Cheat Text="([^"]+)"/g;
+                const list = [...txt.matchAll(reg)];
+                if (list.length === 0) { load.style.display = "none"; return alert("未找到可翻译内容"); }
+                
+                const resArr = [];
+                for (const i of list) {
+                    const raw = i[1];
+                    const customTrans = toolsGetCustomTranslation(raw);
+                    
+                    let finalTrans = customTrans;
+                    if (customTrans === raw || customTrans === toolsReplaceAbbr(raw)) {
+                        try {
+                            const req = await fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(customTrans)+"&langpair=en|zh-CN");
+                            const data = await req.json();
+                            finalTrans = data.responseData?.translatedText || customTrans;
+                        } catch(e) {}
+                    }
+                    
+                    resArr.push({ o: raw, n: finalTrans + " | " + raw });
+                }
+                
+                let finalTxt = txt;
+                for (let item of resArr) finalTxt = finalTxt.replaceAll(`Cheat Text="${item.o}"`, `Cheat Text="${item.n}"`);
+                toolsDom.resultView.value = finalTxt;
+                toolsFileBuffer = new TextEncoder().encode(finalTxt);
+                load.style.display = "none";
+                toolsPreviewCheatMenu();
+                alert("✔ 翻译完成！共 " + resArr.length + " 项");
+            } catch(e) {
+                load.style.display = "none";
+                alert("✖ 翻译失败：" + e.message);
+            }
+        }
+
+        // 加密密钥
+        const SECRET_KEY = "304c6528f659c766110239a51cl5dd9c";
+        const SECRET_IV  = "u@}kzW2u[u(8DWar";
+
+        function toolsGetCipher() {
+            const k = CryptoJS.enc.Utf8.parse(SECRET_KEY);
+            const v = CryptoJS.enc.Utf8.parse(SECRET_IV);
+            return { key: k, iv: v, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 };
+        }
+
+        function toolsCleanJsonData(s) {
+            return s.replace(/[\u3000\f\r\t\v]/g, "").replace(/,\s*([}\]])/g, "$1").trim();
+        }
+
+        function toolsXmlFilter(s) {
+            if (!s) return "";
+            return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+        }
+
+        // 解密MC4
+        async function toolsRunDecrypt() {
+            try {
+                const f = toolsDom.fileSelector.files[0];
+                if (!f) return alert("请选择文件");
+                const fileExt = f.name.split('.').pop().toLowerCase();
+                if (fileExt !== 'mc4') {
+                    return alert("解密功能仅支持MC4格式文件！");
+                }
+                const t = await f.text();
+                const c = CryptoJS.enc.Base64.parse(t);
+                const cfg = toolsGetCipher();
+                const d = CryptoJS.AES.decrypt({ ciphertext: c }, cfg.key, cfg);
+                const xmlResult = d.toString(CryptoJS.enc.Utf8);
+                toolsDom.resultView.value = xmlResult;
+                toolsFileBuffer = new TextEncoder().encode(xmlResult);
+                toolsSaveFileName = f.name.replace(/\.mc4$/i, ".shn");
+                toolsPreviewCheatMenu();
+                alert("✔ 解密完成");
+            } catch(e) {
+                alert("✖ 解密失败：" + e.message);
+            }
+        }
+
+        // 转换JSON
+        async function toolsRunConvert() {
+            try {
+                const f = toolsDom.fileSelector.files[0];
+                if (!f) return alert("请选择文件");
+                const fileExt = f.name.split('.').pop().toLowerCase();
+                if (fileExt !== 'json') {
+                    return alert("转换功能仅支持JSON格式文件！");
+                }
+                const rawText = await f.text();
+                const jsonData = JSON.parse(toolsCleanJsonData(rawText));
+                const game = toolsXmlFilter(jsonData.name || "Game");
+                const cid = toolsXmlFilter(jsonData.id || "");
+                const ver = toolsXmlFilter(jsonData.version || "");
+                const proc = toolsXmlFilter(jsonData.process || "eboot.bin");
+                let out = `<?xml version="1.0" encoding="utf-8"?>
+<Trainer Game="${game}" Moder="User" Cusa="${cid}" Version="${ver}" Process="${proc}">
+`;
+                if (Array.isArray(jsonData.mods)) {
+                    for (let m of jsonData.mods) {
+                        const cname = toolsXmlFilter(m.name || "Cheat");
+                        const desc = m.desc ? toolsXmlFilter(m.desc) : "";
+                        out += `    <Cheat Text="${cname}" Description="${desc}">\n`;
+                        if (Array.isArray(m.memory)) {
+                            for (let line of m.memory) {
+                                const sec = line.section ?? "0";
+                                const off = toolsXmlFilter(line.offset || "");
+                                const onv = toolsXmlFilter(line.on || "");
+                                const ofv = toolsXmlFilter(line.off || "");
+                                out += `        <Cheatline>
+            <Section>${sec}</Section>
+            <Offset>${off}</Offset>
+            <ValueOn>${onv}</ValueOn>
+            <ValueOff>${ofv}</ValueOff>
+        </Cheatline>
+`;
+                            }
+                        }
+                        out += `    </Cheat>\n`;
+                    }
+                }
+                out += `</Trainer>`;
+                toolsDom.resultView.value = out;
+                toolsFileBuffer = new TextEncoder().encode(out);
+                toolsSaveFileName = f.name.replace(/\.json$/i, ".shn");
+                toolsPreviewCheatMenu();
+                alert("✔ 转换完成");
+            } catch(e) {
+                alert("✖ 转换失败：" + e.message);
+            }
+        }
+
+        // 保存文件
+        function toolsRunSave() {
+            const content = toolsDom.resultView.value;
+            if(!content) return alert("暂无内容");
+            toolsFileBuffer = new TextEncoder().encode(content);
+            const blob = new Blob([toolsFileBuffer], { type: "application/octet-stream" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = toolsSaveFileName || "output.shn";
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+
+        // 页面加载完成后初始化工具箱事件
+        document.addEventListener("DOMContentLoaded", function() {
+            // 绑定工具箱按钮事件
+            document.querySelector('.tools-action-btn.tools-btn-color-1').onclick = toolsRunDecrypt;
+            document.querySelector('.tools-action-btn.tools-btn-color-2').onclick = toolsRunConvert;
+            document.querySelector('.tools-action-btn.tools-btn-color-5').onclick = toolsReadFileContent;
+            document.querySelector('.tools-action-btn.tools-btn-color-3').onclick = toolsRunTranslate;
+            document.querySelector('.tools-action-btn.tools-btn-color-4').onclick = toolsRunSave;
+            
+            // 绑定文本框输入事件
+            toolsDom.resultView.addEventListener("input", toolsPreviewCheatMenu);
         });
 
-    ORIGIN_LIST = [...allGames];
-    bannerData = allGames
-        .filter(g => /^[1-5]-/.test(g.file))
-        .map(g => ({
-            ...g,
-            file: g.file.replace(/^[1-5]-/, ""),
-            id: g.id.replace(/^[1-5]-/, "")
-        }));
+        // ========== 工具箱功能结束 ==========
 
-    GAME_LIST = allGames.filter(g => !/^[1-5]-/.test(g.file)).reverse();
-    FILTERED_LIST = [...GAME_LIST];
-    
-    // 点击空白处关闭弹窗
-    document.getElementById("pop").addEventListener("click", function(e){
-        if(e.target === this){
-            closePop();
+        // ========== 留言板功能 ==========
+        const messagesDom = {
+            panel: document.getElementById("messagesPanel"),
+            list: document.getElementById("messagesList"),
+            input: document.getElementById("messageInput")
+        };
+
+        // 显示留言板面板
+        function showMessagesPanel() {
+            messagesDom.panel.classList.add("active");
+            document.querySelectorAll(".nav-item").forEach(item => item.classList.remove("active"));
+            document.getElementById("navMessages").classList.add("active");
         }
-    });
 
-    document.getElementById("loading").style.display="none";
-    updateStat();
-    initBannerSwiper();
-    render();
-};
+        // 隐藏留言板面板
+        function hideMessagesPanel() {
+            messagesDom.panel.classList.remove("active");
+            document.getElementById("navHome").classList.add("active");
+        }
 
-// 下拉排序
-function changeSortSelect(){
-    currentSort = document.getElementById("sortSelect").value;
-    doSort();
-    FILTERED_LIST = [...GAME_LIST];
-    currentPage = 1;
-    render();
-}
+        // 提交留言
+        function submitMessage() {
+            const content = messagesDom.input.value.trim();
+            if (!content) return;
 
-function doSort(){
-    if(currentSort === "desc"){
-        GAME_LIST = [...ORIGIN_LIST].filter(g=>!/^[1-5]-/.test(g.file)).reverse();
-    }else if(currentSort === "asc"){
-        GAME_LIST = [...ORIGIN_LIST].filter(g=>!/^[1-5]-/.test(g.file));
-    }else if(currentSort === "name"){
-        GAME_LIST = [...ORIGIN_LIST].filter(g=>!/^[1-5]-/.test(g.file)).sort((a,b)=>a.name.localeCompare(b.name));
-    }
-}
+            const now = new Date();
+            const timeStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
 
-// 初始化轮播
-function initBannerSwiper(){
-    const listDom = document.getElementById("bannerList");
-    const dotsDom = document.getElementById("bannerDots");
-    let listHtml = "";
-    let dotHtml = "";
-    bannerData.forEach((item,idx)=>{
-        listHtml += `
-        <div class="banner-item" style="background-image:url(${IMAGE_BASE+item.id+".jpg"})" onclick="openFile(bannerData[${idx}])">
-            <div class="banner-info">
-                <div class="banner-name">${item.name}</div>
-                <div class="banner-id">ID：${item.id}</div>
-            </div>
-        </div>`;
-        dotHtml += `<span class="dot ${idx===0?'active':''}" onclick="switchBanner(${idx})"></span>`;
-    });
-    listDom.innerHTML = listHtml;
-    dotsDom.innerHTML = dotHtml;
-    startAutoBanner();
-    document.getElementById("bannerSwiper").addEventListener('mouseenter',()=>clearInterval(bannerTimer));
-    document.getElementById("bannerSwiper").addEventListener('mouseleave',startAutoBanner);
-}
+            const messageItem = document.createElement("div");
+            messageItem.className = "message-item";
+            messageItem.innerHTML = `
+                <div class="message-avatar user">
+                    <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                </div>
+                <div class="message-body">
+                    <div class="message-header">
+                        <span class="message-author">游客用户</span>
+                        <span class="message-time">${timeStr}</span>
+                    </div>
+                    <div class="message-content">${content}</div>
+                </div>
+            `;
 
-function startAutoBanner(){
-    clearInterval(bannerTimer);
-    bannerTimer = setInterval(()=>{
-        bannerIndex++;
-        if(bannerIndex >= bannerData.length) bannerIndex = 0;
-        switchBanner(bannerIndex);
-    },4000);
-}
+            messagesDom.list.appendChild(messageItem);
+            messagesDom.input.value = "";
+            messagesDom.list.scrollTop = messagesDom.list.scrollHeight;
+        }
 
-function switchBanner(idx){
-    bannerIndex = idx;
-    document.getElementById("bannerList").style.transform = `translateX(-${idx*100}%)`;
-    document.querySelectorAll(".dot").forEach((dot,i)=>{
-        dot.classList.toggle("active",i===idx);
-    });
-}
-function prevBanner(){
-    bannerIndex--;
-    if(bannerIndex < 0) bannerIndex = bannerData.length - 1;
-    switchBanner(bannerIndex);
-}
-function nextBanner(){
-    bannerIndex++;
-    if(bannerIndex >= bannerData.length) bannerIndex = 0;
-    switchBanner(bannerIndex);
-}
+        // 处理留言输入键盘事件
+        function handleMessageKeydown(event) {
+            if (event.key === "Enter") {
+                submitMessage();
+            }
+        }
 
-function updateStat(){
-    document.getElementById("statBox").innerText = `📊 已收录：${FILTERED_LIST.length} 个金手指`;
-}
+        // ========== 留言板功能结束 ==========
 
-function render(){
-    renderList();
-    renderPagination();
-}
+        // ========== 关于我们下拉菜单 ==========
+        // 切换关于我们下拉菜单
+        function toggleAboutDropdown() {
+            const dropdown = document.getElementById('aboutDropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
 
-function renderList(){
-    const box=document.getElementById("gameBox");
-    box.innerHTML="";
-    const total=Math.ceil(FILTERED_LIST.length/pageSize);
-    const list=FILTERED_LIST.slice((currentPage-1)*pageSize,currentPage*pageSize);
-    if(!list.length){box.innerHTML=`<div style="padding:40px;text-align:center">未找到</div>`;return;}
-    list.forEach(item=>{
-        let c=document.createElement("div");
-        c.className="game-card";
-        c.onclick=()=>openFile(item);
-        c.style.backgroundImage=`url(${IMAGE_BASE+item.id+".jpg"})`;
-        c.innerHTML=`
-            ${item.id.startsWith("PPSA")?'<div class="ps5-badge"></div>':''}
-            <div class="game-card-info">
-                <div class="game-card-name">${item.name}</div>
-                <div class="game-card-id">${item.id}</div>
-            </div>`;
-        box.appendChild(c);
-    });
-}
+        // 显示关于信息
+        function showAboutInfo() {
+            document.getElementById('aboutDropdown').style.display = 'none';
+            // 创建关于信息弹窗
+            const aboutModal = document.createElement('div');
+            aboutModal.className = 'about-modal';
+            aboutModal.innerHTML = `
+                <div class="about-modal-overlay" onclick="closeAboutModal()"></div>
+                <div class="about-modal-content">
+                    <button class="about-modal-close" onclick="closeAboutModal()">&#xd7;</button>
+                    <div class="about-icon">
+                        <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                    </div>
+                    <h3 class="about-title">关于我们</h3>
+                    <div class="about-info">
+                        <p><strong>PS5金手指资料库</strong></p>
+                        <p>作者：大饼电玩</p>
+                        <p>学习交流群：310630593</p>
+                    </div>
+                    <p class="about-desc">本网站仅供学习交流使用，请勿用于商业用途。</p>
+                </div>
+            `;
+            document.body.appendChild(aboutModal);
+        }
 
-function renderPagination(){
-    const p=document.getElementById("pagination");
-    p.innerHTML="";
-    const total=Math.ceil(FILTERED_LIST.length/pageSize);
-    if(total<=1)return;
+        // 关闭关于信息弹窗
+        function closeAboutModal() {
+            const aboutModal = document.querySelector('.about-modal');
+            if (aboutModal) {
+                aboutModal.remove();
+            }
+        }
 
-    const prev=document.createElement("div");
-    prev.className="page-arrow"+(currentPage<=1?" page-disabled":"");
-    prev.innerText="<";
-    prev.onclick=()=>{if(currentPage>1){currentPage--;render();}};
-    p.appendChild(prev);
+        // 显示捐赠信息
+        function showDonate() {
+            document.getElementById('aboutDropdown').style.display = 'none';
+            // 创建捐赠弹窗
+            const donateModal = document.createElement('div');
+            donateModal.className = 'donate-modal';
+            donateModal.innerHTML = `
+                <div class="donate-modal-overlay" onclick="closeDonateModal()"></div>
+                <div class="donate-modal-content">
+                    <button class="donate-modal-close" onclick="closeDonateModal()">&#xd7;</button>
+                    <div class="donate-icon">
+                        <svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm-128-248c0-17.7 14.3-32 32-32s32 14.3 32 32-14.3 32-32 32-32-14.3-32-32zm192 0c0-17.7 14.3-32 32-32s32 14.3 32 32-14.3 32-32 32-32-14.3-32-32zm0 96c0-17.7 14.3-32 32-32s32 14.3 32 32-14.3 32-32 32-32-14.3-32-32z"/></svg>
+                    </div>
+                    <h3 class="donate-title">捐赠支持</h3>
+                    <div class="donate-status">暂不开通</div>
+                    <p class="donate-desc">感谢您的支持与关注！</p>
+                </div>
+            `;
+            document.body.appendChild(donateModal);
+        }
 
-    let start=Math.max(1,currentPage-2);
-    let end=Math.min(total,currentPage+2);
+        // 关闭捐赠弹窗
+        function closeDonateModal() {
+            const donateModal = document.querySelector('.donate-modal');
+            if (donateModal) {
+                donateModal.remove();
+            }
+        }
 
-    if(start>1){add(1);if(start>2)dots();}
-    for(let i=start;i<=end;i++)add(i);
-    if(end<total){if(end<total-1)dots();add(total);}
+        // 点击页面其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+            const aboutDropdown = document.getElementById('aboutDropdown');
+            const navAbout = document.getElementById('navAbout');
+            if (aboutDropdown && navAbout && !navAbout.contains(e.target)) {
+                aboutDropdown.style.display = 'none';
+            }
+        });
 
-    const next=document.createElement("div");
-    next.className="page-arrow"+(currentPage>=total?" page-disabled":"");
-    next.innerText=">";
-    next.onclick=()=>{if(currentPage<total){currentPage++;render();}};
-    p.appendChild(next);
+        // ========== 关于我们下拉菜单结束 ==========
 
-    function add(n){
-        let d=document.createElement("div");
-        d.className="page-number"+(n===currentPage?" page-active":"");
-        d.innerText=n;
-        d.onclick=()=>{currentPage=n;render();};
-        p.appendChild(d);
-    }
-    function dots(){
-        let t=document.createElement("span");
-        t.className="page-dots";
-        t.innerText="...";
-        p.appendChild(t);
-    }
-}
+        // 回到顶部
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
 
-// 点击按钮搜索
-function searchGames(){
-    const k=document.getElementById("searchInput").value.toLowerCase();
-    FILTERED_LIST=GAME_LIST.filter(i=>i.name.toLowerCase().includes(k)||i.id.toLowerCase().includes(k));
-    currentPage=1;
-    updateStat();
-    render();
-}
+        // 刷新页面
+        function refreshPage() {
+            window.location.reload();
+        }
 
-async function openFile(item){
-    CURRENT_FILE = item.file;
-    document.getElementById("pop").style.display="flex";
-    document.getElementById("gameTitle").innerText=item.name;
-    document.getElementById("gameId").innerText = "ID：" + item.id;
-    
-    let res = await fetch(BASE_URL + item.file);
-    CURRENT_CONTENT = await res.text();
-    
-    document.getElementById("gameModer").innerText="作者："+(CURRENT_CONTENT.match(/Moder="([^"]+)"/i)?.[1]||"未知");
-    document.getElementById("cheatContent").innerHTML=CURRENT_CONTENT.match(/Text="([^"]+)"/g)?.map(i=>`<div class="cheat-item">${i.replace(/Text="/g,"").replace(/"$/,"")}</div>`).join("")||"";
-}
-
-function downloadCheat(){
-    if(!CURRENT_FILE || !CURRENT_CONTENT) return;
-    const blob = new Blob([CURRENT_CONTENT], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = CURRENT_FILE;
-    a.click();
-    URL.revokeObjectURL(url);
-}
-
-function closePop(){document.getElementById("pop").style.display="none";}
-</script>
+        // 页面加载完成后初始化
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
 </body>
 </html>
