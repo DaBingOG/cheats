@@ -1,0 +1,93 @@
+{
+  "name": "CAPTAIN TSUBASA: RISE OF NEW CHAMPIONS 足球小将：新秀崛起",
+  "id": "CUSA14834",
+  "version": "01.33",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Max Player Points | 最大游玩点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "42DDBA",
+          "on": "B9FFE0F505",
+          "off": "0F42C885FF"
+        }
+      ]
+    },
+    {
+      "name": "Max Bouns Ability Points | 最大奖励能力点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "40FC07",
+          "on": "898048AE0100",
+          "off": "89B848AE0100"
+        }
+      ]
+    },
+    {
+      "name": "V Zone Gauge (Must Code) | V Zone 槽 (必须码)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "12C7B20",
+          "on": "4883F900750EC5FA11841164010000E937A731FF4881F980010000750EC5FA11841164010000E920A731FFC5FA11841164010000E912A731FFC78411640100000000C842C3",
+          "off": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "5E2262",
+          "on": "E9B958CE0090909090",
+          "off": "C5FA11841164010000"
+        }
+      ]
+    },
+    {
+      "name": "1P Max V Zone Gauge | 1P 满 V Zone 槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "12C7B26",
+          "on": "E82E00000090909090",
+          "off": "C5FA11841164010000"
+        }
+      ]
+    },
+    {
+      "name": "2P Max V Zone Gauge | 2P 满 V Zone 槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "12C7B3D",
+          "on": "E81700000090909090",
+          "off": "C5FA11841164010000"
+        }
+      ]
+    },
+    {
+      "name": "Empty 1P V Zone Gauge | 清空 1P V Zone 槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "12C7B26",
+          "on": "C784116401000000000000",
+          "off": "C5FA11841164010000"
+        }
+      ]
+    },
+    {
+      "name": "Empty 2P V Zone Gauge | 清空 2P V Zone 槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "12C7B3D",
+          "on": "C784116401000000000000",
+          "off": "C5FA11841164010000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Reddevil82"
+  ]
+}

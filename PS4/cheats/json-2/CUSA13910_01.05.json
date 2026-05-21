@@ -1,0 +1,4 @@
+{"name":"Sekiro™: Shadows Die Twice","id":"CUSA13910","version":"01.05","process":"eboot.bin","mods":[
+{"name":"无敌模式","type":"checkbox","memory":[{"offset":"3867800","on":"664183BE90010000057504E9DC21D9FD41898630010000E9D021D9FD","off":"00000000000000000000000000000000000000000000000000000000"},{"offset":"15F99E5","on":"E916DE26029090","off":"41898630010000"}]},
+{"name":"无限钱","type":"checkbox","memory":[{"offset":"386781C","on":"4189D641C7457CFFFF0000E99F69B2FD","off":"00000000000000000000000000000000"},{"offset":"138E1C4","on":"E953964D029090","off":"4189D64189557C"}]},
+{"name":"无限道具","type":"checkbox","memory":[{"offset":"108197E","on":"458920","off":"458938"}]}],"credits":["Talixme"]}

@@ -1,0 +1,43 @@
+{
+  "name": "LEGO® Star Wars™ : 天行者傳奇",
+  "id": "CUSA13820",
+  "version": "01.10",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "679FB90",
+          "on": "4183BC24C405000003750AC4C17A108C2478050000C4C17A118C2470050000E97AC556FA",
+          "off": "000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "D0C124",
+          "on": "E9673AA9059090909090",
+          "off": "C4C17A118C2470050000"
+        }
+      ]
+    },
+    {
+      "name": "Studs 999,000,000 | 钉子 999,000,000",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "679FBC0",
+          "on": "41C74518C0878B3B498BFFE9175908FC",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "28254E0",
+          "on": "E9DBA6F7039090",
+          "off": "498945184C89FF"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "DJFlameDat"
+  ]
+}

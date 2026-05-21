@@ -1,0 +1,82 @@
+{
+  "name": "Mobile Suit Gundam: Extreme VS. MaxiBoost ON (Premium Edition)",
+  "id": "CUSA15006",
+  "version": "01.15",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "GP 99999999 on Gain | GP 获得时 99999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "F06CA6",
+          "on": "75",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo Use | 弹药无限使用",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7A8382",
+          "on": "C5FA115720",
+          "off": "C5FA114F20"
+        },
+        {
+          "offset": "7A84F4",
+          "on": "9090",
+          "off": "7752"
+        }
+      ]
+    },
+    {
+      "name": "Max Player EX Gauge | 角色 EX 爆发槽满",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "F06CE2",
+          "on": "00",
+          "off": "0A"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Player Boost | 角色无限冲刺",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "F06CD6",
+          "on": "00",
+          "off": "0A"
+        }
+      ]
+    },
+    {
+      "name": "Player Health 999 | 角色机体生命值 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "F06CEE",
+          "on": "00",
+          "off": "0A"
+        }
+      ]
+    },
+    {
+      "name": "Enemy 1 Hit Kill | 敌机一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "F06D17",
+          "on": "750641BC9F860100",
+          "off": "EB0641BCE7030000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

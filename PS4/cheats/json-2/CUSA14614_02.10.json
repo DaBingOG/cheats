@@ -1,0 +1,321 @@
+{
+  "name": "DRAGON BALL Z: KAKAROT 七龙珠Z：卡卡洛特",
+  "id": "CUSA14614",
+  "version": "02.10",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite HP | 无限体力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ki | 无限气力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Tension Gauge | 满干劲量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CBE96D",
+          "on": "0F4EC090",
+          "off": "410F4EC7"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Can't Charge Ki | 敌人无法集气",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Combo | 最高连击数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items | 无限道具",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1155EF3",
+          "on": "909090",
+          "off": "4429F2"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Oxygen | 无限氧气",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF6",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+     {
+      "name": "Easy Max Friendship | 快速加满亲密度",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2006051",
+          "on": "F6",
+          "off": "F2"
+        }
+      ]
+    },
+    {
+      "name": "Max Community Level | 最高社群等级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "20063F5",
+          "on": "89D690",
+          "off": "0F4FF2"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 10 | 经验值 10 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5EF7F6F",
+          "on": "0A",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 100 | 经验值 100 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5EF7F6F",
+          "on": "64",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "Max EXP | 最大经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D4B74B",
+          "on": "C0",
+          "off": "C2"
+        }
+      ]
+    },
+    {
+      "name": "Zeni 9999999 | 索尼 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "All Z Orbs 999999 | 全Z珠 999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF7",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "D Medals & Items 900 | D奖牌和道具 900",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF8",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Maximum HP | 最大体力上限",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFF9",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "097AFF00",
+          "on": "000000D883D79741",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Maximum Ki | 最大气力上限",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFFA",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "097AFF10",
+          "on": "000000008087C340",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Max Total Melee ATK | 最大总格斗攻击力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFFB",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "097AFF20",
+          "on": "000000007E842E41",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Max Total Melee DEF | 最大总格斗防御力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFFC",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "097AFF30",
+          "on": "000000007E842E41",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Max Total Ki ATK | 最大总气功攻击力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFFD",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "097AFF40",
+          "on": "000000007E842E41",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Max Total Ki DEF | 最大总气功防御力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFFE",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "097AFF50",
+          "on": "000000007E842E41",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Max Total Critical Hit Rate | 最大总暴击率",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "097AFFFF",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "097AFF60",
+          "on": "000000008087C340",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Game Speed Multiply 2 | 游戏速度 2 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DD3D57",
+          "on": "0520609D07",
+          "off": "87BC040000"
+        }
+      ]
+    },
+    {
+      "name": "Game Speed Multiply 3 | 游戏速度 3 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DD3D57",
+          "on": "05B2F79C07",
+          "off": "87BC040000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Rizla"
+  ]
+}

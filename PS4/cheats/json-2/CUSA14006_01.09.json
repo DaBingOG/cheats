@@ -1,0 +1,14 @@
+{"name":"The Last of Us Part II/最后生还者：第二部","id":"CUSA14006","version":"01.09","process":"eboot.bin","mods":[
+{"name":"Infinite Health|无限生命值","type":"checkbox","memory":[{"offset":"04787FF3","on":"01","off":"00"}]},
+{"name":"Infinite Oxygen|无限氧气","type":"checkbox","memory":[{"offset":"014CEAD7","on":"4C39F3","off":"4885DB"}]},
+{"name":"One Hit Kill|一击必杀","type":"checkbox","memory":[{"offset":"04787FF2","on":"01","off":"00"}]},
+{"name":"Infinite Ammo|无限弹药","type":"checkbox","memory":[{"offset":"01A4E70D","on":"89C8","off":"29F8"}]},
+{"name":"No Reload|无需装弹","type":"checkbox","memory":[{"offset":"01A4DB71","on":"9090","off":"FFC8"}]},
+{"name":"NInfinite Item-Supplements-Parts Use|道具、零件、补充品使用不减","type":"checkbox","memory":[{"offset":"04787FF1","on":"01","off":"00"}]},
+{"name":"Item-Supplements-Parts Max on Gain|道具、零件、补充品获得时最大","type":"checkbox","memory":[{"offset":"011852EA","on":"89C290","off":"0F4FD0"}]},
+{"name":"Max Weapon Durability|武器耐久度最大维持","type":"checkbox","memory":[{"offset":"01A22B56","on":"9090","off":"29D0"}]},
+{"name":"Set Health Max 250|生命值上限最大","type":"checkbox","memory":[{"offset":"04787FF4","on":"01","off":"00"}]},
+{"name":"Press <L2+L3+R2> to Decrease Health|按<L2+L3+R2>减少生命值","type":"checkbox","memory":[{"offset":"04787FF5","on":"01","off":"00"}]},
+{"name":"Infinite EXTRAS Points Use|附件内容积分使用不减","type":"checkbox","memory":[{"offset":"0075B41B","on":"31D290","off":"4401E2"}]},
+{"name":"Activate Debug Menu|启用Debug Menu","type":"checkbox","memory":[{"offset":"04787FF0","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PS4/PC修改群: 1167084913,702196858）"]}

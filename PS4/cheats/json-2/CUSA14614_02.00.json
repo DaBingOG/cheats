@@ -1,0 +1,257 @@
+{
+  "name": "DRAGON BALL Z: KAKAROT 七龙珠Z：卡卡洛特",
+  "id": "CUSA14614",
+  "version": "02.00",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite HP | 无限体力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ki | 无限气力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Tension Gauge | 满干劲量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "B5831D",
+          "on": "0F4EC090",
+          "off": "410F4EC7"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Can't Charge Ki | 敌人无法集气",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Combo | 最高连击数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items | 无限道具",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "FC8083",
+          "on": "909090",
+          "off": "4429F2"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Oxygen | 无限氧气",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF6",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+     {
+      "name": "Easy Max Friendship | 快速加满亲密度",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1E0FE91",
+          "on": "F6",
+          "off": "F2"
+        }
+      ]
+    },
+    {
+      "name": "Max Community Level | 最高社群等级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1E10235",
+          "on": "89D690",
+          "off": "0F4FF2"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 10 | 经验值 10 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5C8E133",
+          "on": "0A",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 100 | 经验值 100 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5C8E133",
+          "on": "64",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "Max EXP | 最大经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "BE6EDB",
+          "on": "C0",
+          "off": "C2"
+        }
+      ]
+    },
+    {
+      "name": "Zeni 9999999 | 金钱 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "All Z Orbs 999999 | 全Z珠 999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF7",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "D Medals & Items 500 | D奖牌和道具数量 500",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF8",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Maximum HP | 最大体力上限",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FF9",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "09597F00",
+          "on": "000000D883D79741",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Maximum Ki | 最大气力上限",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FFA",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "09597F10",
+          "on": "000000008087C340",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Max Total Critical Hit Rate | 最大总暴击率",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09597FFB",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "09597F20",
+          "on": "000000008087C340",
+          "off": "0000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "Game Speed Multiply 2 | 游戏速度 2 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1BEF6C7",
+          "on": "0591009A07",
+          "off": "87BC040000"
+        }
+      ]
+    },
+    {
+      "name": "Game Speed Multiply 3 | 游戏速度 3 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1BEF6C7",
+          "on": "05C2B07807",
+          "off": "87BC040000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Rizla"
+  ]
+}

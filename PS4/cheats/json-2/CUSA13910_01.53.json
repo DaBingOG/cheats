@@ -1,0 +1,101 @@
+﻿{
+	"name": "只狼-影逝二度",
+	"id": "CUSA13910",
+	"version": "01.53",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "生命最大维持",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "F4A69D",
+					"on": "898030010000",
+					"off": "8B8030010000"
+				}
+			]
+		},
+		{
+			"name": "防御最大维持",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "1B00629",
+					"on": "89BE48010000",
+					"off": "8BBE48010000"
+				},
+				{
+					"offset": "182F7F2",
+					"on": "01D0",
+					"off": "29D0"
+				}
+			]
+		},
+		{
+			"name": "人物快速满级",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "11CD206",
+					"on": "909090",
+					"off": "0F4CCE"
+				}
+			]
+		},
+		{
+			"name": "物品使用无限",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "3AD3811",
+					"on": "4489FE83C663E9DAAF6DFD",
+					"off": "0000000000000000000000"
+				},
+				{
+					"offset": "11AE7F1",
+					"on": "E91B509202",
+					"off": "4489FE29C6"
+				}
+			]
+		},
+		{
+			"name": "金钱最大维持",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "14C448A",
+					"on": "909090",
+					"off": "0F4CC8"
+				}
+			]
+		},
+		{
+			"name": "攻击最大维持",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "3AD3800",
+					"on": "66C74744630066C747486300E91F846FFD",
+					"off": "0000000000000000000000000000000000"
+				},
+				{
+					"offset": "11CBC2A",
+					"on": "E9D17B900290",
+					"off": "034744035F48"
+				}
+			]
+		}
+	],
+	"credits": [
+		"Test"
+	]
+}  
+ 
+   
+   
+ 
+  
+   
+
+
+  
