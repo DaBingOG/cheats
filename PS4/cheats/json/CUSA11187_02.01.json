@@ -1,0 +1,147 @@
+{
+  "name": "Shadow of the Tomb Raider: Definitive Edition 古墓丽影：暗影 最终版",
+  "id": "CUSA11187",
+  "version": "02.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible Mode | 无敌模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1574037",
+          "on": "75",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Oxygen | 无限氧气",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E5973A",
+          "on": "C5E25FC0",
+          "off": "C5E25CC0"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo & Arrow | 无限弹药和箭矢",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1573F00",
+          "on": "66C7400CE703440FB7700CE9B4D14CFF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "A410BF",
+          "on": "E93C2EB300",
+          "off": "440FB7700C"
+        }
+      ]
+    },
+    {
+      "name": "No Reload | 无需装弹",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1574071",
+          "on": "00",
+          "off": "10"
+        }
+      ]
+    },
+    {
+      "name": "Rapid Fire | 快速射击",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "11F9A7C",
+          "on": "7200",
+          "off": "720B"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1573FF7",
+          "on": "74",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Stealth Mode | 隐身模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "B4E334",
+          "on": "7300",
+          "off": "7323"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Resources | 无限物品资源",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1573F40",
+          "on": "6683780C63770666C7400C63000FB7400C31D2E99082F1FF",
+          "off": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "148C1E2",
+          "on": "90E9587D0E00",
+          "off": "0FB7400C31D2"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Skill Points | 无限技能点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1220930",
+          "on": "9090",
+          "off": "29D1"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 4 | 经验值 4 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1573F28",
+          "on": "04",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Gold 30000 | 金块 30000",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1573F70",
+          "on": "66C7400C30750FB7400C31D2E935A3E5FF",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "13CE2B0",
+          "on": "90E9BA5C1A00",
+          "off": "0FB7400C31D2"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

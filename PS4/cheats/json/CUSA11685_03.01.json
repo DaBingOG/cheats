@@ -1,0 +1,120 @@
+{
+  "name": "JUMP FORCE JUMP 大乱斗",
+  "id": "CUSA11685",
+  "version": "03.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限 HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38C7A12",
+          "on": "C5FA10482C",
+          "off": "C5FA114828"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38C7A21",
+          "on": "0F57C99090",
+          "off": "C5FA114828"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ability Gauge | 无限气力槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38C7A37",
+          "on": "C4C17A104834",
+          "off": "C4C17A114830"
+        }
+      ]
+    },
+    {
+      "name": "Empty Opponent's Ability Gauge | 清空对手气力槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38C7A48",
+          "on": "0F57C9909090",
+          "off": "C4C17A114830"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Awaken Gauge | 无限觉醒槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38C7A60",
+          "on": "C4C17A105044",
+          "off": "C4C17A115040"
+        }
+      ]
+    },
+    {
+      "name": "Empty Opponent's Awaken Gauge | 清空对手觉醒槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38C7A71",
+          "on": "0F57D2909090",
+          "off": "C4C17A115040"
+        }
+      ]
+    },
+    {
+      "name": "Max Money | 最大金钱 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38C7AA0",
+          "on": "488B8098070000C7401C7F969800448B501CE9AB28E0FF",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "36CA357",
+          "on": "E944D71F00909090909090",
+          "off": "488B8098070000448B501C"
+        }
+      ]
+    },
+    {
+      "name": "Max Items | 最大道具数量 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38C7AD7",
+          "on": "66C744D104E7030FB744D104E9D12FE0FF",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "36CAAB4",
+          "on": "E91ED01F00",
+          "off": "0FB744D104"
+        }
+      ]
+    },
+    {
+      "name": "Freeze Timer | 锁定对战时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "35BA315",
+          "on": "9090909090909090",
+          "off": "C5FA118314010000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Reddevil82"
+  ]
+}

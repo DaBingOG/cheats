@@ -1,0 +1,8 @@
+{"name":"Metal Slug XX 合金弹头 XX","id":"CUSA11740","version":"01.00","process":"eboot.bin","mods":[
+{"name":"Misson Time Max 任务时间最大","type":"checkbox","memory":[{"offset":"003BFF05","on":"01","off":"00"}]},
+{"name":"Player Invincible 无敌状态","type":"checkbox","memory":[{"offset":"003BFF00","on":"01","off":"00"}]},
+{"name":"Infinite Lives 无限命数","type":"checkbox","memory":[{"offset":"003BFF01","on":"01","off":"00"}]},
+{"name":"Infinite Weapon 无限弹药和炸弹","type":"checkbox","memory":[{"offset":"003BFF02","on":"01","off":"00"}]},
+{"name":"Rapid Fire 快速射击","type":"checkbox","memory":[{"offset":"003BFF04","on":"01","off":"00"}]},
+{"name":"Always Use Leona 总是使用莉安娜","type":"checkbox","memory":[{"offset":"003BFF03","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PLAYSTATION/PC修改讨论群:1167084913）"]}

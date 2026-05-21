@@ -1,0 +1,23 @@
+{
+    "name":"重装机兵",
+    "id":"CUSA11432",
+    "version":"01.03",
+    "process":"eboot.bin",
+    "mods":
+        [
+            {
+                "name":"掉落物能三星的就三星！",
+                "type":"checkbox",
+                "memory":
+                    [
+                        {
+                            "offset":"62098",
+                            "on":"5DB8C645BF03908A",
+                            "off":"5DB8C645BF03908A"
+                        }
+                    ]
+            },
+
+        ],
+    "credits":["Shuee"]
+}

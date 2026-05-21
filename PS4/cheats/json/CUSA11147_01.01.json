@@ -1,0 +1,13 @@
+{"name":"Onimusha: Warlords 鬼武者：重制版","id":"CUSA11147","version":"01.01","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"26A467","on":"BAFF000000909090","off":"66418B95DEB90000"}]},
+{"name":"Infinite Vitality | 无限体力","type":"checkbox","memory":[{"offset":"275256","on":"9090","off":"29C1"}]},
+{"name":"Infinite Magic Power | 无限鬼力","type":"checkbox","memory":[{"offset":"270B23","on":"31C99090","off":"0FB60C0A"},{"offset":"270E97","on":"31C99090","off":"0FB60C0A"},{"offset":"271059","on":"31C99090","off":"0FB60C0A"}]},
+{"name":"Critical Hit | 一闪攻击","type":"checkbox","memory":[{"offset":"276B11","on":"80","off":"00"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"976C9","on":"66B8FF7F90","off":"E872000000"}]},
+{"name":"Infinite Items Use | 无限道具使用","type":"checkbox","memory":[{"offset":"CE4F7","on":"8A","off":"88"},{"offset":"2D97DD","on":"8A","off":"88"}]},
+{"name":"Save Count Always 1 | 保存次数总是 1 次","type":"checkbox","memory":[{"offset":"2BD240","on":"4531DB9090909090","off":"440FB79B80A70000"}]},
+{"name":"Infinite Puzzle Boxes Moves | 旋转数字宝箱剩余次数不减","type":"checkbox","memory":[{"offset":"2CEA72","on":"9090","off":"FFC8"}]},
+{"name":"Infinite Crest Puzzle Time | 家徽拼图无限时间","type":"checkbox","memory":[{"offset":"2B4594","on":"31","off":"FF"}]},
+{"name":"Red Soul Gauge Counter 99 | 红色魂量表总数 99","type":"checkbox","memory":[{"offset":"B669","on":"90","off":"88"}]},
+{"name":"Red Souls 99999 | 红色魂 99999","type":"checkbox","memory":[{"offset":"B651","on":"90","off":"88"}]}
+],"credits":["Fullcodes"]}

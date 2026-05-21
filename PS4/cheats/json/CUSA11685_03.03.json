@@ -1,0 +1,110 @@
+{
+  "name": "JUMP FORCE JUMP 大乱斗",
+  "id": "CUSA11685",
+  "version": "03.03",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0586BFF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0586BFF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ability Gauge | 无限气力槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0586BFF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Empty Opponent's Ability Gauge | 清空对手气力槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0586BFF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Awaken Gauge | 无限觉醒槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0586BFF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Empty Opponent's Awaken Gauge | 清空对手觉醒槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0586BFF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Freeze Timer | 锁定对战时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "35BD5F5",
+          "on": "9090909090909090",
+          "off": "C5FA118314010000"
+        }
+      ]
+    },
+    {
+      "name": "Money 9999999 | 金钱 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0586BFF6",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Items 900 | 道具数量 900",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0586BFF7",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Reddevil82"
+  ]
+}

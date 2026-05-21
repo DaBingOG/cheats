@@ -1,0 +1,91 @@
+{
+  "name": "子弹少女：幻想曲",
+  "id": "CUSA11435",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "exp mul 10/十倍经验",
+      "description": "在第二次任务结算时才生效",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "A7F000",
+          "on": "6BC00A89840A5C010000E90FE378FF",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "20D317",
+          "on": "E9E41C87009090",
+          "off": "89840A5C010000"
+        }
+      ]
+    },
+    {
+      "name": "infinite ammo/无限子弹",
+      "description": "子弹不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "A7F020",
+          "on": "4981FB000040000F8CDF6A58FFFF8B44080000E9D46A58FF",
+          "off": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "5B06",
+          "on": "E91595A70090",
+          "off": "FF8B44080000"
+        }
+      ]
+    },
+    {
+      "name": "infinite hp/无限HP",
+      "description": "infinite hp/无限HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "A7F040",
+          "on": "4189C681FCB0A5FFEE0F8457CD6FFF4401F9E94FCD6FFF",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "17BDA0",
+          "on": "E99B32900090",
+          "off": "4189C64401F9"
+        }
+      ]
+    },
+    {
+      "name": "infinite skill point/无限技能点数",
+      "description": "infinite skill point/无限技能点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D4EB2",
+          "on": "909090",
+          "off": "41FFCF"
+        }
+      ]
+    },
+    {
+      "name": "max money/金钱最大",
+      "description": "在进任务菜单与商店切换时生效",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "A7F060",
+          "on": "BE7F96980089B0F4BF0000E94B607CFF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "2450B5",
+          "on": "E9A69F830090",
+          "off": "8BB0F4BF0000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "allyzc"
+  ]
+}

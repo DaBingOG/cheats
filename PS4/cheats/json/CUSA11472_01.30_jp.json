@@ -1,0 +1,6 @@
+{"name":"DEAD OR ALIVE 6 死或生6","id":"CUSA11472","version":"01.30","process":"eboot.bin","mods":[
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"1440B38","on":"9090","off":"29C1"}]},
+{"name":"Max Break Gauge | 满崩解槽","type":"checkbox","memory":[{"offset":"15F0A10","on":"410F45D84180BF94000000007509B9C800000041894F20E9B16DEFFF","off":"00000000000000000000000000000000000000000000000000000000"},{"offset":"14E77D5","on":"E936921000909090","off":"410F45D841894F20"}]},
+{"name":"Unlock All Costumes | 解锁全部服装","type":"checkbox","memory":[{"offset":"704583","on":"EB08","off":"7508"}]},
+{"name":"Unlock All Hairstyles | 解锁全部发型","type":"checkbox","memory":[{"offset":"5F3A49","on":"EB08","off":"7508"}]}
+],"credits":["Aran & eisky"]}
