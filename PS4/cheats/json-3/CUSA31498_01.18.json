@@ -1,0 +1,18 @@
+{"name":"Street Fighter 6 街头霸王6","id":"CUSA31498","version":"01.18","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"12A8BFE0","on":"01","off":"00"}]},
+{"name":"Infinite Vitality Gauge | 无限生命槽","type":"checkbox","memory":[{"offset":"12A8BFE1","on":"01","off":"00"}]},
+{"name":"Infinite Focus Gauge | 无限斗气槽","type":"checkbox","memory":[{"offset":"12A8BFE2","on":"01","off":"00"}]},
+{"name":"Infinite SA Gauge | 无限超必杀槽","type":"checkbox","memory":[{"offset":"12A8BFE3","on":"01","off":"00"}]},
+{"name":"Empty Opponent's Focus Gauge | 清空对手斗气槽","type":"checkbox","memory":[{"offset":"12A8BFE5","on":"01","off":"00"}]},
+{"name":"Empty Opponent's SA Gauge | 清空对手超必杀槽","type":"checkbox","memory":[{"offset":"12A8BFE4","on":"01","off":"00"}]},
+{"name":"999 Hits | 999 连击","type":"checkbox","memory":[{"offset":"12A8BFE7","on":"01","off":"00"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"12A8BFE6","on":"01","off":"00"}]},
+{"name":"Infinite Items | 无限物品","type":"checkbox","memory":[{"offset":"12A8BFED","on":"01","off":"00"}]},
+{"name":"Infinite Tickets | 无限机票","type":"checkbox","memory":[{"offset":"12A8BFEE","on":"01","off":"00"}]},
+{"name":"Infinite Zenny | 无限 Z 币","type":"checkbox","memory":[{"offset":"3E27991","on":"909090","off":"4429F1"}]},
+{"name":"Infinite Skill Points | 无限技能点数","type":"checkbox","memory":[{"offset":"12A8BFEA","on":"01","off":"00"}]},
+{"name":"EXP Multiply 10 | 经验值 10 倍","type":"checkbox","memory":[{"offset":"12A8BFE8","on":"01","off":"00"}]},
+{"name":"Max EXP | 最大经验值","type":"checkbox","memory":[{"offset":"12A8BFE9","on":"01","off":"00"}]},
+{"name":"Max Style EXP | 最大风格经验值","type":"checkbox","memory":[{"offset":"12A8BFEB","on":"01","off":"00"}]},
+{"name":"Max Bond | 最大交情","type":"checkbox","memory":[{"offset":"12A8BFEC","on":"01","off":"00"}]}
+],"credits":["Fullcodes"]}

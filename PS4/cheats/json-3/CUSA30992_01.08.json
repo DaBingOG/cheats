@@ -1,0 +1,104 @@
+{
+  "name": "Teenage Mutant Ninja Turtles: Shredder's Revenge 忍者神龟：施莱德的复仇",
+  "id": "CUSA30992",
+  "version": "01.08",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Lives | 无限命数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D4C7DD",
+          "on": "4489E09090",
+          "off": "E8DEDD97FF"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Health | 无限生命值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D8D9A9",
+          "on": "D6",
+          "off": "C6"
+        }
+      ]
+    },
+    {
+      "name": "Instant Full Ninja Power | 瞬间充满忍者能量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D42B64",
+          "on": "63",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "Max Ninja Power Level | 最大忍者能量等级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D4C243",
+          "on": "B809000000",
+          "off": "E828CD31FF"
+        },
+        {
+          "offset": "D4C275",
+          "on": "B809000000",
+          "off": "E846E397FF"
+        }
+      ]
+    },
+    {
+      "name": "Invulnerable & One Hit Kill | 无敌模式 & 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "40B1992",
+          "on": "75",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "High Speed | 高速移动",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "40B19AE",
+          "on": "A040",
+          "off": "803F"
+        }
+      ]
+    },
+    {
+      "name": "Hits Multiply 10 | 连击数 10 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D42AF6",
+          "on": "0A",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "Hits Multiply 100 | 连击数 100 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D42AF6",
+          "on": "64",
+          "off": "01"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

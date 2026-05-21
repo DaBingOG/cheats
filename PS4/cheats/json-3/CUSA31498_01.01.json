@@ -1,0 +1,18 @@
+{"name":"Street Fighter 6 街头霸王6","id":"CUSA31498","version":"01.01","process":"eboot.bin","mods":[
+{"name":"God Mode/Ignore Hist 无敌模式","type":"checkbox","memory":[{"offset":"11857FE0","on":"01","off":"00"}]},
+{"name":"Infinite Vitality Gauge 无限生命槽","type":"checkbox","memory":[{"offset":"11857FE1","on":"01","off":"00"}]},
+{"name":"Infinite Focus Gauge 无限斗气槽","type":"checkbox","memory":[{"offset":"11857FE2","on":"01","off":"00"}]},
+{"name":"Infinite SA Gauge 无限超必杀槽","type":"checkbox","memory":[{"offset":"11857FE3","on":"01","off":"00"}]},
+{"name":"999 Hits 999连击","type":"checkbox","memory":[{"offset":"11857FE7","on":"01","off":"00"}]},
+{"name":"Empty Opponent Focus Gauge 清空对手斗气槽","type":"checkbox","memory":[{"offset":"11857FE5","on":"01","off":"00"}]},
+{"name":"Empty Opponent SA Gauge 清空对手超必杀槽","type":"checkbox","memory":[{"offset":"11857FE4","on":"01","off":"00"}]},
+{"name":"One Hit Kill 一击必杀","type":"checkbox","memory":[{"offset":"11857FE6","on":"01","off":"00"}]},
+{"name":"Infinite Zenny Use 无限Z币使用","type":"checkbox","memory":[{"offset":"02435D81","on":"909090","off":"4429F1"}]},
+{"name":"Infinite Item Use 无限物品使用","type":"checkbox","memory":[{"offset":"11857FED","on":"909090","off":"4429F1"}]},
+{"name":"Infinite Tickets Use 无限机票使用","type":"checkbox","memory":[{"offset":"11857FEE","on":"909090","off":"4429F1"}]},
+{"name":"EXP Multi 5 on Add 经验值5倍增加","type":"checkbox","memory":[{"offset":"11857FE8","on":"01","off":"00"}]},
+{"name":"EXP Max on Add 经验值最大增加","type":"checkbox","memory":[{"offset":"11857FE9","on":"01","off":"00"}]},
+{"name":"Infinite Skill Point Use 无限技能点数使用","type":"checkbox","memory":[{"offset":"11857FEA","on":"01","off":"00"}]},
+{"name":"Style EXP Max on Add 风格经验值最大获得","type":"checkbox","memory":[{"offset":"11857FEB","on":"01","off":"00"}]},
+{"name":"Bond Max on Add 交情增加时最大","type":"checkbox","memory":[{"offset":"11857FEC","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PLAYSTATION/PC修改讨论群:1167084913）"]}

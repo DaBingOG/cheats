@@ -1,0 +1,16 @@
+{"name":"Eiyuden Chronicle: Hundred Heroes 百英雄传","id":"CUSA29566","version":"01.08","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"section":"0","offset":"88317FE0","on":"01","off":"00"}]},
+{"name":"Infinite HP | 无限 HP","type":"checkbox","memory":[{"section":"0","offset":"88317FE1","on":"01","off":"00"}]},
+{"name":"Infinite MP | 无限 MP","type":"checkbox","memory":[{"section":"0","offset":"88317FE2","on":"01","off":"00"}]},
+{"name":"Max SP | 最大 SP","type":"checkbox","memory":[{"section":"0","offset":"88317FE3","on":"01","off":"00"}]},
+{"name":"No Random Encounter | 不遇敌","type":"checkbox","memory":[{"section":"0","offset":"88317FE6","on":"01","off":"00"}]},
+{"name":"Fast Random Encounter | 快速遇敌","type":"checkbox","memory":[{"section":"0","offset":"88317FE7","on":"01","off":"00"}]},
+{"name":"Movement Speed Multiply 2 | 移动速度 2 倍","type":"checkbox","memory":[{"section":"0","offset":"88317FE9","on":"01","off":"00"}]},
+{"name":"Movement Speed Multiply 3 | 移动速度 3 倍","type":"checkbox","memory":[{"section":"0","offset":"88317FEA","on":"01","off":"00"}]},
+{"name":"Movement Speed Multiply 4 | 移动速度 4 倍","type":"checkbox","memory":[{"section":"0","offset":"88317FEB","on":"01","off":"00"}]},
+{"name":"Always Level Up +1 | 总是升级 +1 级","type":"checkbox","memory":[{"section":"0","offset":"88317FEC","on":"01","off":"00"}]},
+{"name":"Always Level Up +2 | 总是升级 +2 级","type":"checkbox","memory":[{"section":"0","offset":"88317FED","on":"01","off":"00"}]},
+{"name":"Always Level Up +5 | 总是升级 +5 级","type":"checkbox","memory":[{"section":"0","offset":"88317FEE","on":"01","off":"00"}]},
+{"name":"Money 99,999,999 | 金钱 99,999,999","type":"checkbox","memory":[{"section":"0","offset":"88317FE5","on":"01","off":"00"}]},
+{"name":"Zero Play Time | 游戏时间清零","type":"checkbox","memory":[{"section":"0","offset":"88317FE8","on":"01","off":"00"}]}
+],"credits":["Fullcodes"]}

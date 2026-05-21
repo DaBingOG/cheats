@@ -1,0 +1,16 @@
+{"name":"Eiyuden Chronicle: Hundred Heroes 百英雄传","id":"CUSA29566_00","version":"01.03","process":"eboot.bin","mods":[
+{"name":"God Mode/Ignore Hits 无敌模式/无视伤害判定","type":"checkbox","memory":[{"offset":"8773FFE0","on":"01","off":"00"}]},
+{"name":"Infinite HP 无限HP","type":"checkbox","memory":[{"offset":"8773FFE1","on":"01","off":"00"}]},
+{"name":"Infinite MP 无限MP","type":"checkbox","memory":[{"offset":"8773FFE2","on":"01","off":"00"}]},
+{"name":"Max SP 最大SP","type":"checkbox","memory":[{"offset":"8773FFE3","on":"01","off":"00"}]},
+{"name":"Move Speed Multiplier 2.5 移动速度2.5倍","type":"checkbox","memory":[{"offset":"8773FFEA","on":"01","off":"00"}]},
+{"name":"Move Speed Multiplier 5.0 移动速度5倍","type":"checkbox","memory":[{"offset":"8773FFEB","on":"01","off":"00"}]},
+{"name":"One Hit Kills 一击必杀","type":"checkbox","memory":[{"offset":"8773FFE4","on":"01","off":"00"}]},
+{"name":"Money 99,999,999 on Gain 金钱获得时99,999,999","type":"checkbox","memory":[{"offset":"8773FFE5","on":"01","off":"00"}]},
+{"name":"Add XP Multiplier 2 经验2倍增加","type":"checkbox","memory":[{"offset":"8773FFEC","on":"01","off":"00"}]},
+{"name":"Add XP Multiplier 20 经验20倍增加","type":"checkbox","memory":[{"offset":"8773FFED","on":"01","off":"00"}]},
+{"name":"Add XP Multiplier 200 经验200倍增加","type":"checkbox","memory":[{"offset":"8773FFEE","on":"01","off":"00"}]},
+{"name":"Zero Playtime 游戏时间清零","type":"checkbox","memory":[{"offset":"8773FFE9","on":"01","off":"00"}]},
+{"name":"No Encounter 不遇敌","type":"checkbox","memory":[{"offset":"8773FFE6","on":"01","off":"00"}]},
+{"name":"Always Encounter 始终遇敌","type":"checkbox","memory":[{"offset":"8773FFE7","on":"01","off":"00"}]},
+],"credits":["Fullcodes"]}

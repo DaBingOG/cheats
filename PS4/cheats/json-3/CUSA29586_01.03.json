@@ -1,0 +1,13 @@
+{"name":"Eiyuden Chronicle: Rising 百英雄传：崛起","id":"CUSA29586","version":"01.03","process":"eboot.bin","mods":[
+{"name":"Infinite Health | 无限生命值","type":"checkbox","memory":[{"section":"0","offset":"81933FF0","on":"01","off":"00"}]},
+{"name":"Max Health | 最大生命值","type":"checkbox","memory":[{"section":"0","offset":"81933FF4","on":"01","off":"00"}]},
+{"name":"Max Physical Attack Power | 最大物理攻击力","type":"checkbox","memory":[{"section":"0","offset":"81933FF5","on":"01","off":"00"}]},
+{"name":"Max Physical Defense Power | 最大物理防御力","type":"checkbox","memory":[{"section":"0","offset":"81933FF6","on":"01","off":"00"}]},
+{"name":"Max Magic Defense Power | 最大魔法防御力","type":"checkbox","memory":[{"section":"0","offset":"81933FF7","on":"01","off":"00"}]},
+{"name":"Critical Hit Rate 100%% | 暴击率 100%%","type":"checkbox","memory":[{"section":"0","offset":"81933FF8","on":"01","off":"00"}]},
+{"name":"Max Luck | 最大运气值","type":"checkbox","memory":[{"section":"0","offset":"81933FF9","on":"01","off":"00"}]},
+{"name":"Max EXP | 最大经验值","type":"checkbox","memory":[{"section":"0","offset":"81933FF3","on":"01","off":"00"}]},
+{"name":"EXP Multiply 10 | 经验值 10 倍","type":"checkbox","memory":[{"section":"0","offset":"81933FF1","on":"01","off":"00"}]},
+{"name":"EXP Multiply 100 | 经验值 100 倍","type":"checkbox","memory":[{"section":"0","offset":"81933FF2","on":"01","off":"00"}]},
+{"name":"Baqua 999999 | 巴库币 999999","type":"checkbox","memory":[{"section":"0","offset":"81933FFA","on":"01","off":"00"}]}
+],"credits":["Dreamcast2"]}

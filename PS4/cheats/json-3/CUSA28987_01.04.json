@@ -1,0 +1,181 @@
+{
+  "name": "FATAL FRAME: Maiden of Black Water 零 ～濡鴉之巫女～",
+  "id": "CUSA28987",
+  "version": "01.04",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "FD1C08",
+          "on": "00",
+          "off": "0C"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items Use | 物品使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3DE4DD",
+          "on": "89CA90",
+          "off": "8D51FF"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Films Use | 胶卷使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3DF54B",
+          "on": "8BF790",
+          "off": "8D77FF"
+        }
+      ]
+    },
+    {
+      "name": "Camera Instant Recharge | 相机瞬间充能",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4CC7F4",
+          "on": "5F",
+          "off": "5D"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Special Shots Charge | 无限强化镜头充能",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "FD1C32",
+          "on": "48",
+          "off": "4C"
+        }
+      ]
+    },
+    {
+      "name": "Always Keep Body Dry | 始终维持身体干燥状态",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "FD1C60",
+          "on": "D9EED99F6C050000E9A33351FF",
+          "off": "00000000000000000000000000"
+        },
+        {
+          "offset": "8CD6D6",
+          "on": "E885457000",
+          "off": "E83579C1FF"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D3E26",
+          "on": "9031DB",
+          "off": "0F4ED8"
+        }
+      ]
+    },
+    {
+      "name": "Max Score | 最高分数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D6AA7",
+          "on": "C5FA10055D0CBD0090",
+          "off": "C4C17A588548010000"
+        }
+      ]
+    },
+    {
+      "name": "Mission Time Zero | 任务时间为零",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "579CF4",
+          "on": "C8",
+          "off": "D0"
+        }
+      ]
+    },
+    {
+      "name": "Hold R1 to Through Wall | 按住 R1 穿墙",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "FD1CFF",
+          "on": "75",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Hold L2 to High Speed Run | 按住 L2 高速奔跑",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4E51B7",
+          "on": "0594E197",
+          "off": "87A80600"
+        }
+      ]
+    },
+    {
+      "name": "pts. 99999999 on Use | 点数使用后 99999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3DDC91",
+          "on": "EB",
+          "off": "7D"
+        }
+      ]
+    },
+    {
+      "name": "Denoise | 去除噪点",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "64E5F0",
+          "on": "C3",
+          "off": "55"
+        }
+      ]
+    },
+    {
+      "name": "Remove Box-Shadow | 去除边框阴影",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "640E58",
+          "on": "C5E057DB90909090",
+          "off": "C5EA591DB0158C00"
+        }
+      ]
+    },
+    {
+      "name": "Won't Turn Around Automatically | 不会自动转身",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "294B6",
+          "on": "9090909090",
+          "off": "E8C5772E00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

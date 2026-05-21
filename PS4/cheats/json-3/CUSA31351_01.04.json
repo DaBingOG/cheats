@@ -1,0 +1,244 @@
+{
+  "name": "CRISIS CORE –FINAL FANTASY VII– REUNION 最终幻想7：核心危机 重聚",
+  "id": "CUSA31351",
+  "version": "01.04",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible Mode | 无敌模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite HP in Combat | 战斗中无限 HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite MP in Combat | 战斗中无限 MP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite AP in Combat | 战斗中无限 AP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "SP 99999999 in Combat | 战斗中 SP 99999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items Use | 道具使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00D207EE",
+          "on": "9090",
+          "off": "FFC8"
+        }
+      ]
+    },
+    {
+      "name": "D.M.W EMOTION Max | D.M.W 情绪最大化",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF9",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "D.M.W Limit HEAVENLY | D.M.W 极限计量表最高等级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF8",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Buster Sword Proficiency | 毁灭剑熟练度最大",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFE3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+
+
+    {
+      "name": "Unlock Materia Fusion | 开启魔晶石合成",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFFC",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Unlock 6 Materia Slots | 可装备 6 个魔晶石",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFFD",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Materia Level 5 | 魔晶石等级最高",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFE1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Materia Value + 999 | 魔晶石附加值 + 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFE2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multi 100 on Gain | 经验值 100 倍获得",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFFA",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "EXP Max on Gain | 经验值获得后最大",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFFB",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Gil 99,999,999 | 金钱 99,999,999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF6",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Reset Play Time | 重置游戏时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFF7",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Unlock D.M.W Characters | 解锁 D.M.W 人物",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFFE",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Unlock All Missions | 解锁全部任务",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFFF",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Complete All Missions | 完成全部任务",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "090AFFE0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

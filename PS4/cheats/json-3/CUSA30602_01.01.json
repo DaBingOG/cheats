@@ -1,0 +1,86 @@
+{
+  "name": "Neptunia x SENRAN KAGURA -Ninja Wars- 閃亂忍忍忍者大戰戰機少女 -少女們的響艷-",
+  "id": "CUSA30602",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite HP & Stamina Gauge | 无限 HP 和气力槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "8EE490",
+          "on": "80BBAC02000002750AC5FA10430CE9CF1A87FFC5FA114308E9C51A87FF",
+          "off": "0000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "15FF6D",
+          "on": "E91EE57800",
+          "off": "C5FA114308"
+        }
+      ]
+    },
+    {
+      "name": "Max Ninja Weapon Gauge | 满忍具槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "8EE500",
+          "on": "B8090000008903498BDCE99F3D8AFF",
+          "off": "000000000000000000000000"
+        },
+        {
+          "offset": "1922A9",
+          "on": "E952C27500",
+          "off": "89034C89E3"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items | 无限道具",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "BD025",
+          "on": "90909090",
+          "off": "6641891F"
+        }
+      ]
+    },
+    {
+      "name": "Max EXP | 最大经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "8EE4C0",
+          "on": "C783100900007F969800E9D89E89FF",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "1883A0",
+          "on": "E91B6176009090",
+          "off": "4489B310090000"
+        }
+      ]
+    },
+    {
+      "name": "Coins 9999999 | 金币 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "8EE4E0",
+          "on": "BA7F969800E945137DFF",
+          "off": "00000000000000000000"
+        },
+        {
+          "offset": "BF829",
+          "on": "E9B2EC820090",
+          "off": "81F940420F00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "2B & Wander"
+  ]
+}

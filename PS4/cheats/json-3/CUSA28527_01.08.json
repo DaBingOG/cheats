@@ -1,0 +1,15 @@
+{"name":"艾尔登法环 Elden Ring","id":"CUSA28863","version":"01.08","process":"eboot.bin","mods":[
+{"name":"Runes Held 999999999 卢恩 999999999","type":"checkbox","memory":[{"offset":"0136FE30","on":"4889CF90","off":"480F4FF9"}]},
+{"name":"Infinite Runes Use 卢恩使用不减","type":"checkbox","memory":[{"offset":"014CB8BA","on":"909090","off":"89486C"}]},
+{"name":"Not Lose Runes When Dying 死亡不失去卢恩","type":"checkbox","memory":[{"offset":"0126D903","on":"9090909090909090","off":"41C7466C00000000"}]},
+{"name":"Infinite Item Use 无限道具使用","type":"checkbox","memory":[{"offset":"00DE466A","on":"9090909090","off":"E8A1E1FFFF"}]},
+{"name":"Infinite Arrow Use 无限箭矢使用","type":"checkbox","memory":[{"offset":"01356115","on":"9090909090","off":"E876479201"}]},
+{"name":"Player Invulnerable 角色无敌状态","type":"checkbox","memory":[{"offset":"02F48B0E","on":"75","off":"eb"}]},
+{"name":"Infinite Player Health 角色无限血量","type":"checkbox","memory":[{"offset":"02F48017","on":"00","off":"0C"}]},
+{"name":"Infinite Player FP 角色无限专注值","type":"checkbox","memory":[{"offset":"02F48025","on":"00","off":"0C"}]},
+{"name":"Infinite Player Stamina 角色无限精力","type":"checkbox","memory":[{"offset":"2F48033","on":"00","off":"0C"}]},
+{"name":"Equip Load Maximum 10000.0 装备重量上限 10000.0","type":"checkbox","memory":[{"offset":"0150F608","on":"64","off":"68"}]},
+{"name":"Infinite Player Jump 角色无限跳","type":"checkbox","memory":[{"offset":"011096DA","on":"01","off":"00"}]},
+{"name":"Press <CIRCLE> Player Super Speed Dash 角色按<圆圈>高速冲刺","type":"checkbox","memory":[{"offset":"02f48A5C","on":"75","off":"EB"}]},
+{"name":"Drop Rate 100 掉宝率100","type":"checkbox","memory":[{"offset":"02F4850F","on":"01","off":"00"}]}
+],"credits":[" 原作者：Fullcodes 淘宝刚刚好电玩整合 客服微信：DDYY770880"]}

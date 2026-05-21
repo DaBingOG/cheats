@@ -1,0 +1,22 @@
+{"name":"Elden Ring 艾尔登法环","id":"CUSA28527","version":"01.15","process":"eboot.bin","mods":[
+{"name":"God Mod/Ignore Hits 无敌模式","type":"checkbox","memory":[{"offset":"047CBFD3","on":"01","off":"00"}]},
+{"name":"Infinite HP 无限血量","type":"checkbox","memory":[{"offset":"047CBFD0","on":"01","off":"00"}]},
+{"name":"Infinite FP 无限专注值","type":"checkbox","memory":[{"offset":"047CBFD1","on":"01","off":"00"}]},
+{"name":"Infinite Stamina 无限精力","type":"checkbox","memory":[{"offset":"047CBFD2","on":"01","off":"00"}]},
+{"name":"One Hit Kill 一击必杀","type":"checkbox","memory":[{"offset":"047CBFD5","on":"01","off":"00"}]},
+{"name":"Max Equip Load 10000.0 装备重量上限 10000.0","type":"checkbox","memory":[{"offset":"01534EB8","on":"64","off":"68"}]},
+{"name":"Immunity Against All 全免疫状态","type":"checkbox","memory":[{"offset":"047CBFE3","on":"01","off":"00"}]},
+{"name":"Drop Rate 100 掉宝率100","type":"checkbox","memory":[{"offset":"047CBFE4","on":"01","off":"00"}]},
+{"name":"Dash Speed Multi 2.5 冲刺速度2.5倍","type":"checkbox","memory":[{"offset":"047CBFE0","on":"01","off":"00"}]},
+{"name":"Stealth Mode 隐身模式","type":"checkbox","memory":[{"offset":"047CBFE8","on":"01","off":"00"}]},
+{"name":"Hold <L1+L3> to Fly UP, <L2+L3> to Fly Down 按住 <L1+L3>向上, <L2+L3>向下","type":"checkbox","memory":[{"offset":"047CBFE1","on":"01","off":"00"}]},
+{"name":"Freeze Enemy 锁住敌人","type":"checkbox","memory":[{"offset":"047CBFE2","on":"01","off":"00"}]},
+{"name":"Runes Held 999999999 卢恩 999999999","type":"checkbox","memory":[{"offset":"047CBFD6","on":"01","off":"00"}]},
+{"name":"Not Lose Runes When Dying 死亡不失去卢恩","type":"checkbox","memory":[{"offset":"047CBFDF","on":"01","off":"00"}]},
+{"name":"Infinite Item Use 无限道具使用","type":"checkbox","memory":[{"offset":"047CBFE5","on":"01","off":"00"}]},
+{"name":"Ignore Smithing Required 无视锻造需求","type":"checkbox","memory":[{"offset":"047CBFE6","on":"01","off":"00"}]},
+{"name":"Ignore Crafting Required 无视制作需求","type":"checkbox","memory":[{"offset":"047CBFE7","on":"01","off":"00"}]},
+{"name":"Vigor 99 生命力 99","type":"checkbox","memory":[{"offset":"047CBFD7","on":"01","off":"00"}]},
+{"name":"Mind 99 集中力 99","type":"checkbox","memory":[{"offset":"047CBFD8","on":"01","off":"00"}]},
+{"name":"Endurance 99 耐力 99","type":"checkbox","memory":[{"offset":"047CBFD9","on":"01","off":"00"}]}
+],"credits":["Fullcodes  PC/PS游戏修改交流: 一群 1167084913  二群 702196858"]}

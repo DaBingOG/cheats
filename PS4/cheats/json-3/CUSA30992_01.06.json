@@ -1,0 +1,109 @@
+{
+  "name": "Teenage Mutant Ninja Turtles: Shredder's Revenge 忍者神龟：施莱德的复仇",
+  "id": "CUSA30992",
+  "version": "01.06",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Lives | 无限命数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D00D81",
+          "on": "4489E09090",
+          "off": "E84A139CFF"
+        }
+      ]
+    },
+    {
+      "name": "Invulnerable | 无敌模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3E2D0F7",
+          "on": "75",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Health | 无限生命值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D3755B",
+          "on": "D6",
+          "off": "C6"
+        }
+      ]
+    },
+    {
+      "name": "Instant Full Ninja Power | 瞬间充满忍者能量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "C93FA1",
+          "on": "63",
+          "off": "01"
+        },
+        {
+          "offset": "D0089E",
+          "on": "B809000000",
+          "off": "E85DA236FF"
+        },
+        {
+          "offset": "D008D1",
+          "on": "B809000000",
+          "off": "E8FA179CFF"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3E2D0B2",
+          "on": "75",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "High Speed | 高速移动",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3E2D0C7",
+          "on": "75",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Hits Multiply 10 | 连击数 10 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "C93F44",
+          "on": "0A",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "Hits Multiply 100 | 连击数 100 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "C93F44",
+          "on": "64",
+          "off": "01"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

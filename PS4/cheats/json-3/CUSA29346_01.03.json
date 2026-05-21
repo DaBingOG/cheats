@@ -1,0 +1,177 @@
+{
+  "name": "Axiom Verge 2 公理边缘2",
+  "id": "CUSA29346",
+  "version": "01.03",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F800",
+          "on": "8B870C0200008987080200008B8708020000E9DFC780FB",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "51BFF0",
+          "on": "E90B387F0490",
+          "off": "8B8708020000"
+        }
+      ]
+    },
+    {
+      "name": "Drone Infinite Health | 无人机无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F82D",
+          "on": "C787100200004A0100008B8710020000E924B680FB",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "51AE60",
+          "on": "E9C8497F0490",
+          "off": "8B8710020000"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F920",
+          "on": "31C0898784000000E9CBC764FB",
+          "off": "00000000000000000000000000"
+        },
+        {
+          "offset": "35C0F2",
+          "on": "E929389B0490",
+          "off": "898784000000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Mushhus | 无限穆舒斯",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F844",
+          "on": "C5FA10871C020000C5FA118718020000C5FA108718020000E9A70E71FB",
+          "off": "0000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "420700",
+          "on": "E93FF18E04909090",
+          "off": "C5FA108718020000"
+        }
+      ]
+    },
+    {
+      "name": "Max Apocalypse Flask | 最大天启溶液",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F892",
+          "on": "C787000100000000C642C5FA108700010000E98FAD80FB",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "51A630",
+          "on": "E95D527F04909090",
+          "off": "C5FA108700010000"
+        }
+      ]
+    },
+    {
+      "name": "Invincible & Freeze AI | 无敌 & 定住敌人",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5E01DC",
+          "on": "9090909090",
+          "off": "E8AF61F2FF"
+        }
+      ]
+    },
+    {
+      "name": "Super Jump (Land) | 超级跳跃 (陆地)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F8AB",
+          "on": "415741BF000020C166410F6EC7415FF30F10C0E98CC780FB",
+          "off": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "51C047",
+          "on": "E95F387F04909090",
+          "off": "C5FA1087B8020000"
+        }
+      ]
+    },
+    {
+      "name": "Super Jump (Water) | 超级跳跃 (水中)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F8C5",
+          "on": "415741BF000020C166410F6EC7415FF30F10C0E9D2C780FB",
+          "off": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "51C0A7",
+          "on": "E919387F04909090",
+          "off": "C5FA1087C8020000"
+        }
+      ]
+    },
+    {
+      "name": "Drone Super Jump (Land) | 无人机超级跳跃 (陆地)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F8DF",
+          "on": "415741BF000020C166410F6EC7415FF30F10C0E938C880FB",
+          "off": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "51C127",
+          "on": "E9B3377F04909090",
+          "off": "C5FA1087D8020000"
+        }
+      ]
+    },
+    {
+      "name": "Drone Super Jump (Water) | 无人机超级跳跃 (水中)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D0F8F9",
+          "on": "415741BF000020C166410F6EC7415FF30F10C0E97EC880FB",
+          "off": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "51C187",
+          "on": "E96D377F04909090",
+          "off": "C5FA1087E8020000"
+        }
+      ]
+    },
+    {
+      "name": "Final Stats - Death Count 0 | 最终数据 - 死亡次数 0",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "431AA1",
+          "on": "C783D800000000000000",
+          "off": "FF83D8000000498B4500"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Reddevil82"
+  ]
+}

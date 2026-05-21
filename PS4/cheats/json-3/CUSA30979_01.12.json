@@ -1,0 +1,7 @@
+{"name":"Little Witch Nobeta 小魔女诺贝塔","id":"CUSA30979","version":"01.12","process":"eboot.bin","mods":[
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"section":"0","offset":"82E7BFF0","on":"01","off":"00"}]},
+{"name":"Infinite Mana | 无限魔力","type":"checkbox","memory":[{"section":"0","offset":"82E7BFF1","on":"01","off":"00"}]},
+{"name":"Infinite Stamina | 无限耐力","type":"checkbox","memory":[{"section":"0","offset":"82E7BFF2","on":"01","off":"00"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"section":"0","offset":"82E7BFF3","on":"01","off":"00"}]},
+{"name":"Soul 99999 | 魂 99999","type":"checkbox","memory":[{"section":"0","offset":"82E7BFF4","on":"01","off":"00"}]}
+],"credits":["Dreamcast2"]}

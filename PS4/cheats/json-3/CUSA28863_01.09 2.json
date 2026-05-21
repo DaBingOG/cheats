@@ -1,0 +1,9 @@
+{"name":"艾尔登法环 Elden Ring","id":"CUSA28863","version":"01.08","process":"eboot.bin","mods":[
+{"name":"Runes Held 999999999 卢恩 999999999","type":"checkbox","memory":[{"offset":"01372360","on":"4889CF90","off":"480F4FF9"}]},
+{"name":"Infinite Runes Use 卢恩使用不减","type":"checkbox","memory":[{"offset":"014CE29A","on":"909090","off":"89486C"}]},
+{"name":"Not Lose Runes When Dying 死亡不失去卢恩","type":"checkbox","memory":[{"offset":"01271973","on":"9090909090909090","off":"41C7466C00000000"}]},
+{"name":"Infinite Item Use 无限道具使用","type":"checkbox","memory":[{"offset":"00DE595A","on":"9090909090","off":"E8A1E1FFFF"}]},
+{"name":"Infinite Arrow Use 无限箭矢使用","type":"checkbox","memory":[{"offset":"00DE76BE","on":"4189C690","off":"440F42F0"}]},
+{"name":"Equip Load Maximum 10000.0 装备重量上限 10000.0","type":"checkbox","memory":[{"offset":"015123D8","on":"64","off":"68"}]},
+{"name":"Infinite Player Jump 角色无限跳","type":"checkbox","memory":[{"offset":"0110BDCA","on":"01","off":"00"}]},
+],"credits":[" Fullcodes"]}

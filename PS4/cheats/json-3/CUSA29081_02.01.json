@@ -1,0 +1,17 @@
+{"name":"Dragon Quest X Rise of the Five Tribes Offline/勇者斗恶龙X 觉醒的五种族","id":"CUSA29081_00","version":"02.01","process":"eboot.bin","mods":[
+{"name":"Infinite Health 无限生命","type":"checkbox","memory":[{"offset":"06493FE0","on":"01","off":"00"}]},
+{"name":"Infinite Mana 无限魔法","type":"checkbox","memory":[{"offset":"06493FE1","on":"01","off":"00"}]},
+{"name":"Infinite Tenasion 无限爆发","type":"checkbox","memory":[{"offset":"06493FE2","on":"01","off":"00"}]},
+{"name":"Drop Rate 100 掉宝率100","type":"checkbox","memory":[{"offset":"06493FE3","on":"01","off":"00"}]},
+{"name":"Move Speed Multi 2.5 移动速度2.5倍","type":"checkbox","memory":[{"offset":"06493FE7","on":"01","off":"00"}]},
+{"name":"Move Speed Multi 5.0 移动速度5.0倍","type":"checkbox","memory":[{"offset":"06493FE8","on":"01","off":"00"}]},
+{"name":"Gold 9999900 金钱9999900","type":"checkbox","memory":[{"offset":"06493FE9","on":"01","off":"00"}]},
+{"name":"Banked Gold 9999900 银行存款9999900","type":"checkbox","memory":[{"offset":"06493FEA","on":"01","off":"00"}]},
+{"name":"Casino Coin 999900 赌场代币999900","type":"checkbox","memory":[{"offset":"06493FEB","on":"01","off":"00"}]},
+{"name":"Fish Coin 999900 鱼币999900","type":"checkbox","memory":[{"offset":"06493FEC","on":"01","off":"00"}]},
+{"name":"Tiny Medals 999900 小徽章999900","type":"checkbox","memory":[{"offset":"06493FED","on":"01","off":"00"}]},
+{"name":"Skill Points 9999 技能点数9999","type":"checkbox","memory":[{"offset":"06493FE5","on":"01","off":"00"}]},
+{"name":"ExperiencePoint Add Multi 5 经验值5倍增加","type":"checkbox","memory":[{"offset":"06493FE6","on":"01","off":"00"}]},
+{"name":"ExperiencePoint Add Multi 10 经验值10倍增加","type":"checkbox","memory":[{"offset":"06493FE4","on":"01","off":"00"}]},
+{"name":"One Hit Kills 一击必杀","type":"checkbox","memory":[{"offset":"06493FF9","on":"01","off":"00"}]},
+],"credits":[" Fullcodes（PLAYSTATION/PC修改讨论群:1167084913）"]}

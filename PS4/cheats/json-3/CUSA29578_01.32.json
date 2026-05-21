@@ -1,0 +1,91 @@
+{
+  "name": "STRANGER OF PARADISE FINAL FANTASY ORIGIN 最终幻想起源：天堂的陌生人",
+  "id": "CUSA29578",
+  "version": "01.32",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2C9D7F0",
+          "on": "486B412064488B41184889412090E99C0F83FD",
+          "off": "00000000000000000000000000000000000000"
+        },
+        {
+          "offset": "4CE79A",
+          "on": "E951F07C02",
+          "off": "486B412064"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Magic | 无限魔力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2C9D810",
+          "on": "C781EC13000000001644C5FA1081EC130000C5FA1181E0130000C5F82E81E013000090E9F2F43DFD",
+          "off": "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "7CD22",
+          "on": "E9E90AC202909090",
+          "off": "C5F82E81E0130000"
+        }
+      ]
+    },
+    {
+      "name": "Job Points 99 | 职业点数 99",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2C9D870",
+          "on": "BA630000008910C6070190E92DBC8CFD",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "5694A8",
+          "on": "E9C3437302",
+          "off": "8910C60701"
+        }
+      ]
+    },
+    {
+      "name": "Items 90 on Use | 道具使用后数量 90",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2C9D880",
+          "on": "0F4FD6C640045AE90E4A3FFD",
+          "off": "000000000000000000000000"
+        },
+        {
+          "offset": "92294",
+          "on": "E9E7B5C00290",
+          "off": "0F4FD6885004"
+        }
+      ]
+    },
+    {
+      "name": "Empty Enemy Break Gauge | 清空敌人 Break 槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2C9D840",
+          "on": "80BBD80100000174124883FA2B740CC5F82E448B10E91B0A49FD90C7448B1000000000C5F82E448B10E9070A49FD",
+          "off": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "12E26F",
+          "on": "E9CCF5B60290",
+          "off": "C5F82E448B10"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "d01v"
+  ]
+}

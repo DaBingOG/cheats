@@ -1,0 +1,174 @@
+{
+  "name": "The Legend of Heroes: Kuro no Kiseki 英雄传说：黎之轨迹",
+  "id": "CUSA30353",
+  "version": "01.15",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite HP | 无限生命点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite EP | 无限能量点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite CP | 无限战技点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items Use | 道具使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "ED68D",
+          "on": "9090909090",
+          "off": "E85EBA1900"
+        },
+        {
+          "offset": "28A12",
+          "on": "9090909090",
+          "off": "E8D9062600"
+        }
+      ]
+    },
+    {
+      "name": "ATTACK 99999 | 物理攻击力 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "ARTS 99999 | 魔法攻击力 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 10 | 经验值 10 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF5",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "4F3050",
+          "on": "0A",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 50 | 经验值 50 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF5",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "4F3050",
+          "on": "32",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 100 | 经验值 100 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF5",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "4F3050",
+          "on": "64",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "Max Hollow Core EXP | 最大空洞核心经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF6",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Mira 9999999 | 米拉 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "289770",
+          "on": "B87F9698008987A8011900C3",
+          "off": "8B87A8011900C39090909090"
+        }
+      ]
+    },
+    {
+      "name": "All Sepith 99999 | 全部晶耀石 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "289825",
+          "on": "771289F0C78487880119009F860100B89F860100C3",
+          "off": "770989F08B848788011900C3909090909090909090"
+        }
+      ]
+    },
+    {
+      "name": "U-Materials 99 | U 物质 99",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00803FF7",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

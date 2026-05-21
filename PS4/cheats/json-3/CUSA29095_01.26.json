@@ -1,0 +1,116 @@
+{
+  "name": "Call of Duty®: Vanguard 使命召唤18：先锋",
+  "id": "CUSA29095",
+  "version": "01.26",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Campaign Mode: Infinite Health | 剧情战役：无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "114B22B",
+          "on": "C5FA2CC1",
+          "off": "C5FA2CC0"
+        }
+      ]
+    },
+    {
+      "name": "Zombies Mode: Infinite Health | 丧尸模式：无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "28C64D0",
+          "on": "31C02986C0010000E925A5D7FE",
+          "off": "00000000000000000000000000"
+        },
+        {
+          "offset": "16409FC",
+          "on": "E9CF5A280190",
+          "off": "2986C0010000"
+        }
+      ]
+    },
+    {
+      "name": "Infinte Ammo | 无限弹药",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "28C64F0",
+          "on": "B9E7030000894844E9ACF98FFE",
+          "off": "00000000000000000000000000"
+        },
+        {
+          "offset": "11C5EA4",
+          "on": "E947067001",
+          "off": "29D9894844"
+        }
+      ]
+    },
+    {
+      "name": "No Reload / Infinite Grenades | 无需装弹 / 无限手榴弹",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "28C6510",
+          "on": "39F2BB63000000E9F5D98FFE",
+          "off": "000000000000000000000000"
+        },
+        {
+          "offset": "11C3F0C",
+          "on": "E9FF257001",
+          "off": "39F20F4DDF"
+        }
+      ]
+    },
+    {
+      "name": "Infinte Armor / Salvage 9999 | 无限护甲 / 废料 9999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "28C6530",
+          "on": "43817C3D0C86E2000075086641C7060F27EB1143817C3D0C86C9000075066641C7062003498B06448BB540EEFFFFE9C63063FE",
+          "off": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "EF961F",
+          "on": "E90CCF9C019090909090",
+          "off": "498B06448BB540EEFFFF"
+        }
+      ]
+    },
+    {
+      "name": "Money 99999 | 金钱 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "7FEA23B0",
+          "on": "81BF44020000616D6D6F750DBA9F86010089175DE95F06F3FF8B1689175DE95506F3FF",
+          "off": "0000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "7FDD2A23",
+          "on": "E988F90C00",
+          "off": "8B1689175D"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Money | 无限金钱",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "7FE405F8",
+          "on": "9090",
+          "off": "F3A6"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Saso & Celogamez"
+  ]
+}

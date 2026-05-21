@@ -1,0 +1,8 @@
+{"name":"The Legend of Tianding 廖添丁：绝代凶贼之末日","id":"CUSA30466","version":"01.02","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"section":"0","offset":"80A0EAF0","on":"9090909090","off":"E8BBA4BAFF"}]},
+{"name":"Infinite Stamina | 无限气力","type":"checkbox","memory":[{"section":"0","offset":"82F07FF1","on":"01","off":"00"}]},
+{"name":"Infinite Guabao | 无限割包","type":"checkbox","memory":[{"section":"0","offset":"80E2084B","on":"909090909090","off":"FF8BA0000000"}]},
+{"name":"Infinite Sub Weapon | 无限副武器","type":"checkbox","memory":[{"section":"0","offset":"80E22AE8","on":"90909090909090","off":"4189B738010000"}]},
+{"name":"999 Hits | 999 连击","type":"checkbox","memory":[{"section":"0","offset":"82F07FF3","on":"01","off":"00"}]},
+{"name":"Coins 999999 | 金币 999999","type":"checkbox","memory":[{"section":"0","offset":"82F07FF2","on":"01","off":"00"}]}
+],"credits":["Dreamcast2"]}

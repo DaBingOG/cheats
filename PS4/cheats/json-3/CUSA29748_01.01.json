@@ -1,0 +1,197 @@
+{
+  "name": "KLONOA Phantasy Reverie Series 风之少年 克罗诺亚 1&2 乘风归来",
+  "id": "CUSA29749",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "==================== 风之少年 door to phantomile ====================",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "827D8D90",
+          "on": "00",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Invincible Mode | 无敌模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "81CD42AB",
+          "on": "E9BF04000090",
+          "off": "0F85BE040000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Jumps | 无限跳跃",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "81CDC1D9",
+          "on": "9090",
+          "off": "7435"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Air | 无限浮空",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "81CD915F",
+          "on": "C680DE00000000",
+          "off": "C680DE00000001"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Hearts (Easy) | 无限红心 (简单模式)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "823D8CD0",
+          "on": "0F42D0BA0F000000895138E9EBB78FFF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "81CD44C5",
+          "on": "E90648700090",
+          "off": "0F42D0895138"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Hearts (Normal) | 无限红心 (普通模式)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "823D8CD0",
+          "on": "0F42D0BA06000000895138E9EBB78FFF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "81CD44C5",
+          "on": "E90648700090",
+          "off": "0F42D0895138"
+        }
+      ]
+    },
+    {
+      "name": "Lives 99 (Normal) | 生命数 99 (普通模式)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "823D8CF0",
+          "on": "B96300000089483C488B8320020000E9E39ED9FF",
+          "off": "0000000000000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "82172BDD",
+          "on": "E90E6126009090909090",
+          "off": "89483C488B8320020000"
+        }
+      ]
+    },
+    {
+      "name": "==================== 风之少年2 Lunatea's Veil ====================",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "827D8D90",
+          "on": "00",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Jumps | 无限跳跃",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "81BD8316",
+          "on": "9090",
+          "off": "7502"
+        },
+        {
+          "section": "0",
+          "offset": "81BD8318",
+          "on": "EB31",
+          "off": "7B31"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Hearts (Easy) | 无限红心 (简单模式)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "823D8D50",
+          "on": "BA0F000000895488208B8D30FFFFFFE9B7E07FFF",
+          "off": "0000000000000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "81BD6E11",
+          "on": "E93A1F80009090909090",
+          "off": "895488208B8D30FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Hearts (Normal) | 无限红心 (普通模式)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "823D8D50",
+          "on": "BA09000000895488208B8D30FFFFFFE9B7E07FFF",
+          "off": "0000000000000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "81BD6E11",
+          "on": "E93A1F80009090909090",
+          "off": "895488208B8D30FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "Lives 99 (Normal) | 生命数 99 (普通模式)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "823D8D70",
+          "on": "BA63000000895488205BE98F2083FF",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "81C0AE09",
+          "on": "E962DF7C00",
+          "off": "895488205B"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Dreamcast2 & 炸片饭"
+  ]
+}

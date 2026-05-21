@@ -1,0 +1,54 @@
+{
+  "name": "ELDEN RING™",
+  "id": "CUSA28527",
+  "version": "01.05",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "无限血量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "",
+          "on": "",
+          "off": ""
+        }
+      ]
+    }, 
+    {
+      "name": "无限金钱",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2035BE29C",
+          "on": "000F423F",
+		  "off": "00000000"
+        },
+        {
+          "offset": "14B1CEA",
+          "on": "909090",
+          "off": "89786C"
+        }
+      ]
+    },
+    {
+      "name": "无限物品 ( 需数值>1 )",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "38F3AB0",
+          "on": "438944A70C4183C601448931E912CC4EFD",
+		  "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "DE06CB",
+          "on": "E9E033B102909090",
+          "off": "438944A70C448931"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Echo Stretch"
+  ]
+}
