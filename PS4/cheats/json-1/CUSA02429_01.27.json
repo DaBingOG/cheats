@@ -1,0 +1,68 @@
+﻿{
+	"name": "BATTLELD1",
+	"id": "CUSA02429",
+	"version": "01.27",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "Infinite Ammo and Grenade Usage 无限手雷和无需装弹",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "3BE382E",
+					"on": "66C78320020000E703E9643E6DFE",
+					"off": "0000000000000000000000000000"
+				},
+				{
+					"offset": "22B769A",
+					"on": "E98FC1920190",
+					"off": "898320020000"
+				}
+			]
+		},
+		{
+			"name": "Infinite Player Health 角色无限生命",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "3BE3800",
+					"on": "807B7410750FC5FA104320C5FA11431CE92947C9FDC5FA11431CE91F47C9FD",
+					"off": "00000000000000000000000000000000000000000000000000000000000000"
+				},
+				{
+					"offset": "1877F39",
+					"on": "E9C2B83602",
+					"off": "C5FA11431C"
+				}
+			]
+		},
+		{
+			"name": "No Reload 无限弹夹",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "3BE381F",
+					"on": "6641C78624020000E703E9982C6DFE",
+					"off": "000000000000000000000000000000"
+				},
+				{
+					"offset": "22B64BF",
+					"on": "E95BD392019090",
+					"off": "41898624020000"
+				}
+			]
+		}
+	],
+	"credits": [
+		" Fullcodes"
+	]
+}   
+ 
+  
+  
+  
+
+
+
+ 
+

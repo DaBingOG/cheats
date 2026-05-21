@@ -1,0 +1,169 @@
+{
+	"name": "血源诅咒 老猎人",
+	"id": "CUSA03023",
+	"version": "01.97",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "无敌模式",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE0",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "无限生命",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE1",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "无限体力（耐力）",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE2",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "不会坠亡",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "01A35DEF",
+					"on": "9090",
+					"off": "29D3"
+				}
+			]
+		},
+		{
+			"name": "一击必杀",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE3",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "无限道具和弹药",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE7",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "血之回响99999999",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE4",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "灵视99",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE5",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "无视改造升级和开圣杯需求",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "01C8E010",
+					"on": "C3",
+					"off": "55"
+				},
+				{
+					"offset": "014DAB20",
+					"on": "C3",
+					"off": "55"
+				}
+			]
+		},
+		{
+			"name": "按住 <O> 2倍移动速度",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE8",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "冻结敌人移动",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE9",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		},
+		{
+			"name": "各项能力值99999999（不建议）",
+			"type": "checkbox",
+			"memory": [
+				{
+					"section": "0",
+					"offset": "056D3FE6",
+					"on": "01",
+					"off": "00"
+				}
+			]
+		}
+	],
+	"credits": [
+		" Fullcodes"
+	]
+}  
+ 
+   
+   
+ 
+  
+   
+
+
+  

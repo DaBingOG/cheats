@@ -1,0 +1,15 @@
+{"name":"Red Dead Redemption 2 荒野大镖客2","id":"CUSA03041","version":"01.32","process":"eboot.bin","mods":[
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"09737FF1","on":"01","off":"00"}]},
+{"name":"Infinite Stamina | 无限体力","type":"checkbox","memory":[{"offset":"100FB07","on":"909090","off":"FF5048"}]},
+{"name":"Infinite Dead Eye | 无限死神之眼","type":"checkbox","memory":[{"offset":"144E285","on":"909090","off":"FF5048"}]},
+{"name":"Infinite Ammo | 无限弹药","type":"checkbox","memory":[{"offset":"2C3C24B","on":"909090","off":"4429FE"}]},
+{"name":"No Reload | 无需装弹","type":"checkbox","memory":[{"offset":"2C3C210","on":"909090","off":"4429FE"}]},
+{"name":"Max Items | 最大道具数量","type":"checkbox","memory":[{"offset":"C917A9","on":"4D","off":"4E"}]},
+{"name":"No Weapons Maintain | 武器无需保养","type":"checkbox","memory":[{"offset":"09737FF7","on":"01","off":"00"}]},
+{"name":"Never Wanted | 不会被通缉","type":"checkbox","memory":[{"offset":"9B6B5C","on":"05","off":"00"}]},
+{"name":"No Bounty | 不增加赏金","type":"checkbox","memory":[{"offset":"09737FF8","on":"01","off":"00"}]},
+{"name":"Max Honor | 最高荣誉值","type":"checkbox","memory":[{"offset":"09737FF9","on":"01","off":"00"}]},
+{"name":"Money 999999.00 | 金钱 999999.00","type":"checkbox","memory":[{"offset":"09737FF0","on":"01","off":"00"}]},
+{"name":"Game Speed Multiply 2 | 游戏速度 2 倍","type":"checkbox","memory":[{"offset":"09737FF6","on":"01","off":"00"},{"offset":"6E2D42C","on":"0040","off":"803F"}]},
+{"name":"Game Speed Multiply 3 | 游戏速度 3 倍","type":"checkbox","memory":[{"offset":"09737FF6","on":"01","off":"00"},{"offset":"6E2D42C","on":"4040","off":"803F"}]},
+],"credits":["Fullcodes & LMN"]}
