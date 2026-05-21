@@ -1,0 +1,10 @@
+{"name":"Killzone: Shadow Fall/杀戮地带:暗影坠落","id":"CUSA00065","version":"01.81","process":"eboot.bin","mods":[
+{"name":"Infinite Ammo|无限弹药","type":"checkbox","memory":[{"offset":"00C845A9","on":"90909090","off":"44297018"}]},
+{"name":"No Reload and Infinite Grenade|无需装弹和无限手雷","type":"checkbox","memory":[{"offset":"00CA5AFC","on":"90909090","off":"4529751C"}]},
+{"name":"Super Accuracy|超级精准度","type":"checkbox","memory":[{"offset":"00C9B593","on":"F057","off":"FA7E"}]},
+{"name":"No Recoil|无后坐力","type":"checkbox","memory":[{"offset":"00C81B91","on":"6BE33D01","off":"13ED5C00"}]},
+{"name":"Infinite Adrenaline|无限肾上腺素","type":"checkbox","memory":[{"offset":"00C240CE","on":"4F","off":"4E"}]},
+{"name":"No Adrenaline Cooldown|肾上腺素无冷却","type":"checkbox","memory":[{"offset":"00BEA154","on":"C5F857C09090","off":"C4C17A5C4624"}]},
+{"name":"Infinite Health|无限生命","type":"checkbox","memory":[{"offset":"0205FFF0","on":"01","off":"00"}]},
+{"name":"Infinite OWL Health|OWL无限生命","type":"checkbox","memory":[{"offset":"0205FFF1","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PS4/PC修改群: 1167084913,702196858）"]}

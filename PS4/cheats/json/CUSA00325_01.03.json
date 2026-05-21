@@ -1,0 +1,59 @@
+{
+  "name": "Outlast & Whistleblower 逃生 + 告密者",
+  "id": "CUSA00325",
+  "version": "01.03",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1D0F0B0",
+          "on": "51B9003C1C46660F6EC959C4C17A118FEC310000E92FA3C6FE",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "9793EF",
+          "on": "E9BC5C390190909090",
+          "off": "C4C17A118FEC310000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Battery Life | 无限电量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1D0F0F0",
+          "on": "51B90000803F660F6EC959C4C17A118F2C320000E9016AC5FE",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "965B01",
+          "on": "E9EA953A0190909090",
+          "off": "C4C17A118F2C320000"
+        }
+      ]
+    },
+    {
+      "name": "Max Batteries | 最大电池数量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1D0F130",
+          "on": "518B88FC0A00008988F80A000059E9937BC5FE",
+          "off": "00000000000000000000000000000000000000"
+        },
+        {
+          "offset": "966CD0",
+          "on": "E95B843A0190",
+          "off": "8988F80A0000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Molly"
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "name": "Grand Theft Auto V",
+  "id": "CUSA00419",
+  "version": "01.47",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限 HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BE59",
+          "on": "C5FA108054020000C5FA118050020000E917E211FE",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "A8A07D",
+          "on": "E9D71DEE01909090",
+          "off": "C5FA108050020000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo | 无限弹药",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BEE3",
+          "on": "0F84BA84CAFF66C7411CE8038B411CE98784CAFF",
+          "off": "0000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "2614379",
+          "on": "E9657B3500",
+          "off": "742E8B411C"
+        }
+      ]
+    },
+    {
+      "name": "No Reload | 无需装弹",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "15F8BA0",
+          "on": "C3",
+          "off": "55"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Stamina | 无限耐力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BEBE",
+          "on": "C5FA108B480D0000C5FA118B440D0000E97FDDE4FD",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "7B9C4A",
+          "on": "E96F221B02909090",
+          "off": "C5FA108B440D0000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Oxygen | 无限氧气",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BE9D",
+          "on": "C4C17A104610C4C17A114604E9D4ACE0FD",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "776B7C",
+          "on": "E91C531F0290",
+          "off": "C4C17A104604"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Special Ability | 无限特殊能力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BE7E",
+          "on": "C5FA104B3CC5FA114B34E9827BE4FD",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "7B3A0A",
+          "on": "E96F841B02",
+          "off": "C5FA104B34"
+        }
+      ]
+    },
+    {
+      "name": "Invincible (On) | 无敌模式 (开)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BE30",
+          "on": "41C78658010000FC094000C4C1782E8650020000E978BE31FE",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "C87CB8",
+          "on": "E97341CE0190909090",
+          "off": "C4C1782E8650020000"
+        }
+      ]
+    },
+    {
+      "name": "Invincible (Off) | 无敌模式 (关)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BE30",
+          "on": "41C786580100000C004000C4C1782E8650020000E978BE31FE",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "C87CB8",
+          "on": "E97341CE0190909090",
+          "off": "C4C1782E8650020000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Vehicle Durable (On) | 无限载具耐久度 (开)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BF07",
+          "on": "C78358010000FC094000C5FA1093B8080000E98578B2FE",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "149379B",
+          "on": "E967874D01909090",
+          "off": "C5FA1093B8080000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Vehicle Durable (Off) | 无限载具耐久度 (关)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BF07",
+          "on": "C783580100000C004000C5FA1093B8080000E98578B2FE",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "149379B",
+          "on": "E967874D01909090",
+          "off": "C5FA1093B8080000"
+        }
+      ]
+    },
+    {
+      "name": "Super Jump | 超级跳",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BFDE",
+          "on": "498B8678100000C7802002000000400000E9D6590AFE",
+          "off": "00000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "A119C3",
+          "on": "E916A6F5019090",
+          "off": "498B8678100000"
+        }
+      ]
+    },
+    {
+      "name": "Swim Speed Faster x2 | 游泳速度 2 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BF24",
+          "on": "C780BC05000000000040C5FA108054020000E95DE111FE",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "A8A090",
+          "on": "E98F1EEE01909090",
+          "off": "C5FA108054020000"
+        }
+      ]
+    },
+    {
+      "name": "Reset Wanted Star Level | 重置通缉星级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BF47",
+          "on": "0F4487B800000083BFB8000000007505E9D20B73FDC787B000000000000000C787B400000000000000C787B800000000000000E9AF0B73FD",
+          "off": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "9CB27",
+          "on": "E91BF48C029090",
+          "off": "0F4487B8000000"
+        }
+      ]
+    },
+    {
+      "name": "Remove Noise On Wanted | 消除通缉噪音",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "624420",
+          "on": "C3",
+          "off": "55"
+        }
+      ]
+    },
+    {
+      "name": "Max Money 99999999 | 最大金钱 99999999 (生效后关闭)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "296BF8F",
+          "on": "81F970DB0100741281F920160000740A81F980CF03007402EB10488D470CC7470CFFE0F50533470CEB00488D470C33470CE9F2E5C3FF",
+          "off": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "25AA5B0",
+          "on": "E9DA193C009090",
+          "off": "488D470C33470C"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "k0s0ng"
+  ]
+}

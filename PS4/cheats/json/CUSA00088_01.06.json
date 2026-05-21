@@ -1,0 +1,23 @@
+{
+  "name": "eFootball PES 2021 SEASON UPDATE",
+  "id": "CUSA00088",
+  "version": "01.06",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "取消体力不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "C0F1F8",
+          "on": "0F4EF0",
+          "off": "89C690"
+        }
+      ]
+    },
+
+  ],
+  "credits": [
+    "Fullcodes（树的原理-无所谓随缘搬运分享"
+  ]
+}

@@ -1,0 +1,12 @@
+{"name":"nFamous: Second Son/恶名昭彰:次子","id":"CUSA00309","version":"01.07","process":"eboot.bin","mods":[
+{"name":"God Mode/Ignore Hits|无敌模式","type":"checkbox","memory":[{"offset":"07FA7FF1","on":"01","off":"00"}]},
+{"name":"Infinite Health|无限生命","type":"checkbox","memory":[{"offset":"07FA7FF0","on":"F05F","off":"F25C"}]},
+{"name":"Infinite Energy|无限能量","type":"checkbox","memory":[{"offset":"0020C7B6","on":"EC","off":"E8"},{"offset":"00214B39","on":"EC","off":"E8"}]},
+{"name":"Infinite Bombs Use|无限炸弹使用","type":"checkbox","memory":[{"offset":"0020C8EC","on":"4C","off":"4F"}]},
+{"name":"Infinite Comet Drop Use|无限轨道空降使用","type":"checkbox","memory":[{"offset":"0026635F","on":"4E","off":"4F"}]},
+{"name":"One Hit Kill|一击必杀","type":"checkbox","memory":[{"offset":"07FA7FF2","on":"01","off":"00"}]},
+{"name":"Blast Shards 99|爆炸裂片99","type":"checkbox","memory":[{"offset":"07FA7FF4","on":"01","off":"00"}]},
+{"name":"Karma EXP Max on Gain|业力经验值获得时最大","type":"checkbox","memory":[{"offset":"07FA7FF3","on":"01","off":"00"}]},
+{"name":"Unlock All Abilities|解锁全能力","type":"checkbox","memory":[{"offset":"07FA7FF5","on":"01","off":"00"}]},
+{"name":"Hold <R3> Move to Teleport Waypoint|按住<R3>移动时瞬移至路径点","type":"checkbox","memory":[{"offset":"07FA7FF6","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PS4/PC修改群: 1167084913,702196858）"]}

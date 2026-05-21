@@ -1,0 +1,43 @@
+{
+  "name": "Angry Birds Star Wars",
+  "id": "CUSA00184",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Falcons x999999 (Single Player mode only)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "613800",
+          "on": "90E95628B4FF",
+          "off": "000000000000"
+        },
+        {
+          "offset": "156057",
+          "on": "E9A4D74B00",
+          "off": "9090909090"
+        }
+      ]
+    },
+    {
+      "name": "Max Score x999999 (Single Player mode only)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "613808",
+          "on": "C740103F420F00E9071DABFF",
+          "off": "000000000000000000000000"
+        },
+        {
+          "offset": "C5511",
+          "on": "E9F2E254009090909090",
+          "off": "894810C6851FF0FFFF00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Bandicootmonito "
+  ]
+}
