@@ -1,0 +1,126 @@
+{
+  "name": "DRAGON BALL XENOVERSE 2 龙珠：超宇宙2",
+  "id": "CUSA05085",
+  "version": "01.47",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02223FF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ki | 无限气",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02223FF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Stamina | 无限精力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02223FF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02223FF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max EXP | 最大经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02223FF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Zeni | 最大索尼",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "94343B",
+          "on": "BB00CA9A3B90",
+          "off": "81FB00CA9A3B"
+        }
+      ]
+    },
+    {
+      "name": "Max TP | 最大 TP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1395420",
+          "on": "C7476CFFFFFF378B4F6C894F68394F68E975E05AFF",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "9434A4",
+          "on": "E9771FA50090",
+          "off": "8B4F6C394F68"
+        }
+      ]
+    },
+    {
+      "name": "Items 90 on Sell | 道具卖出后 90",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "949DC0",
+          "on": "B05A",
+          "off": "29C8"
+        }
+      ]
+    },
+    {
+      "name": "Max Attribute Points | 最大能力点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02223FF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+     {
+      "name": "Freeze Misson Timer | 锁定任务时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3ECB5F",
+          "on": "90909090909090",
+          "off": "C4C17A11442448"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Celogamez & d01v"
+  ]
+}

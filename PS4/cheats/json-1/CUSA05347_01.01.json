@@ -1,0 +1,123 @@
+{
+  "name": "Darksiders Warmastered Edition",
+  "id": "CUSA05347",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1783B10",
+          "on": "C4C17A108590010000C4C17A118584010000E92344F3FE",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "6B7F41",
+          "on": "E9CABB0C0190909090",
+          "off": "C4C17A118584010000"
+        }
+      ]
+    },
+    {
+      "name": "1 Hit Kill (Don't Use Against Bosses)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1783E60",
+          "on": "41C7858401000000000000E9D1E4CAFE",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "432338",
+          "on": "E9231B350190909090",
+          "off": "C4C17A118584010000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Wrath Bar",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1783C10",
+          "on": "C7430400001643E9615CA7FE",
+          "off": "000000000000000000000000"
+        },
+        {
+          "offset": "1F9878",
+          "on": "E993A35801",
+          "off": "C5FA114304"
+        }
+      ]
+    },
+    {
+      "name": "Max Chaos (1 Hit)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1783E30",
+          "on": "41C744240800009643C4C17A10442408E997F699FE",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1234D5",
+          "on": "E9560966019090",
+          "off": "C4C17A10442408"
+        }
+      ]
+    },
+    {
+      "name": "Instant Chaos After Use",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1F9AC6",
+          "on": "0F44CA",
+          "off": "0F4CCA"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Horse Gallop",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "33F4A9",
+          "on": "909090909090",
+          "off": "89835C060000"
+        }
+      ]
+    },
+    {
+      "name": "Max/Infinite Souls",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1783B70",
+          "on": "C783000800007F96184BC5FA2C8300080000E901239AFE",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "125E80",
+          "on": "E9EBDC6501909090",
+          "off": "C5FA2C8300080000"
+        },
+        {
+          "offset": "1783C00",
+          "on": "C787000800007F96184BE91450F5FE",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "6D8C1B",
+          "on": "E9E0AF0A01909090",
+          "off": "C5FA118700080000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Celogamez"
+  ]
+}
