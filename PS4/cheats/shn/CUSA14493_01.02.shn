@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="EP3109-CUSA14493_00-DOORKICKERS0SIEE" Moder="fqzx123" Cusa="CUSA14493" Version="01.02" Process="eboot.bin">
+  <Genres Name="Adventure" />
+  <Items />
+  <Cheat Text="Infinite Armor">
+    <Cheatline>
+      <Offset>CA064</Offset>
+      <Section>0</Section>
+      <ValueOn>7E-02</ValueOn>
+      <ValueOff>FF-C8</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infinite HP">
+    <Cheatline>
+      <Offset>9B856</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90</ValueOn>
+      <ValueOff>C5-FA-5C-C1</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="Infinite Skill">
+    <Cheatline>
+      <Offset>C9729</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90</ValueOn>
+      <ValueOff>76-0A</ValueOff>
+    </Cheatline>
+  </Cheat>
+</Trainer>

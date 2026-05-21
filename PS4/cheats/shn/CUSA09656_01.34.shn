@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="真三国无双8" Moder="Test" Cusa="CUSA09656" Version="01.34" Process="eboot.bin">
+  <Genres Name="Action" />
+  <Items />
+  <Cheat Text="杂货铺消费金钱不减">
+    <Cheatline>
+      <Offset>E35F8E</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90</ValueOn>
+      <ValueOff>29-CA</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="铁匠铺消费金钱不减">
+    <Cheatline>
+      <Offset>DE97D4</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90</ValueOn>
+      <ValueOff>29-CA</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="金钱99999999（获得时）">
+    <Cheatline>
+      <Offset>164B800</Offset>
+      <Section>0</Section>
+      <ValueOn>C7-83-B8-0E-00-00-FF-E0-F5-05-E9-73-B7-CA-FE</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>2F6F7C</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-7F-48-35-01-90</ValueOn>
+      <ValueOff>89-93-B8-0E-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="无限强化点数">
+    <Cheatline>
+      <Offset>A887E0</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90-90-90-90-90-90</ValueOn>
+      <ValueOff>66-89-B4-10-32-01-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="无限道具">
+    <Cheatline>
+      <Offset>571227</Offset>
+      <Section>0</Section>
+      <ValueOn>90-90-90</ValueOn>
+      <ValueOff>44-29-F2</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="道具获取999个">
+    <Cheatline>
+      <Offset>164B800</Offset>
+      <Section>0</Section>
+      <ValueOn>66-C7-04-41-E7-03-E9-82-D4-F1-FE</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>568C88</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-73-2B-0E-01</ValueOn>
+      <ValueOff>66-44-89-24-41</ValueOff>
+    </Cheatline>
+  </Cheat>
+</Trainer>   
+
+ 
+ 
+  
+   
+ 
+  
+
+  

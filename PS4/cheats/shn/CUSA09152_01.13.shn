@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="刀劍神域 奪命凶彈" Moder="越狱兔电玩" Cusa="CUSA09152" Version="01.13" Process="eboot.bin">
+  <Genres Name="Action" />
+  <Items />
+  <Cheat Text="🔥金手指主代码 (必须开启)🔥">
+    <Cheatline>
+      <Offset>1D3742</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-D9-3B-C5-7F-90-90</ValueOn>
+      <ValueOff>45-03-A7-20-14-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Offset>1D3734</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-17-3C-C5-7F-90-90</ValueOn>
+      <ValueOff>45-03-A7-A0-11-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="😤获得金钱 9999999">
+    <Cheatline>
+      <Offset>9F46CE</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-7D-2A-43-7F-90-90</ValueOn>
+      <ValueOff>48-8B-8B-70-08-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="获得CP 9999999">
+    <Cheatline>
+      <Offset>3684B4</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-B7-EC-AB-7F-90</ValueOn>
+      <ValueOff>8B-47-34-2B-47-38</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="直接150 级">
+    <Cheatline>
+      <Offset>9F53A1</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-DA-1F-43-7F-90-90-90</ValueOn>
+      <ValueOff>C5-F8-11-85-70-FF-FF-FF</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="最高负重上限">
+    <Cheatline>
+      <Offset>9F53B1</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-DA-1D-43-7F</ValueOn>
+      <ValueOff>C5-F8-10-43-50</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="最高运气">
+    <Cheatline>
+      <Offset>9EEC44</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-67-85-43-7F-90</ValueOn>
+      <ValueOff>C4-C1-78-10-47-50</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="➡️技能无需冷却">
+    <Cheatline>
+      <Offset>275972</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-59-18-BB-7F</ValueOn>
+      <ValueOff>C5-FA-11-4B-28</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="❤️无限生命">
+    <Cheatline>
+      <Offset>2C22AC</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-2F-4F-B6-7F-90-90-90</ValueOn>
+      <ValueOff>C5-FA-10-83-FC-13-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="🔝弹药使用 999">
+    <Cheatline>
+      <Offset>497D24</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-F7-F3-98-7F-90</ValueOn>
+      <ValueOff>29-D8-41-89-46-10</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="➡️武器无需装弹">
+    <Cheatline>
+      <Offset>3023BE</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-6D-4D-B2-7F-90</ValueOn>
+      <ValueOff>89-83-7C-06-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="超级伤害">
+    <Cheatline>
+      <Offset>7FE27334</Offset>
+      <Section>0</Section>
+      <ValueOn>FF-C9-9A-3B</ValueOn>
+      <ValueOff>00-00-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="超级暴击率">
+    <Cheatline>
+      <Offset>7FE27364</Offset>
+      <Section>0</Section>
+      <ValueOn>FF-C9-9A-3B</ValueOn>
+      <ValueOff>FF-00-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="持有勋章 9999">
+    <Cheatline>
+      <Offset>380C11</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-8A-67-AA-7F-90-90</ValueOn>
+      <ValueOff>48-89-E5-48-8B-47-38</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="可兑换次数 999">
+    <Cheatline>
+      <Offset>99CEB5</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-06-A5-48-7F-90-90-90</ValueOn>
+      <ValueOff>48-89-45-D0-41-8B-47-34</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="交换所 SP 1000">
+    <Cheatline>
+      <Offset>372A53</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-88-49-AB-7F-90-90</ValueOn>
+      <ValueOff>C4-C1-7A-2C-44-24-30</ValueOff>
+    </Cheatline>
+  </Cheat>
+</Trainer>  
+ 
+ 
+ 
+
+  
+   
+   
+  
+
