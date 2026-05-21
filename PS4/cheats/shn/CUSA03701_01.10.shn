@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Fallout 4" Moder="越狱兔电玩" Cusa="CUSA03701" Version="01.10" Process="eboot.bin">
+  <Genres Name="Action" />
+  <Items />
+  <Cheat Text="🔝金手指主代码 (必开)">
+    <Cheatline>
+      <Offset>ABC146</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-C5-D1-36-7F-90-90</ValueOn>
+      <ValueOff>48-8B-4F-30-8B-0C-C1</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="🍖背包内道具使用 99">
+    <Cheatline>
+      <Offset>106101</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-5A-31-D2-7F</ValueOn>
+      <ValueOff>41-8B-44-24-20</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="🍖背包内道具丢掉 99">
+    <Cheatline>
+      <Offset>859BDA</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-B1-F6-5C-7F-90-90</ValueOn>
+      <ValueOff>48-8D-75-C8-03-48-20</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="🍖瓶盖 9999999（卖出）">
+    <Cheatline>
+      <Offset>8C5D4B</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-B0-1A-8A-01-90-90-90-90</ValueOn>
+      <ValueOff>0F-1F-44-00-00-4C-8B-7B-20</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="🍖技点使用 99">
+    <Cheatline>
+      <Offset>AF2EA5</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-06-66-33-7F</ValueOn>
+      <ValueOff>FE-C8-0F-B6-F0</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="负重变动清零">
+    <Cheatline>
+      <Offset>29D4E1</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-CA-BD-B8-7F</ValueOn>
+      <ValueOff>C5-FA-10-47-58</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="辐射变动清零">
+    <Cheatline>
+      <Offset>ABC16E</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-7D-D1-36-7F</ValueOn>
+      <ValueOff>C5-FA-11-04-C1</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="❤️HP 壹针加满">
+    <Cheatline>
+      <Offset>ABC1A6</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-A5-D2-36-7F-90-90</ValueOn>
+      <ValueOff>E9-A5-D2-36-7F-90-90</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="AP 无限冲刺">
+    <Cheatline>
+      <Offset>ABC1EE</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-DD-D0-36-7F</ValueOn>
+      <ValueOff>C5-FA-11-04-C1</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="➡️武器无需装弹">
+    <Cheatline>
+      <Offset>A9F5E1</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-6A-9C-38-7F-90-90</ValueOn>
+      <ValueOff>48-89-E5-53-50-89-D3</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="➡️武器无后坐力">
+    <Cheatline>
+      <Offset>61B3EE</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-8D-E0-80-7F-90-90-90-90</ValueOn>
+      <ValueOff>C4-C1-7A-10-86-94-00-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="武器精准度">
+    <Cheatline>
+      <Offset>61B3E5</Offset>
+      <Section>0</Section>
+      <ValueOn>E9-B6-E0-80-7F-90-90-90-90</ValueOn>
+      <ValueOff>C4-C1-7A-11-86-90-00-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="第三人称 速度 x2">
+    <Cheatline>
+      <Offset>7FE29320</Offset>
+      <Section>0</Section>
+      <ValueOn>00-00-48-43</ValueOn>
+      <ValueOff>00-00-C8-42</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="第三人称 速度 x4">
+    <Cheatline>
+      <Offset>7FE29320</Offset>
+      <Section>0</Section>
+      <ValueOn>00-00-C8-43</ValueOn>
+      <ValueOff>00-00-C8-42</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="第三人称 速度 x8">
+    <Cheatline>
+      <Offset>7FE29320</Offset>
+      <Section>0</Section>
+      <ValueOn>00-00-48-44</ValueOn>
+      <ValueOff>00-00-C8-42</ValueOff>
+    </Cheatline>
+  </Cheat>
+</Trainer>  
+ 
+ 
+ 
+
+  
+   
+   
+  
+
