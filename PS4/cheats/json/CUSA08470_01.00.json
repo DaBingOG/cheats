@@ -1,0 +1,11 @@
+{"name":"ŌKAMI HD 大神 絶景版","id":"CUSA08470","version":"01.00","process":"eboot.bin","mods":[
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"section":"0","offset":"805246C1","on":"9090","off":"01FA"},{"section":"0","offset":"805246CC","on":"8B5002","off":"0F4CD6"},{"section":"0","offset":"8048796C","on":"9090","off":"7409"},{"section":"0","offset":"80480A23","on":"6641C78558110000","off":"75086641FF855811"}]},
+{"name":"Infinite Ink | 无限墨","type":"checkbox","memory":[{"section":"0","offset":"805951A0","on":"909090","off":"895008"},{"section":"0","offset":"8059517A","on":"909090","off":"895008"}]},
+{"name":"Max Combo | 最高连击数","type":"checkbox","memory":[{"section":"0","offset":"804AFCA5","on":"63","off":"01"}]},
+{"name":"Uninterrupted Combo | 连击数不中断","type":"checkbox","memory":[{"section":"0","offset":"8047EA07","on":"909090","off":"66FFC8"}]},
+{"name":"Infinite Jumps | 无限跳跃","type":"checkbox","memory":[{"section":"0","offset":"8048C704","on":"90909090909090","off":"41888D45110000"}]},
+{"name":"Tools 99 | 道具数量 99","type":"checkbox","memory":[{"section":"0","offset":"805947D0","on":"BA6300000089D690","off":"0F44F285D20F49F2"}]},
+{"name":"Yen 99999999 | 金钱 99999999","type":"checkbox","memory":[{"section":"0","offset":"80594A21","on":"89D2","off":"39C2"}]},
+{"name":"Praise Orbs 9999 | 幸玉 9999","type":"checkbox","memory":[{"section":"0","offset":"80524990","on":"D1","off":"F9"}]},
+{"name":"Demon Fangs 9999 | 妖怪牙 9999","type":"checkbox","memory":[{"section":"0","offset":"805948E7","on":"89DB","off":"39C3"}]}
+],"credits":["Skal & Vampirexx"]}

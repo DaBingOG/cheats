@@ -1,0 +1,119 @@
+﻿{
+	"name": "无双全明星",
+	"id": "CUSA07471",
+	"version": "02.94",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "敌兵轻松击杀",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "250020",
+					"on": "9090909090",
+					"off": "C5FA584710"
+				}
+			]
+		},
+		{
+			"name": "击杀数量最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "247731",
+					"on": "909090",
+					"off": "0F4ED0"
+				}
+			]
+		},
+		{
+			"name": "金钱购买最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "1822C2",
+					"on": "8990CC260000",
+					"off": "8988CC260000"
+				}
+			]
+		},
+		{
+			"name": "素材出售最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "56F50A",
+					"on": "45899C8C68070000",
+					"off": "4189948C68070000"
+				}
+			]
+		},
+		{
+			"name": "经验结算最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "16B3B6",
+					"on": "895B34",
+					"off": "894334"
+				}
+			]
+		},
+		{
+			"name": "星星快速最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "247CE7",
+					"on": "899324020000",
+					"off": "898324020000"
+				}
+			]
+		},
+		{
+			"name": "无双快速蓄满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2495D0",
+					"on": "884708",
+					"off": "884F08"
+				}
+			]
+		},
+		{
+			"name": "无双使用无限",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "24960E",
+					"on": "004708",
+					"off": "884708"
+				}
+			]
+		},
+		{
+			"name": "无双狂热无限",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "228016",
+					"on": "8997E0030000",
+					"off": "8987E0030000"
+				}
+			]
+		}
+	],
+	"credits": [
+		"越狱兔电玩"
+	]
+}
+   
+ 
+
+
+ 
+ 
+  
+  
+  

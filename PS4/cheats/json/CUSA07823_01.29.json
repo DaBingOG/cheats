@@ -1,0 +1,217 @@
+{
+  "name": "Borderlands 3 无主之地3",
+  "id": "CUSA07823",
+  "version": "01.29",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Max Health & Shield | 最大生命和护盾",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1BD0",
+          "on": "EB00",
+          "off": "EB0A"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo & Grenades | 无限弹药和手雷", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "4F4C0C3", 
+          "on": "8B",
+          "off": "9B"
+        }
+      ]
+    }, 
+    {
+      "name": "No Reload | 无需装弹", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "55B852D", 
+          "on": "90909090909090", 
+          "off": "418987B0010000"
+        }
+      ]
+    }, 
+    {
+      "name": "No Recoil | 无后坐力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1C00", 
+          "on": "EB00", 
+          "off": "EB0E"
+        }
+      ]
+    },
+    {
+      "name": "Super Accuracy | 超级精准度", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "100D174", 
+          "on": "74",
+          "off": "75"
+        }
+      ]
+    }, 
+    {
+      "name": "Weapons No Overheat | 武器不会过热", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "55E225E", 
+          "on": "EB22",
+          "off": "7506"
+        }
+      ]
+    }, 
+    {
+      "name": "Instant Max Level | 瞬间升到最高等级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1CC0",
+          "on": "EB00",
+          "off": "EB06"
+        }
+      ]
+    },
+    {
+      "name": "Learn Skills Without Skill Points | 学习技能无需技能点",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1C60",
+          "on": "B80100000041898660010000E9C4E876F9",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "B6052E",
+          "on": "E92D1789069090",
+          "off": "418B8660010000"
+        }
+      ]
+    },
+    {
+      "name": "Money & Eridium 99999999 | 金钱和铱(E币) 99999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "54A9F88",
+          "on": "B9FFE0F505",
+          "off": "C4C270F2CD"
+        }
+      ]
+    },
+    {
+      "name": "Guardian Tokens | 护卫者代币 99999", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "13A8BFE", 
+          "on": "90909090909090", 
+          "off": "41FF8E6C010000"
+        },
+        {
+          "offset": "73F1C90", 
+          "on": "49C7C79F8601004C89B86C010000E9E5DC0FFA", 
+          "off": "00000000000000000000000000000000000000"
+        },
+        {
+          "offset": "14EF981", 
+          "on": "E90A23F0059090", 
+          "off": "4C63B86C010000"
+        }
+      ]
+    },
+    {
+      "name": "Jump Height Multiply 2 | 跳跃高度 2 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1C30",
+          "on": "EB00",
+          "off": "EB0A"
+        },
+        {
+          "offset": "73F1C38",
+          "on": "0080D444",
+          "off": "00805444"
+        }
+      ]
+    },
+    {
+      "name": "Jump Height Multiply 3 | 跳跃高度 3 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1C30",
+          "on": "EB00",
+          "off": "EB0A"
+        },
+        {
+          "offset": "73F1C38",
+          "on": "00601F45",
+          "off": "00805444"
+        }
+      ]
+    },
+    {
+      "name": "Jump Height Multiply 4 | 跳跃高度 4 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1C30",
+          "on": "EB00",
+          "off": "EB0A"
+        },
+        {
+          "offset": "73F1C38",
+          "on": "00805445",
+          "off": "00805444"
+        }
+      ]
+    },
+    {
+      "name": "Move Speed Multiply 2 | 移动速度 2 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1D0A",
+          "on": "983E66FF",
+          "off": "321868FF"
+        }
+      ]
+    },
+    {
+      "name": "Move Speed Multiply 3 | 移动速度 3 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1D0A",
+          "on": "D72371FF",
+          "off": "321868FF"
+        }
+      ]
+    },
+    {
+      "name": "Move Speed Multiply 4 | 移动速度 4 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "73F1D0A",
+          "on": "0A0CD7FF",
+          "off": "321868FF"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "hejran7 & hanakuso"
+  ]
+}

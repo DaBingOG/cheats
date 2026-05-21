@@ -1,0 +1,8 @@
+{"name":"Uncharted - The Lost Legacy / 秘境探險 - 失落的遺產","id":"CUSA08352","version":"01.09","process":"eboot.bin","mods":[
+{"name":"啟用 Debug 選單","type":"checkbox","memory":[
+{"offset":"1FE1A5","on":"C680F92E000001EB04","off":"80B8F92E0000000F84"},
+{"offset":"1F0CFE9","on":"00","off":"00"},
+{"offset":"1F0D010","on":"00","off":"00"},
+{"offset":"1F89E17","on":"00","off":"00"}
+]},
+],"credits":["Mankind 2023/02/06"]}

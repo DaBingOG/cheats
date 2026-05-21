@@ -1,0 +1,8 @@
+{"name":"Senran Kagura PEACH BEACH SPLASH 闪乱神乐：沙滩戏水","id":"CUSA08285","version":"01.04","process":"eboot.bin","mods":[
+{"name":"Infinite Hearts | 无限爱心","type":"checkbox","memory":[{"offset":"13AB65","on":"9090","off":"FFC8"}]},
+{"name":"Infinite HP | 无限 HP","type":"checkbox","memory":[{"offset":"012D3FF0","on":"01","off":"00"}]},
+{"name":"Infinite Water | 无限水","type":"checkbox","memory":[{"offset":"1A30FD","on":"90909090","off":"C5FA5CC1"},{"offset":"1B1EE5","on":"EB129090","off":"C5F82EC1"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"012D3FF1","on":"01","off":"00"}]},
+{"name":"Zeny 999999 | 金钱 999999","type":"checkbox","memory":[{"offset":"012D3FF3","on":"01","off":"00"}]},
+{"name":"Metals 99999 | 小徽章 99999","type":"checkbox","memory":[{"offset":"012D3FF4","on":"01","off":"00"}]}
+],"credits":["TLH & Dreamcast2"]}

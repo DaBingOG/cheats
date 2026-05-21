@@ -1,0 +1,15 @@
+{"name":"Final Fantasy XII The Zodiac Age 最终幻想12 黄道纪元","id":"CUSA08116","version":"01.08","process":"eboot.bin","mods":[
+{"name":"Gil 99999999 所持金99999999","type":"checkbox","memory":[{"offset":"00244EA5","on":"909090","off":"0F4EC8"}]},
+{"name":"Infinite Item 无限道具","type":"checkbox","memory":[{"offset":"00173C6C","on":"EB","off":"74"}]},
+{"name":"EXP Multi 10 on Gain 经验值10倍获得","type":"checkbox","memory":[{"offset":"1AB33F04","on":"01","off":"00"}]},
+{"name":"Infinite HP 无限HP","type":"checkbox","memory":[{"offset":"1AB33F00","on":"01","off":"00"}]},
+{"name":"Infinite MP 无限MP","type":"checkbox","memory":[{"offset":"1AB33F01","on":"01","off":"00"}]},
+{"name":"LP 999999 LP999999","type":"checkbox","memory":[{"offset":"0017CE12","on":"89C890","off":"0F47C1"},{"offset":"001A19B8","on":"909090","off":"0F4EF2"}]},
+{"name":"Always Action Bar Max 可持续进行战斗","type":"checkbox","memory":[{"offset":"1AB33F03","on":"01","off":"00"}]},
+{"name":"Steal All Items 100 全道具偷盗率100","type":"checkbox","memory":[{"offset":"1AB33F08","on":"01","off":"00"}]},
+{"name":"Drop All Items 100 战斗后全道具掉落率100","type":"checkbox","memory":[{"offset":"1AB33F09","on":"01","off":"00"}]},
+{"name":"Treasure Chest Always Appear 宝箱总是出现","type":"checkbox","memory":[{"offset":"1AB33F0A","on":"01","off":"00"}]},
+{"name":"Pause Chocobo Time 暂停陆行鸟租用计时器","type":"checkbox","memory":[{"offset":"00206360","on":"10","off":"58"}]},
+{"name":"EXP Max on Gain 经验值最大获得","type":"checkbox","memory":[{"offset":"1AB33F05","on":"01","off":"00"}]},
+{"name":"One Hit Kill 一击必杀","type":"checkbox","memory":[{"offset":"1AB33F06","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PLAYSTATION/PC修改讨论群:1167084913）"]}

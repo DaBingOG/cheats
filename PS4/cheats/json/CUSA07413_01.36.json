@@ -1,0 +1,132 @@
+{
+  "name": "God of War 战神4",
+  "id": "CUSA07413",
+  "version": "01.36",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Rage of Sparta | 无限斯巴达之怒",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Runic No Cool Down | 卢恩符文无需冷却",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "75C811",
+          "on": "8D",
+          "off": "86"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Arrow | 无限弓矢",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Stun | 一击眩晕",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "XP 9999999 | XP 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Hacksilver 9999999 | 银片 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF6",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Ignore Craft & Upgrade Requirments | 无视制作和升级需求",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "8C6895",
+          "on": "44015C183041B70190",
+          "off": "44395C1830410F9DC7"
+        }
+      ]
+    },
+    {
+      "name": "Full Mist Poison Gauge (Nifheim) | 满迷雾量表 (尼福尔海姆)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF7",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Throw The Axe And Press L2+X To Teleport | 抛出斧头后按 L2+X 瞬移至斧头位置",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02D13FF8",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

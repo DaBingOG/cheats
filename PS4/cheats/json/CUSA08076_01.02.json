@@ -1,0 +1,64 @@
+{
+  "name": "Sine More EX/不再犹豫",
+  "id": "CUSA08076",
+  "version": "01.02",
+  "process": "eboot.bin",
+  "mods": [
+	{
+      "name": "infinite time/无限时间",
+      "description": "时间不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "74FC5",
+          "on": "9090909090909090",
+          "off": "C5FA1183781D0600"
+        },
+		{
+          "offset": "7596A",
+          "on": "90909090909090909090",
+          "off": "C4C17A118424781D0600"
+        }
+      ]
+    },
+	{
+      "name": "infinite speed/无限速度",
+      "description": "速度不减",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "AFA22",
+          "on": "9090909090909090",
+          "off": "C5FA11871C030000"
+        }
+      ]
+    },
+	{
+      "name": "infinite firepower/无限火力",
+      "description": "火力不减",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "75D90",
+          "on": "909090909090",
+          "off": "2B8D10FFFFFF"
+        }
+      ]
+    },
+	{
+      "name": "infinite bomb/无限炸弹",
+      "description": "炸弹不减",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "6A587",
+          "on": "909090909090",
+          "off": "FE881A030000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "allyzc"
+  ]
+}
