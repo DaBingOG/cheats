@@ -1,0 +1,130 @@
+{
+  "name": "超级机器人大战OG月之民",
+  "id": "CUSA04712",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "view character abilities in battle add exp/战斗中查看人物能力获取经验值",
+      "description": "战斗中查看人物能力获取经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E53000",
+          "on": "4889C10FB7400A89030FB74108663D50C3720C48C7C102000000E9E1AC2DFF05E80300006689410848C7C102000000E9CCAC2DFF",
+          "off": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "12DCFA",
+          "on": "E90153D20090",
+          "off": "0FB7400A8903"
+        }
+      ]
+    },
+    {
+      "name": "infinite hp/无限HP",
+      "description": "无限HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E53040",
+          "on": "4180BEA2070000010F8421FE62FFC4C17A118678070000E913FE62FF",
+          "off": "00000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "482E66",
+          "on": "E9D5019D0090909090",
+          "off": "C4C17A118678070000"
+        }
+      ]
+    },
+    {
+      "name": "AP=99,999,999 when charge/AP值变动后=99,999,999",
+      "description": "AP值变动后=99,999,999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E53060",
+          "on": "B8FFE0F5058987400A0000E992112AFF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "F41FC",
+          "on": "E95FEED50090",
+          "off": "8987400A0000"
+        }
+      ]
+    },
+    {
+      "name": "AP=99,999,999 when charge/AP值变动后=99,999,999",
+      "description": "AP值变动后=99,999,999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E53080",
+          "on": "B8FFE0F5058987400A0000E97C8929FF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "EBA06",
+          "on": "E97576D60090",
+          "off": "8987400A0000"
+        }
+      ]
+    },
+    {
+      "name": "money=99,999,999 when charge/金钱变动后=99,999,999",
+      "description": "金钱变动后=99,999,999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E530A0",
+          "on": "B8FFE0F5058987380A0000E90D8929FF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "EB9B7",
+          "on": "E9E476D60090",
+          "off": "8987380A0000"
+        }
+      ]
+    },
+    {
+      "name": "PP=9999 when charge/PP值变动后=9999",
+      "description": "PP值变动后=9999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E530C0",
+          "on": "6641BD0F27664489680AE9BAAC2DFF",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "12DD84",
+          "on": "E93753D200",
+          "off": "664489680A"
+        }
+      ]
+    },
+    {
+      "name": "both sides will not be killed/敌我双方不会被杀死",
+      "description": "敌我双方不会被杀死",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E530E0",
+          "on": "83F8647C0DC5FA2AC0C5FA2AC9E970FD62FFB864000000C5FA2AC0C5FA2AC9E95EFD62FF",
+          "off": "000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "482E5A",
+          "on": "E981029D00909090",
+          "off": "C5FA2AC0C5FA2AC9"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "allyzc"
+  ]
+}
