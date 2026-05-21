@@ -1,0 +1,35 @@
+{
+  "name": "重力眩晕 重制版",
+  "id": "CUSA02443",
+  "version": "01.00",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "无限重力",
+      "hint": null,
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "48169A",
+          "on": "9090909090909090",
+          "off": "C5FA1183780A0000"
+        }
+      ]
+    },
+    {
+      "name": "珍奇宝石消费后不减反增",
+      "hint": null,
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "504777",
+          "on": "0117",
+          "off": "2917"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "cml"
+  ]
+}

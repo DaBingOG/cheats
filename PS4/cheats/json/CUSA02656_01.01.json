@@ -1,0 +1,130 @@
+﻿{
+	"name": "讨鬼传 极",
+	"id": "CUSA02656",
+	"version": "01.01",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "角色生命常满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "6880D",
+					"on": "C5F82ED1",
+					"off": "C5F82EC8"
+				}
+			]
+		},
+		{
+			"name": "角色体力常满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "114575",
+					"on": "C5F82ED1",
+					"off": "C5F82EC8"
+				}
+			]
+		},
+		{
+			"name": "大招快速加满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "171C3",
+					"on": "C5F82ED1",
+					"off": "C5F82EC8"
+				}
+			]
+		},
+		{
+			"name": "技能使用无限",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "93F27",
+					"on": "9090",
+					"off": "FFC9"
+				}
+			]
+		},
+		{
+			"name": "所有技能加身",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "912DB",
+					"on": "C5F82ED1",
+					"off": "C5F82EC1"
+				}
+			]
+		},
+		{
+			"name": "御魂快速升级",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "14E8C6",
+					"on": "418906",
+					"off": "45893E"
+				}
+			]
+		},
+		{
+			"name": "物品越用越多",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "140C99",
+					"on": "01D1",
+					"off": "29D1"
+				}
+			]
+		},
+		{
+			"name": "物品使用不减",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "140C99",
+					"on": "9090",
+					"off": "29D1"
+				}
+			]
+		},
+		{
+			"name": "金钱越用越多",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "13CF53",
+					"on": "01F0",
+					"off": "29F0"
+				}
+			]
+		},
+		{
+			"name": "金钱使用不减",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "13CF53",
+					"on": "9090",
+					"off": "29F0"
+				}
+			]
+		}
+	],
+	"credits": [
+		"越狱兔电玩"
+	]
+}
+   
+ 
+
+
+ 
+ 
+  
+  
+  

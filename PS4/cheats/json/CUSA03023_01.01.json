@@ -1,0 +1,14 @@
+{"name":"Bloodborne: The Old Hunter Edition 血源诅咒:老猎人版","id":"CUSA03023","version":"01.01","process":"eboot.bin","mods":[
+{"name":"God Mode/Ignore Hits|无敌模式","type":"checkbox","memory":[{"section":"0","offset":"056D3FE0","on":"01","off":"00"}]},
+{"name":"Infinite Health|无限生命","type":"checkbox","memory":[{"section":"0","offset":"056D3FE1","on":"01","off":"00"}]},
+{"name":"Infinite Stamina|无限体力（耐力）","type":"checkbox","memory":[{"section":"0","offset":"056D3FE2","on":"01","off":"00"}]},
+{"name":"No Fall to Death|不会坠亡","type":"checkbox","memory":[{"section":"0","offset":"01A35DEF","on":"9090","off":"29D3"}]},
+{"name":"One Hit Kill|一击必杀","type":"checkbox","memory":[{"section":"0","offset":"056D3FE3","on":"01","off":"00"}]},
+{"name":"Infinite Item and Ammo Use|无限道具和弹药","type":"checkbox","memory":[{"section":"0","offset":"056D3FE7","on":"01","off":"00"}]},
+{"name":"BloodEcho 99999999|血之回响99999999","type":"checkbox","memory":[{"section":"0","offset":"056D3FE4","on":"01","off":"00"}]},
+{"name":"Lucidity 99|灵视99","type":"checkbox","memory":[{"section":"0","offset":"056D3FE5","on":"01","off":"00"}]},
+{"name":"Ignore Update Required|无视改造升级和开圣杯需求","type":"checkbox","memory":[{"section":"0","offset":"01C8E010","on":"C3","off":"55"},{"offset":"014DAB20","on":"C3","off":"55"}]},
+{"name":"Hold <CIRCLE> to Move Speed Multi 2|按住 <O> 2倍移动速度","type":"checkbox","memory":[{"section":"0","offset":"056D3FE8","on":"01","off":"00"}]},
+{"name":"Freeze Enemies Move|冻结敌人移动","type":"checkbox","memory":[{"section":"0","offset":"056D3FE9","on":"01","off":"00"}]},
+{"name":"Stats 99999999|各项能力值99999999（不建议）","type":"checkbox","memory":[{"section":"0","offset":"056D3FE6","on":"01","off":"00"}]}
+],"credits":[" Fullcodes"]}
