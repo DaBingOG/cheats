@@ -1,0 +1,91 @@
+{
+  "name": "BLUE REFLECTION: TIE 蓝色反射：帝",
+  "id": "CUSA25337",
+  "version": "01.05",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite HP | 无限 HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1259DE0",
+          "on": "80BB3401000001750FC78314010000E7030000E9BD7A14FF898314010000E9B27A14FF",
+          "off": "0000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "3A18AF",
+          "on": "E92C85EB0090",
+          "off": "898314010000"
+        }
+      ]
+    },
+    {
+      "name": "Items 90 | 道具数量 90",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1259E40",
+          "on": "66C747065A00C3E9C9CE0CFF",
+          "off": "000000000000000000000000"
+        },
+        {
+          "offset": "326D10",
+          "on": "E92B31F300",
+          "off": "66897706C3"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 500 | 经验值 500 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1259E20",
+          "on": "69F6F4010000017708488BDFE97BA734FF",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "5A45A6",
+          "on": "E97558CB0090",
+          "off": "0177084889FB"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 1000 | 经验值 1000 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1259E20",
+          "on": "69F6E8030000017708488BDFE97BA734FF",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "5A45A6",
+          "on": "E97558CB0090",
+          "off": "0177084889FB"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 5000 | 经验值 5000 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1259E20",
+          "on": "69F688130000017708488BDFE97BA734FF",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "5A45A6",
+          "on": "E97558CB0090",
+          "off": "0177084889FB"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Wander"
+  ]
+}

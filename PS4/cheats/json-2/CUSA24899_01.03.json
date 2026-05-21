@@ -1,0 +1,6 @@
+{"name":"Stray 迷失","id":"CUSA24899","version":"01.03","process":"eboot.bin","mods":[
+{"name":"Player Invincible 角色无敌状态","type":"checkbox","memory":[{"offset":"06cFFA01","on":"01","off":"00"}]},
+{"name":"Infinite Player Health 角色无限血量","type":"checkbox","memory":[{"offset":"06cFFA00","on":"01","off":"00"}]},
+{"name":"Player Stealth 角色隐身状态","type":"checkbox","memory":[{"offset":"06cFFA02","on":"01","off":"00"}]},
+{"name":"Set Movement Speed Multi 2 角色移动速度2倍","type":"checkbox","memory":[{"offset":"04E36700","on":"02","off":"01"}]}
+],"credits":[" Fullcodes（PLAYSTATION/PC修改讨论群:1167084913）"]}

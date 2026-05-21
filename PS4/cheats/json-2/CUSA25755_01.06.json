@@ -1,0 +1,16 @@
+{"name":"Tactics Ogre: Reborn 皇家骑士团：重生","id":"CUSA25755","version":"01.06","process":"eboot.bin","mods":[
+{"name":"Infinite Health 无限生命","type":"checkbox","memory":[{"offset":"010EBFE0","on":"01","off":"00"}]},
+{"name":"Infinite MP 无限魔法","type":"checkbox","memory":[{"offset":"010EBFE1","on":"01","off":"00"}]},
+{"name":"Infinite Action 无限行动","type":"checkbox","memory":[{"offset":"010EBFE2","on":"01","off":"00"}]},
+{"name":"Empty Enemy MP 清空敌方魔法","type":"checkbox","memory":[{"offset":"010EBFE3","on":"01","off":"00"}]},
+{"name":"One Hit Kill 一击必杀","type":"checkbox","memory":[{"offset":"010EBFE5","on":"01","off":"00"}]},
+{"name":"War Funds 99999999 on Gain 金钱获得时99999999","type":"checkbox","memory":[{"offset":"0019A981","on":"90909090","off":"440F42F3"}]},
+{"name":"Infinite War Funds on Use 金钱使用不减","type":"checkbox","memory":[{"offset":"0019A9F6","on":"39","off":"29"}]},
+{"name":"Infinite Item Usage 无限道具使用","type":"checkbox","memory":[{"offset":"010EBFE9","on":"01","off":"00"}]},
+{"name":"99 Deploy Solts 可参战人数99","type":"checkbox","memory":[{"offset":"010EBFE8","on":"01","off":"00"}]},
+{"name":"EXP Multi 5 on Gain 经验值5倍获得","type":"checkbox","memory":[{"offset":"010EBFE6","on":"01","off":"00"}]},
+{"name":"MaxHP 9999 最大生命9999","type":"checkbox","memory":[{"offset":"010EBFEA","on":"01","off":"00"}]},
+{"name":"MaxMP 999 最大魔法999","type":"checkbox","memory":[{"offset":"010EBFEB","on":"01","off":"00"}]},
+{"name":"All Stats 999 各项属性999","type":"checkbox","memory":[{"offset":"010EBFEC","on":"01","off":"00"}]},
+{"name":"LV 50 on Levelup 升级时LV50","type":"checkbox","memory":[{"offset":"00143EAA","on":"87","off":"8F"}]}
+],"credits":[" Fullcodes（PLAYSTATION/PC修改讨论群:1167084913）"]}

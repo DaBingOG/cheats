@@ -1,0 +1,12 @@
+{"name":"Evil West/暗邪西部","id":"CUSA25569","version":"01.04","process":"eboot.bin","mods":[
+{"name":"God Mode/Ignore Hits|无敌模式","type":"checkbox","memory":[{"offset":"07CC7FF8","on":"01","off":"00"}]},
+{"name":"Infinite Health|无限生命","type":"checkbox","memory":[{"offset":"07CC7FF3","on":"01","off":"00"}]},
+{"name":"Infinite Armor|无限护甲","type":"checkbox","memory":[{"offset":"07CC7FF4","on":"01","off":"00"}]},
+{"name":"Infinite Energy|无限能量","type":"checkbox","memory":[{"offset":"07CC7FF5","on":"01","off":"00"}]},
+{"name":"Player Speed Multi 3|角色速度3倍","type":"checkbox","memory":[{"offset":"07CC7FF6","on":"01","off":"00"}]},
+{"name":"Infinite Ammo|无限子弹","type":"checkbox","memory":[{"offset":"07CC7FF9","on":"01","off":"00"}]},
+{"name":"Money Multi 100 on Gain|金钱100倍获得","type":"checkbox","memory":[{"offset":"07CC7FF0","on":"01","off":"00"}]},
+{"name":"EXP Multi 20 on Gain|经验20倍获得","type":"checkbox","memory":[{"offset":"07CC7FF1","on":"01","off":"00"}]},
+{"name":"Infinite Skill Point Use|技能点数无限使用","type":"checkbox","memory":[{"offset":"07CC7FF2","on":"01","off":"00"}]},
+{"name":"One Hit Kill|一击必杀","type":"checkbox","memory":[{"offset":"07CC7FF7","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PS4/PC修改群: 1167084913,702196858）"]}

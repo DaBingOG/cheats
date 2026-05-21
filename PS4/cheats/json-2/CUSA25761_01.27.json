@@ -1,0 +1,88 @@
+{
+  "name": "SIFU 师父",
+  "id": "CUSA25761",
+  "version": "01.27",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible Mode | 无敌模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09ED3FF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09ED3FF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Focus | 无限专注度",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09ED3FF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Defense | 无限防御",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09ED3FF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Easy Break Defense | 快速破防",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09ED3FF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Death Count 0  | 死亡次数 0",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3601787",
+          "on": "9090909090",
+          "off": "E814D6A9FF"
+        }
+      ]
+    },
+    {
+      "name": "XP 90,000 | 经验值 90,000",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "09ED3FF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

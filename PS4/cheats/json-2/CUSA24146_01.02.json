@@ -1,0 +1,66 @@
+{
+  "name": "Stubbs the Zombie 僵尸斯塔布斯",
+  "id": "CUSA24146",
+  "version": "01.02",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health (Stubbs) | 无限生命值 (斯塔布斯)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00ABBFF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Full Abilities Gauge (Stubbs) | 满能力槽 (斯塔布斯)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00ABBFF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Unlock All Abilities (Stubbs) | 解锁全能力 (斯塔布斯)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00ABBFF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Ammo (Police) | 最大弹药 (警察)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00ABBFF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Rapid Fire (Police) | 快速连射 (警察)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "00ABBFF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Molly"
+  ]
+}

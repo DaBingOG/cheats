@@ -1,0 +1,109 @@
+{
+  "name": "R-Type Final 2 异形战机 Final 2",
+  "id": "CUSA28561",
+  "version": "01.17",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible / Ignore Hits | 无敌模式 / 无视伤害判定",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1976252",
+          "on": "9090",
+          "off": "7405"
+        }
+      ]
+    },
+    {
+      "name": "Instant Charge BEAM Gauge | 瞬间填满波动炮 BEAM 量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "197A1D5",
+          "on": "9090",
+          "off": "7247"
+        }
+      ]
+    },
+    {
+      "name": "Full DOSE Gauge | 满特殊武器 DOSE 量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5B124B0",
+          "on": "C5FA1087D8070000C5FA1187D4070000E9F752A0FB",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "15177B4",
+          "on": "E9F7AC5F04909090",
+          "off": "C5FA1087D4070000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Lives | 无限生命数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1971670",
+          "on": "00",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5B124E3",
+          "on": "C704880000803F5DC3",
+          "off": "000000000000000000"
+        },
+        {
+          "offset": "14B0AB6",
+          "on": "E9281A6604",
+          "off": "C5FA110488"
+        }
+      ]
+    },
+    {
+      "name": "Rpt 999999999 | 金钱 999999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5B12489",
+          "on": "00",
+          "off": "05"
+        }
+      ]
+    },
+    {
+      "name": "Score 9999999 | 得分 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "BC1497",
+          "on": "B9FFC99A3B89C890",
+          "off": "4401F0B9FFC99A3B"
+        }
+      ]
+    },
+    {
+      "name": "Tricolor Crystal 999999999 | 三色晶矿 999999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1575A89",
+          "on": "41BCFFC99A3B4489E0",
+          "off": "4401F041BCFFC99A3B"
+        }
+      ]
+    },
+  ],
+  "credits": [
+    "炸片饭"
+  ]
+}

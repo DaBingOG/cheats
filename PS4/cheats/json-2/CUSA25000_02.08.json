@@ -1,0 +1,19 @@
+{"name":"Kena: Bridge of Spirits 凯娜：精灵之桥","id":"CUSA25000","version":"02.08","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"60C9748","on":"0B","off":"00"}]},
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"08AB3FF0","on":"01","off":"00"}]},
+{"name":"Infinite Shield | 无限护盾","type":"checkbox","memory":[{"offset":"2045250","on":"909090909090","off":"FF9040040000"}]},
+{"name":"Infinite Courage | 无限勇气","type":"checkbox","memory":[{"offset":"1EEFBE5","on":"00","off":"2F"}]},
+{"name":"Infinite Rots Cloud Gauge | 无限腐灵云槽","type":"checkbox","memory":[{"offset":"1EA1CF0","on":"90909090909090","off":"41FF9340040000"},{"offset":"23A712D","on":"909090909090","off":"FF9340040000"}]},
+{"name":"Infinite Arrows & Bombs | 无限箭矢和炸弹","type":"checkbox","memory":[{"offset":"5850827","on":"85DB90","off":"2B45D8"}]},
+{"name":"Gems 9000 | 宝石 9000","type":"checkbox","memory":[{"offset":"08AB3FF2","on":"01","off":"00"}]},
+{"name":"Karma 9000 | 业力 9000","type":"checkbox","memory":[{"offset":"08AB3FF1","on":"01","off":"00"}]},
+{"name":"Damage Multiply 2 | 伤害 2 倍","type":"checkbox","memory":[{"offset":"08AB3FF3","on":"01","off":"00"},{"offset":"60C9784","on":"059F85","off":"5A5080"}]},
+{"name":"Damage Multiply 4 | 伤害 4 倍","type":"checkbox","memory":[{"offset":"08AB3FF3","on":"01","off":"00"},{"offset":"60C9784","on":"AE2A6F","off":"5A5080"}]},
+{"name":"Damage Multiply 8 | 伤害 8 倍","type":"checkbox","memory":[{"offset":"08AB3FF3","on":"01","off":"00"},{"offset":"60C9784","on":"FEAD85","off":"5A5080"}]},
+{"name":"Damage Multiply 16 | 伤害 16 倍","type":"checkbox","memory":[{"offset":"08AB3FF3","on":"01","off":"00"},{"offset":"60C9784","on":"A24F81","off":"5A5080"}]},
+{"name":"Jump Height Multiply 2 | 跳跃高度 2 倍","type":"checkbox","memory":[{"offset":"1E83CCF","on":"05C66DA905","off":"8500FFFFFF"}]},
+{"name":"Jump Height Multiply 4 | 跳跃高度 4 倍","type":"checkbox","memory":[{"offset":"1E83CCF","on":"0596D29305","off":"8500FFFFFF"}]},
+{"name":"Jump Height Multiply 6 | 跳跃高度 6 倍","type":"checkbox","memory":[{"offset":"1E83CCF","on":"058CC59504","off":"8500FFFFFF"}]},
+{"name":"Jump Height Multiply 8 | 跳跃高度 8 倍","type":"checkbox","memory":[{"offset":"1E83CCF","on":"05827BA305","off":"8500FFFFFF"}]},
+{"name":"Jump Height Multiply 10 | 跳跃高度 10 倍","type":"checkbox","memory":[{"offset":"1E83CCF","on":"0564909504","off":"8500FFFFFF"}]}
+],"credits":["Hank"]}

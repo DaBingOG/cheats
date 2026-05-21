@@ -1,0 +1,7 @@
+{"name":"Stray 迷失","id":"CUSA24899","version":"01.04","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"06AF7FF1","on":"01","off":"00"}]},
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"06AF7FF0","on":"01","off":"00"}]},
+{"name":"Stealth Mode | 隐身模式","type":"checkbox","memory":[{"offset":"06AF7FF2","on":"01","off":"00"}]},
+{"name":"Movement Speed Multiply 1.5 | 移动速度 1.5 倍","type":"checkbox","memory":[{"offset":"4CE74C4","on":"C03F","off":"803F"}]},
+{"name":"Movement Speed Multiply 2 | 移动速度 2 倍","type":"checkbox","memory":[{"offset":"4CE74C4","on":"0040","off":"803F"}]}
+],"credits":["Fullcodes"]}

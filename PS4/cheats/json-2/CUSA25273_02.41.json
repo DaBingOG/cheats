@@ -1,0 +1,93 @@
+{
+  "name": "THE KING OF FIGHTERS XV 拳皇15",
+  "id": "CUSA25273",
+  "version": "02.41",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限体力槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07493FF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Power Gauge | 满力量槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07493FF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Guard Gauge | 满防御槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07493FF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Stun 2P | 一击眩晕 2P",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07493FF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Stun 1P | 一击眩晕 1P",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07493FF4",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "566F26D",
+          "on": "00",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "Freeze Timer | 锁定战斗时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "F02270",
+          "on": "00",
+          "off": "FF"
+        }
+      ]
+    },
+    {
+      "name": "Max Score | 最高战斗分数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "ED4DE3",
+          "on": "89C890",
+          "off": "0F4DC1"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "炸片饭 & d01v"
+  ]
+}

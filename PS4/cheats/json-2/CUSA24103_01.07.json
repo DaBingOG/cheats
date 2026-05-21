@@ -1,0 +1,88 @@
+{
+  "name": "Marvel's Guardians of the Galaxy 漫威银河护卫队",
+  "id": "CUSA24103",
+  "version": "01.07",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2EEB098",
+          "on": "00",
+          "off": "08"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Shield | 无限护盾",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2EEB06F",
+          "on": "00",
+          "off": "07"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2EEAFDC",
+          "on": "74",
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Skill Instant Cooldown | 技能瞬间冷却",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1CAA2C8",
+          "on": "5F",
+          "off": "5D"
+        }
+      ]
+    },
+    {
+      "name": "Max Skill Points 99 | 最大能力点 99",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2EEB041",
+          "on": "00",
+          "off": "0E"
+        }
+      ]
+    },
+    {
+      "name": "Max Basic Components 99999 | 最大基本部件 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2EEB001",
+          "on": "00",
+          "off": "10"
+        }
+      ]
+    },
+    {
+      "name": "Max Advanced Components 99999 | 最大高级部件 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2EEB013",
+          "on": "00",
+          "off": "10"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

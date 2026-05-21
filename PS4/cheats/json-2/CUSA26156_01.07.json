@@ -1,0 +1,38 @@
+﻿{
+  "name": "Trek to Yomi",
+  "id": "CUSA26156",
+  "version": "1.07",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "角色无敌",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5E3FDE0",
+          "on": "807F0808750741FF9720060000E98B1923FA",
+          "off": "000000000000000000000000000000000000"
+        },
+        {
+          "offset": "71776",
+          "on": "E965E6DC059090",
+          "off": "41FF9720060000"
+        }
+      ]
+    },
+    {
+      "name": "无限气力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4F504",
+          "on": "909090909090",
+          "off": "FF9320060000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "fqzx123"
+  ]
+}

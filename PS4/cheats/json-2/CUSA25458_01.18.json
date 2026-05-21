@@ -1,0 +1,109 @@
+{
+  "name": "R-Type Final 2 异形战机 Final 2",
+  "id": "CUSA25458",
+  "version": "01.18",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible / Ignore Hits | 无敌模式 / 无视伤害判定",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1991452",
+          "on": "9090",
+          "off": "7405"
+        }
+      ]
+    },
+    {
+      "name": "Instant Charge BEAM Gauge | 瞬间填满波动炮 BEAM 量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "19951F5",
+          "on": "9090",
+          "off": "7247"
+        }
+      ]
+    },
+    {
+      "name": "Full DOSE Gauge | 满特殊武器 DOSE 量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5B39211",
+          "on": "00",
+          "off": "08"
+        },
+        {
+          "offset": "5B3921C",
+          "on": "11",
+          "off": "10"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Lives | 无限生命数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "198C88D",
+          "on": "00",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5B39240",
+          "on": "C704880000803F5DC3",
+          "off": "000000000000000000"
+        },
+        {
+          "offset": "14CD776",
+          "on": "E9C5BA6604",
+          "off": "C5FA110488"
+        }
+      ]
+    },
+    {
+      "name": "Rpt 999999999 | 金钱 999999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "086FBFF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Score 9999999 | 得分 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "BC28A7",
+          "on": "B9FFC99A3B89C890",
+          "off": "4401F0B9FFC99A3B"
+        }
+      ]
+    },
+    {
+      "name": "Tricolor Crystal 999999999 | 三色晶矿 999999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1576D09",
+          "on": "41BCFFC99A3B4489E0",
+          "off": "4401F041BCFFC99A3B"
+        }
+      ]
+    },
+  ],
+  "credits": [
+    "炸片饭"
+  ]
+}

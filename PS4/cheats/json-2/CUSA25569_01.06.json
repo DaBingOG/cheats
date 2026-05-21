@@ -1,0 +1,16 @@
+{"name":"Evil West 暗邪西部","id":"CUSA25569","version":"01.06","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"07CC7FF8","on":"01","off":"00"}]},
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"07CC7FF3","on":"01","off":"00"}]},
+{"name":"Infinite Armor | 无限护甲","type":"checkbox","memory":[{"offset":"07CC7FF4","on":"01","off":"00"}]},
+{"name":"Infinite Energy | 无限能量","type":"checkbox","memory":[{"offset":"07CC7FF5","on":"01","off":"00"}]},
+{"name":"Infinite Ammo | 无限子弹","type":"checkbox","memory":[{"offset":"07CC7FF9","on":"01","off":"00"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"07CC7FF7","on":"01","off":"00"}]},
+{"name":"Infinite Skill Points | 无限技能点数","type":"checkbox","memory":[{"offset":"07CC7FF2","on":"01","off":"00"}]},
+{"name":"Money Multiply 10 | 金钱 10 倍","type":"checkbox","memory":[{"offset":"07CC7FF0","on":"01","off":"00"},{"offset":"58AB14B","on":"0A","off":"01"}]},
+{"name":"Money Multiply 100 | 金钱 100 倍","type":"checkbox","memory":[{"offset":"07CC7FF0","on":"01","off":"00"},{"offset":"58AB14B","on":"64","off":"01"}]},
+{"name":"EXP Multiply 10 | 经验值 10 倍","type":"checkbox","memory":[{"offset":"07CC7FF1","on":"01","off":"00"},{"offset":"58AB17C","on":"0A","off":"01"}]},
+{"name":"EXP Multiply 100 | 经验值 100 倍","type":"checkbox","memory":[{"offset":"07CC7FF1","on":"01","off":"00"},{"offset":"58AB17C","on":"64","off":"01"}]},
+{"name":"Player Speed Multiply 1.5 | 玩家速度 1.5 倍","type":"checkbox","memory":[{"offset":"07CC7FF6","on":"01","off":"00"},{"offset":"58AB1F9","on":"C03F","off":"803F"}]},
+{"name":"Player Speed Multiply 2 | 玩家速度 2 倍","type":"checkbox","memory":[{"offset":"07CC7FF6","on":"01","off":"00"},{"offset":"58AB1F9","on":"0040","off":"803F"}]},
+{"name":"Player Speed Multiply 3 | 玩家速度 3 倍","type":"checkbox","memory":[{"offset":"07CC7FF6","on":"01","off":"00"},{"offset":"58AB1F9","on":"4040","off":"803F"}]}
+],"credits":["Fullcodes"]}

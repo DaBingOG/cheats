@@ -1,0 +1,171 @@
+﻿{
+	"name": "地平线2-西之绝境",
+	"id": "CUSA24705",
+	"version": "01.15",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "无限武器耐力",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2BDBDE0",
+					"on": "41C74550003C1C46EB00C4C17A104D50E9A11120FF",
+					"off": "000000000000000000000000000000000000000000"
+				},
+				{
+					"offset": "1DDCF90",
+					"on": "E94BEEDF0090",
+					"off": "C4C17A104D50"
+				}
+			]
+		},
+		{
+			"name": "勇气激增快速蓄满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "1B14B70",
+					"on": "C5FA119780000000",
+					"off": "C5FA118F80000000"
+				}
+			]
+		},
+		{
+			"name": "无限额外生命",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "1C16EF2",
+					"on": "C5F258C8",
+					"off": "C5F25CC8"
+				}
+			]
+		},
+		{
+			"name": "无限生命",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2BDBE00",
+					"on": "C74074003C1C46EB00C5FA104074E95AE472FF",
+					"off": "00000000000000000000000000000000000000"
+				},
+				{
+					"offset": "230A268",
+					"on": "E9931B8D00",
+					"off": "C5FA104074"
+				}
+			]
+		},
+		{
+			"name": "无限氧气",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "1DDB533",
+					"on": "C5FA58C3",
+					"off": "C5FA5CC3"
+				}
+			]
+		},
+		{
+			"name": "无限专注",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "18FA2C0",
+					"on": "C5FA58C1",
+					"off": "C5FA5CC1"
+				}
+			]
+		},
+		{
+			"name": "获得 物品/弓箭 x999",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2BDBE20",
+					"on": "488B6C391066C74550E703EB00034550E9774531FF",
+					"off": "000000000000000000000000000000000000000000"
+				},
+				{
+					"offset": "1EF03A4",
+					"on": "E977BACE00909090",
+					"off": "488B6C3910034550"
+				}
+			]
+		},
+		{
+			"name": "获取金钱 x9999999",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2BDBE40",
+					"on": "41C744DB107F969800E96528A9FE",
+					"off": "0000000000000000000000000000"
+				},
+				{
+					"offset": "166E6AE",
+					"on": "E98DD75601",
+					"off": "450174DB10"
+				}
+			]
+		},
+		{
+			"name": "无限药包",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2BDBE50",
+					"on": "C4C17A114F606641C747646300E9C89F04FF",
+					"off": "000000000000000000000000000000000000"
+				},
+				{
+					"offset": "1C25E20",
+					"on": "E92B60FB009090909090",
+					"off": "C4C17A114F6041894F64"
+				}
+			]
+		},
+		{
+			"name": "无限技能点",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "1F6FF68",
+					"on": "41895670",
+					"off": "41894E70"
+				}
+			]
+		},
+		{
+			"name": "一击必杀",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2BDBE70",
+					"on": "4180BDE800000001750A41C74574003C1C46EB090F57C0C4C17A114574E903172AFE",
+					"off": "00000000000000000000000000000000000000000000000000000000000000000000"
+				},
+				{
+					"offset": "E7D58F",
+					"on": "E9DCE8D50190",
+					"off": "C4C17A114574"
+				}
+			]
+		}
+	],
+	"credits": [
+		"Test"
+	]
+}  
+ 
+   
+   
+ 
+  
+   
+
+
+  

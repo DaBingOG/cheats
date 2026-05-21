@@ -1,0 +1,121 @@
+{
+  "name": "THE KING OF FIGHTERS XV 拳皇15",
+  "id": "CUSA25272",
+  "version": "01.80",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Max Player Health | 玩家最大生命值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "540D8F4",
+          "on": "6641C78636070000E803",
+          "off": "90909090909090909090"
+        }
+      ]
+    },
+    {
+      "name": "Max Player Power Gauge | 玩家满能量槽",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "540D906",
+          "on": "664189863E070000",
+          "off": "9090909090909090"
+        }
+      ]
+    },
+    {
+      "name": "Freeze Timer | 锁定比赛时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E30840",
+          "on": "00",
+          "off": "FF"
+        }
+      ]
+    },
+    {
+      "name": "Max Score | 最高战斗分数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E04E33",
+          "on": "89C890",
+          "off": "0F4DC1"
+        }
+      ]
+    },
+    {
+      "name": "Press L1 to Refill Health (1P) | 按 L1 恢复生命值 (1P)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5422DD4",
+          "on": "740B",
+          "off": "EB00"
+        }
+      ]
+    },
+    {
+      "name": "Press L1 to Refill Health (2P) | 按 L1 恢复生命值 (2P)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5422DD3",
+          "on": "01740B",
+          "off": "00EB00"
+        }
+      ]
+    },
+    {
+      "name": "Max Guard Gauge (1P) | 满防御槽 (1P)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5422E74",
+          "on": "740B",
+          "off": "EB00"
+        }
+      ]
+    },
+    {
+      "name": "Max Guard Gauge (2P) | 满防御槽 (2P)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5422E73",
+          "on": "01740B",
+          "off": "00EB00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Stun 2P | 一击眩晕 2P",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5422EB5",
+          "on": "740C",
+          "off": "EB00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Stun 1P | 一击眩晕 1P",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5422EB4",
+          "on": "00740C",
+          "off": "01EB00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "炸片饭 & d01v"
+  ]
+}

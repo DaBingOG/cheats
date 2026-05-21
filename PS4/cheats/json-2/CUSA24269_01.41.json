@@ -1,0 +1,267 @@
+{
+  "name": "Call of Duty®: Black Ops Cold War 使命召唤17：黑色行动 冷战",
+  "id": "CUSA24269",
+  "version": "01.41",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible Mode | 无敌模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DCD880",
+          "on": "BFA00000A089B8640E0000E953F14FFF",
+          "off": "BF0000002089B8640E0000E953F14FFF"
+        },
+        {
+          "offset": "12CC9DD",
+          "on": "E99E0EB00090",
+          "off": "E99E0EB00090"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "125BA6B",
+          "on": "7F00",
+          "off": "7F18"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo | 无限弹药",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "F174F4",
+          "on": "9090",
+          "off": "29D9"
+        }
+      ]
+    },
+    {
+      "name": "No Reload | 无需装弹",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DCD6D0",
+          "on": "83FBFF750231DB41039C8EDC130000E920D813FF",
+          "off": "0000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "F0AEFC",
+          "on": "909090E9CC27EC00",
+          "off": "41039C8EDC130000"
+        }
+      ]
+    },
+    {
+      "name": "No Recoil | 无后坐力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DCD780",
+          "on": "C5F2580EC70600000000C5FA100EE9655F17FF",
+          "off": "00000000000000000000000000000000000000"
+        },
+        {
+          "offset": "F436F0",
+          "on": "E98BA0E800909090",
+          "off": "C5F2580EC5FA110E"
+        },
+        {
+          "offset": "1DCD7A0",
+          "on": "C5FA584604C7460400000000C5FA104E04E9515F17FF",
+          "off": "00000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "F436FD",
+          "on": "E99EA0E8009090909090",
+          "off": "C5FA584604C5FA114604"
+        },
+        {
+          "offset": "F4656B",
+          "on": "909090909090909090909090",
+          "off": "C4C17A1136C4C37917760401"
+        }
+      ]
+    },
+    {
+      "name": "No Spread | 准心不扩散",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DCD730",
+          "on": "41C7864011000000000000C4C17A108640110000E93E0C07FF",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "E3E37E",
+          "on": "E9ADF3F80090909090",
+          "off": "C4C17A118640110000"
+        },
+        {
+          "offset": "1DCD750",
+          "on": "41C7864011000000000000C4C17A108640110000E97C400AFF",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "E717DC",
+          "on": "E96FBFF50090909090",
+          "off": "C4C17A118640110000"
+        },
+        {
+          "offset": "E6A74D",
+          "on": "C7804011000000000000",
+          "off": "C7804011000000007F43"
+        }
+      ]
+    },
+    {
+      "name": "Rapid Fire | 快速连射",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E6CD86",
+          "on": "9090",
+          "off": "8932"
+        },
+        {
+          "offset": "E6CDA8",
+          "on": "9090",
+          "off": "890A"
+        }
+      ]
+    },
+    {
+      "name": "Weapon No Overheat | 武器不会过热",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1209840",
+          "on": "9090909090909090",
+          "off": "C5FA58808C000000"
+        }
+      ]
+    },
+    {
+      "name": "Slient Auto Weapons | 消音自动武器",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E6CEDE",
+          "on": "C70200000000",
+          "off": "C70207000000"
+        }
+      ]
+    },
+    {
+      "name": "Fast Switch Weapons | 快速切换武器",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "E98974",
+          "on": "90909090909090",
+          "off": "4189876C0E0000"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1500668",
+          "on": "4C0F4DF9",
+          "off": "4C0F4CF9"
+        }
+      ]
+    },
+    {
+      "name": "Stealth Mode | 隐身模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5AAB67",
+          "on": "9090909090",
+          "off": "E85479F400"
+        },
+        {
+          "offset": "14E8E4A",
+          "on": "9090909090",
+          "off": "E821A33CFF"
+        }
+      ]
+    },
+    {
+      "name": "Movement Speed Multiply 1.5 | 移动速度 1.5 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DCD7F0",
+          "on": "48C1E104B81D010000E9BD4244FF",
+          "off": "0000000000000000000000000000"
+        },
+        {
+          "offset": "1211AB4",
+          "on": "E937BDBB009090",
+          "off": "48C1E1048B0408"
+        }
+      ]
+    },
+    {
+      "name": "Movement Speed Multiply 2 | 移动速度 2 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DCD7F0",
+          "on": "48C1E104B87C010000E9BD4244FF",
+          "off": "0000000000000000000000000000"
+        },
+        {
+          "offset": "1211AB4",
+          "on": "E937BDBB009090",
+          "off": "48C1E1048B0408"
+        }
+      ]
+    },
+    {
+      "name": "Movement Speed Multiply 3 | 移动速度 3 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DCD7F0",
+          "on": "48C1E104B83A020000E9BD4244FF",
+          "off": "0000000000000000000000000000"
+        },
+        {
+          "offset": "1211AB4",
+          "on": "E937BDBB009090",
+          "off": "48C1E1048B0408"
+        }
+      ]
+    },
+    {
+      "name": "Zombies Mode: Money 99999 | 丧尸模式：金钱 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DCD710",
+          "on": "B89F8601008981245D0000E984E751FF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "12EBE9E",
+          "on": "E96D18AE0090",
+          "off": "8981245D0000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes & Rizla"
+  ]
+}

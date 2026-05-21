@@ -1,0 +1,23 @@
+{
+  "name": "CUSA24853_00-KENA",
+  "id": "CUSA24853",
+  "version": "02.03",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible",
+      "hint": null,
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2288D87",
+          "on": "FF90C0080000",
+          "off": "909090909090"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "fqzx123"
+  ]
+}

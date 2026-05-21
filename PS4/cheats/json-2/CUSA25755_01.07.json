@@ -1,0 +1,175 @@
+{
+  "name": "Tactics Ogre: Reborn 皇家骑士团：重生",
+  "id": "CUSA25755",
+  "version": "01.07",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite HP | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite MP | 无限魔法",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Action | 无限行动",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Empty Enemy MP | 清空敌方魔法",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Deploy Solts 99 | 可配置数 99",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE8",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Item Use | 道具使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE9",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite War Funds | 金钱使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "19ABF6",
+          "on": "39",
+          "off": "29"
+        }
+      ]
+    },
+    {
+      "name": "War Funds 99,999,999 | 金钱 99,999,999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "19AB81",
+          "on": "90909090",
+          "off": "440F42F3"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 5 | 经验值倍率 5 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE6",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "94DF2B",
+          "on": "05",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "EXP Multiply 10 | 经验值倍率 10 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFE6",
+          "on": "01",
+          "off": "00"
+        },
+        {
+          "offset": "94DF2B",
+          "on": "0A",
+          "off": "01"
+        }
+      ]
+    },
+    {
+      "name": "Max HP 9999 | 最大生命 9999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFEA",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max MP 999 | 最大魔法 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFEB",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Stats 999 | 各项属性 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "010EBFEC",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}
