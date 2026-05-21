@@ -1,0 +1,54 @@
+{
+  "name": "MAD RAT DEAD",
+  "id": "CUSA20394",
+  "version": "01.03",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Freeze Time 999 | 锁定时间 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "42C0A0",
+          "on": "BBE70300008998C8030000E92A82BDFF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "42D4",
+          "on": "E9C77D420090",
+          "off": "8998C8030000"
+        }
+      ]
+    },
+    {
+      "name": "Combo 999 | 连击数 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "42C080",
+          "on": "BEE703000089B7BC030000E9FC7BCFFF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "123C86",
+          "on": "E9F583300090",
+          "off": "89B7BC030000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Jumps | 无限跳跃",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CD730",
+          "on": "FF8FB40A0000",
+          "off": "FF87B40A0000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Dreamcast2"
+  ]
+}

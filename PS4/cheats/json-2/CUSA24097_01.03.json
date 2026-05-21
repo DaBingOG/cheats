@@ -1,0 +1,112 @@
+﻿{
+  "name": "戰國無雙５",
+  "id": "CUSA24097",
+  "version": "01.03",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "无双无限",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "ED37CD",
+          "on": "89CE90",
+          "off": "0F4DF1"
+        },
+        {
+          "offset": "EAE5BD",
+          "on": "89D790",
+          "off": "0F4DFA"
+        }
+      ]
+    },
+    {
+      "name": "极意无限",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "ED418D",
+          "on": "C5FA11803C020000",
+          "off": "C5FA11883C020000"
+        },
+        {
+          "offset": "ED3E1E",
+          "on": "C5FA5FC9",
+          "off": "C5FA5DC9"
+        }
+      ]
+    },
+    {
+      "name": "闪技无限",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1072CDF",
+          "on": "C5F25CC9",
+          "off": "C5F25CC8"
+        },
+        {
+          "offset": "1072D5F",
+          "on": "C5F25CC1",
+          "off": "C5F25CC0"
+        },
+        {
+          "offset": "1072C98",
+          "on": "C5F25CC9",
+          "off": "C5F25CC8"
+        },
+        {
+          "offset": "1072D1F",
+          "on": "C5F25CC9",
+          "off": "C5F25CC8"
+        }
+      ]
+    },
+    {
+      "name": "经验不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1206546",
+          "on": "89B1A0080000",
+          "off": "8981A0080000"
+        }
+      ]
+    },
+    {
+      "name": "功绩不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1AFF700",
+          "on": "BA7F9698000F42D101DAE9DAF974FF",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "124F0E1",
+          "on": "E91A068B00909090",
+          "off": "BA7F9698000F42D1"
+        }
+      ]
+    },
+    {
+      "name": "金钱不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1AFF720",
+          "on": "BA7F9698000F43CA01F1E9BD774EFF",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "FE6EE4",
+          "on": "E93788B100909090",
+          "off": "BA7F9698000F43CA"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "fqzx123"
+  ]
+}

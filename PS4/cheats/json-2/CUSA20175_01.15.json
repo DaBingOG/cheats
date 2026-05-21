@@ -1,0 +1,187 @@
+{
+  "name": "The Legend of Heroes Hajimari no Kiseki 英雄传说：创之轨迹",
+  "id": "CUSA20175",
+  "version": "01.15",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite HP | 无限生命 HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CE9FD4",
+          "on": "00",
+          "off": "09"
+        }
+      ]
+    },
+    {
+      "name": "Infinite EP | 无限魔法 EP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CE9FDF",
+          "on": "00",
+          "off": "0C"
+        }
+      ]
+    },
+    {
+      "name": "Infinite CP | 无限战技 CP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CE9FED",
+          "on": "00",
+          "off": "0C"
+        }
+      ]
+    },
+    {
+      "name": "Infinite BP | 无限勇气指令 BP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "6BD8D3",
+          "on": "4C",
+          "off": "47"
+        }
+      ]
+    },
+    {
+      "name": "Max Move Range | 最大移动范围",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CE9FFB",
+          "on": "00",
+          "off": "08"
+        }
+      ]
+    },
+    {
+      "name": "STR 99999 | 物理攻击 STR 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CEA00F",
+          "on": "00",
+          "off": "09"
+        }
+      ]
+    },
+    {
+      "name": "ATS 99999 | 魔法攻击 ATS 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CEA01A",
+          "on": "00",
+          "off": "09"
+        }
+      ]
+    },
+    {
+      "name": "Evasion Change 100%% | 闪避率 100%%",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CEA005",
+          "on": "00",
+          "off": "08"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items Use in Battle | 战斗中道具使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "41A336",
+          "on": "909090",
+          "off": "4429E0"
+        }
+      ]
+    },
+    {
+      "name": "Infinite CHARGE Use | 奇袭攻击 CHARGE 无限使用",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "425484",
+          "on": "90909090",
+          "off": "664429FB"
+        }
+      ]
+    },
+    {
+      "name": "Mira 9999999 | 米拉 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "424CDA",
+          "on": "C78040F67A007F969800B87F969800C3",
+          "off": "8B8040F67A00C3909090909090909090"
+        }
+      ]
+    },
+    {
+      "name": "U-Materials 9999999 | U 物质 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "424D57",
+          "on": "90EB084489F05B415E5DC341BE7F969800448931EBED",
+          "off": "448B314489F05B415E5DC39090909090909090909090"
+        }
+      ]
+    },
+    {
+      "name": "All Sepith & Sepith Mass 99999 | 全部晶耀片和晶耀石块 99999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "424B7D",
+          "on": "C78488A0F57A009F860100B89F860100C3",
+          "off": "8B8488A0F57A00C3909090909090909090"
+        }
+      ]
+    },
+    {
+      "name": "Player Level Always Level Up | 战斗后玩家等级总是升级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1333F7",
+          "on": "90909090",
+          "off": "410F42C4"
+        }
+      ]
+    },
+    {
+      "name": "Master Quartz Always Level Up | 战斗后核心回路总是升级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "130B25",
+          "on": "909090",
+          "off": "0F42C1"
+        }
+      ]
+    },
+    {
+      "name": "Max LINK-LV After Battle | 战斗后 LINK 等级最大",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "6BCB31",
+          "on": "90909090",
+          "off": "410F47C5"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

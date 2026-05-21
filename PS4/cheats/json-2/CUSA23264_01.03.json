@@ -1,0 +1,7 @@
+{"name":"Need for Speed: Hot Pursuit Remastered 极品飞车:热力追踪 重制版","id":"CUSA23264","version":"01.03","process":"eboot.bin","mods":[
+{"name":"Infinite Nitrous 无限氮气","type":"checkbox","memory":[{"offset":"001EAC97","on":"5F","off":"5C"}]},
+{"name":"Infinite HP 车辆零受损","type":"checkbox","memory":[{"offset":"015ABF01","on":"01","off":"00"}]},
+{"name":"Race Time 0:00.00 计时器 0:00.00","type":"checkbox","memory":[{"offset":"015ABF04","on":"01","off":"00"}]},
+{"name":"Slow Rival Car 降低其它车辆速度","type":"checkbox","memory":[{"offset":"015ABF00","on":"01","off":"00"}]},
+{"name":"Bounty Multi 100 on Gain 车手和警察积分100倍获得","type":"checkbox","memory":[{"offset":"015ABF02","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PLAYSTATION/PC修改讨论群:1167084913）"]}

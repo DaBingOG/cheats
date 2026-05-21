@@ -1,0 +1,122 @@
+{
+  "name": "Crash Bandicoot™ 4: It's About Time",
+  "id": "CUSA19035",
+  "version": "01.05",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4F2C142",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Jumps | 无限跳跃",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "19A7C0",
+          "on": "90909090909090",
+          "off": "41FF8638030000"
+        }
+      ]
+    },
+    
+    {
+      "name": "Super Jump | 超级跳",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07D4FFF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Deaths 0 | 死亡次数 0",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07D4FFF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Crates | 最大箱子数量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07D4FFF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Wumpa | 最大乌姆帕数量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07D4FFF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Reduced Time Trial | 减少试炼时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "07D4FFF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Run Speed Multiply 2 | 奔跑速度 2 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4F2C19D",
+          "on": "D4CBE1",
+          "off": "7FCFE1"
+        }
+      ]
+    },
+    {
+      "name": "Run Speed Multiply 3 | 奔跑速度 3 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4F2C19D",
+          "on": "15C8DA",
+          "off": "7FCFE1"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Jumps (Dingodile) | 无限跳跃 (丁戈鳄)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "9895D",
+          "on": "2901",
+          "off": "2800"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "hejran7"
+  ]
+}

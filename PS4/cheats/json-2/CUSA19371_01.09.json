@@ -1,0 +1,55 @@
+{
+  "name": "Streets of Rage 4 怒之铁拳4",
+  "id": "CUSA19371",
+  "version": "01.09",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0379FFF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Star Move | 无限星之秘技",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0379FFF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Score Multiply 100 | 分数百倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0379FFF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Full Screen Attack | 全屏攻击",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0379FFF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Hank"
+  ]
+}

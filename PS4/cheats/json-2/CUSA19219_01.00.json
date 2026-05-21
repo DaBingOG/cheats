@@ -1,0 +1,155 @@
+{
+  "name": "碧之轨迹",
+  "id": "CUSA19219",
+  "version": "01.00",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "洛伊德EXP MAX",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "3ACE80",
+          "on": "E97FA0E30490",
+          "off": "8A800C010000"
+        },
+        {
+          "section": "0",
+          "offset": "86647100",
+          "on": "8A485C8A800C01000080E101888D2BFFFFFFF6852BFFFFFF01740230C0E9605F1CFB",
+          "off": "00000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "金钱4倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "83B60D46",
+          "on": "8B75E06BF6040375E489F0",
+          "off": "8B7DE48B75E0E89F7898FC"
+        }
+      ]
+    },
+    {
+      "name": "无限能量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "818453DE",
+          "on": "31F690",
+          "off": "8B75D4"
+        }
+      ]
+    },
+    {
+      "name": "移动速度提升",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8515EFBE",
+          "on": "E95F814E01",
+          "off": "C5FA1045EC"
+        },
+        {
+          "section": "0",
+          "offset": "86647122",
+          "on": "2EC5FA100D85C82EFFC5FA1045ECC5FA59C1E98A7EB1FE",
+          "off": "0000000000000000000000000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "跑步速度提升",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8181128D",
+          "on": "E9A75EE304909090",
+          "off": "C5FA1085B4FAFFFF"
+        },
+        {
+          "section": "0",
+          "offset": "86647139",
+          "on": "C5FA1085B4FAFFFF2EC5FA100D66C82EFFC5FA59C1E942A11CFB",
+          "off": "0000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "代币不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "84E9D8F0",
+          "on": "31C090",
+          "off": "8B45F4"
+        }
+      ]
+    },
+    {
+      "name": "连击数5倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8510D10B",
+          "on": "E943A053019090",
+          "off": "48897DF88975F4"
+        },
+        {
+          "section": "0",
+          "offset": "86647153",
+          "on": "6BF6059048897DF88975F4E9AF5FACFE",
+          "off": "00000000000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "name": "武器耐久不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "818971E5",
+          "on": "BE00000000",
+          "off": "BE01000000"
+        }
+      ]
+    },
+    {
+      "name": "全角色可使用",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "84E9DFAD",
+          "on": "909090909090",
+          "off": "0F8405000000"
+        }
+      ]
+    },
+    {
+      "name": "全屏收集金币能量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "84D2BCA9",
+          "on": "C5FA10152315D200",
+          "off": "C5FA10956CFFFFFF"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "怪盗B"
+  ]
+}                                     retn

@@ -1,0 +1,16 @@
+{"name":"Onee Chanbara Origin 御姐玫瑰 起源","id":"CUSA19217","version":"01.03","process":"eboot.bin","mods":[
+{"name":"Player Invincible 角色无敌状态","type":"checkbox","memory":[{"offset":"0135BFF3","on":"01","off":"00"}]},
+{"name":"Infinite Player HP 角色无限HP","type":"checkbox","memory":[{"offset":"0135BFF0","on":"01","off":"00"}]},
+{"name":"Infinite Player Xtasy 角色无限狂喜量表","type":"checkbox","memory":[{"offset":"001A4D82","on":"A0","off":"98"}]},
+{"name":"Infinite Player Stain 角色血污永久变身","type":"checkbox","memory":[{"offset":"00201E57","on":"9090909090","off":"E8D430F2FF"}]},
+{"name":"Auto Cool Finish 自动酷炫连段","type":"checkbox","memory":[{"offset":"001789E6","on":"EB","off":"74"},{"offset":"00178A06","on":"00","off":"0C"}]},
+{"name":"Infinite Player Jump 角色无限跳跃","type":"checkbox","memory":[{"offset":"001B8F17","on":"EB","off":"75"}]},
+{"name":"Player Movement Speed Multi 2.5 移动速度2.5倍","type":"checkbox","memory":[{"offset":"0135BFF2","on":"01","off":"00"}]},
+{"name":"Player XP Max on Gain 角色经验值最大获得","type":"checkbox","memory":[{"offset":"000C99DC","on":"90909090","off":"410F42CE"}]},
+{"name":"Infinite Money Use on Purchase 购物时所持金钱无限使用","type":"checkbox","memory":[{"offset":"002A34CC","on":"90BA405489","off":"8B935C0200"}]},
+{"name":"Infinite Consumable Items 无限消费道具使用","type":"checkbox","memory":[{"offset":"000C8885","on":"0A0000004889E789","off":"FFFFFF7F4889E723"}]},
+{"name":"No Weapon Degradation 武器不会劣化","type":"checkbox","memory":[{"offset":"001DAA0E","on":"108358","off":"588350"}]},
+{"name":"One Hit Kill 一击必杀","type":"checkbox","memory":[{"offset":"0135BFF1","on":"01","off":"00"}]},
+{"name":"Hit Count Multi 99 连段数99倍增加","type":"checkbox","memory":[{"offset":"000C6F99","on":"63","off":"01"}]},
+{"name":"Kill Streak Multi 99 连杀数99倍增加","type":"checkbox","memory":[{"offset":"000C710B","on":"63","off":"01"}]}
+],"credits":[" Fullcodes（PLAYSTATION/PC修改讨论群:1167084913）"]}

@@ -1,0 +1,29 @@
+{
+  "name": "The Coma 2: Vicious Sisters 昏迷2：恶毒姐妹",
+  "id": "CUSA10262",
+  "version": "01.00",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health / Stamina / Money 999999 | 无限生命 / 耐力 / 金钱 999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "82CFB200",
+          "on": "8B7424F4BE3F420F00897714E9C41600FF",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "81CFC8CE",
+          "on": "E92DE9FF009090",
+          "off": "8B7424F4897714"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Dreamcast2"
+  ]
+}

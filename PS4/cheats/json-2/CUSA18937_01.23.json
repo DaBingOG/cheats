@@ -1,0 +1,77 @@
+{
+    "name":"Diablo II: Resurrected 暗黑破坏神II：狱火重生",
+    "id":"CUSA18937",
+    "version":"01.23",
+    "process":"eboot.bin",
+    "mods":[
+        {
+            "name":"Gold 2000000 | 金币 2000000",
+            "type":"checkbox",
+            "memory":[
+                {
+                    "offset":"30AFA54",
+                    "on":"01",
+                    "off":"00"
+                }
+            ]
+        },
+        {
+            "name":"Player XP Max | 经验值最大",
+            "type":"checkbox",
+            "memory":[
+                {
+                    "offset":"30AFA50",
+                    "on":"01",
+                    "off":"00"
+                }
+            ]
+        },
+        {
+            "name":"Player Life 9999 | 角色生命 9999",
+            "type":"checkbox",
+            "memory":[
+                {
+                    "offset":"30AFA44",
+                    "on":"01",
+                    "off":"00"
+                }
+            ]
+        },
+        {
+            "name":"Player Mana 9999 | 角色法力 9999",
+            "type":"checkbox",
+            "memory":[
+                {
+                    "offset":"30AFA48",
+                    "on":"01",
+                    "off":"00"
+                }
+            ]
+        },
+        {
+            "name":"Player Stamina Max | 角色耐力 9999",
+            "type":"checkbox",
+            "memory":[
+                {
+                    "offset":"30AFA4C",
+                    "on":"01",
+                    "off":"00"
+                }
+            ]
+        },
+        {
+            "name":"Stats Max on Assign | 分配属性点数时 力量/敏捷/活力/能量 9999",
+            "type":"checkbox",
+            "memory":[
+                {
+                    "offset":"30AFA40",
+                    "on":"01",
+                    "off":"00"
+                }
+            ]
+        }
+    ],
+    "credits":[
+        "Fullcodes"
+    ]
+}

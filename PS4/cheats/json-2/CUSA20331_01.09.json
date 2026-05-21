@@ -1,0 +1,176 @@
+﻿{
+  "name": "Atelier Ryza 2 Lost Legends and the Secret Fairy 莱莎的炼金工房2：失落传说与秘密妖精",
+  "id": "CUSA20331",
+  "version": "01.09",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite HP | 无限 HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "01F63FF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite AP | 无限 AP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "01F63FF1",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite CC | 无限 CC",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "01F63FF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Qiuckly Charge T-Lv | 快速填充 T-Lv",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "6FB7C",
+          "on": "6690",
+          "off": "7519"
+        }
+      ]
+    },
+    {
+      "name": "Instant Action / No Wait Time | 瞬间行动 / 无等待时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "01F63FF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Always Container After Battle | 战斗后素材直接存入材料箱",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "6158FD",
+          "on": "B00190",
+          "off": "0F94C0"
+        }
+      ]
+    },
+    {
+      "name": "Stealth Mode | 隐身模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "5F1CA5",
+          "on": "30C0",
+          "off": "84C0"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Shop Item Inventory | 无限商品库存",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "733956",
+          "on": "C604C163",
+          "off": "402834C1"
+        }
+      ]
+    },
+    {
+      "name": "Max Shop Item Development Level | 最高商品开发等级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "736603",
+          "on": "90909090",
+          "off": "450F46CF"
+        }
+      ]
+    },
+    {
+      "name": "Max Item Quality | 最高物品品质",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "01F63FF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Reputation | 最高声望",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "01F63FF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max EXP | 最大经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "01F63FF6",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Mists Multiply 10 | 雾冰晶 10 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "01F63FF7",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Cole | 最大克尔",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "74177C",
+          "on": "89CE90",
+          "off": "0F4DF1"
+        }
+      ]
+    },
+    {
+      "name": "Max Gold Coins | 最大金币",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7418B3",
+          "on": "89CF90",
+          "off": "0F4DF9"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "炸片饭"
+  ]
+}

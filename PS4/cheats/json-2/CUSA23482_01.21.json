@@ -1,0 +1,12 @@
+{"name":"Xuan-Yuan Sword 7 轩辕剑7","id":"CUSA23482","version":"01.21","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"07C23FF3","on":"01","off":"00"}]},
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"07C23FF0","on":"01","off":"00"}]},
+{"name":"Infinite Stamina | 无限气力","type":"checkbox","memory":[{"offset":"07C23FF1","on":"01","off":"00"}]},
+{"name":"Never Stun | 不会眩晕","type":"checkbox","memory":[{"offset":"07C23FF2","on":"01","off":"00"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"07C23FF4","on":"01","off":"00"}]},
+{"name":"Infinite Elysium Energy | 无限魂契","type":"checkbox","memory":[{"offset":"07C23FF7","on":"01","off":"00"}]},
+{"name":"Martial Arts & Imprison No Cooldown | 武技和收妖无需冷却","type":"checkbox","memory":[{"offset":"B57868","on":"5DC2","off":"5CC0"}]},
+{"name":"Infinite Shortcut Items | 无限快捷栏物品","type":"checkbox","memory":[{"offset":"07C23FF5","on":"01","off":"00"}]},
+{"name":"Max EXP | 最大经验值","type":"checkbox","memory":[{"offset":"07C23FF6","on":"01","off":"00"}]},
+{"name":"Money 999999 | 金钱 999999","type":"checkbox","memory":[{"offset":"97C43F","on":"909090","off":"0F4FC8"},{"offset":"A3C46B","on":"909090","off":"0F4FC8"}]}
+],"credits":["Fullcodes"]}

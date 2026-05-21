@@ -1,0 +1,75 @@
+{
+  "name": "Sackboy: A Big Adventure 麻布仔大冒险",
+  "id": "CUSA20425",
+  "version": "01.22",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Lives | 无限生命数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "68CCBC0",
+          "on": "8983640600008B8364060000E9896257FB",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "1E42E54",
+          "on": "E9679DA80490",
+          "off": "8B8364060000"
+        }
+      ]
+    },
+    {
+      "name": "Score Multiply 10 | 得分 10 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "68CCC20",
+          "on": "6BD20A410195B4030000E9422E8FFB",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "21BFA6A",
+          "on": "E9B1D170049090",
+          "off": "410195B4030000"
+        }
+      ]
+    },
+    {
+      "name": "Score Multiply 100 | 得分 100 倍",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "68CCC20",
+          "on": "6BD264410195B4030000E9422E8FFB",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "21BFA6A",
+          "on": "E9B1D170049090",
+          "off": "410195B4030000"
+        }
+      ]
+    },
+    {
+      "name": "Bells 9999 | 铃铛 9999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "68CCBF0",
+          "on": "41BE0F27000044893044037804E9CC5A9FFB",
+          "off": "000000000000000000000000000000000000"
+        },
+        {
+          "offset": "22C26C7",
+          "on": "E924A560049090",
+          "off": "44893044037804"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Saso & Dreamcast2"
+  ]
+}

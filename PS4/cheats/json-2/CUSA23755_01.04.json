@@ -1,0 +1,44 @@
+{
+  "name": "Asterix and Obelix - Slap them All",
+  "id": "CUSA23755",
+  "version": "01.04",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "50EF76",
+          "on": "90909090",
+          "off": "C5FA5CC2"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Power",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "513A25",
+          "on": "C5F82EC1",
+          "off": "C5F82EC8"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "6E74EF",
+          "on": "C5FA115110",
+          "off": "C5FA114910"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "TatyPS2"
+  ]
+}

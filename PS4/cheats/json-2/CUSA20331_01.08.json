@@ -1,0 +1,211 @@
+﻿{
+  "name": "Atelier Ryza 2 Lost Legends and the Secret Fairy 莱莎的炼金工房2：失落传说与秘密妖精", 
+  "id": "CUSA20331", 
+  "version": "01.08", 
+  "process": "eboot.bin", 
+  "mods": [
+    {
+      "name": "Infinite HP | 无限 HP", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "129C5F7", 
+          "on": "75", 
+          "off": "EB"
+        }
+      ]
+    },
+    {
+      "name": "Infinite AP | 无限 AP", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "129C620", 
+          "on": "518B48148948108B401085C059E9FB7C4BFF", 
+          "off": "000000000000000000000000000000000000"
+        },
+        {
+          "offset": "754328", 
+          "on": "E9F382B400", 
+          "off": "8B401085C0"
+        }
+      ]
+    },
+    {
+      "name": "Infinite CC | 无限 CC", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "129C640", 
+          "on": "EB00", 
+          "off": "EB05"
+        }
+      ]
+    },
+    {
+      "name": "Qiuckly Charge T-Lv | 快速填充 T-Lv", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "6F12C", 
+          "on": "6690", 
+          "off": "7519"
+        }
+      ]
+    },
+    {
+      "name": "Instant Action / No Wait Time | 瞬间行动 / 无等待时间", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "129C660", 
+          "on": "EB00", 
+          "off": "EB04"
+        }
+      ]
+    },
+    {
+      "name": "Stealth Mode | 隐身模式", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "58DF85", 
+          "on": "30C0", 
+          "off": "84C0"
+        }
+      ]
+    },
+    {
+      "name": "Max Item Quality | 最高物品品质", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "129C680", 
+          "on": "66C74306E70366C74308E703C5FC104B20E9394538FF", 
+          "off": "00000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "620BCA", 
+          "on": "E9B1BAC700", 
+          "off": "C5FC104B20"
+        },
+        {
+          "offset": "129C6A0", 
+          "on": "B8E7030000668947066689470831C9E9DDDB0AFF", 
+          "off": "0000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "34A28B", 
+          "on": "E91024F50090", 
+          "off": "0FB7470631C9"
+        }
+      ]
+    },
+    {
+      "name": "Max Reputation | 最高声望", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "129C6D0", 
+          "on": "8B3C8E81FF0F2700007D07C7048E0F2700008B0C8E486374D008E99D8258FF", 
+          "off": "00000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "824984", 
+          "on": "909090E9447DA700", 
+          "off": "8B0C8E486374D008"
+        }
+      ]
+    },
+    {
+      "name": "Max Shop Item Development Level | 最高商品开发等级", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "6D2243", 
+          "on": "90909090", 
+          "off": "450F46CF"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Shop Item Inventory | 无限商品库存", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "6CF596", 
+          "on": "C604C163", 
+          "off": "402834C1"
+        }
+      ]
+    },
+    {
+      "name": "Always Container After Battle | 战斗后素材直接存入材料箱", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "5B1BCD", 
+          "on": "B00190", 
+          "off": "0F94C0"
+        }
+      ]
+    },
+    {
+      "name": "Max Cole | 最大克尔", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "6DD83C", 
+          "on": "89CE90", 
+          "off": "0F4DF1"
+        }
+      ]
+    },
+    {
+      "name": "Max Gold Coins | 最大金币", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "6DD973", 
+          "on": "89CF90", 
+          "off": "0F4DF9"
+        }
+      ]
+    },
+    {
+      "name": "Max EXP | 最大经验值", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "129C700", 
+          "on": "488B80E8000000C740507F969800E9322C50FF", 
+          "off": "00000000000000000000000000000000000000"
+        }, 
+        {
+          "offset": "79F33E", 
+          "on": "E9BDD3AF009090", 
+          "off": "488B80E8000000"
+        }
+      ]
+    },
+    {
+      "name": "Mists Multiply 10 | 雾冰晶倍率 10 倍", 
+      "type": "checkbox", 
+      "memory": [
+        {
+          "offset": "129C730", 
+          "on": "C5FA5905B05ED7FFC5FA2CC08BC8E9526318FF", 
+          "off": "00000000000000000000000000000000000000"
+        },
+        {
+          "offset": "422A8F", 
+          "on": "E99C9CE70090", 
+          "off": "C5FA2CC089C1"
+        }
+      ]
+    }
+  ], 
+  "credits": [
+    "炸片饭"
+  ]
+}
