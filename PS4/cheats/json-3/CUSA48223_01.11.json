@@ -1,0 +1,9 @@
+{"name":"ENDER MAGNOLIA: Bloom in the Mist 终焉之玛格诺利亚：雾中盛放之花","id":"CUSA48223","version":"01.11","process":"eboot.bin","mods":[
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"06EC7FF1","on":"01","off":"00"}]},
+{"name":"Infinite Healing Ward | 无限结界恢复","type":"checkbox","memory":[{"offset":"06EC7FF3","on":"01","off":"00"}]},
+{"name":"No Ability Cooldown | 技能无需冷却","type":"checkbox","memory":[{"offset":"3B83416","on":"0F57C990","off":"C5F25CC8"}]},
+{"name":"Infinite Double Jumps | 无限二段跳","type":"checkbox","memory":[{"offset":"3B3C067","on":"909090909090","off":"FF8374040000"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"06EC7FF2","on":"01","off":"00"}]},
+{"name":"Max EXP | 最大经验值","type":"checkbox","memory":[{"offset":"06EC7FF4","on":"01","off":"00"}]},
+{"name":"Materials、Scrap、Fragments 999999 | 魔质、废料、残片 999999","type":"checkbox","memory":[{"offset":"06EC7FF5","on":"01","off":"00"}]}
+],"credits":["Dreamcast2"]}

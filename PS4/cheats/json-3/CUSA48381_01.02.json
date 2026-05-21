@@ -1,0 +1,99 @@
+{
+  "name": "极速超杀美版中文",
+  "id": "CUSA48381",
+  "version": "01.02",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "infinite Ammo/无限子弹",
+      "description": "无限子弹",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "808D3721",
+          "on": "90909090",
+          "off": "41894630"
+        },
+		{
+          "offset": "808D3785",
+          "on": "90909090",
+          "off": "41894634"
+        },
+		{
+          "offset": "808D37E9",
+          "on": "90909090",
+          "off": "41894638"
+        },
+		{
+          "offset": "808D384D",
+          "on": "90909090",
+          "off": "4189463C"
+        },
+		{
+          "offset": "808D38B1",
+          "on": "90909090",
+          "off": "41894640"
+        },
+		{
+          "offset": "808D3918",
+          "on": "90909090",
+          "off": "41894644"
+        },
+		{
+          "offset": "808D3982",
+          "on": "90909090",
+          "off": "41894648"
+        },
+		{
+          "offset": "808D3A30",
+          "on": "90909090",
+          "off": "41894E4C"
+        }
+      ]
+    },
+    {
+      "name": "infinite HP/无限生命",
+      "description": "无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "8091717A",
+          "on": "909090",
+          "off": "894334"
+        }
+      ]
+    },
+    {
+      "name": "infinite Jump/无限跳跃",
+      "description": "无限跳跃",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "808EB93B",
+          "on": "909090909090",
+          "off": "FF838C010000"
+        }
+      ]
+    },
+    {
+      "name": "money=99999999/金钱=99999999",
+      "description": "金钱增加时生效",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "83D63000",
+          "on": "B8FFE0F5058983A0000000E91C33B7FC",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "808D6326",
+          "on": "E9D5CC480390",
+          "off": "8983A0000000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "allyzc"
+  ]
+}

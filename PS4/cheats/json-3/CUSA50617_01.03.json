@@ -1,0 +1,409 @@
+{
+  "name": "Elden Ring Nightreign 艾尔登法环：黑夜君临",
+  "id": "CUSA50617",
+  "version": "01.03",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible Mode | 无敌模式",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7B8C0",
+          "on": "48893D39462C01488B07FF9098010000E9EBDE86FE",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "22E97B7",
+          "on": "E90421790190909090",
+          "off": "488B07FF9098010000"
+        },
+        {
+          "offset": "3A7B8E0",
+          "on": "89D94C8D4DB8483B1513462C010F85FD161AFEE9FD161AFE",
+          "off": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1C1CFEA",
+          "on": "E9F1E8E50190",
+          "off": "89D94C8D4DB8"
+        },
+        {
+          "offset": "3A7B900",
+          "on": "488BB898000000E912F801FE",
+          "off": "000000000000000000000000"
+        },
+        {
+          "offset": "1A9B112",
+          "on": "E9E907FE019090",
+          "off": "488BB898000000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Health | 无限血量",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7B920",
+          "on": "498B07488B780848A308FF130500000000E9892101FE",
+          "off": "00000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1A8DAB8",
+          "on": "E963DEFE019090",
+          "off": "498B07488B7808"
+        },
+        {
+          "offset": "3A7B940",
+          "on": "48391DC1452C0175088B83540100007500E9535F09FE",
+          "off": "00000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1B118A3",
+          "on": "E998A0F60190",
+          "off": "898350010000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite FP | 无限专注值",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7B970",
+          "on": "8B8E54010000898E50010000E9C5E44BFE",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "1F39E40",
+          "on": "E92B1BB40190",
+          "off": "8B8E50010000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Stamina | 无限精力",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7B9A0",
+          "on": "8B8E70010000898E6C010000E9F9E44BFE",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "1F39EA4",
+          "on": "E9F71AB40190",
+          "off": "8B8E6C010000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Item Usage | 无限道具使用",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "187A5F1",
+          "on": "894108",
+          "off": "895908"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Air Jumps | 无限浮空跳跃",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "25E63B7",
+          "on": "41C687920000000141C687E501000001",  
+          "off": "41C687920000000041C687E501000000"
+        }
+      ]
+    },
+    {
+      "name": "No Skill Cooldown | 技艺无需冷却",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7BA30",
+          "on": "0F57C9C4C17A114F28C4C17A114F24E9255F32FE",
+          "off": "0000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1DA1963",
+          "on": "E9C8A0CD0190",
+          "off": "C4C17A114F24"
+        }
+      ]
+    },
+    {
+      "name": "No Ultimate Art Cooldown | 绝招无需冷却",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DAACC6",
+          "on": "C5FA114F14",
+          "off": "C5FA114714"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1B1D6EB",
+          "on": "0F94C0",
+          "off": "0F95C0"
+        }
+      ]
+    },
+    {
+      "name": "Max Level | 最高等级",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7BAF0",
+          "on": "BF10000000448BF68BC7E915A34DFE",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "1F55E0F",
+          "on": "E9DC5CB201",
+          "off": "4189F689F8"
+        }
+      ]
+    },
+    {
+      "name": "Player Won't Die | 玩家不会死亡",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1B105FB",
+          "on": "90909090909090",
+          "off": "803D96AC970200"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Don't Attack | 敌人不会攻击",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "18EEE99",
+          "on": "909090909090909090909090",
+          "off": "0FB68388050000C0E8042401"
+        },
+        {
+          "offset": "1A4A123",
+          "on": "4885DB9090909090909090909090",
+          "off": "488B83A8000000F6808805000010"
+        }
+      ]
+    },
+    {
+      "name": "Won't Lose Runes When Dies | 死亡不会失去卢恩",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1E92590",
+          "on": "9090909090909090",
+          "off": "41C7466C00000000"
+        }
+      ]
+    },
+    {
+      "name": "Stop Night Growth | 停止夜间生长",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7BB10",
+          "on": "31D2C68330010000000FB6B344010000E9F54D36FE",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1DE0913",
+          "on": "E9F8B1C9019090",       
+          "off": "0FB6B344010000"
+        }
+      ]
+    },
+    {
+      "name": "Disable Idle Timer | 禁用空闲计时器",
+      "description": "This disables the annoying timer that sign you out of the game if you remain idle for some time.",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7BB40",
+          "on": "0F57C0C5FA1183C8010000E996E2FEFD",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "1A69DDE",
+          "on": "E95D1D0102909090",
+          "off": "C5FA1183C8010000"
+        }
+      ]
+    },
+    {
+      "name": "Runes 999999999 | 卢恩 999999999",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7B9D0",
+          "on": "41C744246CFFC99A3B418B44246CE9A32151FE",
+          "off": "00000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1F8DB81",
+          "on": "E94ADEAE01",
+          "off": "418B44246C"
+        }
+      ]
+    },
+    {
+      "name": "Murks 999999999 | 暗痕 999999999",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3A7BA00",
+          "on": "C780D0000000FFC99A3B8B90D0000000E911C450FE",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1F87E20",
+          "on": "E9DB3BAF0190",
+          "off": "8B90D0000000"
+        }
+      ]
+    },
+    {
+      "name": "Speed Multiply Master Code | 速度倍率必须码",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D3FF28",
+          "on": "0000803F",
+          "off": "0000803F"
+        },
+        {
+          "offset": "4D3FF2C",
+          "on": "0000803F",
+          "off": "0000803F"
+        },
+        {
+          "offset": "3A7B860",
+          "on": "48891DB9462C01488B43084D01F5E9DDC8B6FE",
+          "off": "00000000000000000000000000000000000000"
+        },
+        {
+          "offset": "25E8149",
+          "on": "E9123749019090",
+          "off": "488B43084D01F5"
+        },
+        {
+          "offset": "3A7B880",
+          "on": "4C3B2599462C017508D90599462C01EB06D90595462C0141D99C2458180000C4C17A59842458180000E96E9700FE",
+          "off": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1A85012",
+          "on": "E96968FF019090909090",  
+          "off": "C4C17A59842458180000"
+        }
+      ]
+    },
+    {
+      "name": "Player Speed Multiply 1.5 | 玩家速度 1.5 倍",
+      "description": "Freezes enemies",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D3FF28",
+          "on": "0000C03F",
+          "off": "0000803F"
+        }
+      ]
+    },
+    {
+      "name": "Player Speed Multiply 2 | 玩家速度 2 倍",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D3FF28",
+          "on": "00000040",
+          "off": "0000803F"
+        }
+      ]
+    },
+    {
+      "name": "Player Speed Multiply 3 | 玩家速度 3 倍",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D3FF28",
+          "on": "00004040",
+          "off": "0000803F"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Speed Multiply 0.2 | 敌人速度 0.2 倍",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D3FF2C",
+          "on": "CDCC4C3E",
+          "off": "0000803F"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Speed Multiply 0.5 | 敌人速度 0.5 倍",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D3FF2C",
+          "on": "0000003F",
+          "off": "0000803F"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Speed Multiply 2 | 敌人速度 2 倍",
+      "description": "",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D3FF2C",
+          "on": "00000040",
+          "off": "0000803F"
+        }
+      ]
+    } 
+  ],
+  "credits": [
+    "Pharaoh2k"
+  ]
+}

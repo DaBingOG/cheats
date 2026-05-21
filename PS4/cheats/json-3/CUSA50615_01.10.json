@@ -1,0 +1,131 @@
+{
+  "name": "Elden Ring Nightreign",
+  "id": "CUSA50615",
+  "version": "01.10",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3AEEE20",
+          "on": "837F70FF7507448B875401000044898750010000E93D9D02FE",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1B18B6F",
+          "on": "E9AC62FD019090",
+          "off": "44898750010000"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3AEEE3B",
+          "on": "837B70FF7405B801000000898350010000E928B202FE",
+          "off": "00000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1B1A073",
+          "on": "E9C34DFD0190",
+          "off": "898350010000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite FP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1B1A431",
+          "on": "0F4CC0",
+          "off": "0F4CC1"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Stamina",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1B1A6A6",
+          "on": "0F4CC0",
+          "off": "0F4CC1"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Throwables, Flask Usage",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "187E361",
+          "on": "909090",
+          "off": "895908"
+        }
+      ]
+    },
+    {
+      "name": "No Skill Coodown",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DB0C13",
+          "on": "C4C17A114724",
+          "off": "C4C17A114F24"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ultimate Art",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1DBA350",
+          "on": "C5FA114F14",
+          "off": "C5FA114714"
+        }
+      ]
+    },
+    {
+      "name": "Runes does not reset on dying",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1EAB0C6",
+          "on": "9090909090909090",
+          "off": "41C7466C00000000"
+        }
+      ]
+    },
+    {
+      "name": "Runes does not decrease on level up or buying",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1F6A7DA",
+          "on": "9090",
+          "off": "29D7"
+        }
+      ]
+    },
+    {
+      "name": "Murk does not decrease on buying",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1F6A940",
+          "on": "9090",
+          "off": "29CE"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "TatyPS2"
+  ]
+}

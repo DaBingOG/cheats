@@ -1,0 +1,22 @@
+{"name":"LUNAR 2 ETERNAL BLUE","id":"CUSA52898","version":"01.04","process":"lunar2.elf","mods":[
+{"name":"Infinite HP | 无限 HP","type":"checkbox","memory":[{"offset":"065DBFF1","on":"01","off":"00"}]},
+{"name":"Infinite MP | 无限 MP","type":"checkbox","memory":[{"offset":"065DBFF2","on":"01","off":"00"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"065DBFF0","on":"01","off":"00"}]},
+{"name":"Drop Rate 100%% | 掉宝率 100%%","type":"checkbox","memory":[{"offset":"163587","on":"909090909090","off":"0F8D29010000"}]},
+{"name":"Infinite Running | 无限奔跑","type":"checkbox","memory":[{"offset":"2076ED","on":"9090","off":"FFC8"}]},
+{"name":"No Battles | 不遇敌","type":"checkbox","memory":[{"offset":"2094FA","on":"90E9","off":"0F88"}]},
+{"name":"Through Walls | 穿墙模式","type":"checkbox","memory":[{"offset":"207338","on":"90E9","off":"0F84"}]},
+{"name":"Attack 999 | 攻击 999","type":"checkbox","memory":[{"offset":"065DBFF3","on":"01","off":"00"}]},
+{"name":"Attacks 9 | 次数 9","type":"checkbox","memory":[{"offset":"065DBFF4","on":"01","off":"00"}]},
+{"name":"Defense 999 | 防御 999","type":"checkbox","memory":[{"offset":"065DBFF5","on":"01","off":"00"}]},
+{"name":"Agility 999 | 灵巧 999","type":"checkbox","memory":[{"offset":"065DBFF6","on":"01","off":"00"}]},
+{"name":"Speed 999 | 敏捷 999","type":"checkbox","memory":[{"offset":"065DBFF7","on":"01","off":"00"}]},
+{"name":"Wisdom 999 | 精神 999","type":"checkbox","memory":[{"offset":"065DBFF8","on":"01","off":"00"}]},
+{"name":"MgcDef 999 | 魔防 999","type":"checkbox","memory":[{"offset":"065DBFF9","on":"01","off":"00"}]},
+{"name":"Range 999 | 移动 999","type":"checkbox","memory":[{"offset":"065DBFFA","on":"01","off":"00"}]},
+{"name":"Luck 999 | 幸运 999","type":"checkbox","memory":[{"offset":"065DBFFB","on":"01","off":"00"}]},
+{"name":"EXP Multiply 10 | 经验值 10 倍","type":"checkbox","memory":[{"offset":"08A9BFFC","on":"01","off":"00"}]},
+{"name":"EXP Multiply 100 | 经验值 100 倍","type":"checkbox","memory":[{"offset":"08A9BFFD","on":"01","off":"00"}]},
+{"name":"Max EXP | 最大经验值","type":"checkbox","memory":[{"offset":"065DBFFE","on":"01","off":"00"}]},
+{"name":"Money 9999999 | 金钱 9999999","type":"checkbox","memory":[{"offset":"1876E4","on":"8BC090","off":"0F4CC8"}]}
+],"credits":["炸片饭"]}

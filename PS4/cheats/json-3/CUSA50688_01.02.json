@@ -1,0 +1,77 @@
+{
+  "name": "Nine Sols",
+  "id": "CUSA50688",
+  "version": "01.02",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "80B9760D",
+          "on": "9090909090",
+          "off": "E80E050000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite-Health",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "80B43A40",
+          "on": "9090909090",
+          "off": "C5FA114738"
+        }
+      ]
+    },
+    {
+      "name": "Inf-SkillS-Points",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "80B93A57",
+          "on": "909090909090",
+          "off": "FF9018020000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite-money",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "80AD151B",
+          "on": "909090909090",
+          "off": "FF9018020000"
+        }
+      ]
+    },
+    {
+      "name": "Inf-Life-Recovery",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "80B4C895",
+          "on": "9090909090",
+          "off": "C5FA114334"
+        }
+      ]
+    },
+    {
+      "name": "Inf-Full-control-POWER",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "80B3637B",
+          "on": "909090909090",
+          "off": "FF9018020000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Ali-mk"
+  ]
+}

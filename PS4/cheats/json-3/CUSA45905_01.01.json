@@ -1,0 +1,14 @@
+{"name":"超级忍：反攻的斩击","id":"CUSA45905","version":"01.01","process":"eboot.bin",
+"master":{"challenged":"yes","memory":[{"offset":"8156E450","on":"48893D69DB9702488B7730488B764848893562DB9702488B3593F45C02488BB6B8000000488B7650EB07C746603F420F00EB0AC786A4000000E7030000488BB010020000C3"},{"offset":"8173A3E1","on":"9090E86840E3FF"},{"offset":"8156E530","on":"48393D91DA97027405E872A21B00C3"},{"offset":"8156E550","on":"48393D69DA97027400554889E54157E9627C1C0031C0C3"},{"offset":"817361C0","on":"E98B83E3FF"},{"offset":"8156E570","on":"48393D49DA97027400554889E54157E9F2791C00C3"},{"offset":"81735F70","on":"E9FB85E3FF"}]},"mods":[
+{"name":"无敌模式","type":"checkbox","memory":[{"offset":"8156E558","on":"0B","off":"00"},{"offset":"8156E578","on":"0B","off":"00"},{"offset":"8173EFD0","on":"31C0C3","off":"554889"}]},
+{"name":"无限生命","type":"checkbox","memory":[{"offset":"81684A51","on":"DB9AEEFF","off":"5B3D0A00"}]},
+{"name":"无限忍法","type":"checkbox","memory":[{"offset":"8172AF8E","on":"00","off":"21"}]},
+{"name":"无限忍術","type":"checkbox","memory":[{"offset":"8172A280","on":"B001C3","off":"C3"}]},
+{"name":"无限苦无","type":"checkbox","memory":[{"offset":"8169128E","on":"00","off":"01"},{"offset":"8173FC3F","on":"00","off":"01"}]},
+{"name":"无限冲刺","type":"checkbox","memory":[{"offset":"81687F39","on":"32","off":"30"}]},
+{"name":"无限跳跃","type":"checkbox","memory":[{"offset":"8168A6A4","on":"90B001","off":"0F9CC0"}]},
+{"name":"无限金幣","type":"checkbox","memory":[{"offset":"8156E479","on":"00","off":"07"}]},
+{"name":"无限遺物","type":"checkbox","memory":[{"offset":"8156E482","on":"00","off":"0A"}]},
+{"name":"敌人處決状态","type":"checkbox","memory":[{"offset":"8172775C","on":"B001","off":"31C0"},{"offset":"81727092","on":"18","off":"1C"}]},
+{"name":"一击必杀","type":"checkbox","memory":[{"offset":"816535FD","on":"C5FA10472890","off":"C4C17A104608"}]}
+],"credits":["Hank"]}

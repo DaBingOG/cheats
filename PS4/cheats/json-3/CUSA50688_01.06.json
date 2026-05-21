@@ -1,0 +1,17 @@
+{"name":"Nine Sols 九日","id":"CUSA50688","version":"01.06","process":"eboot.bin",
+"master":{"challenged":"yes","memory":[{"offset":"845494B0","on":"EB07C743380050D045C5FA104338488BB3B8000000488BB628FFFFFF488935ED2A8B01C3"},{"offset":"80B435B5","on":"E8F65EA003"},{"offset":"84549450","on":"483B1D692B8B017400C5FA10431C4883C4085B5DC3C5FA1005236BA7FFEBEF"},{"offset":"831F64DC","on":"E96F2F3501"}]},"mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"80B97F50","on":"C3","off":"55"}]},
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"845494B1","on":"00","off":"07"}]},
+{"name":"Infinite Energy | 无限能量","type":"checkbox","memory":[{"offset":"80B3638F","on":"58","off":"5C"},{"offset":"80B360B0","on":"488B4738488B4038C5FA104024E96EFDFFFF","off":"C5F857C0E977FDFFFF0F1F8000000000C366"}]},
+{"name":"Infinite Medicine Pipe | 无限药斗","type":"checkbox","memory":[{"offset":"80B4C3D1","on":"F3","off":"F7"}]},
+{"name":"Infinite Dash | 无限冲刺","type":"checkbox","memory":[{"offset":"80B5F9CC","on":"8B","off":"83"},{"offset":"80B5A0AE","on":"00","off":"09"},{"offset":"80B5A0B6","on":"EB","off":"74"},{"offset":"80B5A165","on":"C9","off":"C0"}]},
+{"name":"Infinite Jumps | 无限跳跃","type":"checkbox","memory":[{"offset":"80B67271","on":"00","off":"31"},{"offset":"80B672A1","on":"EB","off":"74"}]},
+{"name":"Quick Charge | 快速蓄力","type":"checkbox","memory":[{"offset":"84549490","on":"C5FA59056011A8FFC3","off":"000000000000000000"},{"offset":"80B6353D","on":"E84E5F9E03","off":"C5FA5945D4"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"84549458","on":"0C","off":"00"}]},
+{"name":"Ignore Money | 无视金钱","type":"checkbox","memory":[{"offset":"80AD24A2","on":"90B001","off":"0F93C0"},{"offset":"80AD2082","on":"90B001","off":"0F93C0"},{"offset":"80AD2126","on":"90909039C0","off":"413B442418"}]},
+{"name":"Ignore Skill Points | 无视技能点数","type":"checkbox","memory":[{"offset":"80B93CF2","on":"6639C0","off":"4139C7"},{"offset":"80B93E86","on":"C7","off":"C0"}]},
+{"name":"Ignore Computing Power | 无视算力","type":"checkbox","memory":[{"offset":"80B90F88","on":"FA101DA9624203","off":"F22A9B88010000"}]},
+{"name":"EXP Multiply 4 | 经验值 4 倍","type":"checkbox","memory":[{"offset":"84549480","on":"C1E0024883C4085B5DC3","off":"00000000000000000000"},{"offset":"80F9C0E0","on":"E99BD35A039090","off":"4883C4085B5DC3"}]},
+{"name":"EXP Multiply 16 | 经验值 16 倍","type":"checkbox","memory":[{"offset":"84549480","on":"C1E0044883C4085B5DC3","off":"00000000000000000000"},{"offset":"80F9C0E0","on":"E99BD35A039090","off":"4883C4085B5DC3"}]},
+{"name":"EXP Multiply 64 | 经验值 64 倍","type":"checkbox","memory":[{"offset":"84549480","on":"C1E0064883C4085B5DC3","off":"00000000000000000000"},{"offset":"80F9C0E0","on":"E99BD35A039090","off":"4883C4085B5DC3"}]}
+],"credits":["Hank"]}

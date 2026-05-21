@@ -1,0 +1,101 @@
+{
+  "name": "Plants vs. Zombies Replanted 植物大战僵尸：重植版",
+  "id": "CUSA55613",
+  "version": "01.21",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Sun 9990 | 阳光 9990",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "81FB3AB0",
+          "on": "C7401006270000E95B4C0700",
+          "off": "000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "8202870E",
+          "on": "E99DB3F8FF90909090",
+          "off": "44296810E994000000"
+        }
+      ]
+    },
+    {
+      "name": "Plants No Cooldown | 植物无需冷却",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "81FB3AE0",
+          "on": "C743709F8601003B4374E9CA221100",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "820C5DB3",
+          "on": "E928DDEEFF90",
+          "off": "8943703B4374"
+        }
+      ]
+    },
+    {
+      "name": "Coins 9,999,000 | 金币 9,999,000",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "81FB3B10",
+          "on": "C74050DC410F004883C408E9190A2400",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "section": "0",
+          "offset": "821F4532",
+          "on": "E9D9F5DBFF9090",
+          "off": "0158504883C408"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Fertilizer | 无限植物肥料",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "820CEE81",
+          "on": "909090",         
+          "off": "FF4858"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Bug Spray | 无限杀虫剂",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "820CEE51",
+          "on": "909090",
+          "off": "FF485C"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Tree Food | 无限智慧树肥料",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "82056589",
+          "on": "909090909090",
+          "off": "FF8890000000"         
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Bandicootmonito"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "name": "美德传说fRemastered",
+  "id": "CUSA46340",
+  "version": "01.04",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "infinite hp/无限HP",
+      "description": "infinite hp/无限HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "84DAF000",
+          "on": "83BB80D7000000770B4529FC4489E0E9D681DAFF4489E0E9CE81DAFF",
+          "off": "00000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "84B571E4",
+          "on": "E9177E250090",
+          "off": "4529FC4489E0"
+        }
+      ]
+    },
+    {
+      "name": "infinite item/无限道具",
+      "description": "infinite item/无限道具",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "84DAF020",
+          "on": "4180FF000F8CB03DABFF440038664585FFE9A43DABFF",
+          "off": "00000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "84862DD3",
+          "on": "E948C254009090",
+          "off": "440038664585FF"
+        }
+      ]
+    },
+    {
+      "name": "level up after battle/战斗后升级",
+      "description": "第二次战斗后看到效果",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "84DAF040",
+          "on": "450F44E74401602041BC0000000044896024E9B70AADFF",
+          "off": "0000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "8487FB06",
+          "on": "E935F55200909090",
+          "off": "450F44E744896024"
+        }
+      ]
+    },
+    {
+      "name": "money=9999999/金钱=9999999",
+      "description": "金钱变化时生效",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "84DAF060",
+          "on": "B87F9698008981D4760000E992F0AAFF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "8485E0FC",
+          "on": "E95F0F550090",
+          "off": "8981D4760000"
+        }
+      ]
+    },
+    {
+      "name": "one hit kill/一击秒杀",
+      "description": "one hit kill/一击秒杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "84DAF080",
+          "on": "83BB80D7000000740B89B3BCD60000E96D81DAFFBE0000000089B3BCD60000E95D81DAFF",
+          "off": "000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "84B571FB",
+          "on": "E9807E250090",
+          "off": "89B3BCD60000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "allyzc"
+  ]
+}

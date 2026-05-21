@@ -1,0 +1,70 @@
+{
+  "name": "EARTH DEFENSE FORCE 6 地球防卫军6",
+  "id": "CUSA45285",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Power | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1608570",
+          "on": "C4C17A10842414030000C4C17A11842418030000E9A9DB30FF",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "916128",
+          "on": "E94324CF009090909090",
+          "off": "C4C17A10842418030000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Energy | 无限能量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1608500",
+          "on": "C5FA109724030000C5FA119728030000E9B90201FF",
+          "off": "000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "6187C6",
+          "on": "E935FDFE00909090",
+          "off": "C5FA119728030000"
+        }
+      ]
+    },
+    {
+      "name": "Max Ammo | 最大弹药",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1608530",
+          "on": "B8E703000041898424480C0000B8E70300004189842468020000E9272715FF",
+          "off": "00000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "75AC6E",
+          "on": "E9BDD8EA00909090",
+          "off": "41898424480C0000"
+        }
+      ]
+    },
+    {
+      "name": "No Reload | 无需装弹",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "75AC68",
+          "on": "8D0190",
+          "off": "8D41FF"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Dreamcast2"
+  ]
+}

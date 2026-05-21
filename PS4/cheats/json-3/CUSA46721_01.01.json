@@ -1,0 +1,95 @@
+{
+  "name": "KAGE～Shadow of The Ninja 绝影战士",
+  "id": "CUSA46721",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Invincible Mode | 无敌模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "80551CD5",
+          "on": "909090909090",
+          "off": "FF90A8020000"
+        },
+        {
+          "section": "0",
+          "offset": "80551DA8",
+          "on": "909090909090",
+          "off": "FF90A8020000"
+        },
+        {
+          "section": "0",
+          "offset": "8061F4E7",
+          "on": "909090909090",
+          "off": "FF90A8020000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "806531BF",
+          "on": "9090",
+          "off": "29D9"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "806310E4",
+          "on": "5C",
+          "off": "78"
+        }
+      ]
+    },
+    {
+      "name": "Freeze Timer | 锁定时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "80674A63",
+          "on": "10",
+          "off": "11"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items | 无限道具",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8054A0FC",
+          "on": "9090",
+          "off": "FFC9"
+        }
+      ]
+    },
+    {
+      "name": "Coins 9999999 | 金币 9999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "80663B87",
+          "on": "B97F96980090",
+          "off": "81F97F969800"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "iKun"
+  ]
+}

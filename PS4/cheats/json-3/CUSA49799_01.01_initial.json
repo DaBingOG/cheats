@@ -1,0 +1,93 @@
+{
+  "name": "鬼武者2：武士的命运重制版 (初始版本：无需安装jsonbased补丁pkg)",
+  "id": "CUSA49799",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "infinite arrow/无限弓箭",
+      "description": "弓箭使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7C2671",
+          "on": "909090",
+          "off": "FE481C"
+        }
+      ]
+    },
+    {
+      "name": "infinite ghost power/无限鬼力",
+      "description": "无限鬼力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "386B42",
+          "on": "9090909090",
+          "off": "6689544820"
+        }
+      ]
+    },
+    {
+      "name": "infinite hp/无限HP",
+      "description": "如果有异常请关闭，包括菜单切换物品",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7657000",
+          "on": "4883F9000F843729B1F80FB70066894610E92B29B1F8",
+          "off": "00000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "16993A",
+          "on": "E9C1D64E079090",
+          "off": "0FB70066894610"
+        }
+      ]
+    },
+    {
+      "name": "infinite soul power/无限魂力",
+      "description": "无限魂力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "224908A",
+          "on": "90909090909090",
+          "off": "4429A8F8010000"
+        }
+      ]
+    },
+    {
+      "name": "infinite item/无限道具",
+      "description": "无限道具",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "170CF3D",
+          "on": "909090",
+          "off": "88581C"
+        }
+      ]
+    },
+    {
+      "name": "max money/金钱最大",
+      "description": "购买东西时生效",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7657020",
+          "on": "41BE9F8601004489B010010000E9E7F367FA",
+          "off": "000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1CD6412",
+          "on": "E9090C98059090",
+          "off": "4429B010010000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "allyzc"
+  ]
+}

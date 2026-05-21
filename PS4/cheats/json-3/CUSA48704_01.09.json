@@ -1,0 +1,12 @@
+{"name":"LOLLIPOP CHAINSAW RePOP 电锯甜心","id":"CUSA48704","version":"01.09","process":"eboot.bin","mods":[
+{"name":"Master Code | 必须码","type":"checkbox","memory":[{"offset":"4CED000","on":"4C8925B92F1801803DE32F180101750C41C78424BC060000D2000000803DCF2F180101750C41C784241018000000000000803DBB2F180101750C41C784241C18000000000040803DA72F180101750C41C78424601300000F270000803D932F180101750C41C784240C2F000063000000803D7F2F180101750C41C784246C20000009000000498BF431D2E961FE0EFE","off":"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"},{"offset":"2DDCEEB","on":"E91001F101","off":"4C89E631D2"},{"offset":"4CED0B0","on":"803D402F1801017505B87F9698008943644401735CE9F4E112FE","off":"0000000000000000000000000000000000000000000000000000"},{"offset":"2E1B2B7","on":"E9F41DED019090","off":"8943644401735C"},{"offset":"4CED130","on":"803DC12E1801017505B8E70300004189466841015E60E9DFE412FE","off":"000000000000000000000000000000000000000000000000000000"},{"offset":"2E1B622","on":"E9091BED01909090","off":"4189466841015E60"},{"offset":"4CED170","on":"803D822E1801017505B8FFE0F50589476C488B07E9E5E612FE","off":"00000000000000000000000000000000000000000000000000"},{"offset":"2E1B868","on":"E90319ED0190","off":"89476C488B07"}]},
+{"name":"Infinite Health | 无限体力","type":"checkbox","memory":[{"offset":"05E6FFF1","on":"01","off":"00"}]},
+{"name":"Star Soul Mode Always Available | 无敌模式始终可用","type":"checkbox","memory":[{"offset":"05E6FFF2","on":"01","off":"00"}]},
+{"name":"Infinite Star Soul Meter Durability | 无敌量表无限维持","type":"checkbox","memory":[{"offset":"05E6FFF3","on":"01","off":"00"}]},
+{"name":"Max Chainsaw Blaster Damage | 电锯爆裂枪最高伤害","type":"checkbox","memory":[{"offset":"05E6FFF4","on":"01","off":"00"}]},
+{"name":"Infinite Blaster Bullet | 无限爆裂芭莱弹","type":"checkbox","memory":[{"offset":"05E6FFF5","on":"01","off":"00"}]},
+{"name":"Infinite Nick Ticket | 无限尼克券","type":"checkbox","memory":[{"offset":"05E6FFF6","on":"01","off":"00"}]},
+{"name":"Gold Zombie Medal 9999999 | 黄金丧尸奖章 9999999","type":"checkbox","memory":[{"offset":"05E6FFF7","on":"01","off":"00"}]},
+{"name":"Platinum Zombie Medal 999 | 白金丧尸奖章 999","type":"checkbox","memory":[{"offset":"05E6FFF8","on":"01","off":"00"}]},
+{"name":"Score 99999999 | 得分 99999999","type":"checkbox","memory":[{"offset":"05E6FFF9","on":"01","off":"00"}]}
+],"credits":["Hank"]}

@@ -1,0 +1,9 @@
+{"name":"LUNAR SILVER STAR STORY","id":"CUSA52898","version":"01.04","process":"lunar1.elf","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"029BBFF1","on":"01","off":"00"},{"offset":"1663C8","on":"909090","off":"668930"},{"offset":"16644A","on":"90909090","off":"6689703E"},{"offset":"1664BD","on":"90909090","off":"6689707C"},{"offset":"166533","on":"90909090909090","off":"6689B0BA000000"},{"offset":"166771","on":"90909090909090","off":"6689B0F8000000"}]},
+{"name":"Infinite MP | 无限 MP","type":"checkbox","memory":[{"offset":"029BBFF3","on":"01","off":"00"}]},
+{"name":"Attack 999 | 攻击力 999","type":"checkbox","memory":[{"offset":"029BBFF2","on":"01","off":"00"}]},
+{"name":"Always Level Up | 总是升级","type":"checkbox","memory":[{"offset":"029BBFF4","on":"01","off":"00"}]},
+{"name":"No Battles | 不遇敌","type":"checkbox","memory":[{"offset":"1EBB94","on":"90E9","off":"0F85"}]},
+{"name":"Through Walls | 穿墙模式","type":"checkbox","memory":[{"offset":"1F2B23","on":"9090","off":"7406"}]},
+{"name":"Money 9999999 | 金钱 9999999","type":"checkbox","memory":[{"offset":"170DF9","on":"458BC090","off":"410F42F0"}]}
+],"credits":["炸片饭"]}
