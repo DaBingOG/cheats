@@ -1,0 +1,99 @@
+{
+  "name": "Dragon Quest Builders 勇者斗恶龙 创世小玩家：阿雷夫加尔德复兴记",
+  "id": "CUSA04004",
+  "version": "01.00",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "83009",
+          "on": "66898188D30100C5FA2AC8",
+          "off": "0FB78988D30100C5FA2AC9"
+        }
+      ]
+    },
+    {
+      "name": "100%% Fullness | 100%% 饱腹度",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7038E",
+          "on": "8A",
+          "off": "8C"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Equipment Durability | 无限装备耐久度",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7F036",
+          "on": "909090",
+          "off": "4129C7"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items | 无限持有物品",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "81373",
+          "on": "9090",
+          "off": "FFC8"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Materials | 无限制作材料",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D22B2",
+          "on": "9090",
+          "off": "29C1"
+        }
+      ]
+    },
+    {
+      "name": "Max Camp EXP | 最大据点经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "20AC55",
+          "on": "41BD68420000",
+          "off": "448B284501FD"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7EC3E",
+          "on": "B80F2700009090",
+          "off": "0FB780600A0300"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Can't Move | 敌人不能移动",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "8A01D",
+          "on": "9090909090909090",
+          "off": "C5F8298BF0060000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

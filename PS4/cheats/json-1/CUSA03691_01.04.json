@@ -1,0 +1,209 @@
+{
+  "name": "Ryu Ga Gotoku Kiwami 人中之龙：极",
+  "id": "CUSA03691",
+  "version": "01.04",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限体力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "163FFF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Max Heat Gauge | 满热血量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "24EE8B",
+          "on": "C7401C008C8647909090",
+          "off": "C5FA1045D4C5FA11401C"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "163FFF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Stamina | 无限耐力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "F3E1C1",
+          "on": "00",
+          "off": "04"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items | 无限持有物品",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "753666",
+          "on": "9090",
+          "off": "FFC8"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items (Item Box) | 无限物品 (道具箱)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7530B0",
+          "on": "90909090",
+          "off": "66897706"
+        }
+      ]
+    },
+    {
+      "name": "Max Items (Item Box) | 最大物品数量 (道具箱)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "75317F",
+          "on": "90909090",
+          "off": "660F4CD6"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo | 无限子弹",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7547F5",
+          "on": "EB",
+          "off": "77"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Weapon Durability | 无限武器耐久度",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7545A5",
+          "on": "EB",
+          "off": "74"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Skill Points | 无限技能点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7526B2",
+          "on": "909090",
+          "off": "4801DA"
+        }
+      ]
+    },
+    {
+      "name": "Max Skill Points | 最大技能点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7526C1",
+          "on": "89F290",
+          "off": "0F4DD6"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Money & CP | 无限金钱和成就点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "75628C",
+          "on": "909090",
+          "off": "4C01F2"
+        }
+      ]
+    },
+    {
+      "name": "Max Money & CP | 最大金钱和成就点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "756297",
+          "on": "89F190",
+          "off": "0F4FCE"
+        }
+      ]
+    },
+    {
+      "name": "Max EXP | 最大经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "7526DD",
+          "on": "89F390",
+          "off": "0F4DDE"
+        }
+      ]
+    },
+    {
+      "name": "Never Drunk | 不会醉酒",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "75222B",
+          "on": "31C0",
+          "off": "01F0"
+        }
+      ]
+    },
+    {
+      "name": "Always Drunk | 总是醉酒",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "752240",
+          "on": "90909090",
+          "off": "660F4CC1"
+        }
+      ]
+    },
+    {
+      "name": "Quickly Complete Combat Tutorial | 快速完成干架指南",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "B2C26",
+          "on": "31",
+          "off": "FF"
+        }
+      ]
+    },
+    {
+      "name": "Quickly Upgrade Majima Rank | 快速提升与真岛吾朗孽缘阶级",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "684E8D",
+          "on": "4489D690",
+          "off": "410F4DF2"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "TLH"
+  ]
+}

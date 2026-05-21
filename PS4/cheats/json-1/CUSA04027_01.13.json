@@ -1,0 +1,101 @@
+{
+  "name": "Titanfall™ 2 泰坦陨落2",
+  "id": "CUSA04027",
+  "version": "01.13",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8F2D220D",
+          "on": "9090909090",
+          "off": "E8BEAFC0FF"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Jumps | 无限跳跃",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8EF694CA",
+          "on": "31DB",
+          "off": "FFC3"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo | 无限弹药",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8F3D46D7",
+          "on": "909090",
+          "off": "4429FB"
+        }
+      ]
+    },
+    {
+      "name": "No Reload & Infinite Grenade | 无需装弹和无限手雷",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8F3CFB42",
+          "on": "9090909090909090",
+          "off": "41899C24F00E0000"
+        },
+        {
+          "section": "0",
+          "offset": "8F3CF8E4",
+          "on": "9090",
+          "off": "FFCB"
+        }
+      ]
+    },
+    {
+      "name": "Skills No Cooldown | 技能无需冷却",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8F3D8349",
+          "on": "C683F00E0000C8",
+          "off": "4489B3F00E0000"
+        }
+      ]
+    },
+    {
+      "name": "Infintie Titan Thrust | 泰坦无限推进力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8EF696A9",
+          "on": "C5F828C8",
+          "off": "C5FA5CC9"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "checkbox",
+      "memory": [
+        {
+          "section": "0",
+          "offset": "8F6EDEB7",
+          "on": "75",
+          "off": "EB"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes"
+  ]
+}

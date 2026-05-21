@@ -1,0 +1,18 @@
+{"name":"RESIDENT EVIL 7 biohazard 生化危机7","id":"CUSA03842","version":"01.11","process":"eboot.bin","mods":[
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"0EE33FF0","on":"01","off":"00"}]},
+{"name":"Infinite Ammo & Items | 无限弹药和物品","type":"checkbox","memory":[{"offset":"187A81E","on":"9090","off":"29D8"}]},
+{"name":"No Reload | 无需装弹","type":"checkbox","memory":[{"offset":"1BD15C6","on":"909090","off":"41FFCF"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"0EE33FF1","on":"01","off":"00"}]},
+{"name":"Highlight Items & Interactables | 显示全部可互动 / 可收集物品","type":"checkbox","memory":[{"offset":"510A46F","on":"80","off":"83"}]},
+{"name":"Hold L1 & Press △ To Open Item Box Anywhere | 按住 L1 再按 △ 随时打开物品箱","type":"checkbox","memory":[{"offset":"0EE33FF2","on":"01","off":"00"}]},
+{"name":"Movement Speed Multiply 2 | 移动速度 2 倍","type":"checkbox","memory":[{"offset":"1B752DD","on":"0040","off":"803F"}]},
+{"name":"Movement Speed Multiply 3 | 移动速度 3 倍","type":"checkbox","memory":[{"offset":"1B752DD","on":"4040","off":"803F"}]},
+{"name":"Movement Speed Multiply 4 | 移动速度 4 倍","type":"checkbox","memory":[{"offset":"1B752DD","on":"4040","off":"803F"}]},
+{"name":"Play Time 0:00'00'' | 游戏时间 0:00'00''","type":"checkbox","memory":[{"offset":"408699A","on":"F057","off":"F35A"}]},
+{"name":"Restarts 0 | 重新开始 0","type":"checkbox","memory":[{"offset":"3519100","on":"31C9","off":"FFC1"}]},
+{"name":"Banned Footage: Scraps 99999 | 禁止公开的录像：废料 99999","type":"checkbox","memory":[{"offset":"2863277","on":"BA9F8601004531ED41BE3A00000090","off":"8B536C4531ED41BE3A0000004429E2"}]},
+{"name":"Banned Footage: High Score | 禁止公开的录像：超高分数","type":"checkbox","memory":[{"offset":"0EE33FF3","on":"01","off":"00"}]},
+{"name":"Not A Hero: Infinite Oxygen | 不是英雄：无限氧气","type":"checkbox","memory":[{"offset":"2581B14","on":"9090909090","off":"C5FA5C45C0"}]},
+{"name":"Not A Hero: Infinite Grenades | 不是英雄：无限手榴弹","type":"checkbox","memory":[{"offset":"43FAC97","on":"909090","off":"41FFCE"}]},
+{"name":"Jack's 55th Birthday: Results Rank SS | 杰克 55 岁的生日：结果评分 SS","type":"checkbox","memory":[{"offset":"0EE33FF4","on":"01","off":"00"}]}
+],"credits":["Fullcodes"]}

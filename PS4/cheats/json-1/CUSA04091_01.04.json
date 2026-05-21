@@ -1,0 +1,82 @@
+{
+  "name": "WORLD OF FINAL FANTASY 最终幻想世界",
+  "id": "CUSA04091",
+  "version": "01.04",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Items | 无限道具",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "335F7A",
+          "on": "909090",
+          "off": "894804"
+        },
+        {
+          "offset": "1C807",
+          "on": "909090",
+          "off": "895004"
+        }
+      ]
+    },
+    {
+      "name": "Easy Capture | 轻松捕获",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02567FF0",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "SP 999 | SP 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02567FF4",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Gil 9900000 | 金钱 9900000",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02567FF3",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Arma Gems 999 | 阿玛宝石 999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02567FF2",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    },
+    {
+      "name": "Lv 99 After Battle | 战斗后等级 99",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "02567FF5",
+          "on": "01",
+          "off": "00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "越狱兔电玩"
+  ]
+}
