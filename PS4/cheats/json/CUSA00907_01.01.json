@@ -1,0 +1,215 @@
+﻿{
+	"name": "大蛇无双2 蛇魔 豪华版",
+	"id": "CUSA00907",
+	"version": "01.01",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "游戏时间最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "001E0BE6",
+					"on": "31D29090",
+					"off": "418B5734"
+				}
+			]
+		},
+		{
+			"name": "击杀数量最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2ED9D8",
+					"on": "909090",
+					"off": "0F46CA"
+				}
+			]
+		},
+		{
+			"name": "连击数量最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "00B67100",
+					"on": "C7839C0400000F270000E99E3F4FFF",
+					"off": "000000000000000000000000000000"
+				},
+				{
+					"offset": "0005B0A7",
+					"on": "90E953C0B000",
+					"off": "FF839C040000"
+				}
+			]
+		},
+		{
+			"name": "人物快速满级",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2A0CA8",
+					"on": "41894E14",
+					"off": "418B4E14"
+				}
+			]
+		},
+		{
+			"name": "熟练快速满评",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2A0CDB",
+					"on": "41895E20",
+					"off": "418B5620"
+				},
+				{
+					"offset": "2A0DFF",
+					"on": "41894E24",
+					"off": "418B7E24"
+				}
+			]
+		},
+		{
+			"name": "武熟快速满级",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2BD83E",
+					"on": "909090",
+					"off": "0F43C6"
+				}
+			]
+		},
+		{
+			"name": "大招快速蓄满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2EFA90",
+					"on": "6641898C24A4050000",
+					"off": "6641898424A4050000"
+				}
+			]
+		},
+		{
+			"name": "大招前摇冻结",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2EFB55",
+					"on": "9090",
+					"off": "29C8"
+				}
+			]
+		},
+		{
+			"name": "无双奥义常满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "7ECC1",
+					"on": "C5FA118898010000",
+					"off": "C5FA118098010000"
+				}
+			]
+		},
+		{
+			"name": "贵石购买最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "297718",
+					"on": "89877C130000",
+					"off": "89B77C130000"
+				}
+			]
+		},
+		{
+			"name": "稀石购买最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "297938",
+					"on": "668987DCD50000",
+					"off": "6689B7DCD50000"
+				}
+			]
+		},
+		{
+			"name": "经验使用最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "297708",
+					"on": "899F78130000",
+					"off": "89B778130000"
+				}
+			]
+		},
+		{
+			"name": "长玉使用最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2946E4",
+					"on": "66894F42",
+					"off": "66894742"
+				}
+			]
+		},
+		{
+			"name": "转生变动最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2AB16C",
+					"on": "889FFC000000",
+					"off": "8887FC000000"
+				}
+			]
+		},
+		{
+			"name": "属性成长最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2A9194",
+					"on": "66894F0E",
+					"off": "6689470E"
+				},
+				{
+					"offset": "2A9240",
+					"on": "66895F12",
+					"off": "66894712"
+				},
+				{
+					"offset": "2A92A0",
+					"on": "66895F14",
+					"off": "66894714"
+				},
+				{
+					"offset": "2A91E4",
+					"on": "66894F10",
+					"off": "66894710"
+				},
+				{
+					"offset": "2A9300",
+					"on": "66895F16",
+					"off": "66894716"
+				}
+			]
+		}
+	],
+	"credits": [
+		"越狱兔电玩"
+	]
+}
+   
+ 
+
+
+ 
+ 
+  
+  
+  

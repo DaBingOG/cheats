@@ -1,0 +1,11 @@
+{"name":"The Last of Us Remastered/最后生还者 重制版","id":"CUSA00559","version":"01.11","process":"eboot.bin","mods":[
+{"name":"Infinite Health|无限生命值","type":"checkbox","memory":[{"offset":"01C23FF3","on":"01","off":"00"}]},
+{"name":"Infinite Oxygen|无限氧气","type":"checkbox","memory":[{"offset":"00480953","on":"F05F","off":"F25C"}]},
+{"name":"One Hit Kill|一击必杀","type":"checkbox","memory":[{"offset":"01C23FF4","on":"01","off":"00"}]},
+{"name":"No Reload|无需装弹","type":"checkbox","memory":[{"offset":"00682CE3","on":"399B","off":"FF8B"}]},
+{"name":"Money 9999999|金钱 9999999","type":"checkbox","memory":[{"offset":"01C23FF1","on":"01","off":"00"}]},
+{"name":"Infinite Everything Use|道具、总弹药、零部件、技能点数使用不减","type":"checkbox","memory":[{"offset":"000894D3","on":"9090","off":"29D6"}]},
+{"name":"Everything Max on Pickup|道具、总弹药、零部件、技能点数获取最大","type":"checkbox","memory":[{"offset":"0008901B","on":"4189C690909090","off":"440F4DF00FB7C1"}]},
+{"name":"Press <L2+L3+R2> to Set 80% Health|按<L2+L3+R2>设定80%生命值","type":"checkbox","memory":[{"offset":"01C23FF2","on":"01","off":"00"}]},
+{"name":"Activate Debug Menu|启用Debug Menu","type":"checkbox","memory":[{"offset":"01c23FF0","on":"01","off":"00"}]}
+],"credits":[" Fullcodes（PS4/PC修改群: 1167084913,702196858）"]}
