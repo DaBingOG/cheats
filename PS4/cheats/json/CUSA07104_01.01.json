@@ -1,0 +1,98 @@
+{
+  "name": "Resident Evil - Code - Veronica X",
+  "id": "CUSA07104",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite-Health",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "807FD7F600",
+          "on": "99",
+          "off": "23"
+        },
+        {
+          "offset": "807FD7F601",
+          "on": "99",
+          "off": "10"
+        }
+      ]
+    },
+    {
+      "name": "rocket-Launeher",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "808003337A",
+          "on": "01FF",
+          "off": "01FF"
+        },
+        {
+          "offset": "8080033378",
+          "on": "01FF",
+          "off": "01FF"
+        }
+      ]
+    },
+    {
+      "name": "Infinite-Linear-Launeher",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "808003337E",
+          "on": "0BFF",
+          "off": "0BFF"
+        }
+      ]
+    },
+    {
+      "name": "Lnk-Ribbon",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "808003337E",
+          "on": "1FFF",
+          "off": "1FFF"
+        }
+      ]
+    },
+    {
+      "name": "Grenade-Launcher",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "808003337E",
+          "on": "06FF",
+          "off": "06FF"
+        }
+      ]
+    },
+    {
+      "name": "Infinite-Shotgun",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "808003337E",
+          "on": "04FF",
+          "off": "04FF"
+        }
+      ]
+    },
+    {
+      "name": "Infinite-Magnum",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "8080033386",
+          "on": "20FF",
+          "off": "20FF"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Ali-mk"
+  ]
+}

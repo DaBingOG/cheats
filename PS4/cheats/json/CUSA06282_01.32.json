@@ -1,0 +1,27 @@
+{
+  "name": "ABSOLVER 索赦免者",
+  "id": "CUSA06282",
+  "version": "01.32",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4D69470",
+          "on": "4183BFFC000000027509C4C17A1087F4000000E9805348FB",
+          "off": "000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "1EE800",
+          "on": "E96BACB704909090",
+          "off": "C5FA5FC1C5F057C9"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Vampirexx"
+  ]
+}

@@ -1,0 +1,22 @@
+{"name":"NieR:Automata 尼尔：自动人形","id":"CUSA06592","version":"01.03","process":"eboot.bin","mods":[
+{"name":"Invincible Mode | 无敌模式","type":"checkbox","memory":[{"offset":"25A669","on":"9090909090","off":"E832110000"}]},
+{"name":"Infinite HP | 无限 HP","type":"checkbox","memory":[{"offset":"2D151F","on":"909090","off":"4429F0"},{"offset":"2E430B","on":"909090","off":"4429F0"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"3D473B","on":"EB","off":"7E"}]},
+{"name":"Infinite Air Evade | 空中无限闪避","type":"checkbox","memory":[{"offset":"2CC597","on":"00","off":"01"}]},
+{"name":"Infinite Double Jumps | 无限二段跳","type":"checkbox","memory":[{"offset":"2D850A","on":"41C6875814000001EB","off":"4183BF58140000027C"}]},
+{"name":"Pod Programs No Cooldown | 辅助机程式无需冷却","type":"checkbox","memory":[{"offset":"2633B5","on":"EB","off":"77"}]},
+{"name":"Ignore Pod Upgrade Requirements | 无视辅助机强化所需材料","type":"checkbox","memory":[{"offset":"72C9D0","on":"C3","off":"55"}]},
+{"name":"Ignore Weapon Upgrage Requirements | 无视武器强化所需材料","type":"checkbox","memory":[{"offset":"72C5B0","on":"C3","off":"55"}]},
+{"name":"Maximum Plug-in Chip Storage Space | 晶片存储容量最大","type":"checkbox","memory":[{"offset":"01AB3FF2","on":"01","off":"00"}]},
+{"name":"Mininum Plug-in Chip Size | 晶片占用容量最低","type":"checkbox","memory":[{"offset":"01AB3FF3","on":"01","off":"00"}]},
+{"name":"Infinite Hacking Health | 骇客入侵无限生命","type":"checkbox","memory":[{"offset":"2EEECA","on":"9090","off":"FFC9"}]},
+{"name":"Infinite Hacking Time | 骇客入侵无限时间","type":"checkbox","memory":[{"offset":"01AB3FF1","on":"01","off":"00"}]},
+{"name":"Save Anywhere | 随时存档","type":"checkbox","memory":[{"offset":"01AB3FF0","on":"01","off":"00"}]},
+{"name":"Max EXP | 最大经验值","type":"checkbox","memory":[{"offset":"6B4782","on":"909090","off":"0F4EC8"}]},
+{"name":"Funds 9,999,999 | 持有金钱 9,999,999","type":"checkbox","memory":[{"offset":"711236","on":"9090","off":"7C0E"},{"offset":"71BE88","on":"9090","off":"7C0E"}]},
+{"name":"Play Time 00:00:00 | 游玩时间 00:00:00","type":"checkbox","memory":[{"offset":"01AB3FF6","on":"01","off":"00"}]},
+{"name":"Movement Speed Multiply 1.5 | 移动速度 1.5 倍","type":"checkbox","memory":[{"offset":"29A220","on":"C783401A00000000C03F9090","off":"C5FA58C1C5FA1183401A0000"}]},
+{"name":"Movement Speed Multiply 2 | 移动速度 2 倍","type":"checkbox","memory":[{"offset":"29A220","on":"C783401A0000000000409090","off":"C5FA58C1C5FA1183401A0000"}]},
+{"name":"Run Speed Multiply 2 | 奔跑速度 2 倍","type":"checkbox","memory":[{"offset":"29B208","on":"41C785401A0000000000409090","off":"C5FA58C1C4C17A1185401A0000"}]},
+{"name":"Run Speed Multiply 3 | 奔跑速度 3 倍","type":"checkbox","memory":[{"offset":"29B208","on":"41C785401A0000000040409090","off":"C5FA58C1C4C17A1185401A0000"}]}
+],"credits":["Fullcodes & hejran7"]}

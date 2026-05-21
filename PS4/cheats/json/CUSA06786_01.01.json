@@ -1,0 +1,79 @@
+{
+  "name": "秋叶原妄想物语",
+  "id": "CUSA06786",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+	{
+      "name": "HP=9999/HP=9999",
+      "description": "战斗时生效",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "80AEB000",
+          "on": "C740340F27000048634834F20F2AC1E95A9576FF",
+          "off": "0000000000000000000000000000000000000000"
+        },
+		{
+          "offset": "80254566",
+          "on": "E9956A8900909090",
+          "off": "48634834F20F2AC1"
+        }
+      ]
+    },
+	{
+      "name": "SP=9999/SP=9999",
+      "description": "战斗时生效",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "80AEB020",
+          "on": "B80F27000089413C4863493C39C8E927CA82FF",
+          "off": "00000000000000000000000000000000000000"
+        },
+		{
+          "offset": "80317A54",
+          "on": "E9C7357D0090",
+          "off": "4863493C39C8"
+        }
+      ]
+    },
+	{
+      "name": "money=9999999/金钱=9999999",
+      "description": "金钱增加时生效",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "80AEB040",
+          "on": "48C7C07F969800E90D2F84FF",
+          "off": "000000000000000000000000"
+        },
+		{
+          "offset": "8032DF54",
+          "on": "E9E7D07B00",
+          "off": "4803442408"
+        }
+      ]
+    },
+	{
+      "name": "exp mul 100/百倍经验",
+      "description": "百倍经验",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "80AEB060",
+          "on": "6BD26401D1894850E932A471FF",
+          "off": "00000000000000000000000000"
+        },
+		{
+          "offset": "8020549A",
+          "on": "E9C15B8E00",
+          "off": "01D1894850"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "allyzc"
+  ]
+}

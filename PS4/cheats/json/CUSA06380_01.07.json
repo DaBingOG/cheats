@@ -1,0 +1,70 @@
+{
+  "name": "MARVEL VS. CAPCOM: INFINITE",
+  "id": "CUSA06380",
+  "version": "01.07",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限 HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3CC8660",
+          "on": "83BF000300000075068BB7B806000089B7BC060000E9D79143FC",
+          "off": "0000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "offset": "10184B",
+          "on": "E9106EBC0390",
+          "off": "89B7BC060000"
+        }
+      ]
+    },
+    {
+      "name": "Max Hyper Combo Gauge | 满超级连击蓄力槽 (敌我通用)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3CC8690",
+          "on": "BA409C000089500CE9774E46FC",
+          "off": "00000000000000000000000000"
+        },
+        {
+          "offset": "12D50F",
+          "on": "E97CB1B903",
+          "off": "89500C85F6"
+        }
+      ]
+    },
+    {
+      "name": "Max Infinity Stone Gauge | 满无限宝石蓄力槽 (敌我通用)",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "FFDD4",
+          "on": "909090909090",
+          "off": "81FA10270000"
+        }
+      ]
+    },
+    {
+      "name": "Freeze Timer | 锁定时间",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "3CC86B0",
+          "on": "B0634188475EE9484D48FC",
+          "off": "0000000000000000000000"
+        },
+        {
+          "offset": "14D3FA",
+          "on": "E9B1B2B70390909090",
+          "off": "4188475E41C6475F90"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "DJFlameDat"
+  ]
+}

@@ -1,0 +1,11 @@
+{"name":"Naruto Shippuden Ultimate Ninja Storm 4 Road to Boruto 火影忍者疾風傳 終極風暴4 慕留人傳","id":"CUSA06134","version":"01.05","process":"eboot.bin","mods":[
+{"name":"Infinite Health | 无限生命","type":"checkbox","memory":[{"offset":"04C97FF0","on":"01","off":"00"}]},
+{"name":"Infinite Chakra | 无限查克拉","type":"checkbox","memory":[{"offset":"04C97FF1","on":"01","off":"00"}]},
+{"name":"Infinite Substitution Jutsu | 无限替身术","type":"checkbox","memory":[{"offset":"04C97FF2","on":"01","off":"00"}]},
+{"name":"Empty Opponent's Chakra | 清空对手查克拉","type":"checkbox","memory":[{"offset":"04C97FF3","on":"01","off":"00"}]},
+{"name":"Opponent Can't Use Substitution Jutsu | 对手不能使用替身术","type":"checkbox","memory":[{"offset":"04C97FF4","on":"01","off":"00"}]},
+{"name":"One Hit Kill | 一击必杀","type":"checkbox","memory":[{"offset":"04C97FF5","on":"01","off":"00"}]},
+{"name":"Battle Time 99 | 对战时间 99","type":"checkbox","memory":[{"offset":"04C97FF6","on":"01","off":"00"}]},
+{"name":"Items 900 | 道具数量 900","type":"checkbox","memory":[{"offset":"04C97FF7","on":"01","off":"00"}]},
+{"name":"Ryo 9,000,000 | 金钱 9,000,000","type":"checkbox","memory":[{"offset":"04C97FF8","on":"01","off":"00"}]}
+],"credits":["2B & FLiNG"]}

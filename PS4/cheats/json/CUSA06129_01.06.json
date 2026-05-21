@@ -1,0 +1,132 @@
+{
+  "name": "Ryu Ga Gotoku 6 人中之龙6：生命诗篇",
+  "id": "CUSA06129",
+  "version": "01.06",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限体力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "AB2AD0",
+          "on": "4E",
+          "off": "4F"
+        }
+      ]
+    },
+    {
+      "name": "Max Heat Gauge | 满热血量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "AA345A",
+          "on": "5F",
+          "off": "5D"
+        }
+      ]
+    },
+    {
+      "name": "One Hit Kill | 一击必杀",
+      "type": "",
+      "memory": [
+        {
+          "offset": "AB219A",
+          "on": "4D31",
+          "off": "4989"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Stamina | 无限耐力",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "590E46",
+          "on": "F828C1",
+          "off": "F25CC0"
+        }
+      ]
+    },
+    {
+      "name": "Empty Stomach | 清空胃袋量表",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "12ECE22",
+          "on": "5D",
+          "off": "5F"
+        }
+      ]
+    },
+    {
+      "name": "Max Items | 最大物品数量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D9DE49",
+          "on": "4D",
+          "off": "4E"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo | 无限子弹",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "ABD7CA",
+          "on": "9090",
+          "off": "FFC8"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Weapon Durability | 无限武器耐久度",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "C1B70A",
+          "on": "9090909090",
+          "off": "412B542454"
+        }
+      ]
+    },
+    {
+      "name": "Max Money & Abilities Points | 最大金钱和强化能力点数",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D9CC46",
+          "on": "89F990",
+          "off": "0F4FCF"
+        }
+      ]
+    },
+    {
+      "name": "Never Drunk | 不会醉酒",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "A8A310",
+          "on": "5D",
+          "off": "5F"
+        }
+      ]
+    },
+    {
+      "name": "Always Drunk | 总是醉酒",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "A8A322",
+          "on": "C780500400000080F0439090",
+          "off": "C5E25DD2C5FA119050040000"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Fullcodes & TLH"
+  ]
+}

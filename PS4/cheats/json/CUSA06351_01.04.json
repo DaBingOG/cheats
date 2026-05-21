@@ -1,0 +1,8 @@
+{"name":"The Elder Scrolls V: Skyrim 上古卷轴5：天际","id":"CUSA06351","version":"01.04","process":"eboot.bin","mods":[
+{"name":"Infinite Health 无限生命","type":"checkbox","memory":[{"offset":"03B0bff2","on":"01","off":"00"}]},
+{"name":"Infinite Magicka 无限法术","type":"checkbox","memory":[{"offset":"03B0bff3","on":"01","off":"00"}]},
+{"name":"Infinite Stamina 无限精力","type":"checkbox","memory":[{"offset":"03B0bff4","on":"01","off":"00"}]},
+{"name":"Gold 99999 金币99999","type":"checkbox","memory":[{"offset":"03B0bff0","on":"01","off":"00"}]},
+{"name":"Perks 99 额外能力点数99","type":"checkbox","memory":[{"offset":"03B0bff5","on":"01","off":"00"}]},
+{"name":"Zero Weight 零负重","type":"checkbox","memory":[{"offset":"03B0bff1","on":"01","off":"00"}]}
+],"credits":[" Fullcodes"]}

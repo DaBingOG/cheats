@@ -1,0 +1,150 @@
+﻿{
+	"name": "讨鬼传 2",
+	"id": "CUSA07086",
+	"version": "01.02",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "角色生命常满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "A2FB6C",
+					"on": "C5F82EC9",
+					"off": "C5F82EC8"
+				}
+			]
+		},
+		{
+			"name": "角色体力常满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "507685",
+					"on": "C5F82EC9",
+					"off": "C5F82EC8"
+				}
+			]
+		},
+		{
+			"name": "角色大招常满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "374EF0",
+					"on": "C5F82ED1",
+					"off": "C5F82EC8"
+				}
+			]
+		},
+		{
+			"name": "技能使用无限",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "3B432D",
+					"on": "39D3",
+					"off": "39D0"
+				}
+			]
+		},
+		{
+			"name": "技能效果无限",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "3B1438",
+					"on": "C5F82EC9",
+					"off": "C5F82EC1"
+				}
+			]
+		},
+		{
+			"name": "头目容易杀死",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "511820",
+					"on": "C5FA11A744040000",
+					"off": "C5FA118744040000"
+				}
+			]
+		},
+		{
+			"name": "金钱越用越多",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "73E21E",
+					"on": "01CA",
+					"off": "29CA "
+				},
+				{
+					"offset": "73E3F8",
+					"on": "01CA",
+					"off": "29CA"
+				},
+				{
+					"offset": "73E068",
+					"on": "01D6",
+					"off": "29D6"
+				}
+			]
+		},
+		{
+			"name": "金钱使用不减",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "73E21E",
+					"on": "9090",
+					"off": "29CA "
+				},
+				{
+					"offset": "73E3F8",
+					"on": "9090",
+					"off": "29CA"
+				},
+				{
+					"offset": "73E068",
+					"on": "9090",
+					"off": "29D6"
+				}
+			]
+		},
+		{
+			"name": "物品越用越多",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "46EFA9",
+					"on": "01D0",
+					"off": "29D0"
+				}
+			]
+		},
+		{
+			"name": "物品使用不减",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "46EFA9",
+					"on": "9090",
+					"off": "29D0"
+				}
+			]
+		}
+	],
+	"credits": [
+		"越狱兔电玩"
+	]
+}
+   
+ 
+
+
+ 
+ 
+  
+  
+  
