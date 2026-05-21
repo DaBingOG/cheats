@@ -1,0 +1,54 @@
+{
+  "name": "Child of Light 光之子",
+  "id": "CUSA00339",
+  "version": "01.02",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Inventory Items & Oculi Gems | 无限装备道具和奥库利宝石",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "4269E",
+          "on": "909090",
+          "off": "4429F0"
+        }
+      ]
+    },
+    {
+      "name": "Skill Points 99 | 技能点数 99",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "973080",
+          "on": "B963000000898840030000E9317B75FF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "CABBB",
+          "on": "E9C0848A0090",
+          "off": "898840030000"
+        }
+      ]
+    },
+    {
+      "name": "Max EXP | 最大经验值",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "9730B0",
+          "on": "4C8BFF41C74714FFE0F505E9547079FF",
+          "off": "00000000000000000000000000000000"
+        },
+        {
+          "offset": "10A10D",
+          "on": "E99E8F86009090",
+          "off": "4989FF41017714"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Dreamcast2"
+  ]
+}

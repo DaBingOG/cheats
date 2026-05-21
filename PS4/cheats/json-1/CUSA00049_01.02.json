@@ -1,0 +1,60 @@
+{
+	"name": "Battlefield 4",
+	"id": "CUSA00049",
+	"version": "01.02",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "God Mode 无敌模式",
+			"hint": null,
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "174C17E",
+					"on": "C5FA11431C",
+					"off": "C5FA11431C"
+				},
+				{
+					"offset": "2F83028",
+					"on": "837B2C100F8451917CFEC5FA11431CE947917CFE",
+					"off": "0000000000000000000000000000000000000000"
+				},
+				{
+					"offset": "174C17E",
+					"on": "E9A56E8301",
+					"off": "C5FA11431C"
+				}
+			]
+		},
+		{
+			"name": "Infinite Ammo 无限子弹",
+			"hint": null,
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "10289A4",
+					"on": "9090",
+					"off": "FFC8"
+				}
+			]
+		},
+		{
+			"name": "No Recoil 无后座力",
+			"hint": "Pick up a new weapon for no spread.",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "6C6E10",
+					"on": "C3",
+					"off": "55"
+		  }
+      ]
+    }
+  ],
+  "credits": [
+    "Wander FW9.00"
+  ]
+}
+
+  
+

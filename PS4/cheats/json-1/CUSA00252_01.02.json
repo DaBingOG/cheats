@@ -1,0 +1,71 @@
+{
+  "name": "Thief",
+  "id": "CUSA00252",
+  "version": "01.02",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限 HP",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "9CCA93",
+          "on": "C5F828C1",
+          "off": "C5F25CC0"
+        }
+      ]
+    },
+    {
+      "name": "Stealth Mode | 隐身模式",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "C6516D",
+          "on": "0F57C990",
+          "off": "C5FA58C9"
+        },
+        {
+          "offset": "C65690",
+          "on": "0F57C99090",
+          "off": "C5FA584F64"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Eye | 专注槽使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "83C867",
+          "on": "C5F828C190",
+          "off": "C5FA1045E4"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Items | 道具使用不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CD2367",
+          "on": "909090",
+          "off": "4529E7"
+        }
+      ]
+    },
+    {
+      "name": "Max Gold | 最大金钱",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "CD2712",
+          "on": "909090",
+          "off": "0F4ED8"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "TLH"
+  ]
+}

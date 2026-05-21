@@ -1,0 +1,86 @@
+{
+  "name": "真.三国无双7 with 猛将传",
+  "id": "CUSA00159",
+  "version": "01.03",
+  "process": "eboot.bin",
+  "mods": [
+	{
+      "name": "infinite hp/无限HP",
+      "description": "HP不减",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "D33000",
+          "on": "F3440F2AC9498D9400345F0A00F3440F110A89CEE9CA8D2DFF",
+          "off": "00000000000000000000000000000000000000000000000000"
+        },
+		{
+          "offset": "BDD9",
+          "on": "E92272D2009090909090",
+          "off": "C4C17A2CB400345F0A00"
+        }
+      ]
+    },
+	{
+      "name": "max money/金钱最大",
+      "description": "金钱使用后生效",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "2D1914",
+          "on": "BB7F969800909090",
+          "off": "81FB7F9698007704"
+        }
+      ]
+    },
+	{
+      "name": "Facility Weapon materials 9999/设施、武器素材9999",
+      "description": "设施、武器素材分别使用后生效",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "D33030",
+          "on": "66B80F276689844FA4000000E9DA145AFF",
+          "off": "0000000000000000000000000000000000"
+        },
+		{
+          "offset": "2D4513",
+          "on": "E918EBA500909090",
+          "off": "6689844FA4000000"
+        }
+      ]
+    },
+	{
+      "name": "Baoyu 9999/宝玉9999",
+      "description": "宝玉使用后生效",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "D33060",
+          "on": "66B80F27668987521C0000E91FF759FF",
+          "off": "00000000000000000000000000000000"
+        },
+		{
+          "offset": "2D2788",
+          "on": "E9D308A6009090",
+          "off": "668987521C0000"
+        }
+      ]
+    },
+	{
+      "name": "infinite wushuang/无限无双",
+      "description": "无限无双,使用无双技能时无双值不减",
+      "type": "checkbox",
+      "memory": [
+		{
+          "offset": "F2D3E",
+          "on": "909090",
+          "off": "885708"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "allyzc"
+  ]
+}

@@ -1,0 +1,130 @@
+﻿{
+	"name": "真 三国无双7 猛将传",
+	"id": "CUSA00159",
+	"version": "01.01",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "角色击杀数量最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "EF22C",
+					"on": "90909090",
+					"off": "440F4EF8"
+				}
+			]
+		},
+		{
+			"name": "角色连击数量最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "FA36",
+					"on": "899BB803000090",
+					"off": "4489B3B8030000"
+				}
+			]
+		},
+		{
+			"name": "角色经验增加满级",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2B7531",
+					"on": "41894D70",
+					"off": "41894570"
+				}
+			]
+		},
+		{
+			"name": "角色怒气快速加满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "70EAB",
+					"on": "898FB8020000",
+					"off": "8987B8020000"
+				}
+			]
+		},
+		{
+			"name": "角色无双快速加满",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "F0CC0",
+					"on": "885F08",
+					"off": "884F08"
+				}
+			]
+		},
+		{
+			"name": "游戏限制时间最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "DE551",
+					"on": "45894738",
+					"off": "41894F38"
+				}
+			]
+		},
+		{
+			"name": "持有金钱使用最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2C6E6C",
+					"on": "45896614",
+					"off": "41895E14"
+				}
+			]
+		},
+		{
+			"name": "持有宝玉增加最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2C7CD8",
+					"on": "66898F521C0000",
+					"off": "668987521C0000"
+				}
+			]
+		},
+		{
+			"name": "持有素材使用最大",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2C9A23",
+					"on": "4C89844FA4000000",
+					"off": "6689844FA4000000"
+				}
+			]
+		},
+		{
+			"name": "持有名声增加翻倍",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "2CF111",
+					"on": "66898780050000 ",
+					"off": "66899F80050000"
+				}
+			]
+		}
+	],
+	"credits": [
+		"越狱兔电玩"
+	]
+}
+   
+ 
+
+
+ 
+ 
+  
+  
+  
