@@ -1,0 +1,59 @@
+{
+  "name": "BLEED 2 血流2",
+  "id": "CUSA08890",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2103020",
+          "on": "C7000000A042833851E93A6032FE",
+          "off": "0000000000000000000000000000"
+        },
+        {
+          "offset": "429063",
+          "on": "E9B89FCD01",
+          "off": "8908833851"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Energy | 无限能量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2103040",
+          "on": "C7000000A0420F57C9E9DF6032FE",
+          "off": "0000000000000000000000000000"
+        },
+        {
+          "offset": "429126",
+          "on": "E9159FCD019090",
+          "off": "F30F11000F57C9"
+        }
+      ]
+    },
+    {
+      "name": "Instant S Rank | 瞬间 S 评分",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "2103060",
+          "on": "C70300004843498B3EE97C8C3EFE",
+          "off": "0000000000000000000000000000"
+        },
+        {
+          "offset": "4EBCE3",
+          "on": "E97873C1019090",
+          "off": "F30F1103498B3E"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Dreamcast2"
+  ]
+}

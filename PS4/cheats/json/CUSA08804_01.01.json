@@ -1,0 +1,42 @@
+﻿{
+	"name": "旺达与巨像",
+	"id": "CUSA08804",
+	"version": "03.54",
+	"process": "eboot.bin",
+	"mods": [
+		{
+			"name": "无限生命",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "7ECEFE",
+					"on": "C5F85FC0",
+					"off": "C5F857C0"
+				}
+			]
+		},
+		{
+			"name": "无限体力",
+			"type": "checkbox",
+			"memory": [
+				{
+					"offset": "7ED1C1",
+					"on": "C5F85FC0",
+					"off": "C5F857C0"
+				}
+			]
+		}
+	],
+	"credits": [
+		"越狱兔电玩"
+	]
+}
+   
+ 
+
+
+ 
+ 
+  
+  
+  

@@ -1,0 +1,59 @@
+{
+  "name": "BLEED 血流",
+  "id": "CUSA08889",
+  "version": "01.01",
+  "process": "eboot.bin",
+  "mods": [
+    {
+      "name": "Infinite Health | 无限生命",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1D2A050",
+          "on": "C783F400000078000000E99C6F58FE",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "2B0FF5",
+          "on": "E95690A70190",
+          "off": "89ABF4000000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Energy | 无限能量",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1D2A070",
+          "on": "C7831801000000007042E9247158FE",
+          "off": "000000000000000000000000000000"
+        },
+        {
+          "offset": "2B119B",
+          "on": "E9D08EA701909090",
+          "off": "F30F118318010000"
+        }
+      ]
+    },
+    {
+      "name": "Money 999999 | 金钱 999999",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "1D2A090",
+          "on": "B93F420F00894B604883C408E9CAAC45FE",
+          "off": "0000000000000000000000000000000000"
+        },
+        {
+          "offset": "184D64",
+          "on": "E92753BA019090",
+          "off": "894B604883C408"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    "Dreamcast2"
+  ]
+}
