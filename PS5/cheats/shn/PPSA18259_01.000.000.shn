@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Trainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Game="Dead Rising Deluxe Remaster" Moder="Yharnam" Cusa="PPSA18259" Version="01.000.000" Process="eboot.bin">
+  <Genres Name="Action"/>
+  <Items/>
+  <Cheat Text="无限生命值（玩家） | Infi Health (Player)">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>76632E0</Offset>
+      <ValueOn>41-83-BC-24-D4-00-00-00-05-75-05-41-8B-44-24-60-41-89-44-24-54-E9-FD-26-82-F9</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>E859F2</Offset>
+      <ValueOn>E9-E9-D8-7D-06</ValueOn>
+      <ValueOff>41-89-44-24-54</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="无限生命值（幸存者） | Infi Health (Survivors)">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>76633A8</Offset>
+      <ValueOn>C4-E2-70-F2-C0-41-81-7E-34-EC-00-00-00-75-05-41-8B-44-24-60-E9-31-26-82-F9</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>E859ED</Offset>
+      <ValueOn>E9-B6-D9-7D-06</ValueOn>
+      <ValueOff>C4-E2-70-F2-C0</ValueOff>
+    </Cheatline>
+  </Cheat>  
+  <Cheat Text="无限武器耐久度 | Inf Weapon Durability">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>7663312</Offset>
+      <ValueOn>C5-FA-10-58-20-C5-FA-11-58-28-E9-B5-A0-38-F9</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>9ED3D1</Offset>
+      <ValueOn>E9-3C-5F-C7-06</ValueOn>
+      <ValueOff>C5-FA-11-58-28</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="无限弹药 | Inf Ammo">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>7663344</Offset>
+      <ValueOn>66-8B-50-2E-66-89-50-2C-48-8B-86-68-02-00-00-E9-15-A4-38-F9</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>9ED762</Offset>
+      <ValueOn>E9-DD-5B-C7-06-90-90-90-90-90-90</ValueOn>
+      <ValueOff>66-01-50-2C-48-8B-86-68-02-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="停止时间 | Time Stop">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>D07C62</Offset>
+      <ValueOn>90-90-90-90-90-90</ValueOn>
+      <ValueOff>FF-90-C0-00-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>  
+  <Cheat Text="无限电影 | Infi Film">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>1DCADFA</Offset>
+      <ValueOn>90-90-90</ValueOn>
+      <ValueOff>41-FF-CD</ValueOff>
+    </Cheatline>
+  </Cheat>  
+  <Cheat Text="最大击杀次数 | Maximum Number of Kills">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>7663376</Offset>
+      <ValueOn>41-BD-3F-42-0F-00-45-89-AC-24-B8-00-00-00-E9-F7-51-A7-F8</ValueOn>
+      <ValueOff>00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00</ValueOff>
+    </Cheatline>
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>D8578</Offset>
+      <ValueOn>E9-F9-AD-58-07-90-90-90</ValueOn>
+      <ValueOff>45-89-AC-24-B8-00-00-00</ValueOff>
+    </Cheatline>
+  </Cheat>
+  <Cheat Text="最大经验 | Max Exp">
+    <Cheatline>
+      <Section>0</Section>
+      <Offset>CDCAD3</Offset>
+      <ValueOn>89-F1-90-90-90</ValueOn>
+      <ValueOff>39-F1-0F-4C-F1</ValueOff>
+    </Cheatline>
+  </Cheat>
+</Trainer>
