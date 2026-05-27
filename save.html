@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PS4/PS5 金手指使用教程">
-    <title>使用教程 - 大饼 PS5 金手指资料库</title>
+    <meta name="description" content="PS4/PS5 游戏存档">
+    <title>游戏存档 - 大饼 PS5 金手指资料库</title>
     <script src="js/common.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 顶部导航栏 -->
     <nav class="navbar">
         <div class="navbar-brand" onclick="location.href='index.html'">
             <img src="images/UI/logo.png" alt="Logo">
@@ -19,13 +18,13 @@
             <div class="nav-item" id="navHome" onclick="location.href='index.html'">
                 <svg class="icon icon-fill" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 首页
             </div>
-            <div class="nav-item ps5-btn active" id="navPopular">
+            <div class="nav-item ps5-btn" id="navPopular" onclick="location.href='tutorial.html'">
                 <svg class="icon ps5-icon ps5-icon-triangle" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2692 6.98965C23.0395 5.65908 24.9605 5.65908 25.7309 6.98965L44.262 38.9979C45.0339 40.3313 44.0718 42 42.5311 42H5.4689C3.92823 42 2.96611 40.3313 3.73804 38.9979L22.2692 6.98965Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> 实用教程
             </div>
             <div class="nav-item ps5-btn" id="navTools" onclick="location.href='tools.html'">
                 <svg class="icon ps5-icon ps5-icon-circle" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="4"/></svg> 工具箱
             </div>
-            <div class="nav-item ps5-btn" id="navMessages" onclick="location.href='save.html'">
+            <div class="nav-item ps5-btn active" id="navMessages">
                 <svg class="icon ps5-icon" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 8L40 40" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 40L40 8" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> 游戏存档
             </div>
             <div class="nav-item nav-dropdown ps5-btn" id="navAbout" onclick="toggleAboutDropdown()">
@@ -37,7 +36,6 @@
             </div>
         </div>
         
-        <!-- 移动端下拉菜单按钮 -->
         <div class="mobile-nav-wrapper">
             <button class="mobile-nav-btn" onclick="toggleMobileNav()">
                 <svg class="icon" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.94971 11.9497H39.9497" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.94971 23.9497H39.9497" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.94971 35.9497H39.9497" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -46,13 +44,13 @@
                 <div class="mobile-nav-item" id="mobileNavHome" onclick="location.href='index.html'; toggleMobileNav()">
                     <svg class="icon icon-fill" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 首页
                 </div>
-                <div class="mobile-nav-item active" id="mobileNavPopular">
+                <div class="mobile-nav-item" id="mobileNavPopular" onclick="location.href='tutorial.html'; toggleMobileNav()">
                     <svg class="icon ps5-icon ps5-icon-triangle" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2692 6.98965C23.0395 5.65908 24.9605 5.65908 25.7309 6.98965L44.262 38.9979C45.0339 40.3313 44.0718 42 42.5311 42H5.4689C3.92823 42 2.96611 40.3313 3.73804 38.9979L22.2692 6.98965Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> 实用教程
                 </div>
                 <div class="mobile-nav-item" id="mobileNavTools" onclick="location.href='tools.html'; toggleMobileNav()">
                     <svg class="icon ps5-icon ps5-icon-circle" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="4"/></svg> 工具箱
                 </div>
-                <div class="mobile-nav-item" id="mobileNavMessages" onclick="location.href='save.html'; toggleMobileNav()">
+                <div class="mobile-nav-item active" id="mobileNavMessages">
                     <svg class="icon ps5-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg> 游戏存档
                 </div>
                 <div class="mobile-nav-item" id="mobileNavAbout" onclick="toggleMobileAboutDropdown()">
@@ -66,66 +64,139 @@
         </div>
     </nav>
 
-    <!-- 主内容区域 -->
     <main class="main-content" style="margin-top: 80px;">
-        <div class="container">
-            <header>
-                <h1>使用教程大全</h1>
-                <p class="subtitle">PS4/PS5 金手指使用指南</p>
-            </header>
+        <header>
+            <h1>游戏存档</h1>
+            <p class="subtitle">PS4/PS5 游戏存档资源</p>
+        </header>
 
-            <div class="tutorial-card">
-                <h2>PS5折腾百科全书</h2>
-                <ul>
-                    <li>最全折腾教程：<a href="https://docs.qq.com/aio/p/sclyetur1r2t9to?p=rCUgAUhwygXUAT5BPiiYjX" target="_blank" style="color: #3b82f6; text-decoration: none; font-weight: 500;">https://docs.qq.com/aio/p/sclyetur1r2t9to?p=rCUgAUhwygXUAT5BPiiYjX</a></li>
-                </ul>
-            </div>
+        <div class="saves-grid" id="savesGrid">
+            <div class="loading-indicator">加载中...</div>
+        </div>
 
-            <div class="tutorial-card">
-                <h2>PS4平台</h2>
-                <ul>
-                    <li>PS4需已折腾并且 GoldHEN 版本为2.2以上</li>
-                    <li>了解您的游戏版本号，如：CUSA01234_01.01</li>
-                    <li>将指定格式的金手指放入：Goldhen/cheats/json（mc4/shn）内</li>
-                    <li>进入游戏长按 SHARE 键呼出金手指菜单</li>
-                </ul>
-            </div>
-
-            <div class="tutorial-card">
-                <h2>PS5平台</h2>
-                <p>4.03-10.01系统可使用etaHEN的cheats功能</p>
-                <p>10.20-12.00系统可使用各类金手指插件，如：东哥工具箱、麒麟核心、Yoncore等等...</p>
-                <ul>
-                    <li>PS5需已折腾并且注入 etaHEN2.5B（或其他金手指插件）</li>
-                    <li>了解您的游戏版本号，如：PPSA01234_01.001.000</li>
-                    <li>将指定格式的金手指放入：etaHEN/cheats/json（mc4/shn）内（json需转为shn格式，不然会死机）</li>
-                    <li>进入游戏后，打开工具箱，点击金手指菜单</li>
-                </ul>
-            </div>
-
-            <div class="version-info">
-                <p>教程版本：v1.0 | 最后更新：2026年5月</p>
-            </div>
+        <div class="version-info">
+            <p>游戏存档页面 - 持续更新中</p>
         </div>
     </main>
 
-    <!-- JavaScript -->
     <script>
-        // ========== 关于我们功能 ==========
+        // ========== 游戏存档功能 ==========
+        async function loadGameSaves() {
+            const savesGrid = document.getElementById('savesGrid');
+            try {
+                const response = await fetch('SAVES/saves.txt');
+                if (!response.ok) {
+                    throw new Error('无法加载存档列表');
+                }
+                const text = await response.text();
+                const lines = text.split('\n').filter(line => line.trim() !== '');
+
+                if (lines.length === 0) {
+                    savesGrid.innerHTML = '<div class="no-saves">暂无存档</div>';
+                    return;
+                }
+
+                savesGrid.innerHTML = '';
+                lines.forEach(line => {
+                    const parts = line.split('=');
+                    const saveFile = parts[0].trim();
+                    const nameAndInfo = parts.length > 1 ? parts[1].trim() : saveFile.replace('.zip', '');
+                    const infoParts = nameAndInfo.split('//');
+                    const saveName = infoParts[0].trim();
+                    const saveInfo = infoParts.length > 1 ? infoParts[1].trim() : '';
+                    const saveId = saveFile.replace('.zip', '').trim();
+                    const saveCard = createSaveCard(saveId, saveName, saveFile, saveInfo);
+                    savesGrid.appendChild(saveCard);
+                });
+            } catch (error) {
+                console.error('加载存档失败:', error);
+                savesGrid.innerHTML = '<div class="no-saves">加载失败，请稍后重试</div>';
+            }
+        }
+
+        function createSaveCard(saveId, saveName, saveFile, saveInfo) {
+            const card = document.createElement('div');
+            card.className = 'game-card';
+            card.onclick = () => showSavePreview(saveId, saveName, saveFile, saveInfo);
+
+            const folder = saveId.substring(0, 4);
+            const imagePath = `images/${folder}/${saveId}`;
+            const isPS5 = saveId.startsWith('PPSA');
+            const platformBadge = isPS5 ? 'ps5-badge' : 'ps4-badge';
+
+            card.style.backgroundImage = `url('${imagePath}.jpg'), url('${imagePath}.png'), url('images/placeholder.png')`;
+
+            card.innerHTML = `
+                <div class="${platformBadge}"></div>
+                <div class="game-card-info">
+                    <div class="game-card-name">${saveName}</div>
+                    <div class="game-card-id">${saveId}</div>
+                </div>
+            `;
+            return card;
+        }
+
+        function showSavePreview(saveId, saveName, saveFile, saveInfo) {
+            const existingModal = document.querySelector('.save-preview-modal');
+            if (existingModal) existingModal.remove();
+
+            const folder = saveId.substring(0, 4);
+            const imagePath = `images/${folder}/${saveId}`;
+            const downloadPath = `SAVES/savedata/${saveFile}`;
+            const isPS5 = saveId.startsWith('PPSA');
+
+            const modal = document.createElement('div');
+            modal.className = 'save-preview-modal';
+            modal.innerHTML = `
+                <div class="save-preview-overlay" onclick="closeSavePreview()"></div>
+                <div class="save-preview-content">
+                    <button class="save-preview-close" onclick="closeSavePreview()">&#xd7;</button>
+                    <div class="save-preview-image-wrapper">
+                        <img src="${imagePath}.jpg" alt="${saveName}"
+                             onerror="this.src='${imagePath}.png'; this.onerror=function(){this.src='images/placeholder.png'; this.onerror=null;}">
+                        <div class="${isPS5 ? 'ps5-badge' : 'ps4-badge'}" style="position: absolute; top: 16px; left: 16px; width: 50px; height: 50px;"></div>
+                    </div>
+                    <div class="save-preview-info">
+                        <h2 class="save-preview-title">${saveName}</h2>
+                        <div class="save-preview-id">${saveId}</div>
+                        ${saveInfo ? `<div class="save-preview-detail">
+                            <div class="save-preview-detail-label">存档信息</div>
+                            <div class="save-preview-detail-value">${saveInfo}</div>
+                        </div>` : ''}
+                        <div class="save-preview-actions">
+                            <a href="${downloadPath}" class="save-preview-download" download>
+                                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                下载存档
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function closeSavePreview() {
+            const modal = document.querySelector('.save-preview-modal');
+            if (modal) modal.remove();
+        }
+
+        document.addEventListener('DOMContentLoaded', loadGameSaves);
+
         function toggleMobileNav() {
             const mobileNavMenu = document.getElementById('mobileNavMenu');
             mobileNavMenu.classList.toggle('active');
         }
 
-        // 切换移动端关于我们下拉菜单
         function toggleMobileAboutDropdown() {
-            const dropdown = document.getElementById('mobileAboutDropdown');
-            dropdown.classList.toggle('active');
+            event.stopPropagation();
+            const mobileAboutDropdown = document.getElementById('mobileAboutDropdown');
+            mobileAboutDropdown.classList.toggle('active');
         }
 
-        // 页面加载完成后初始化
-        document.addEventListener("DOMContentLoaded", function() {
-        });
     </script>
 </body>
 </html>

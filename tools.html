@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PS4/PS5 金手指使用教程">
-    <title>使用教程 - 大饼 PS5 金手指资料库</title>
+    <meta name="description" content="MC4 & JSON 金手指转换 | 自动汉化工具箱">
+    <title>工具箱 - 大饼 PS5 金手指资料库</title>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/crypto-js.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/tools.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,10 +21,10 @@
             <div class="nav-item" id="navHome" onclick="location.href='index.html'">
                 <svg class="icon icon-fill" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 首页
             </div>
-            <div class="nav-item ps5-btn active" id="navPopular">
+            <div class="nav-item ps5-btn" id="navPopular" onclick="location.href='tutorial.html'">
                 <svg class="icon ps5-icon ps5-icon-triangle" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2692 6.98965C23.0395 5.65908 24.9605 5.65908 25.7309 6.98965L44.262 38.9979C45.0339 40.3313 44.0718 42 42.5311 42H5.4689C3.92823 42 2.96611 40.3313 3.73804 38.9979L22.2692 6.98965Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> 实用教程
             </div>
-            <div class="nav-item ps5-btn" id="navTools" onclick="location.href='tools.html'">
+            <div class="nav-item ps5-btn active" id="navTools">
                 <svg class="icon ps5-icon ps5-icon-circle" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="4"/></svg> 工具箱
             </div>
             <div class="nav-item ps5-btn" id="navMessages" onclick="location.href='save.html'">
@@ -46,10 +48,10 @@
                 <div class="mobile-nav-item" id="mobileNavHome" onclick="location.href='index.html'; toggleMobileNav()">
                     <svg class="icon icon-fill" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 首页
                 </div>
-                <div class="mobile-nav-item active" id="mobileNavPopular">
+                <div class="mobile-nav-item" id="mobileNavPopular" onclick="location.href='tutorial.html'; toggleMobileNav()">
                     <svg class="icon ps5-icon ps5-icon-triangle" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2692 6.98965C23.0395 5.65908 24.9605 5.65908 25.7309 6.98965L44.262 38.9979C45.0339 40.3313 44.0718 42 42.5311 42H5.4689C3.92823 42 2.96611 40.3313 3.73804 38.9979L22.2692 6.98965Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> 实用教程
                 </div>
-                <div class="mobile-nav-item" id="mobileNavTools" onclick="location.href='tools.html'; toggleMobileNav()">
+                <div class="mobile-nav-item active" id="mobileNavTools">
                     <svg class="icon ps5-icon ps5-icon-circle" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="4"/></svg> 工具箱
                 </div>
                 <div class="mobile-nav-item" id="mobileNavMessages" onclick="location.href='save.html'; toggleMobileNav()">
@@ -67,64 +69,96 @@
     </nav>
 
     <!-- 主内容区域 -->
-    <main class="main-content" style="margin-top: 80px;">
-        <div class="container">
-            <header>
-                <h1>使用教程大全</h1>
-                <p class="subtitle">PS4/PS5 金手指使用指南</p>
-            </header>
+    <main class="main-content" style="margin-top: 80px; padding-bottom: 40px;">
+        <div class="tools-panel standalone">
+            <div class="tools-header">
+                <h2 class="tools-title">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                        <path d="M44 16C44 22.6274 38.6274 28 32 28C29.9733 28 28.0639 27.4975 26.3896 26.6104L9 44L4 39L21.3896 21.6104C20.5025 19.9361 20 18.0267 20 16C20 9.37258 25.3726 4 32 4C34.0267 4 35.9361 4.50245 37.6104 5.38959L30 13L35 18L42.6104 10.3896C43.4975 12.0639 44 13.9733 44 16Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> MC4 & JSON 金手指转换 | 自动汉化工具箱
+                </h2>
+            </div>
+            
+            <div class="tools-content">
+                <div class="tools-flex-row">
+                    <div class="tools-flex-col" style="flex:0 0 280px;">
+                        <div class="tools-panel-box">
+                            <div class="tools-subtitle">📁 选择金手指</div>
+                            <div class="tools-tip-text">支持 MC4 / JSON / SHN</div>
+                            
+                            <div class="tools-upload-area">
+                                <input type="file" id="toolsFileSelector" accept=".mc4,.json,.shn" onchange="updateToolsFileLabelWrapper()">
+                                <label for="toolsFileSelector">
+                                    点击或拖拽文件
+                                    <div id="toolsFileLabel"></div>
+                                </label>
+                            </div>
 
-            <div class="tutorial-card">
-                <h2>PS5折腾百科全书</h2>
-                <ul>
-                    <li>最全折腾教程：<a href="https://docs.qq.com/aio/p/sclyetur1r2t9to?p=rCUgAUhwygXUAT5BPiiYjX" target="_blank" style="color: #3b82f6; text-decoration: none; font-weight: 500;">https://docs.qq.com/aio/p/sclyetur1r2t9to?p=rCUgAUhwygXUAT5BPiiYjX</a></li>
-                </ul>
+                            <div style="margin-top:auto;">
+                                <button class="tools-action-btn tools-btn-color-1" onclick="toolsRunDecrypt(toolsDom.fileSelector, toolsDom.resultView, toolsDom.menuPreview)">■ 解密MC4金手指</button>
+                                <button class="tools-action-btn tools-btn-color-2" onclick="toolsRunConvert(toolsDom.fileSelector, toolsDom.resultView, toolsDom.menuPreview)">▲ 修复JSON金手指</button>
+                                <button class="tools-action-btn tools-btn-color-5" onclick="toolsReadFileContent(toolsDom.fileSelector, toolsDom.resultView, toolsDom.menuPreview, toolsDom.loadingPanel)">✖ 读取金手指代码</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tools-flex-col">
+                        <div class="tools-panel-box">
+                            <div class="tools-subtitle">📝 金手指代码</div>
+                            <textarea class="tools-result-area" id="toolsResultView" placeholder="等待转换金手指..."></textarea>
+                            
+                            <div id="toolsLoadingPanel">
+                                <div id="toolsLoadingText">๐•ᴗ•๐ 正在翻译中，请稍候...</div>
+                                <div class="tools-progress-base"><div class="tools-progress-animation"></div></div>
+                            </div>
+
+                            <div class="tools-btn-row">
+                                <button class="tools-action-btn tools-btn-color-3" onclick="toolsRunTranslate(toolsDom.resultView, toolsDom.loadingPanel, toolsDom.menuPreview)">◉ 自动汉化金手指</button>
+                                <button class="tools-action-btn tools-btn-color-4" onclick="toolsRunSave(toolsDom.resultView)">➤ 导出SHN格式</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tools-panel-box">
+                    <div class="tools-subtitle">★ 金手指功能键可视化编辑 ★</div>
+                    <div id="toolsMenuPreview" class="tools-menu-preview">
+                        <div class="tools-no-preview">请先读取或生成金手指内容</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="tutorial-card">
-                <h2>PS4平台</h2>
-                <ul>
-                    <li>PS4需已折腾并且 GoldHEN 版本为2.2以上</li>
-                    <li>了解您的游戏版本号，如：CUSA01234_01.01</li>
-                    <li>将指定格式的金手指放入：Goldhen/cheats/json（mc4/shn）内</li>
-                    <li>进入游戏长按 SHARE 键呼出金手指菜单</li>
-                </ul>
-            </div>
-
-            <div class="tutorial-card">
-                <h2>PS5平台</h2>
-                <p>4.03-10.01系统可使用etaHEN的cheats功能</p>
-                <p>10.20-12.00系统可使用各类金手指插件，如：东哥工具箱、麒麟核心、Yoncore等等...</p>
-                <ul>
-                    <li>PS5需已折腾并且注入 etaHEN2.5B（或其他金手指插件）</li>
-                    <li>了解您的游戏版本号，如：PPSA01234_01.001.000</li>
-                    <li>将指定格式的金手指放入：etaHEN/cheats/json（mc4/shn）内（json需转为shn格式，不然会死机）</li>
-                    <li>进入游戏后，打开工具箱，点击金手指菜单</li>
-                </ul>
-            </div>
-
-            <div class="version-info">
-                <p>教程版本：v1.0 | 最后更新：2026年5月</p>
+            <div class="tools-footer">
+                By : <span>DaBing Game Studio</span> | 交流群：310630593 | 本软件完全免费，仅供学习使用 | 尊重原作，请勿篡改原作者信息
             </div>
         </div>
     </main>
 
-    <!-- JavaScript -->
     <script>
-        // ========== 关于我们功能 ==========
+        const toolsDom = {
+            fileSelector: document.getElementById("toolsFileSelector"),
+            fileLabel: document.getElementById("toolsFileLabel"),
+            resultView: document.getElementById("toolsResultView"),
+            loadingPanel: document.getElementById("toolsLoadingPanel"),
+            menuPreview: document.getElementById("toolsMenuPreview")
+        };
+
+        function updateToolsFileLabelWrapper() {
+            updateToolsFileLabel(toolsDom.fileSelector, toolsDom.fileLabel);
+        }
+
         function toggleMobileNav() {
             const mobileNavMenu = document.getElementById('mobileNavMenu');
             mobileNavMenu.classList.toggle('active');
         }
 
-        // 切换移动端关于我们下拉菜单
         function toggleMobileAboutDropdown() {
             const dropdown = document.getElementById('mobileAboutDropdown');
             dropdown.classList.toggle('active');
         }
 
-        // 页面加载完成后初始化
         document.addEventListener("DOMContentLoaded", function() {
+            toolsDom.resultView.addEventListener("input", () => toolsPreviewCheatMenu(toolsDom.resultView, toolsDom.menuPreview));
         });
     </script>
 </body>
