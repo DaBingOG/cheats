@@ -83,3 +83,58 @@ document.addEventListener('click', function(e) {
         dropdown.style.display = 'none';
     }
 });
+
+// 回到顶部
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// 刷新页面
+function refreshPage() {
+    window.location.reload();
+}
+
+// 黑夜模式切换
+function toggleDarkMode() {
+    const isDark = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', isDark);
+}
+
+// 初始化黑夜模式
+function initDarkMode() {
+    const isDark = localStorage.getItem('darkMode') === 'true';
+    if (isDark) {
+        document.body.classList.add('dark-mode');
+    }
+}
+
+// 页面加载时初始化深色模式
+document.addEventListener('DOMContentLoaded', function() {
+    initDarkMode();
+});
+
+// 添加悬浮按钮
+function addFloatButtons() {
+    const floatButtons = `
+        <!-- 悬浮按钮 -->
+        <button class="float-btn dark-btn" onclick="toggleDarkMode()" title="切换黑夜模式">
+            <svg class="icon sun-icon" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 37C31.1797 37 37 31.1797 37 24C37 16.8203 31.1797 11 24 11C16.8203 11 11 16.8203 11 24C11 31.1797 16.8203 37 24 37Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><circle cx="24" cy="4" r="2" fill="currentColor"/><circle cx="39" cy="10" r="2" fill="currentColor"/><circle cx="45" cy="24" r="2" fill="currentColor"/><circle cx="39" cy="38" r="2" fill="currentColor"/><circle cx="24" cy="44" r="2" fill="currentColor"/><circle cx="9" cy="38" r="2" fill="currentColor"/><circle cx="3" cy="24" r="2" fill="currentColor"/><circle cx="9" cy="10" r="2" fill="currentColor"/></svg>
+            <svg class="icon moon-icon" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.0527 4.41085C22.5828 5.83695 18.5455 10.8106 18.5455 16.7273C18.5455 23.7564 24.2436 29.4545 31.2727 29.4545C37.1894 29.4545 42.1631 25.4172 43.5891 19.9473C43.8585 21.256 44 22.6115 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C25.3885 4 26.744 4.14149 28.0527 4.41085Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="float-btn refresh-btn" onclick="refreshPage()" title="刷新页面">
+            <svg class="icon icon-stroke" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M36.7279 36.7279C33.4706 39.9853 28.9706 42 24 42C14.0589 42 6 33.9411 6 24C6 14.0589 14.0589 6 24 6C28.9706 6 33.4706 8.01472 36.7279 11.2721C38.3859 12.9301 42 17 42 17"/><path d="M42 8V17H33"/></svg>
+        </button>
+        <button class="float-btn top-btn" onclick="scrollToTop()" title="回到顶部">
+            <svg class="icon icon-stroke" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 30L25 18L37 30"/></svg>
+        </button>
+    `;
+    document.body.insertAdjacentHTML('beforeend', floatButtons);
+}
+
+// 页面加载完成后添加悬浮按钮
+document.addEventListener('DOMContentLoaded', function() {
+    addFloatButtons();
+});

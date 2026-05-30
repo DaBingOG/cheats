@@ -18,7 +18,7 @@
     <nav class="navbar">
         <div class="navbar-brand" onclick="toggleSidebar()">
             <img src="images/UI/logo.png" alt="Logo">
-            <span>大饼 's   金手指资源库</span>
+            <span>大饼 's   金手指资源库 | Dabings.cn</span>
         </div>
         <div class="navbar-menu">
             <a href="index.html" class="nav-item active" id="navHome"><svg class="icon icon-fill" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 首页</a>
@@ -117,11 +117,6 @@
 
     <!-- 主内容区域 -->
     <main class="main-content" id="mainContent" onclick="closeSidebarOnClick(event)">
-        <!-- 顶部：标题 + 统计 -->
-        <div class="header">
-            <h1 class="top-title">大饼 PS4 & PS5 金手指资源库</h1>
-        </div>
-
         <!-- 轮播海报 -->
         <div class="banner-swiper" id="bannerSwiper">
             <div class="new-banner-title"><svg class="icon icon-fill" viewBox="0 0 512 512"><path d="M327.3 98.9c-6.9-12.1-19.8-19.9-34.5-19.9s-27.6 7.8-34.5 19.9L185.9 214.5c-7 12.2-7 27.1 0 39.3l72.3 115.6c6.9 12.1 19.8 19.9 34.5 19.9s27.6-7.8 34.5-19.9L399.7 253.8c7-12.2 7-27.1 0-39.3L327.3 98.9zM512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0z"/></svg> 最新更新</div>
@@ -171,14 +166,6 @@
             站长：大饼电玩D.B.© | 仅供学习使用 | 学习交流群：310630593
         </div>
     </main>
-
-    <!-- 悬浮按钮 -->
-    <button class="float-btn refresh-btn" onclick="refreshPage()" title="刷新页面">
-        <svg class="icon icon-stroke" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M36.7279 36.7279C33.4706 39.9853 28.9706 42 24 42C14.0589 42 6 33.9411 6 24C6 14.0589 14.0589 6 24 6C28.9706 6 33.4706 8.01472 36.7279 11.2721C38.3859 12.9301 42 17 42 17"/><path d="M42 8V17H33"/></svg>
-    </button>
-    <button class="float-btn top-btn" onclick="scrollToTop()" title="回到顶部">
-        <svg class="icon icon-stroke" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 30L25 18L37 30"/></svg>
-    </button>
 
     <!-- 工具箱面板 -->
     <div class="tools-panel" id="toolsPanel">
@@ -250,6 +237,7 @@
                 <span id="gameId"></span>
                 <span id="gameModer"></span>
             </div>
+            <div class="version-selector" id="versionSelector"></div>
             <div class="cheat-container" id="cheatContent"></div>
             <div class="pop-actions">
                 <button class="convert-btn" id="convertBtn" onclick="convertJsonToShn()" style="display:none;">
@@ -421,11 +409,69 @@
         function getGameFormat(fileName) {
             const ext = fileName.split('.').pop().toLowerCase();
             const formatMap = {
-                'shn': 'S',
-                'mc4': 'M',
-                'json': 'J'
+                'shn': 'SHN',
+                'mc4': 'MC4',
+                'json': 'JSON'
             };
-            return formatMap[ext] || 'S';
+            return formatMap[ext] || 'SHN';
+        }
+
+        // 合并相同baseId的游戏
+        function mergeGamesByBaseId(games) {
+            const groups = {};
+            
+            games.forEach(game => {
+                // 跳过banner游戏（以1-5-开头的）
+                if (/^[1-5]-/.test(game.file)) return;
+                
+                const key = game.baseId;
+                if (!groups[key]) {
+                    groups[key] = {
+                        ...game,
+                        name: game.name.replace(/（.*?）|\(.*?\)/g, '').trim(), // 去除括号内的内容
+                        versions: []
+                    };
+                }
+                // 添加版本信息，用 version + format 作为唯一键
+                const verKey = game.version + '_' + game.format;
+                const existingVersion = groups[key].versions.find(v => (v.version + '_' + v.format) === verKey);
+                if (!existingVersion) {
+                    groups[key].versions.push({
+                        version: game.version,
+                        file: game.file,
+                        id: game.id,
+                        format: game.format,
+                        name: game.name
+                    });
+                }
+            });
+            
+            // 对版本进行排序（先按版本降序，再按格式排序）
+            Object.values(groups).forEach(group => {
+                group.versions.sort((a, b) => {
+                    // 先比较版本号
+                    const verA = a.version.split('.').map(v => parseInt(v));
+                    const verB = b.version.split('.').map(v => parseInt(v));
+                    for (let i = 0; i < Math.max(verA.length, verB.length); i++) {
+                        const va = verA[i] || 0;
+                        const vb = verB[i] || 0;
+                        if (va !== vb) return vb - va; // 降序排列，最新版本在前
+                    }
+                    // 版本相同则按格式排序
+                    if (a.format !== b.format) {
+                        return a.format.localeCompare(b.format);
+                    }
+                    return 0;
+                });
+                // 设置默认选中第一个版本
+                if (group.versions.length > 0) {
+                    group.currentFile = group.versions[0].file;
+                    group.currentId = group.versions[0].id;
+                    group.currentVersion = group.versions[0].version;
+                }
+            });
+            
+            return Object.values(groups);
         }
 
         // 加载游戏列表
@@ -445,10 +491,17 @@
                         .map(line => {
                             const [file, name] = line.split("=");
                             const fileTrimmed = file.trim();
+                            // PS5文件名格式: PPSAxxxxx_版本.扩展名
+                            const baseIdMatch = fileTrimmed.match(/^(PPSA\d+)_/);
+                            const baseId = baseIdMatch ? baseIdMatch[1] : fileTrimmed;
+                            // 提取版本号: _数字.数字.数字
+                            const versionMatch = fileTrimmed.match(/^(?:PPSA\d+_)?(\d+\.\d+\.\d+)/);
                             return {
                                 file: fileTrimmed,
                                 name: name.trim(),
                                 id: fileTrimmed.replace(/\.(shn|mc4|json)$/i, "").trim(),
+                                baseId: baseId,
+                                version: versionMatch ? versionMatch[1] : "1.000.000",
                                 platform: "PS5",
                                 format: getGameFormat(fileTrimmed)
                             };
@@ -463,10 +516,17 @@
                         .map(line => {
                             const [file, name] = line.split("=");
                             const fileTrimmed = file.trim();
+                            // PS4文件名格式: CUSAxxxxx_版本.扩展名 或 CUSAxxxxx_版本_后缀.扩展名
+                            const baseIdMatch = fileTrimmed.match(/^(CUSA\d+)_/);
+                            const baseId = baseIdMatch ? baseIdMatch[1] : fileTrimmed;
+                            // 提取版本号: _数字.数字.数字（在第一个_之后）
+                            const versionMatch = fileTrimmed.match(/^(?:CUSA\d+_)?(\d+\.\d+(?:\.\d+)?)/);
                             return {
                                 file: fileTrimmed,
                                 name: name.trim(),
                                 id: fileTrimmed.replace(/\.(shn|mc4|json)$/i, "").trim(),
+                                baseId: baseId,
+                                version: versionMatch ? versionMatch[1] : "1.00",
                                 platform: "PS4",
                                 format: getGameFormat(fileTrimmed)
                             };
@@ -480,8 +540,13 @@
                     .map(game => ({
                         ...game,
                         file: game.file.replace(/^[1-5]-/, ""),
-                        id: game.id.replace(/^[1-5]-/, "")
+                        id: game.id.replace(/^[1-5]-/, ""),
+                        baseId: game.baseId.replace(/^[1-5]-/, "")
                     }));
+
+                // 合并相同baseId的游戏，创建版本列表
+                const mergedGames = mergeGamesByBaseId(allGames);
+                state.gameList = [...mergedGames];
 
                 applySort();
                 state.filteredList = [...state.gameList];
@@ -563,8 +628,8 @@
         }
 
         function applySort() {
-            const filterFn = game => !/^[1-5]-/.test(game.file);
-            let sortedList = [...state.originList].filter(filterFn);
+            // 先合并游戏，再排序
+            let sortedList = mergeGamesByBaseId([...state.originList]);
 
             if (state.currentSort === "name") {
                 sortedList = sortedList.sort((a, b) => 
@@ -738,13 +803,19 @@
                 img.src = imageUrl;
                 
                 const platformBadge = item.platform === "PS5" ? '<div class="ps5-badge"></div>' : '<div class="ps4-badge"></div>';
-                const formatBadge = `<div class="format-badge ${item.format}">${item.format}</div>`;
+                // 如果有多个版本，显示版本数量标记
+                const versionBadge = item.versions && item.versions.length > 1
+                    ? `<div class="version-badge">${item.versions.length}个版本</div>`
+                    : '';
+                // 收集所有格式类型，在游戏编号后方显示
+                const formats = [...new Set(item.versions ? item.versions.map(v => v.format) : [item.format])];
+                const formatTags = formats.map(f => `<span class="format-tag ${f}">${f}</span>`).join('');
                 card.innerHTML = `
                     ${platformBadge}
-                    ${formatBadge}
+                    ${versionBadge}
                     <div class="game-card-info">
                         <div class="game-card-name">${item.name}</div>
-                        <div class="game-card-id">${item.id}</div>
+                        <div class="game-card-id">${item.id} ${formatTags}</div>
                     </div>`;
                 dom.gameBox.appendChild(card);
             });
@@ -831,14 +902,58 @@
             dom.pagination.appendChild(dots);
         }
 
+        // 版本切换处理函数
+        function handleVersionClick(e) {
+            const btn = e.target.closest('.version-btn');
+            if (!btn || !state.currentGame) return;
+            
+            const index = parseInt(btn.dataset.index);
+            const selectedVer = state.currentGame.versions[index];
+            if (!selectedVer) return;
+            
+            // 更新当前游戏版本
+            state.currentGame.currentFile = selectedVer.file;
+            state.currentGame.currentId = selectedVer.id;
+            state.currentGame.currentVersion = selectedVer.version;
+            
+            // 更新UI
+            const versionSelector = document.getElementById("versionSelector");
+            versionSelector.querySelectorAll('.version-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById("gameId").innerText = `ID：${selectedVer.id}`;
+            
+            // 重新加载文件
+            openFile(state.currentGame);
+        }
+
         // 打开游戏详情
         async function openFile(item) {
-            state.currentFile = item.file;
-            const fileExt = item.file.split('.').pop().toLowerCase();
+            // 保存当前游戏和版本信息到全局状态
+            state.currentGame = item;
+            const currentFile = item.currentFile || item.file;
+            state.currentFile = currentFile;
+            const fileExt = currentFile.split('.').pop().toLowerCase();
             state.currentFileExt = fileExt;
             dom.pop.style.display = "flex";
             dom.gameTitle.innerText = item.name;
-            dom.gameId.innerText = `ID：${item.id}`;
+            dom.gameId.innerText = `ID：${item.currentId || item.id}`;
+
+            // 显示版本选择器（如果有多个版本）
+            const versionSelector = document.getElementById("versionSelector");
+            if (item.versions && item.versions.length > 1) {
+                versionSelector.innerHTML = item.versions.map((v, index) => {
+                    const displayName = v.name || v.version;
+                    const isActive = (v.file === item.currentFile) || (index === 0 && !item.currentFile);
+                    return `<button class="version-btn ${isActive ? 'active' : ''}" data-index="${index}" title="${displayName}">${v.version} ${v.format}</button>`;
+                }).join('');
+                versionSelector.style.display = "flex";
+                // 移除旧事件，避免重复绑定
+                versionSelector.removeEventListener('click', handleVersionClick);
+                // 添加新事件
+                versionSelector.addEventListener('click', handleVersionClick);
+            } else {
+                versionSelector.style.display = "none";
+            }
 
             // 隐藏转换按钮（默认）
             const convertBtn = document.getElementById("convertBtn");
@@ -847,6 +962,7 @@
             try {
                 // 根据文件类型确定基础URL
                 let baseUrl = item.platform === "PS5" ? CONFIG.PS5_BASE_URL : CONFIG.PS4_BASE_URL;
+                const currentFileName = item.currentFile || item.file;
                 
                 // 如果是JSON文件，从json目录读取
                 if (fileExt === 'json') {
@@ -858,7 +974,7 @@
                         const jsonDirs = ["./PS4/cheats/json-1/", "./PS4/cheats/json-2/", "./PS4/cheats/json-3/"];
                         let found = false;
                         for (const dir of jsonDirs) {
-                            const testResponse = await fetch(dir + item.file);
+                            const testResponse = await fetch(dir + currentFileName);
                             if (testResponse.ok) {
                                 baseUrl = dir;
                                 found = true;
@@ -874,7 +990,7 @@
                     baseUrl = item.platform === "PS5" ? "./PS5/cheats/mc4/" : "./PS4/cheats/mc4/";
                 }
                 
-                const response = await fetch(baseUrl + item.file);
+                const response = await fetch(baseUrl + currentFileName);
                 let content = await response.text();
 
                 // MC4格式需要先解密
@@ -931,18 +1047,53 @@
                         convertBtn.style.display = "flex";
                     }
                 } else {
-                    // SHN/MC4格式：正常预览
-                    const moder = state.currentContent.match(/Moder="([^"]+)"/i)?.[1] || "未知";
+                    // SHN/MC4/XML格式：统一用SHN方式处理
+                    // 先清理转义字符
+                    let cleanContent = state.currentContent;
+                    // 处理各种转义字符
+                    cleanContent = cleanContent.replace(/\\r\\n/g, '\n').replace(/\\r/g, '\n').replace(/\\n/g, '\n').replace(/\\t/g, ' ');
+                    // 处理HTML实体和反斜杠转义的引号
+                    cleanContent = cleanContent.replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+                    cleanContent = cleanContent.replace(/\\"/g, '"').replace(/\\'/g, "'");
+                    // 清理多余的反斜杠
+                    cleanContent = cleanContent.replace(/\\\\/g, '\\');
+                    
+                    const moder = cleanContent.match(/Moder="([^"]+)"/i)?.[1] || "未知";
                     const formatLabel = state.currentFileExt === 'mc4' ? 'MC4' : 'SHN';
-                    dom.gameModer.innerText = `作者：${moder} | 格式：${formatLabel}`;
-
-                    const texts = state.currentContent.match(/Text="([^"]+)"/g) || [];
+                    
+                    // 尝试多种方式提取功能列表
+                    let texts = [];
+                    // 方式1: Text="xxx"
+                    texts = cleanContent.match(/Text="([^"]+)"/g) || [];
+                    // 方式2: Text='xxx'
+                    if (texts.length === 0) {
+                        texts = cleanContent.match(/Text='([^']+)'/g) || [];
+                    }
+                    // 方式3: 不带引号的
+                    if (texts.length === 0) {
+                        const cheatTags = cleanContent.match(/<Cheat[^>]*>/gi) || [];
+                        texts = cheatTags.filter(tag => tag.includes('Text=')).map(tag => {
+                            const match = tag.match(/Text=([^\s>]+)/i);
+                            return match ? 'Text="' + match[1] + '"' : tag;
+                        });
+                    }
+                    
                     const funcCount = texts.length;
                     dom.gameModer.innerHTML = `作者：${moder} | 格式：${formatLabel} | <strong>${funcCount}</strong> 项修改`;
 
-                    dom.cheatContent.innerHTML = texts.map(text => `
-                        <div class="cheat-item">${text.replace(/Text="/g, "").replace(/"$/, "")}</div>
-                    `).join("");
+                    if (texts.length > 0) {
+                        dom.cheatContent.innerHTML = texts.map(text => {
+                            let func = text.replace(/Text="/g, "").replace(/"$/g, "");
+                            func = func.replace(/Text='/g, "").replace(/'$/g, "");
+                            return `<div class="cheat-item">${func}</div>`;
+                        }).join("");
+                    } else {
+                        // 如果都没找到，显示原始内容的一部分
+                        let preview = cleanContent;
+                        if (preview.length > 2000) preview = preview.substring(0, 2000) + "...";
+                        dom.cheatContent.innerHTML = `<div style="text-align:center;color:#f59e0b;padding:20px;">未找到功能列表</div><div style="padding:10px;background:#f3f4f6;border-radius:8px;font-family:monospace;font-size:10px;white-space:pre-wrap;word-break:break-all;">${preview}</div>`;
+                    }
+                    convertBtn.style.display = "none";
                 }
             } catch (error) {
                 console.error("加载金手指内容失败:", error);
@@ -1063,19 +1214,6 @@
         function hideToolsPanel() {
             toolsDom.panel.classList.remove("active");
             document.getElementById("navHome").classList.add("active");
-        }
-
-        // 回到顶部
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        // 刷新页面
-        function refreshPage() {
-            window.location.reload();
         }
 
         function updateToolsFileLabelWrapper() {
