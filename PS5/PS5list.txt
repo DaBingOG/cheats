@@ -138,4 +138,5 @@ PPSA15304_01.001.004.shn=合金装备：食蛇者 – 重制版 数字豪华版.
 PPSA09519_01.000.011.shn=明末：渊虚之羽.Wuchang: Fallen Feathers
 PPSA07631_01.000.000.shn=沙罗周期：豪华版.SAROS Digital Deluxe Edition
 PPSA25286_01.000.151.shn=红色沙漠.Crimson Desert
+PPSA08236_01.006.004.shn=不朽者传奇.Immortals of Aveum
 PPSA00000_00.000.000.shn=我全都要.All in
